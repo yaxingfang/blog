@@ -5,17 +5,17 @@
 # Site
 title: Yaxing's Blog
 subtitle: ''
-description: ''
+description: 人生如逆旅，我亦是行人。
 keywords:
-author: Arthur Fang
-language: cn
-timezone: ''
+author: 
+language: zh-Hans
+timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: http://example.com
-permalink: :year/:month/:day/:title/
-permalink_defaults:
+url: https://yaxing97.com
+permalink: :urlname.html
+permalink_defaults: 
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
   trailing_html: true # Set to false to remove trailing '.html' from permalinks
@@ -97,9 +97,27 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: landscape
+theme: next
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
   type: ''
+
+symbols_count_time:
+  separated_meta: true  #分隔线
+  item_text_post: true  #文章中的显示是否显示文本
+  item_text_total: true       #网页底部的显示是否显示文本
+  awl: 2 #平均每个字符的长度
+  wpm: 275 # 设定每分钟可阅读的字符数
+  symbols: true #是否统计字数
+  time: true #是否统计阅读时长
+  total_symbols: true #是否统计总字数
+  total_time: true #是否统计总阅读时长
+
+# Search
+search:
+  path: search.xml # 支持json和xml，可自行设定，索引文件的路径，相对于站点根目录
+  field: post # 搜索范围，默认是 post，还可以选择 page、all，设置成 all 表示搜索所有页面
+  format: html
+  limit: 10000 # 限制搜索的条目数
