@@ -9,6 +9,8 @@ urlname: image-host
 
 在我们日常使用Typora写文档时，一般图片都是放在本地的一个相对路径下，如果将markdown文件发送给别人，那么这个文件中的图片别人自然是访问不到的。图床的作用就是把图片存在网站上，对应的图片生成一个链接，markdown文件中使用该链接访问图片。在本文中我们使用Typora + PicGo + 阿里云OSS图床实现图片自动上传并自由访问。
 
+<!--more-->
+
 ## 下载 Typora
 
 [Typora官网](https://typora.io/) 官网拉到最下，点击 [History Releases](https://typora.io/releases/all)，选择 Dev/Beta Releases，拉到最下 More Beta,
