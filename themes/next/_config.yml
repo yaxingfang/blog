@@ -40,10 +40,10 @@ custom_file_path:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/blackstar.png
-  medium: /images/blackstar.png
-  apple_touch_icon: /images/blackstar.png
-  safari_pinned_tab: /images/blackstar.png
+  small: /images/icons8-falling-star-pastel-glyph-16.png
+  medium: /images/icons8-falling-star-pastel-glyph-32.png
+  apple_touch_icon: /images/icons8-falling-star-pastel-glyph-32.png
+  safari_pinned_tab: /images/icons8-falling-star-pastel-glyph-32.png
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
