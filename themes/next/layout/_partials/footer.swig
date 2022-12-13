@@ -60,14 +60,13 @@
 
 {{- next_inject('footer') }}
 
-<br /> #换行
 <!-- 网站运行时间的设置 -->
 <span id="timeDate">载入天数...</span>
 <span id="times">载入时分秒...</span>
 <script>
     var now = new Date();
     function createtime() {
-        var grt= new Date("04/21/2019 15:54:40");//此处修改你的建站时间或者网站上线时间
+        var grt= new Date("12/11/2022 13:51:00");//此处修改你的建站时间或者网站上线时间
         now.setTime(now.getTime()+250);
         days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days);
         hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours);
