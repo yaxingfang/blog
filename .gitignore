@@ -6,3 +6,6 @@ node_modules/
 public/
 .deploy*/
 _multiconfig.yml
+
+*/.DS_Store
+*/*/.DS_Store
