@@ -1,7 +1,6 @@
 ---
-title: About me
-type: "about"
-date: 2022-12-12 10:26:33
+title: About
+layout: about
 ---
 
 很高兴认识你，以下是我的个人情况～

@@ -4,6 +4,7 @@ copyright: true
 mathjax: true
 date: 2022-12-12 22:11:09
 categories: 技术总结
+tags: 技术总结
 urlname: image-host
 ---
 
