@@ -25,13 +25,13 @@ donate: true
 # comment
 # you can set gitment or uyan
 
-comment: gitment
+comment: 
 
 # gitment config
-gitment_owner: yaxingfang
-gitment_repo: blog-comment
-gitment_oauth_id: 573c178ebfc57396f95a
-gitment_oauth_secret: 77b4901caee4818ee04417e4add1cd03d78ca240
+gitment_owner: 
+gitment_repo: 
+gitment_oauth_id: 
+gitment_oauth_secret: 
 
 # uyan
 # if you want to use uyan as your blog comment, plz remove/comment out gitment config
@@ -39,8 +39,8 @@ gitment_oauth_secret: 77b4901caee4818ee04417e4add1cd03d78ca240
 baidu_id: 
 
 about: 
-  banner: http://file.muyutech.com/about.jpg
-  avatar: https://avatars3.githubusercontent.com/u/16443628?v=3&s=460
+  # banner: http://file.muyutech.com/about.jpg
+  # avatar: https://avatars3.githubusercontent.com/u/16443628?v=3&s=460
   description: 人生如逆旅，我亦是行人。
   # Links
   weibo_username: 

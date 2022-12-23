@@ -132,9 +132,7 @@
     </div>
     <!-- 二维码 END -->
     
-      <!-- Gitment START -->
-      <div id="comments"></div>
-      <!-- Gitment END -->
+      <!-- No Comment -->
     
   </article>
   <!-- Article END -->
@@ -198,15 +196,15 @@
     });
 
     // gitment
-    var gitmentConfig = "yaxingfang";
+    var gitmentConfig = "";
     if (gitmentConfig !== 'undefined') {
       var gitment = new Gitment({
         id: "Categories",
-        owner: "yaxingfang",
-        repo: "blog-comment",
+        owner: "",
+        repo: "",
         oauth: {
-          client_id: "573c178ebfc57396f95a",
-          client_secret: "77b4901caee4818ee04417e4add1cd03d78ca240"
+          client_id: "",
+          client_secret: ""
         },
         theme: {
           render(state, instance) {
