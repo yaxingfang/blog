@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://yaxing97.com/202301-it-info.html</loc>
+    <lastmod>2023-01-13</lastmod>
+  </url>
+  <url>
     <loc>https://yaxing97.com/2022-memory.html</loc>
     <lastmod>2023-01-01</lastmod>
   </url>
@@ -25,19 +29,19 @@
     <lastmod>2022-12-23</lastmod>
   </url>
   <url>
-    <loc>https://yaxing97.com/bilibili-vip.html</loc>
-    <lastmod>2022-12-23</lastmod>
-  </url>
-  <url>
     <loc>https://yaxing97.com/my-bytedance-internship-friends-offer.html</loc>
     <lastmod>2022-12-23</lastmod>
   </url>
   <url>
-    <loc>https://yaxing97.com/2022-internship-summary.html</loc>
+    <loc>https://yaxing97.com/bilibili-vip.html</loc>
     <lastmod>2022-12-23</lastmod>
   </url>
   <url>
     <loc>https://yaxing97.com/2022-autumn-recruitment-summary.html</loc>
+    <lastmod>2022-12-23</lastmod>
+  </url>
+  <url>
+    <loc>https://yaxing97.com/2022-internship-summary.html</loc>
     <lastmod>2022-12-23</lastmod>
   </url>
 </urlset> 
