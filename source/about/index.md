@@ -1,19 +1,11 @@
----
-title: Hello, world!
----
+<div align="center">
+<img src="https://rishavanand.github.io/static/images/greetings.gif" align="center" style="width: 100%" />
+</div>  
 
-很高兴认识你，简单介绍下我自己吧。
+🔭 本科：苏州大学纳米科学与技术学院，纳米物理方向；硕士：苏州大学计算机科学与技术学院，计算机技术。
 
-本科毕业于苏州大学纳米科学与技术学院，纳米物理方向；硕士毕业于苏州大学计算机科学与技术学院，专业是计算机技术。
+🌱 在字节跳动实习过4个月，担任飞书 EA-finance - 后端开发一职，秋招拿到了字节跳动、上海银行、高中信息技术老师等offer。
 
-在字节跳动实习过4个月，担任飞书 EA-finance - 后端开发一职。
+⚡ 编程语言熟悉Java、Python，数据库熟悉MySQL、Redis，框架熟悉Spring全家桶，常用工具熟悉Git、Maven、Linux……
 
-编程语言熟悉Java、Python，数据库熟悉MySQL、Redis，框架熟悉Spring全家桶，常用工具熟悉Git、Maven、Linux，more～
-
-秋招拿到了字节跳动、上海银行、高中信息技术老师等offer。
-
-最终选择是高中信息技术老师，未来的规划是带好课，争取带机器人竞赛、信息学竞赛，课外分享读书学习、个人生活相关。
-
-保持学习，热爱生活。
-
-欢迎交流～（yaxingfang@163.com）
+❓ 欢迎交流计算机考研、实习、秋招、编程、互联网等问题，我的邮箱 yaxingfang@163.com
