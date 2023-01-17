@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://yaxing97.com/about/index.html</loc>
+    <loc>https://yaxing97.com/build-blog.html</loc>
     
     <lastmod>2023-01-17</lastmod>
     
@@ -11,7 +11,16 @@
   </url>
   
   <url>
-    <loc>https://yaxing97.com/build-blog.html</loc>
+    <loc>https://yaxing97.com/image-host.html</loc>
+    
+    <lastmod>2023-01-17</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaxing97.com/about/index.html</loc>
     
     <lastmod>2023-01-17</lastmod>
     
@@ -128,15 +137,6 @@
   </url>
   
   <url>
-    <loc>https://yaxing97.com/image-host.html</loc>
-    
-    <lastmod>2022-12-23</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://yaxing97.com/categories/index.html</loc>
     
     <lastmod>2022-12-23</lastmod>
@@ -153,13 +153,6 @@
     <priority>1.0</priority>
   </url>
 
-  
-  <url>
-    <loc>https://yaxing97.com/tags/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2023-01-17</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
   
 
   
