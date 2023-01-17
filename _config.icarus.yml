@@ -91,7 +91,7 @@ donates:
     #     url: ''
     -
         type: alipay
-        qrcode: '/images/alipay.jpg'
+        qrcode: 'https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/alipay.jpg'
     # -
     #     type: buymeacoffee
     #     url: ''
@@ -104,16 +104,16 @@ donates:
     #     currency_code: USD
     -
         type: wechat
-        qrcode: '/images/wechat.jpg'
+        qrcode: 'https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/wechat.jpg'
 # share:
 #     type: sharethis
 #     install_url: ''
 sidebar:
     left:
-        sticky: false
+        sticky: true
     right:
         sticky: false
-# widgets:
+widgets:
 #     -
 #         position: left
 #         type: profile
@@ -146,12 +146,12 @@ sidebar:
         #     RSS:
         #         icon: fas fa-rss
         #         url: /
-    # -
-    #     position: left
-    #     type: toc
-    #     index: true
-    #     collapsed: true
-    #     depth: 3
+    -
+        position: left
+        type: toc
+        index: true
+        collapsed: true
+        depth: 3
     # -
     #     position: left
     #     type: links
@@ -193,9 +193,9 @@ plugins:
     animejs: true
     back_to_top: true
     baidu_analytics:
-        tracking_id: 
+        tracking_id: 2037c3637df2058f01d810ede4492aec
     bing_webmaster:
-        tracking_id: 
+        tracking_id: D145D14463E38D6AA94D5D4595C8AD13
     busuanzi: true
     cnzz:
         id: 
@@ -208,7 +208,7 @@ plugins:
         policyLink: https://www.cookiesandyou.com/
     gallery: true
     google_analytics:
-        tracking_id: 
+        tracking_id: G-FD6WJ02QTG
     hotjar:
         site_id: 
     katex: false

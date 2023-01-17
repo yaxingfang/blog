@@ -122,3 +122,12 @@ search:
   field: post # 搜索范围，默认是 post，还可以选择 page、all，设置成 all 表示搜索所有页面
   format: html
   limit: 10000 # 限制搜索的条目数
+
+feed:
+    type: atom
+    path: atom.xml
+    limit: 20
+    hub:
+    content:
+    content_limit:
+    content_limit_delim: ' '
