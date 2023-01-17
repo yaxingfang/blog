@@ -8,7 +8,7 @@ subtitle: ''
 description: 人生如逆旅，我亦是行人。
 keywords:
 author: Yaxing Fang
-language: zh-Hans
+language: zh-CN
 timezone: Asia/Shanghai
 
 # URL
@@ -97,7 +97,8 @@ ignore:
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-theme: vexo
+# theme: vexo
+theme: icarus
 
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment

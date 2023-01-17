@@ -26,10 +26,8 @@
 ]]></content>
       <categories>
         <category>实习秋招</category>
+        <category>秋招</category>
       </categories>
-      <tags>
-        <tag>实习秋招</tag>
-      </tags>
   </entry>
   <entry>
     <title>12张图回忆我的2022</title>
@@ -62,9 +60,9 @@
 <h3 id="12月"><a href="#12月" class="headerlink" title="12月"></a>12月</h3><p>回老家过生日大姨妈给买的蛋糕，哈哈哈，快乐。</p>
 <p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/12.jpg" alt="12"></p>
 ]]></content>
-      <tags>
-        <tag>日常小记</tag>
-      </tags>
+      <categories>
+        <category>日常小记</category>
+      </categories>
   </entry>
   <entry>
     <title>Typora配置阿里云OSS图床</title>
@@ -202,10 +200,8 @@
 ]]></content>
       <categories>
         <category>实习秋招</category>
+        <category>实习</category>
       </categories>
-      <tags>
-        <tag>实习秋招</tag>
-      </tags>
   </entry>
   <entry>
     <title>字节暑期实习同组实习生秋招情况分享</title>
@@ -213,7 +209,7 @@
     <content><![CDATA[<p>突然想起来做这个分享，是因为刚好下午有个字节跳动暑期实习时同组的朋友刚签约三方，和父母也顺便分享了其他同组实习生的签约情况。这边也给大家分享下。</p>
 <span id="more"></span>
 
-<p>在字节跳动暑期实习期间，前前后后加上我一共有4名23届实习生。</p>
+<p>在字节跳动暑期实习期间，前前后后加上我一共有5名实习生。</p>
 <p>实习生A：浙大硕，在我们组从4月中干到7月中，走字节的活水平台活水到其他部门继续暑期实习了，未能转正成功，后续情况不清楚。</p>
 <p>实习生B：山大硕，多段实习（包括量化，字节多段实习）大佬，7月离职，未参加实习转正，投递字节另一个部门的秋招提前批，最终斩获大sp offer并顺利签约。</p>
 <p>实习生C：重邮本，参加本部门实习转正，顺利收到小sp offer并签约。</p>
@@ -226,10 +222,8 @@
 ]]></content>
       <categories>
         <category>实习秋招</category>
+        <category>实习</category>
       </categories>
-      <tags>
-        <tag>实习秋招</tag>
-      </tags>
   </entry>
   <entry>
     <title>回老家的一周</title>
@@ -243,9 +237,9 @@
 <p>爷爷、奶奶那一辈的好多人年纪都很大了，希望他们健健康康。</p>
 <p>今天下午回到常州了，准备最近搞搞毕业论文的事了。</p>
 ]]></content>
-      <tags>
-        <tag>日常小记</tag>
-      </tags>
+      <categories>
+        <category>日常小记</category>
+      </categories>
   </entry>
   <entry>
     <title>开了个B站大会员</title>
@@ -260,9 +254,6 @@
       <categories>
         <category>日常小记</category>
       </categories>
-      <tags>
-        <tag>日常小记</tag>
-      </tags>
   </entry>
   <entry>
     <title>手把手带你搭建个人博客</title>
@@ -307,17 +298,17 @@
 <p>5、构建完成可以看到一个 xxx.netlify.app 的url，即为我们博客的url，修改该url中的xxx为yaxing97，即设置我的个人博客域名为<code>yaxing97.netlify.app</code></p>
 <h3 id="配置域名"><a href="#配置域名" class="headerlink" title="配置域名"></a>配置域名</h3><p>1、购买域名（国内国外都可）</p>
 <p>2、购买完成后在域名列表找到自己的域名，点击操作中的解析按钮</p>
-<p>3、设置域名解析，类型为<code>CNAME</code>，主机记录为<code>@</code>，记录值为<code>yaxing97.netlify.app</code>，其中`yaxing97是之前建站步骤中设置的个性二级域名</p>
+<p>3、设置域名解析，类型为<code>CNAME</code>，主机记录为<code>@</code>，记录值为<code>yaxing97.netlify.app</code>，其中<code>yaxing97</code>是之前建站步骤中设置的个性二级域名</p>
 <p>4、在netlify中配置域名，domain management - domains - add custom domain，一路通过即可</p>
 <h2 id="CloudFlare加速"><a href="#CloudFlare加速" class="headerlink" title="CloudFlare加速"></a>CloudFlare加速</h2><p>Netlify 虽然已经提供了 CDN 加速，但在使用过程中发现国内访问还是比较慢，Cloudflare 相对于国内的七牛云、阿里云等云服务商的 CDN 速度会慢一些，但是它有免费版本，而且最重要的是域名不用备案。</p>
 <h3 id="步骤-1"><a href="#步骤-1" class="headerlink" title="步骤"></a>步骤</h3><p>1、注册Cloudflare并登陆</p>
 <p>2、输入您的站点（yaxing97.com），点击添加站点</p>
 <p>3、选择免费套餐</p>
 <p>4、添加DNS，Type为<code>CNAME</code>，Name为<code>yaxing97.com</code>，Content为<code>yaxing97.netlify.app</code></p>
-<p>5、使用cloudflare提供的dns解析服务器（Cloudflare Nameservers）对yaxing97.com进行dns解析</p>
+<p>5、使用cloudflare提供的dns解析服务器（Cloudflare Nameservers）对 <code>yaxing97.com</code> 进行dns解析</p>
 <p>6、到阿里云控制台中，DNS管理 - DNS修改，修改DNS服务器</p>
 <h2 id="配置https"><a href="#配置https" class="headerlink" title="配置https"></a>配置https</h2><p>回到netlify中，Domain management - HTTPS，点击 verify DNS configuration，结果如下即为配置完成</p>
-<p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/image-20221212214817015.png" alt="image-20221212214817015"></p>
+<p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/image-20221212214817015.png" alt="配置HTTPS"></p>
 <h2 id="文章编写"><a href="#文章编写" class="headerlink" title="文章编写"></a>文章编写</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">"文章标题"</span></span><br><span class="line"><span class="comment"># 编写好之后</span></span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">git add *</span><br><span class="line">git commit -m <span class="string">"commit信息"</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
 
 <p>过片刻，访问我们的<code>https://yaxing97.com</code>，可以看到新添加的文章。</p>
@@ -340,14 +331,11 @@
 <p>如果要使用27寸及以上尺寸显示器的话，建议购买宽度至少70cm的，我购买的尺寸为 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="16.416ex" height="1.581ex" role="img" focusable="false" viewBox="0 -677 7255.9 699"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(500,0)"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(1000,0)"></path></g><g data-mml-node="mo" transform="translate(1722.2,0)"><path data-c="D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path></g><g data-mml-node="mn" transform="translate(2722.4,0)"><path data-c="38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(500,0)"></path></g><g data-mml-node="mo" transform="translate(3944.7,0)"><path data-c="D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path></g><g data-mml-node="mn" transform="translate(4944.9,0)"><path data-c="37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"></path><path data-c="34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" transform="translate(500,0)"></path></g><g data-mml-node="mi" transform="translate(5944.9,0)"><path data-c="1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path></g><g data-mml-node="mi" transform="translate(6377.9,0)"><path data-c="1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g></g></g></svg></mjx-container>，店铺是“新尚美家居”。</p>
 <p>注意到手需要自己拧螺丝固定桌腿和桌板（用电动螺丝刀）以及桌腿和桌腿之间的连接（手拧即可）。</p>
 <p>以下是实拍图 hh。</p>
-<p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/IMG_1396.JPG" alt="IMG_1396"></p>
+<p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/IMG_1396.JPG" alt="新书桌实拍图"></p>
 ]]></content>
       <categories>
         <category>日常小记</category>
       </categories>
-      <tags>
-        <tag>日常小记</tag>
-      </tags>
   </entry>
   <entry>
     <title>最近关于校招、互联网的一些信息</title>
@@ -376,9 +364,9 @@
 <p>19、“围城”这个词一定能在今年秋招占据一席之地。大城小城，国企央企私企外企体制，银行券商互联网制造业军工研究所。究竟是选个能安家的小城还是尽情享受大城市的年轻与自由？是选择一步到位还是将悬念留个未来？是挤出时间来工作还是选择工作外的生活？是坚定走自己的专业还是另辟蹊径？是选择一眼看到头的安心还是未知伴随的风险与机遇？最后，希望各位都能有满意的选择。我们已是当代青年，我们的选择便是新一代青年的选择。与诸位共勉。</p>
 <p>20、从北大来读书的，最近看工作，越来越觉得，在北京挣三十和挣五十没有太大区别，做互联网和做其他行业也没有太大区别，可见的未来的工作只是作为糊口的工具，很难有什么热爱可言。越来越想回家乡找个体制内的稳定工作了，把更多的时间用在生活上面。是我太躺了吗？还是我格局不够？</p>
 ]]></content>
-      <tags>
-        <tag>日常小记</tag>
-      </tags>
+      <categories>
+        <category>日常小记</category>
+      </categories>
   </entry>
   <entry>
     <title>江苏省考考完啦</title>
@@ -395,8 +383,5 @@
       <categories>
         <category>日常小记</category>
       </categories>
-      <tags>
-        <tag>日常小记</tag>
-      </tags>
   </entry>
 </search>
