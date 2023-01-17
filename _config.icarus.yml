@@ -212,7 +212,7 @@ plugins:
     hotjar:
         site_id: 
     katex: false
-    mathjax: true
+    mathjax: false
     outdated_browser: false
     progressbar: true
     statcounter:
