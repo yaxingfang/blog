@@ -184,11 +184,11 @@ widgets:
     #     client_id: ''
     #     slot_id: ''
     # -
-    #     position: left
-    #     type: followit
-    #     description: 
-    #     action_url: ''
-    #     verification_code: ''
+        position: left
+        type: followit
+        description: 
+        action_url: https://api.follow.it/subscription-form/RFM4cTNhZE42UWVTNE1UaW43VXpXRXRXczBqWVhDZUhwZExobHZJOTZHQXRtN3l3TURlYkNoVDJPNDB5WGF3Z0EraWxaYy9FVGtlYUVlUXhleDZSVmFPRGJZRlVBVVd0a2llYmdjM2JldHZPR01nWDQ0UVFXVG9DL2p4SHhPLzh8MXd4K2VSSUVQVWhKdXgrWjBRU0ZnVGkxelJ3RVdRMEtTYTNWYkMveVdwTT0=/8
+        verification_code: EAQb1LmXqQu3uy1GrQ2G
 plugins:
     animejs: true
     back_to_top: true
