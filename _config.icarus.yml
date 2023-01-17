@@ -93,8 +93,8 @@ donates:
     #     url: ''
     -
         type: alipay
-        # qrcode: 'https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/alipay.jpg'
-        qrcode: '/img/alipay.jpg'
+        qrcode: 'https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/alipay.jpg'
+        # qrcode: '/img/alipay.jpg'
     # -
     #     type: buymeacoffee
     #     url: ''
@@ -107,8 +107,8 @@ donates:
     #     currency_code: USD
     -
         type: wechat
-        # qrcode: 'https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/wechat.jpg'
-        qrcode: '/img/wechat.jpg'
+        qrcode: 'https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/wechat.jpg'
+        # qrcode: '/img/wechat.jpg'
 # share:
 #     type: sharethis
 #     install_url: ''
