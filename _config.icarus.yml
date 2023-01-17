@@ -1,6 +1,8 @@
 version: 5.1.0
 variant: default
 logo: /img/favicon.svg
+# logo: 
+#     text: Yaxing's Blog
 head:
     favicon: /img/favicon.svg
     manifest:
