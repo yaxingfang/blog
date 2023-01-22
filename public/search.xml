@@ -116,28 +116,6 @@
       </categories>
   </entry>
   <entry>
-    <title>字节暑期实习同组实习生秋招情况分享</title>
-    <url>/my-bytedance-internship-friends-offer.html</url>
-    <content><![CDATA[<p>突然想起来做这个分享，是因为刚好下午有个字节跳动暑期实习时同组的朋友刚签约三方，和父母也顺便分享了其他同组实习生的签约情况。这边也给大家分享下。</p>
-<span id="more"></span>
-
-<p>在字节跳动暑期实习期间，前前后后加上我一共有5名实习生。</p>
-<p>实习生A：浙大硕，在我们组从4月中干到7月中，走字节的活水平台活水到其他部门继续暑期实习了，未能转正成功，后续情况不清楚。</p>
-<p>实习生B：山大硕，多段实习（包括量化，字节多段实习）大佬，7月离职，未参加实习转正，投递字节另一个部门的秋招提前批，最终斩获大sp offer并顺利签约。</p>
-<p>实习生C：重邮本，参加本部门实习转正，顺利收到小sp offer并签约。</p>
-<p>实习生D：南开硕，由于实习时间短产出不足未能转正成功，秋招收到华为和农行等offer，选择wlb的农行。</p>
-<p>实习生E（本人），具体情况可见我的<a href="https://yaxing97.com/2022-autumn-recruitment-summary.html">2022秋招总结</a> 。</p>
-<p>这两天看了很多脉脉，有一个评论我觉得说的很对：“很多暑期实习过的人，都不想再去大厂了，选择去国企。”</p>
-<p>我觉得说的真的很对，实习过体会了大厂的卷，况且还是实习生，当时我的mentor比我累多了，每天晚上回去还要干活。我每天回到家感觉整个人都被抽空了，虽说我回家的也很早，一般8点左右就润了。到家什么都不想做，更别提学习了。幸好618入手了ps5，靠战神4、瑞奇与叮当、只狼等游戏度过一个又一个夜晚，不然我觉得我可能会抑郁。说实话，如果没有这段暑期实习，我拿到字节等大厂offer可能无脑去了，经历过才知道自己所能承受的身心压力。</p>
-<p>因此，暑期实习还是推荐去大厂的，一方面给秋招简历润色，另一方面看看自己是否能适应大厂工作生活节奏。</p>
-<p>以上。</p>
-]]></content>
-      <categories>
-        <category>实习秋招</category>
-        <category>实习</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Typora配置阿里云OSS图床</title>
     <url>/image-host.html</url>
     <content><![CDATA[<p>在我们日常使用Typora写文档时，一般图片都是放在本地的一个相对路径下，如果将markdown文件发送给别人，那么这个文件中的图片别人自然是访问不到的。图床的作用就是把图片存在网站上，对应的图片生成一个链接，markdown文件中使用该链接访问图片。在本文中我们使用Typora + PicGo + 阿里云OSS图床实现图片自动上传并自由访问。</p>
@@ -239,6 +217,54 @@
       </categories>
   </entry>
   <entry>
+    <title>字节暑期实习同组实习生秋招情况分享</title>
+    <url>/my-bytedance-internship-friends-offer.html</url>
+    <content><![CDATA[<p>突然想起来做这个分享，是因为刚好下午有个字节跳动暑期实习时同组的朋友刚签约三方，和父母也顺便分享了其他同组实习生的签约情况。这边也给大家分享下。</p>
+<span id="more"></span>
+
+<p>在字节跳动暑期实习期间，前前后后加上我一共有5名实习生。</p>
+<p>实习生A：浙大硕，在我们组从4月中干到7月中，走字节的活水平台活水到其他部门继续暑期实习了，未能转正成功，后续情况不清楚。</p>
+<p>实习生B：山大硕，多段实习（包括量化，字节多段实习）大佬，7月离职，未参加实习转正，投递字节另一个部门的秋招提前批，最终斩获大sp offer并顺利签约。</p>
+<p>实习生C：重邮本，参加本部门实习转正，顺利收到小sp offer并签约。</p>
+<p>实习生D：南开硕，由于实习时间短产出不足未能转正成功，秋招收到华为和农行等offer，选择wlb的农行。</p>
+<p>实习生E（本人），具体情况可见我的<a href="https://yaxing97.com/2022-autumn-recruitment-summary.html">2022秋招总结</a> 。</p>
+<p>这两天看了很多脉脉，有一个评论我觉得说的很对：“很多暑期实习过的人，都不想再去大厂了，选择去国企。”</p>
+<p>我觉得说的真的很对，实习过体会了大厂的卷，况且还是实习生，当时我的mentor比我累多了，每天晚上回去还要干活。我每天回到家感觉整个人都被抽空了，虽说我回家的也很早，一般8点左右就润了。到家什么都不想做，更别提学习了。幸好618入手了ps5，靠战神4、瑞奇与叮当、只狼等游戏度过一个又一个夜晚，不然我觉得我可能会抑郁。说实话，如果没有这段暑期实习，我拿到字节等大厂offer可能无脑去了，经历过才知道自己所能承受的身心压力。</p>
+<p>因此，暑期实习还是推荐去大厂的，一方面给秋招简历润色，另一方面看看自己是否能适应大厂工作生活节奏。</p>
+<p>以上。</p>
+]]></content>
+      <categories>
+        <category>实习秋招</category>
+        <category>实习</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>开了个B站大会员</title>
+    <url>/bilibili-vip.html</url>
+    <content><![CDATA[<p>最近巫师3更新了次世代版本（画质优化+中文配音），由于PS5放在了学校里，笔记本也带不太动，只能看老戴的视频云玩家二周目了（<a href="https://www.bilibili.com/video/BV1L14y1N7b3">链接</a>）。</p>
+<span id="more"></span>
+
+<p>看了一会，诶，咋更新了还这么糊，一看原来是只开了1080P画质，一冲动上某多多买了三个月的大会员，点开4K画质选项，好家伙，直接感受到了次世代的魅力。配音配的也很出色，没什么槽点。回头PS5上再三周目吧，并且期待一手巫师4。</p>
+<p>充了大会员，接下来闲的时候再把B站上的电影再看看，总不能浪费了不是hhh。</p>
+<p>最近多个平台都在搞年终总结了，比如Apple Music和PlayStation，准备等其他平台都推出年终总结之后搞波分享～</p>
+]]></content>
+      <categories>
+        <category>日常小记</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>新年快乐！</title>
+    <url>/2023-happy-spring-festival.html</url>
+    <content><![CDATA[<p>今年是大年初一，过新年。祝愿我和各位读者们新年快乐，事事如意，日进斗金，财运亨通，兔年大吉🎉</p>
+]]></content>
+      <categories>
+        <category>日常小记</category>
+      </categories>
+      <tags>
+        <tag>日常小记</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>手把手带你搭建个人博客</title>
     <url>/build-blog.html</url>
     <content><![CDATA[<h2 id="系统环境-amp-工具"><a href="#系统环境-amp-工具" class="headerlink" title="系统环境&工具"></a>系统环境&amp;工具</h2><p>系统环境：MacOS</p>
@@ -303,20 +329,6 @@
       </categories>
   </entry>
   <entry>
-    <title>开了个B站大会员</title>
-    <url>/bilibili-vip.html</url>
-    <content><![CDATA[<p>最近巫师3更新了次世代版本（画质优化+中文配音），由于PS5放在了学校里，笔记本也带不太动，只能看老戴的视频云玩家二周目了（<a href="https://www.bilibili.com/video/BV1L14y1N7b3">链接</a>）。</p>
-<span id="more"></span>
-
-<p>看了一会，诶，咋更新了还这么糊，一看原来是只开了1080P画质，一冲动上某多多买了三个月的大会员，点开4K画质选项，好家伙，直接感受到了次世代的魅力。配音配的也很出色，没什么槽点。回头PS5上再三周目吧，并且期待一手巫师4。</p>
-<p>充了大会员，接下来闲的时候再把B站上的电影再看看，总不能浪费了不是hhh。</p>
-<p>最近多个平台都在搞年终总结了，比如Apple Music和PlayStation，准备等其他平台都推出年终总结之后搞波分享～</p>
-]]></content>
-      <categories>
-        <category>日常小记</category>
-      </categories>
-  </entry>
-  <entry>
     <title>新买的小书桌</title>
     <url>/new-desk.html</url>
     <content><![CDATA[<p>之前买了个LG的27寸显示器，放在书房的桌子上，一方面不能升高（上面有架板挡住），另一方面是桌子宽度不够（只有50cm），显示器靠墙前面只能勉强放下我的mac，导致屏幕离我很近，观感极差。于是在淘宝上淘了个书桌，还算不错。</p>
@@ -377,17 +389,5 @@
       <categories>
         <category>日常小记</category>
       </categories>
-  </entry>
-  <entry>
-    <title>新年快乐！</title>
-    <url>/2023-happy-spring-festival.html</url>
-    <content><![CDATA[<p>今年是大年初一，过新年。祝愿我和各位读者们新年快乐，事事如意，日进斗金，财运亨通，兔年大吉🎉</p>
-]]></content>
-      <categories>
-        <category>日常小记</category>
-      </categories>
-      <tags>
-        <tag>日常小记</tag>
-      </tags>
   </entry>
 </search>
