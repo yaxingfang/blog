@@ -253,18 +253,6 @@
       </categories>
   </entry>
   <entry>
-    <title>新年快乐！</title>
-    <url>/2023-happy-spring-festival.html</url>
-    <content><![CDATA[<p>今年是大年初一，过新年。祝愿我和各位读者们新年快乐，事事如意，日进斗金，财运亨通，兔年大吉🎉</p>
-]]></content>
-      <categories>
-        <category>日常小记</category>
-      </categories>
-      <tags>
-        <tag>日常小记</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>手把手带你搭建个人博客</title>
     <url>/build-blog.html</url>
     <content><![CDATA[<h2 id="系统环境-amp-工具"><a href="#系统环境-amp-工具" class="headerlink" title="系统环境&工具"></a>系统环境&amp;工具</h2><p>系统环境：MacOS</p>
@@ -342,6 +330,18 @@
       <categories>
         <category>日常小记</category>
       </categories>
+  </entry>
+  <entry>
+    <title>新年快乐！</title>
+    <url>/2023-happy-spring-festival.html</url>
+    <content><![CDATA[<p>今年是大年初一，过新年。祝愿我和各位读者们新年快乐，事事如意，日进斗金，财运亨通，兔年大吉🎉</p>
+]]></content>
+      <categories>
+        <category>日常小记</category>
+      </categories>
+      <tags>
+        <tag>日常小记</tag>
+      </tags>
   </entry>
   <entry>
     <title>最近关于校招、互联网的一些信息</title>
