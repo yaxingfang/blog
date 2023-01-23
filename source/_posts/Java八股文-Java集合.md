@@ -134,7 +134,7 @@ Iterator 的特点是只能单向遍历，但是更加安全，因为它可以�
 ```java
 Iterator<Integer> it = list.iterator();
 while(it.hasNext()){
-   *// do something*
+   // do something
    it.remove();
 }
 ```
