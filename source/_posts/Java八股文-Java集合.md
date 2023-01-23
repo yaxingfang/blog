@@ -472,7 +472,7 @@ public boolean add(E e) {
 
 	当线程T1执行完，而线程T2恢复执行时，死循环就建立了，如下图所示： 
 
-	![img](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/v2-bd4a753db8c985119aa4dcd4356609cf_720w.jpg)
+	![多线程扩容导致死循环问题-3](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/v2-bd4a753db8c985119aa4dcd4356609cf_720w.jpg)
 
 	 因为T1执行完扩容之后B节点的下一个节点是A，而T2线程指向的首节点是A，第二个节点是B，这个顺序刚好和T1扩完容完之后的节点顺序是相反的。**T1执行完之后的顺序是B到A，而T2的顺序是A到B，这样A节点和B节点就形成死循环了**，这就是HashMap死循环导致的原因。
 
