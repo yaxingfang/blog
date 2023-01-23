@@ -10,9 +10,7 @@ toc: true
 urlname: java-basic-knowledge
 ---
 
-> 整理的Java基础相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～
-
-​	<!--more-->
+> 整理的Java基础相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～	<!--more-->
 
 ## Java概述
 

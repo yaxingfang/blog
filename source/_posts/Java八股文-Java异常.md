@@ -10,9 +10,7 @@ toc: true
 urlname: java-exception-error
 ---
 
-> 整理的Java异常相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～
-
-​	<!--more-->
+> 整理的Java异常相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～	<!--more-->
 
 ## Java异常架构
 
