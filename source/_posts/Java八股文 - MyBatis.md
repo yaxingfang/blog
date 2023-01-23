@@ -1,5 +1,5 @@
 ---
-title: Java八股文-MyBatis
+title: Java八股文 - MyBatis
 copyright: true
 mathjax: false
 categories:

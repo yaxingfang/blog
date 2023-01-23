@@ -1,5 +1,5 @@
 ---
-title: Java八股文-Java并发
+title: Java八股文 - Java并发
 copyright: true
 mathjax: false
 categories:

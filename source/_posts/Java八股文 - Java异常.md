@@ -1,5 +1,5 @@
 ---
-title: Java八股文- Java异常
+title: Java八股文 - Java异常
 copyright: true
 mathjax: false
 categories:

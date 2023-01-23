@@ -2,10 +2,10 @@ https://yaxing97.com/java-springmvc.html
 https://yaxing97.com/java-spring.html
 https://yaxing97.com/java-mybatis.html
 https://yaxing97.com/java-concurrent-programming.html
-https://yaxing97.com/2023-happy-spring-festival.html
 https://yaxing97.com/java-collection.html
 https://yaxing97.com/java-exception-error.html
 https://yaxing97.com/java-basic-knowledge.html
+https://yaxing97.com/2023-happy-spring-festival.html
 https://yaxing97.com/build-blog.html
 https://yaxing97.com/about/index.html
 https://yaxing97.com/tags/index.html

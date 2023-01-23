@@ -1,5 +1,5 @@
 ---
-title: Java八股文-SpringMVC
+title: Java八股文 - SpringMVC
 copyright: true
 mathjax: false
 categories:

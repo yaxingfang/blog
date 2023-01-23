@@ -1,5 +1,5 @@
 ---
-title: Java八股文- Java基础
+title: Java八股文 - Java基础
 copyright: true
 mathjax: false
 categories:
