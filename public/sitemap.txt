@@ -1,7 +1,7 @@
+https://yaxing97.com/java-concurrent-programming.html
 https://yaxing97.com/java-springmvc.html
 https://yaxing97.com/java-spring.html
 https://yaxing97.com/java-mybatis.html
-https://yaxing97.com/java-concurrent-programming.html
 https://yaxing97.com/java-collection.html
 https://yaxing97.com/java-exception-error.html
 https://yaxing97.com/java-basic-knowledge.html

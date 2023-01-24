@@ -527,8 +527,8 @@
 <li>**有名管道(Names Pipes)<strong>：匿名管道由于没有名字，只能用于亲缘关系的进程间通信。为了克服这个缺点，提出了有名管道。有名管道严格遵循</strong>先进先出(first in first out)**。有名管道以磁盘文件的方式存在，可以实现本机任意两个进程通信；</li>
 <li><strong>信号(Signal)</strong> ：信号是一种比较复杂的通信方式，用于通知接收进程某个事件已经发生；</li>
 <li><strong>消息队列(Message Queuing)</strong> ：消息队列是消息的链表，具有特定的格式，存放在内存中并由消息队列标识符标识。<strong>消息队列克服了信号承载信息量少，管道只能承载无格式字节流以及缓冲区大小受限等缺点</strong>；</li>
-<li><strong>信号量(Semaphores)</strong> ：信号量是一个计数器，用于多进程对共享数据的访问，信号量的意图在于进程间同步。这种通信方式主要用于解决与同步相关的问题并避免竞争条件。  </li>
-<li><strong>共享内存(Shared memory)</strong> ：使得多个进程可以访问同一块内存空间，不同进程可以及时看到对方进程中对共享内存中数据的更新。这种方式需要依靠某种同步操作，如互斥锁和信号量等。可以说这是最有用的进程间通信方式。</li>
+<li><strong>信号量(Semaphores)</strong> ：信号量是一个计数器，用于多进程对共享数据的访问，信号量的意图在于进程间同步。这种通信方式主要用于解决与同步相关的问题并避免竞争条件；</li>
+<li><strong>共享内存(Shared memory)</strong> ：使得多个进程可以访问同一块内存空间，不同进程可以及时看到对方进程中对共享内存中数据的更新。这种方式需要依靠某种同步操作，如互斥锁和信号量等。可以说这是最有用的进程间通信方式；</li>
 <li>**套接字(Sockets)**：此方法主要用于在客户端和服务器之间通过网络进行通信。套接字是支持 TCP&#x2F;IP 的网络通信的基本操作单元，可以看做是不同主机之间的进程进行双向通信的端点，简单的说就是通信的两方的一种约定，用套接字中的相关函数来完成通信过程。</li>
 </ol>
 <h4 id="线程间的同步方式"><a href="#线程间的同步方式" class="headerlink" title="线程间的同步方式"></a>线程间的同步方式</h4><p>线程同步是两个或多个共享关键资源的线程的并发执行。应该同步线程以避免关键的资源使用冲突。</p>
@@ -1163,6 +1163,102 @@
       </categories>
   </entry>
   <entry>
+    <title>Java八股文 - SpringMVC</title>
+    <url>/java-springmvc.html</url>
+    <content><![CDATA[<blockquote>
+<p>整理的SpringMVC相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～<span id="more"></span></p>
+</blockquote>
+<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><h3 id="什么是Spring-MVC？简单介绍下你对Spring-MVC的理解？"><a href="#什么是Spring-MVC？简单介绍下你对Spring-MVC的理解？" class="headerlink" title="什么是Spring MVC？简单介绍下你对Spring MVC的理解？"></a>什么是Spring MVC？简单介绍下你对Spring MVC的理解？</h3><p>Spring MVC是一个基于Java的实现了MVC设计模式的请求驱动类型的轻量级Web框架，通过把模型-视图-控制器分离，将web层进行职责解耦，简化开发。</p>
+<h2 id="核心组件"><a href="#核心组件" class="headerlink" title="核心组件"></a>核心组件</h2><h3 id="Spring-MVC的主要组件？"><a href="#Spring-MVC的主要组件？" class="headerlink" title="Spring MVC的主要组件？"></a>Spring MVC的主要组件？</h3><p>（1）前端控制器 DispatcherServlet（不需要程序员开发）</p>
+<p>作用：接收请求、响应结果，相当于转发器，有了DispatcherServlet 就减少了其它组件之间的耦合度。</p>
+<p>（2）处理器映射器HandlerMapping（不需要程序员开发）</p>
+<p>作用：根据请求的URL来查找Handler</p>
+<p>（3）处理器适配器HandlerAdapter</p>
+<p>注意：在编写Handler的时候要按照HandlerAdapter要求的规则去编写，这样适配器HandlerAdapter才可以正确的去执行Handler。</p>
+<p>（4）处理器Handler（需要程序员开发）</p>
+<p>（5）视图解析器 ViewResolver（不需要程序员开发）</p>
+<p>作用：进行视图的解析，根据视图逻辑名解析成真正的视图（view）</p>
+<p>（6）视图View（需要程序员开发jsp）</p>
+<p>View是一个接口， 它的实现类支持不同的视图类型（jsp，freemarker，pdf等等）</p>
+<h3 id="什么是DispatcherServlet"><a href="#什么是DispatcherServlet" class="headerlink" title="什么是DispatcherServlet"></a>什么是DispatcherServlet</h3><p>Spring的MVC框架是围绕DispatcherServlet来设计的，它用来处理所有的HTTP请求和响应。</p>
+<h3 id="什么是Spring-MVC框架的控制器？"><a href="#什么是Spring-MVC框架的控制器？" class="headerlink" title="什么是Spring MVC框架的控制器？"></a>什么是Spring MVC框架的控制器？</h3><p>控制器使用@Controller注解，并且提供了@RequestMapping注解，通过解析url中的路径，可以找到相应的控制器进行逻辑处理，响应数据等。</p>
+<h3 id="Spring-MVC的控制器是不是单例模式-如果是-有什么问题-怎么解决？"><a href="#Spring-MVC的控制器是不是单例模式-如果是-有什么问题-怎么解决？" class="headerlink" title="Spring MVC的控制器是不是单例模式,如果是,有什么问题,怎么解决？"></a>Spring MVC的控制器是不是单例模式,如果是,有什么问题,怎么解决？</h3><p>单例模式,所以在多线程访问的时候有线程安全问题,不要用同步,会影响性能的，解决方案是在控制器保持控制器无状态（不要写字段）。</p>
+<h2 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h2><h3 id="请描述Spring-MVC的工作流程？描述一下-DispatcherServlet-的工作流程？"><a href="#请描述Spring-MVC的工作流程？描述一下-DispatcherServlet-的工作流程？" class="headerlink" title="请描述Spring MVC的工作流程？描述一下 DispatcherServlet 的工作流程？"></a>请描述Spring MVC的工作流程？描述一下 DispatcherServlet 的工作流程？</h3><ol>
+<li>用户发送请求至前端控制器DispatcherServlet；</li>
+<li>DispatcherServlet收到请求后，调用HandlerMapping处理器映射器，请求获取Handler；</li>
+<li>HandlerMapping处理器映射器根据请求url<strong>找到具体的处理器</strong>，生成处理器对象及处理器拦截器(如果有则生成)一并返回给DispatcherServlet；</li>
+<li>DispatcherServlet 调用 HandlerAdapter处理器适配器；</li>
+<li>HandlerAdapter 经过适配 <strong>调用具体处理器</strong>(Handler，也叫后端控制器)；</li>
+<li>Handler执行完成返回ModelAndView；</li>
+<li>HandlerAdapter将Handler执行结果ModelAndView返回给DispatcherServlet；</li>
+<li>DispatcherServlet将ModelAndView传给ViewResolver视图解析器进行解析；</li>
+<li>ViewResolver解析后返回具体View；</li>
+<li>DispatcherServlet对View进行渲染成为视图（即将模型数据填充至视图中）；</li>
+<li>DispatcherServlet响应用户。</li>
+</ol>
+<p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes20200208211439106.png" alt="Spring MVC的工作流程"></p>
+<h2 id="常用注解"><a href="#常用注解" class="headerlink" title="常用注解"></a>常用注解</h2><h3 id="注解原理是什么"><a href="#注解原理是什么" class="headerlink" title="注解原理是什么"></a>注解原理是什么</h3><p>注解本质是一个继承了Annotation的特殊接口，其具体实现类是Java运行时生成的动态代理类。我们通过反射获取注解时，返回的是Java运行时生成的动态代理对象。通过代理对象调用自定义注解的方法。</p>
+<h3 id="Spring-MVC常用的注解有哪些？"><a href="#Spring-MVC常用的注解有哪些？" class="headerlink" title="Spring MVC常用的注解有哪些？"></a>Spring MVC常用的注解有哪些？</h3><p>@RequestMapping：用于处理请求 url 映射的注解，可用于类或方法上。用于类上，则表示类中的所有响应请求的方法都是以该地址作为父路径。</p>
+<p>@RequestBody：注解实现接收http请求的json数据，将json转换为java对象。</p>
+<p>@ResponseBody：注解实现将controller方法返回对象转化为json对象响应给客户。</p>
+<h3 id="Sping-MVC中的控制器的注解一般用哪个-有没有别的注解可以替代？"><a href="#Sping-MVC中的控制器的注解一般用哪个-有没有别的注解可以替代？" class="headerlink" title="Sping MVC中的控制器的注解一般用哪个,有没有别的注解可以替代？"></a>Sping MVC中的控制器的注解一般用哪个,有没有别的注解可以替代？</h3><p>答：一般用@Controller注解，也可以使用@RestController，@RestController注解相当于@ResponseBody ＋ @Controller，@ResponseBody 用于返回json数据＋ @Controller 用于表明控制器</p>
+<h3 id="Controller注解的作用"><a href="#Controller注解的作用" class="headerlink" title="@Controller注解的作用"></a>@Controller注解的作用</h3><p>@Controller 用于标记在一个类上，使用它标记的类就是一个Spring MVC Controller 对象。通过请求的url和@RequestMapping 注解对应到实际处理请求的处理器。需要开启mvc注解扫描找到@Controller的控制器。</p>
+<h3 id="RequestMapping注解的作用"><a href="#RequestMapping注解的作用" class="headerlink" title="@RequestMapping注解的作用"></a>@RequestMapping注解的作用</h3><p>RequestMapping是一个用来处理请求地址映射的注解，可用于类或方法上。</p>
+<p>用于类上，表示类中的所有响应请求的方法都是以该地址作为父路径。</p>
+<p>RequestMapping注解有六个属性：</p>
+<p><strong>path&#x2F;value， method</strong></p>
+<ul>
+<li><p>value： 指定请求的实际地址，指定的地址可以是URI Template 模式（后面将会说明）；</p>
+</li>
+<li><p>method： 指定请求的method类型， GET、POST、PUT、DELETE等；</p>
+</li>
+</ul>
+<p><strong>consumes，produces</strong></p>
+<ul>
+<li><p>consumes： 指定处理请求的提交内容类型（Content-Type），例如application&#x2F;json, text&#x2F;html;</p>
+</li>
+<li><p>produces: 指定返回的内容类型，仅当request请求头中的(Accept)类型中包含该指定类型才返回；</p>
+</li>
+</ul>
+<p><strong>params，headers</strong></p>
+<ul>
+<li><p>params： 指定request中必须包含某些参数值时，才让该方法处理。</p>
+</li>
+<li><p>headers： 指定request中必须包含某些指定的header值，才能让该方法处理请求。</p>
+</li>
+</ul>
+<h3 id="PathVariable和-RequestParam的区别"><a href="#PathVariable和-RequestParam的区别" class="headerlink" title="@PathVariable和@RequestParam的区别"></a>@PathVariable和@RequestParam的区别</h3><p>@PathVariable作用： 用于绑定url中的占位符。例如：请求url中 &#x2F;delete&#x2F;{id}，这个{id}就是url占位符。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 根据path /anno/testPathVariable/10 找到 testPathVariable 方法</span></span><br><span class="line"><span class="comment">* 然后，其中的10就是sid占位符所占的位置的数据，然后通过<span class="doctag">@PathVaribale</span>注解将其赋值给 id</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">@RequestMapping(path = &quot;testPathVariable/&#123;sid&#125;&quot;)</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">testPathVariable</span><span class="params">(<span class="meta">@PathVariable(value = &quot;sid&quot;)</span> String id)</span> &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;执行了testPathVariable...&quot;</span>);</span><br><span class="line">    System.out.println(id);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;success&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>@RequestParam作用： 把请求中指定名称的参数给控制器中的形参赋值。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Controller中的代码：</span></span><br><span class="line"><span class="meta">@RequestMapping(path = &quot;/testRequestParam&quot;)</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">testRequestParam</span><span class="params">(<span class="meta">@RequestParam(value = &quot;name&quot;)</span> String username)</span> &#123;</span><br><span class="line">    <span class="comment">// 把请求中指定的name赋值给控制器中的形参username</span></span><br><span class="line">    System.out.println(<span class="string">&quot;执行了testRequestParam...&quot;</span>);</span><br><span class="line">    System.out.println(username);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;success&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="Spring-MVC怎么样设定转发和重定向的？"><a href="#Spring-MVC怎么样设定转发和重定向的？" class="headerlink" title="Spring MVC怎么样设定转发和重定向的？"></a>Spring MVC怎么样设定转发和重定向的？</h3><p>（1）转发：使用forward<br>forward是指内部转发，相当于服务器内部方法跳转调用。请求一次服务器。转发地址不变。</p>
+<p>（2）重定向：使用redirect<br>重定向是指当浏览器请求一个URL时，服务器返回一个重定向指令，告诉浏览器地址已经变了，麻烦使用新的URL再重新发送新请求。请求两次服务器。重定向地址改变。</p>
+<h3 id="Spring-MVC怎么和AJAX相互调用的？"><a href="#Spring-MVC怎么和AJAX相互调用的？" class="headerlink" title="Spring MVC怎么和AJAX相互调用的？"></a>Spring MVC怎么和AJAX相互调用的？</h3><p>通过Jackson或者是fastjson就可以把Java里面的对象直接转化成Js可以识别的Json对象，来进行传输。</p>
+<h3 id="如何解决POST请求中文乱码问题，GET的又如何处理呢？"><a href="#如何解决POST请求中文乱码问题，GET的又如何处理呢？" class="headerlink" title="如何解决POST请求中文乱码问题，GET的又如何处理呢？"></a>如何解决POST请求中文乱码问题，GET的又如何处理呢？</h3><p>（1）解决post请求乱码问题：</p>
+<p>在web.xml中配置一个CharacterEncodingFilter过滤器，设置成utf-8；</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">filter</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-class</span>&gt;</span>org.springframework.web.filter.CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-class</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">init-param</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-name</span>&gt;</span>encoding<span class="tag">&lt;/<span class="name">param-name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-value</span>&gt;</span>utf-8<span class="tag">&lt;/<span class="name">param-value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">init-param</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">filter</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">filter-mapping</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/*<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">filter-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>（2）get请求中文参数出现乱码解决方法有两个：</p>
+<p>修改tomcat配置文件添加编码与工程编码一致，如下：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">&lt;ConnectorURIEncoding=&quot;utf-8&quot; connectionTimeout=&quot;20000&quot; port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot; redirectPort=&quot;8443&quot;/&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Spring-MVC的异常处理"><a href="#Spring-MVC的异常处理" class="headerlink" title="Spring MVC的异常处理"></a>Spring MVC的异常处理</h3><p>可以将异常抛给Spring框架，由Spring框架来处理；我们只需要配置简单的异常处理器，在异常处理器中添视图页面即可。</p>
+<h3 id="如果在拦截请求中，我想拦截get方式提交的方法-怎么配置"><a href="#如果在拦截请求中，我想拦截get方式提交的方法-怎么配置" class="headerlink" title="如果在拦截请求中，我想拦截get方式提交的方法,怎么配置"></a>如果在拦截请求中，我想拦截get方式提交的方法,怎么配置</h3><p>答：可以在@RequestMapping注解里面加上method&#x3D;RequestMethod.GET。</p>
+<h3 id="怎样在方法里面得到Request-或者Session？"><a href="#怎样在方法里面得到Request-或者Session？" class="headerlink" title="怎样在方法里面得到Request,或者Session？"></a>怎样在方法里面得到Request,或者Session？</h3><p>答：直接在方法的形参中声明request,Spring MVC就自动把request对象传入。</p>
+<h3 id="如果想在拦截的方法里面得到从前台传入的参数-怎么得到？"><a href="#如果想在拦截的方法里面得到从前台传入的参数-怎么得到？" class="headerlink" title="如果想在拦截的方法里面得到从前台传入的参数,怎么得到？"></a>如果想在拦截的方法里面得到从前台传入的参数,怎么得到？</h3><p>直接在形参里面声明这个参数就可以,但必须名字和传过来的参数一样。<br>或者使用 RequestParam注解将前台的参数名A传给形参中的参数B</p>
+<h3 id="如果前台有很多个参数传入-并且这些参数都是一个对象的-那么怎么样快速得到这个对象？"><a href="#如果前台有很多个参数传入-并且这些参数都是一个对象的-那么怎么样快速得到这个对象？" class="headerlink" title="如果前台有很多个参数传入,并且这些参数都是一个对象的,那么怎么样快速得到这个对象？"></a>如果前台有很多个参数传入,并且这些参数都是一个对象的,那么怎么样快速得到这个对象？</h3><p>直接在方法中声明这个对象,Spring MVC就自动会把属性赋值到这个对象里面。</p>
+<h3 id="Spring-MVC中函数的返回值是什么？"><a href="#Spring-MVC中函数的返回值是什么？" class="headerlink" title="Spring MVC中函数的返回值是什么？"></a>Spring MVC中函数的返回值是什么？</h3><p>返回值可以有很多类型,有String, ModelAndView（视图和数据合并在一起）。</p>
+<h3 id="Spring-MVC用什么对象从后台向前台传递数据的？"><a href="#Spring-MVC用什么对象从后台向前台传递数据的？" class="headerlink" title="Spring MVC用什么对象从后台向前台传递数据的？"></a>Spring MVC用什么对象从后台向前台传递数据的？</h3><p>通过ModelMap对象,可以在这个对象里面调用put方法,把对象加到里面,前台就可以通过el表达式拿到。</p>
+<h3 id="怎么样把ModelMap里面的数据放入Session里面？"><a href="#怎么样把ModelMap里面的数据放入Session里面？" class="headerlink" title="怎么样把ModelMap里面的数据放入Session里面？"></a>怎么样把ModelMap里面的数据放入Session里面？</h3><p>可以在类上面加上@SessionAttributes注解,里面包含的字符串就是要放入session里面的key。</p>
+<h3 id="Spring-MVC里面拦截器是怎么写的"><a href="#Spring-MVC里面拦截器是怎么写的" class="headerlink" title="Spring MVC里面拦截器是怎么写的"></a>Spring MVC里面拦截器是怎么写的</h3><p>有两种写法,一种是实现HandlerInterceptor接口，重写prehandle等方法，然后配置拦截器</p>
+]]></content>
+      <categories>
+        <category>Java八股文</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Java八股文 - Spring</title>
     <url>/java-spring.html</url>
     <content><![CDATA[<blockquote>
@@ -1471,102 +1567,6 @@
 </ul>
 <p>可以简单地认为, 使用 @Aspect 注解的类就是切面</p>
 <p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes2020021212264438.png" alt="在这里插入图片描述"></p>
-]]></content>
-      <categories>
-        <category>Java八股文</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Java八股文 - SpringMVC</title>
-    <url>/java-springmvc.html</url>
-    <content><![CDATA[<blockquote>
-<p>整理的SpringMVC相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～<span id="more"></span></p>
-</blockquote>
-<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><h3 id="什么是Spring-MVC？简单介绍下你对Spring-MVC的理解？"><a href="#什么是Spring-MVC？简单介绍下你对Spring-MVC的理解？" class="headerlink" title="什么是Spring MVC？简单介绍下你对Spring MVC的理解？"></a>什么是Spring MVC？简单介绍下你对Spring MVC的理解？</h3><p>Spring MVC是一个基于Java的实现了MVC设计模式的请求驱动类型的轻量级Web框架，通过把模型-视图-控制器分离，将web层进行职责解耦，简化开发。</p>
-<h2 id="核心组件"><a href="#核心组件" class="headerlink" title="核心组件"></a>核心组件</h2><h3 id="Spring-MVC的主要组件？"><a href="#Spring-MVC的主要组件？" class="headerlink" title="Spring MVC的主要组件？"></a>Spring MVC的主要组件？</h3><p>（1）前端控制器 DispatcherServlet（不需要程序员开发）</p>
-<p>作用：接收请求、响应结果，相当于转发器，有了DispatcherServlet 就减少了其它组件之间的耦合度。</p>
-<p>（2）处理器映射器HandlerMapping（不需要程序员开发）</p>
-<p>作用：根据请求的URL来查找Handler</p>
-<p>（3）处理器适配器HandlerAdapter</p>
-<p>注意：在编写Handler的时候要按照HandlerAdapter要求的规则去编写，这样适配器HandlerAdapter才可以正确的去执行Handler。</p>
-<p>（4）处理器Handler（需要程序员开发）</p>
-<p>（5）视图解析器 ViewResolver（不需要程序员开发）</p>
-<p>作用：进行视图的解析，根据视图逻辑名解析成真正的视图（view）</p>
-<p>（6）视图View（需要程序员开发jsp）</p>
-<p>View是一个接口， 它的实现类支持不同的视图类型（jsp，freemarker，pdf等等）</p>
-<h3 id="什么是DispatcherServlet"><a href="#什么是DispatcherServlet" class="headerlink" title="什么是DispatcherServlet"></a>什么是DispatcherServlet</h3><p>Spring的MVC框架是围绕DispatcherServlet来设计的，它用来处理所有的HTTP请求和响应。</p>
-<h3 id="什么是Spring-MVC框架的控制器？"><a href="#什么是Spring-MVC框架的控制器？" class="headerlink" title="什么是Spring MVC框架的控制器？"></a>什么是Spring MVC框架的控制器？</h3><p>控制器使用@Controller注解，并且提供了@RequestMapping注解，通过解析url中的路径，可以找到相应的控制器进行逻辑处理，响应数据等。</p>
-<h3 id="Spring-MVC的控制器是不是单例模式-如果是-有什么问题-怎么解决？"><a href="#Spring-MVC的控制器是不是单例模式-如果是-有什么问题-怎么解决？" class="headerlink" title="Spring MVC的控制器是不是单例模式,如果是,有什么问题,怎么解决？"></a>Spring MVC的控制器是不是单例模式,如果是,有什么问题,怎么解决？</h3><p>单例模式,所以在多线程访问的时候有线程安全问题,不要用同步,会影响性能的，解决方案是在控制器保持控制器无状态（不要写字段）。</p>
-<h2 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h2><h3 id="请描述Spring-MVC的工作流程？描述一下-DispatcherServlet-的工作流程？"><a href="#请描述Spring-MVC的工作流程？描述一下-DispatcherServlet-的工作流程？" class="headerlink" title="请描述Spring MVC的工作流程？描述一下 DispatcherServlet 的工作流程？"></a>请描述Spring MVC的工作流程？描述一下 DispatcherServlet 的工作流程？</h3><ol>
-<li>用户发送请求至前端控制器DispatcherServlet；</li>
-<li>DispatcherServlet收到请求后，调用HandlerMapping处理器映射器，请求获取Handler；</li>
-<li>HandlerMapping处理器映射器根据请求url<strong>找到具体的处理器</strong>，生成处理器对象及处理器拦截器(如果有则生成)一并返回给DispatcherServlet；</li>
-<li>DispatcherServlet 调用 HandlerAdapter处理器适配器；</li>
-<li>HandlerAdapter 经过适配 <strong>调用具体处理器</strong>(Handler，也叫后端控制器)；</li>
-<li>Handler执行完成返回ModelAndView；</li>
-<li>HandlerAdapter将Handler执行结果ModelAndView返回给DispatcherServlet；</li>
-<li>DispatcherServlet将ModelAndView传给ViewResolver视图解析器进行解析；</li>
-<li>ViewResolver解析后返回具体View；</li>
-<li>DispatcherServlet对View进行渲染成为视图（即将模型数据填充至视图中）；</li>
-<li>DispatcherServlet响应用户。</li>
-</ol>
-<p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes20200208211439106.png" alt="Spring MVC的工作流程"></p>
-<h2 id="常用注解"><a href="#常用注解" class="headerlink" title="常用注解"></a>常用注解</h2><h3 id="注解原理是什么"><a href="#注解原理是什么" class="headerlink" title="注解原理是什么"></a>注解原理是什么</h3><p>注解本质是一个继承了Annotation的特殊接口，其具体实现类是Java运行时生成的动态代理类。我们通过反射获取注解时，返回的是Java运行时生成的动态代理对象。通过代理对象调用自定义注解的方法。</p>
-<h3 id="Spring-MVC常用的注解有哪些？"><a href="#Spring-MVC常用的注解有哪些？" class="headerlink" title="Spring MVC常用的注解有哪些？"></a>Spring MVC常用的注解有哪些？</h3><p>@RequestMapping：用于处理请求 url 映射的注解，可用于类或方法上。用于类上，则表示类中的所有响应请求的方法都是以该地址作为父路径。</p>
-<p>@RequestBody：注解实现接收http请求的json数据，将json转换为java对象。</p>
-<p>@ResponseBody：注解实现将controller方法返回对象转化为json对象响应给客户。</p>
-<h3 id="Sping-MVC中的控制器的注解一般用哪个-有没有别的注解可以替代？"><a href="#Sping-MVC中的控制器的注解一般用哪个-有没有别的注解可以替代？" class="headerlink" title="Sping MVC中的控制器的注解一般用哪个,有没有别的注解可以替代？"></a>Sping MVC中的控制器的注解一般用哪个,有没有别的注解可以替代？</h3><p>答：一般用@Controller注解，也可以使用@RestController，@RestController注解相当于@ResponseBody ＋ @Controller，@ResponseBody 用于返回json数据＋ @Controller 用于表明控制器</p>
-<h3 id="Controller注解的作用"><a href="#Controller注解的作用" class="headerlink" title="@Controller注解的作用"></a>@Controller注解的作用</h3><p>@Controller 用于标记在一个类上，使用它标记的类就是一个Spring MVC Controller 对象。通过请求的url和@RequestMapping 注解对应到实际处理请求的处理器。需要开启mvc注解扫描找到@Controller的控制器。</p>
-<h3 id="RequestMapping注解的作用"><a href="#RequestMapping注解的作用" class="headerlink" title="@RequestMapping注解的作用"></a>@RequestMapping注解的作用</h3><p>RequestMapping是一个用来处理请求地址映射的注解，可用于类或方法上。</p>
-<p>用于类上，表示类中的所有响应请求的方法都是以该地址作为父路径。</p>
-<p>RequestMapping注解有六个属性：</p>
-<p><strong>path&#x2F;value， method</strong></p>
-<ul>
-<li><p>value： 指定请求的实际地址，指定的地址可以是URI Template 模式（后面将会说明）；</p>
-</li>
-<li><p>method： 指定请求的method类型， GET、POST、PUT、DELETE等；</p>
-</li>
-</ul>
-<p><strong>consumes，produces</strong></p>
-<ul>
-<li><p>consumes： 指定处理请求的提交内容类型（Content-Type），例如application&#x2F;json, text&#x2F;html;</p>
-</li>
-<li><p>produces: 指定返回的内容类型，仅当request请求头中的(Accept)类型中包含该指定类型才返回；</p>
-</li>
-</ul>
-<p><strong>params，headers</strong></p>
-<ul>
-<li><p>params： 指定request中必须包含某些参数值时，才让该方法处理。</p>
-</li>
-<li><p>headers： 指定request中必须包含某些指定的header值，才能让该方法处理请求。</p>
-</li>
-</ul>
-<h3 id="PathVariable和-RequestParam的区别"><a href="#PathVariable和-RequestParam的区别" class="headerlink" title="@PathVariable和@RequestParam的区别"></a>@PathVariable和@RequestParam的区别</h3><p>@PathVariable作用： 用于绑定url中的占位符。例如：请求url中 &#x2F;delete&#x2F;{id}，这个{id}就是url占位符。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 根据path /anno/testPathVariable/10 找到 testPathVariable 方法</span></span><br><span class="line"><span class="comment">* 然后，其中的10就是sid占位符所占的位置的数据，然后通过<span class="doctag">@PathVaribale</span>注解将其赋值给 id</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">@RequestMapping(path = &quot;testPathVariable/&#123;sid&#125;&quot;)</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">testPathVariable</span><span class="params">(<span class="meta">@PathVariable(value = &quot;sid&quot;)</span> String id)</span> &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;执行了testPathVariable...&quot;</span>);</span><br><span class="line">    System.out.println(id);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;success&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>@RequestParam作用： 把请求中指定名称的参数给控制器中的形参赋值。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Controller中的代码：</span></span><br><span class="line"><span class="meta">@RequestMapping(path = &quot;/testRequestParam&quot;)</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">testRequestParam</span><span class="params">(<span class="meta">@RequestParam(value = &quot;name&quot;)</span> String username)</span> &#123;</span><br><span class="line">    <span class="comment">// 把请求中指定的name赋值给控制器中的形参username</span></span><br><span class="line">    System.out.println(<span class="string">&quot;执行了testRequestParam...&quot;</span>);</span><br><span class="line">    System.out.println(username);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;success&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="Spring-MVC怎么样设定转发和重定向的？"><a href="#Spring-MVC怎么样设定转发和重定向的？" class="headerlink" title="Spring MVC怎么样设定转发和重定向的？"></a>Spring MVC怎么样设定转发和重定向的？</h3><p>（1）转发：使用forward<br>forward是指内部转发，相当于服务器内部方法跳转调用。请求一次服务器。转发地址不变。</p>
-<p>（2）重定向：使用redirect<br>重定向是指当浏览器请求一个URL时，服务器返回一个重定向指令，告诉浏览器地址已经变了，麻烦使用新的URL再重新发送新请求。请求两次服务器。重定向地址改变。</p>
-<h3 id="Spring-MVC怎么和AJAX相互调用的？"><a href="#Spring-MVC怎么和AJAX相互调用的？" class="headerlink" title="Spring MVC怎么和AJAX相互调用的？"></a>Spring MVC怎么和AJAX相互调用的？</h3><p>通过Jackson或者是fastjson就可以把Java里面的对象直接转化成Js可以识别的Json对象，来进行传输。</p>
-<h3 id="如何解决POST请求中文乱码问题，GET的又如何处理呢？"><a href="#如何解决POST请求中文乱码问题，GET的又如何处理呢？" class="headerlink" title="如何解决POST请求中文乱码问题，GET的又如何处理呢？"></a>如何解决POST请求中文乱码问题，GET的又如何处理呢？</h3><p>（1）解决post请求乱码问题：</p>
-<p>在web.xml中配置一个CharacterEncodingFilter过滤器，设置成utf-8；</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">filter</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-class</span>&gt;</span>org.springframework.web.filter.CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-class</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">init-param</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-name</span>&gt;</span>encoding<span class="tag">&lt;/<span class="name">param-name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-value</span>&gt;</span>utf-8<span class="tag">&lt;/<span class="name">param-value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">init-param</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">filter</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">filter-mapping</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/*<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">filter-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>（2）get请求中文参数出现乱码解决方法有两个：</p>
-<p>修改tomcat配置文件添加编码与工程编码一致，如下：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">&lt;ConnectorURIEncoding=&quot;utf-8&quot; connectionTimeout=&quot;20000&quot; port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot; redirectPort=&quot;8443&quot;/&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="Spring-MVC的异常处理"><a href="#Spring-MVC的异常处理" class="headerlink" title="Spring MVC的异常处理"></a>Spring MVC的异常处理</h3><p>可以将异常抛给Spring框架，由Spring框架来处理；我们只需要配置简单的异常处理器，在异常处理器中添视图页面即可。</p>
-<h3 id="如果在拦截请求中，我想拦截get方式提交的方法-怎么配置"><a href="#如果在拦截请求中，我想拦截get方式提交的方法-怎么配置" class="headerlink" title="如果在拦截请求中，我想拦截get方式提交的方法,怎么配置"></a>如果在拦截请求中，我想拦截get方式提交的方法,怎么配置</h3><p>答：可以在@RequestMapping注解里面加上method&#x3D;RequestMethod.GET。</p>
-<h3 id="怎样在方法里面得到Request-或者Session？"><a href="#怎样在方法里面得到Request-或者Session？" class="headerlink" title="怎样在方法里面得到Request,或者Session？"></a>怎样在方法里面得到Request,或者Session？</h3><p>答：直接在方法的形参中声明request,Spring MVC就自动把request对象传入。</p>
-<h3 id="如果想在拦截的方法里面得到从前台传入的参数-怎么得到？"><a href="#如果想在拦截的方法里面得到从前台传入的参数-怎么得到？" class="headerlink" title="如果想在拦截的方法里面得到从前台传入的参数,怎么得到？"></a>如果想在拦截的方法里面得到从前台传入的参数,怎么得到？</h3><p>直接在形参里面声明这个参数就可以,但必须名字和传过来的参数一样。<br>或者使用 RequestParam注解将前台的参数名A传给形参中的参数B</p>
-<h3 id="如果前台有很多个参数传入-并且这些参数都是一个对象的-那么怎么样快速得到这个对象？"><a href="#如果前台有很多个参数传入-并且这些参数都是一个对象的-那么怎么样快速得到这个对象？" class="headerlink" title="如果前台有很多个参数传入,并且这些参数都是一个对象的,那么怎么样快速得到这个对象？"></a>如果前台有很多个参数传入,并且这些参数都是一个对象的,那么怎么样快速得到这个对象？</h3><p>直接在方法中声明这个对象,Spring MVC就自动会把属性赋值到这个对象里面。</p>
-<h3 id="Spring-MVC中函数的返回值是什么？"><a href="#Spring-MVC中函数的返回值是什么？" class="headerlink" title="Spring MVC中函数的返回值是什么？"></a>Spring MVC中函数的返回值是什么？</h3><p>返回值可以有很多类型,有String, ModelAndView（视图和数据合并在一起）。</p>
-<h3 id="Spring-MVC用什么对象从后台向前台传递数据的？"><a href="#Spring-MVC用什么对象从后台向前台传递数据的？" class="headerlink" title="Spring MVC用什么对象从后台向前台传递数据的？"></a>Spring MVC用什么对象从后台向前台传递数据的？</h3><p>通过ModelMap对象,可以在这个对象里面调用put方法,把对象加到里面,前台就可以通过el表达式拿到。</p>
-<h3 id="怎么样把ModelMap里面的数据放入Session里面？"><a href="#怎么样把ModelMap里面的数据放入Session里面？" class="headerlink" title="怎么样把ModelMap里面的数据放入Session里面？"></a>怎么样把ModelMap里面的数据放入Session里面？</h3><p>可以在类上面加上@SessionAttributes注解,里面包含的字符串就是要放入session里面的key。</p>
-<h3 id="Spring-MVC里面拦截器是怎么写的"><a href="#Spring-MVC里面拦截器是怎么写的" class="headerlink" title="Spring MVC里面拦截器是怎么写的"></a>Spring MVC里面拦截器是怎么写的</h3><p>有两种写法,一种是实现HandlerInterceptor接口，重写prehandle等方法，然后配置拦截器</p>
 ]]></content>
       <categories>
         <category>Java八股文</category>
@@ -2092,6 +2092,22 @@
       </categories>
   </entry>
   <entry>
+    <title>江苏省考考完啦</title>
+    <url>/2022-jiangsu-gwy.html</url>
+    <content><![CDATA[<p>坐标常州钟楼区肯德基青山店，看了下下一班回家的班车要到下午一点了，遂坐在肯德基里，沐浴暖冬的阳光，简单回顾一下我备考这次江苏省考的一些事情吧。</p>
+<span id="more"></span>
+
+<p>8月底从字节回学校，本来是准备用80%的时间准备gwy考试，剩下时间参加秋招的。然而，事与愿违，由于考公的意愿不是很强烈，再加上一波又一波的笔试面试，严重挤占了复习时间。更关键的是，在后期秋招快结束的时候，由于offer选择等问题让人心烦，备考甚至中断过一段时间。</p>
+<p>来常州也是不太顺利，最近疫情管控放开，礼拜五中午来常之前特意做了单管核酸检测，问了下说是晚上六七点就能出结果，并且听朋友说如果第二天早上八点不出结果，就是阳了。等啊等，到晚上七八点了反复查看核酸结果，无。十一点睡前再看了一次，还是无，睡吧，能咋办呢。第二天一早，醒来第一件事就是看核酸结果，结果出来了，阴性，大舒一口气，不然不是浪费了报名费跟酒店费嘛（笑死）。</p>
+<p>昨天早上行测，135题，厚礼蟹，感觉以我目前的水平120分钟做完125题是个极限了，还有浙江省考竟然115题，晕。下午申论，写了三小时小学生写作，不得不说我的字写的太挫了，以后有空可以练练（flag已立），不过以后有小孩这个一定要放到高优项。今天上午刚考完专业科目，跟前两天粉笔上做的去年和前年的专业课感觉差不多，都是该会的会，不会的猜，毕竟裸考。</p>
+<p>总体而言，对于我这个岗位而言，报录比80:2，如果从七月份好好准备，心无旁骛，我觉得应该是可以进面试的（蜜汁自信）。</p>
+<p>下个月还有国考，这几天再带着看看行测吧。</p>
+]]></content>
+      <categories>
+        <category>日常小记</category>
+      </categories>
+  </entry>
+  <entry>
     <title>最近关于校招、互联网的一些信息</title>
     <url>/202301-it-info.html</url>
     <content><![CDATA[<p>最近刷脉脉、知乎等记录下一些网友发布的一些信息，仅作记录，不对其真实性等作深究，侵删。</p>
@@ -2117,22 +2133,6 @@
 <p>18、前几年当老师门槛很低，如果以当初的条件，现在去应聘，根本进不去。</p>
 <p>19、“围城”这个词一定能在今年秋招占据一席之地。大城小城，国企央企私企外企体制，银行券商互联网制造业军工研究所。究竟是选个能安家的小城还是尽情享受大城市的年轻与自由？是选择一步到位还是将悬念留个未来？是挤出时间来工作还是选择工作外的生活？是坚定走自己的专业还是另辟蹊径？是选择一眼看到头的安心还是未知伴随的风险与机遇？最后，希望各位都能有满意的选择。我们已是当代青年，我们的选择便是新一代青年的选择。与诸位共勉。</p>
 <p>20、从北大来读书的，最近看工作，越来越觉得，在北京挣三十和挣五十没有太大区别，做互联网和做其他行业也没有太大区别，可见的未来的工作只是作为糊口的工具，很难有什么热爱可言。越来越想回家乡找个体制内的稳定工作了，把更多的时间用在生活上面。是我太躺了吗？还是我格局不够？</p>
-]]></content>
-      <categories>
-        <category>日常小记</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>江苏省考考完啦</title>
-    <url>/2022-jiangsu-gwy.html</url>
-    <content><![CDATA[<p>坐标常州钟楼区肯德基青山店，看了下下一班回家的班车要到下午一点了，遂坐在肯德基里，沐浴暖冬的阳光，简单回顾一下我备考这次江苏省考的一些事情吧。</p>
-<span id="more"></span>
-
-<p>8月底从字节回学校，本来是准备用80%的时间准备gwy考试，剩下时间参加秋招的。然而，事与愿违，由于考公的意愿不是很强烈，再加上一波又一波的笔试面试，严重挤占了复习时间。更关键的是，在后期秋招快结束的时候，由于offer选择等问题让人心烦，备考甚至中断过一段时间。</p>
-<p>来常州也是不太顺利，最近疫情管控放开，礼拜五中午来常之前特意做了单管核酸检测，问了下说是晚上六七点就能出结果，并且听朋友说如果第二天早上八点不出结果，就是阳了。等啊等，到晚上七八点了反复查看核酸结果，无。十一点睡前再看了一次，还是无，睡吧，能咋办呢。第二天一早，醒来第一件事就是看核酸结果，结果出来了，阴性，大舒一口气，不然不是浪费了报名费跟酒店费嘛（笑死）。</p>
-<p>昨天早上行测，135题，厚礼蟹，感觉以我目前的水平120分钟做完125题是个极限了，还有浙江省考竟然115题，晕。下午申论，写了三小时小学生写作，不得不说我的字写的太挫了，以后有空可以练练（flag已立），不过以后有小孩这个一定要放到高优项。今天上午刚考完专业科目，跟前两天粉笔上做的去年和前年的专业课感觉差不多，都是该会的会，不会的猜，毕竟裸考。</p>
-<p>总体而言，对于我这个岗位而言，报录比80:2，如果从七月份好好准备，心无旁骛，我觉得应该是可以进面试的（蜜汁自信）。</p>
-<p>下个月还有国考，这几天再带着看看行测吧。</p>
 ]]></content>
       <categories>
         <category>日常小记</category>
