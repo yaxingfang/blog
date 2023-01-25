@@ -54,7 +54,7 @@ urlname: java-concurrent-programming
 
 #### 什么是线程和进程?
 
-**进程**：进程是应用程序的一次运行，每个进程都有自己独立的内存空间；是操作系统资源分配的基本单位；
+**进程**：进程是应用程序的一次运行，每个进程都有自己独立的内存空间，是操作系统资源分配的基本单位；
 
 **线程**：线程是处理器调度和执行的基本单位，一个进程中可以有多个线程，线程共享进程的内存空间和资源。
 
@@ -73,24 +73,24 @@ urlname: java-concurrent-programming
 
 **注意事项：**
 
-1. `setDaemon(true)`必须在`start()`方法前执行，否则会抛出 `IllegalThreadStateException` 异常
-2. 在守护线程中产生的新线程也是守护线程
-3. 不是所有的任务都可以分配给守护线程来执行，比如读写操作或者计算逻辑
+1. `setDaemon(true)`必须在`start()`方法前执行，否则会抛出 `IllegalThreadStateException` 异常；
+2. 在守护线程中产生的新线程也是守护线程；
+3. 不是所有的任务都可以分配给守护线程来执行，比如读写操作或者计算逻辑；
 4. 守护 (Daemon) 线程中不能依靠 finally 块的内容来确保执行关闭或清理资源的逻辑。因为我们上面也说过了一旦所有用户线程都结束运行，守护线程会随 JVM 一起结束工作，所以守护 (Daemon) 线程中的 finally 语句块可能无法被执行。
 
 #### 如何在 Windows 和 Linux 上查找哪个线程cpu利用率最高？
 
-Windows上面用任务管理器看，Linux下可以用 top 这个命令看。
+Windows 下用任务管理器看，Linux 下可以用 top 这个命令看。
 
 #### 什么是线程死锁
 
-死锁是指两个或两个以上的进程（线程）在执行过程中，由于竞争资源造成的一种阻塞的现象，若无外力作用，它们都将无法推进下去。
+死锁是指两个或两个以上的线程在执行过程中，由于竞争资源造成的一种阻塞的现象，若无外力作用，它们都将无法推进下去。
 
-如下图所示，线程 A 持有资源 2，线程 B 持有资源 1，他们同时都想申请对方的资源，所以这两个线程就会互相等待而进入死锁状态。
+如图所示，线程 A 持有资源 2，线程 B 持有资源 1，他们同时都想申请对方的资源，这两个线程就会互相等待而进入死锁状态。
 
 ![线程死锁](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/202206152131355.png)
 
-下面通过一个例子来说明线程死锁，代码模拟了上图的死锁的情况 (代码来源于《并发编程之美》)：
+下面通过代码模拟了上图的死锁的情况（代码来源于《并发编程之美》）：
 
 ```java
 public class DeadLockDemo {
@@ -140,14 +140,14 @@ Thread[线程 1,5,main]waiting get resource2
 Thread[线程 2,5,main]waiting get resource1
 ```
 
-线程 A 通过 synchronized (resource1) 获得 resource1 的监视器锁，然后通过`Thread.sleep(1000)`；让线程 A 休眠 1s 为的是让线程 B 得到CPU执行权，然后获取到 resource2 的监视器锁。线程 A 和线程 B 休眠结束了都开始企图请求获取对方的资源，然后这两个线程就会陷入互相等待的状态，这也就产生了死锁。上面的例子符合产生死锁的四个必要条件。
+线程 A 通过 synchronized (resource1) 获得 resource1 的监视器锁，然后通过`Thread.sleep(1000)`；让线程 A 休眠 1s 为的是让线程 B 得到 CPU 执行权，然后获取到 resource2 的监视器锁。线程 A 和线程 B 休眠结束了都开始企图请求获取对方的资源，然后这两个线程就会陷入互相等待的状态，这也就产生了死锁。上面的例子符合产生死锁的四个必要条件。
 
 #### 形成死锁的四个必要条件是什么
 
 1. 互斥条件：一个资源只能被一个线程占用，直到被该线程释放；
 2. 请求与保持条件：一个线程因请求被占用资源而发生阻塞时，对已获得的资源保持不放；
-3. 不剥夺条件：线程；已获得的资源在末使用完之前不能被其他线程强行剥夺，只有自己使用完毕后才释放资源；
-4. 循环等待条件：当发生死锁时，所等待的线程必定会形成一个环路（类似于死循环），造成永久阻塞
+3. 不剥夺条件：线程已获得的资源在末使用完之前不能被其他线程强行剥夺，只有自己使用完毕后才释放资源；
+4. 循环等待条件：当发生死锁时，所等待的线程必定会形成一个环路（类似于死循环），造成永久阻塞。
 
 #### 如何避免线程死锁
 
@@ -199,26 +199,24 @@ Thread[线程 2,5,main]get resource2
 
 创建线程有四种方式：
 
-- 继承 Thread 类；
-- 实现 Runnable 接口；
-- 实现 Callable 接口；
+- 继承 Thread 类
+- 实现 Runnable 接口
+- 实现 Callable 接口
 - 使用 Executors 工具类创建线程池
 
 **继承 Thread 类**
 
-1. 定义一个 Thread 类的子类，重写 run 方法
-2. 创建自定义的线程子类对象
-3. 调用子类实例的 start() 方法来启动线程
+1. 定义一个 Thread 类的子类，重写 run 方法；
+2. 创建自定义的线程子类对象；
+3. 调用子类实例的 start() 方法来启动线程。
 
 ```java
 public class Main {
     static class MyThread extends Thread {
-
         @Override
         public void run() {
             System.out.println(Thread.currentThread().getName() + " run()方法正在执行...");
         }
-
     }
     public static void main(String[] args) {
         new MyThread().start();
@@ -234,9 +232,9 @@ public class Main {
 
 **实现 Runnable 接口**
 
-1. 定义 Runnable 接口实现类 MyRunnable，并重写 run() 方法
-2. 创建 MyRunnable 实例 myRunnable，以 myRunnable 作为 target 创建 Thread 对象，**该Thread对象才是真正的线程对象**
-3. 调用线程对象的 start() 方法
+1. 定义 Runnable 接口实现类 MyRunnable，并重写 run() 方法；
+2. 创建 MyRunnable 实例 myRunnable，以 myRunnable 作为 target 创建 Thread 实例，**该Thread对象才是真正的线程对象**；
+3. 调用线程实例的 start() 方法。
 
 ```java
 public class Main {
@@ -262,15 +260,14 @@ public class Main {
 
 **实现 Callable 接口**
 
-1. 创建实现 Callable 接口的类 myCallable
-2. ⭐以 myCallable 为参数创建 FutureTask 对象
-3. 将 FutureTask 作为参数创建 Thread 对象
-4. 调用线程对象的 start() 方法
+1. 创建实现 Callable 接口的类 myCallable；
+2. 以 myCallable 为参数创建 FutureTask 对象；
+3. 将 FutureTask 作为参数创建 Thread 对象；
+4. 调用线程对象的 start() 方法。
 
 ```java
 public class Main {
     static class MyCallable implements Callable<Integer> {
-
         @Override
         public Integer call() throws Exception {
             System.out.println(Thread.currentThread().getName() + " call()方法执行中...");
@@ -326,9 +323,9 @@ public class SingleThreadExecutorTest {n
 
 - 都是接口
 - 都可以用来实现多线程
-- 都采用 Thread.start() 启动线程
+- 都创建 Thread 实例并调用其 start() 方法启动线程
 
-**主要区别**
+主要区别
 
 - Runnable 接口 run 方法无返回值；Callable 接口 call 方法有返回值，和 FutureTask 配合可以用来获取异步执行的结果
 - Runnable 接口 run 方法无法捕获并处理异常；Callable 接口 call 方法可以捕获并处理异常
@@ -360,7 +357,7 @@ new Thread(futureTask).start();
 
 有两种调度模型：**时间片轮转**模型和**优先级调度**模型。
 
-**Java虚拟机采用优先级调度模型**，是指优先让可运行池中优先级高的线程占用CPU，如果可运行池中的线程优先级相同，那么就随机选择一个线程，使其占用CPU。处于运行状态的线程会一直运行，直至它不得不放弃 CPU。
+**Java 虚拟机采用优先级调度模型**，是指优先让可运行池中优先级高的线程占用 CPU，如果可运行池中的线程优先级相同，那么就随机选择一个线程，使其占用 CPU。处于运行状态的线程会一直运行，直至它不得不放弃 CPU。
 
 #### 请说出与线程同步以及线程调度相关的方法。
 
@@ -379,7 +376,7 @@ new Thread(futureTask).start();
 - 类的不同：wait() 是 Object 类的方法，sleep() 是 Thread 线程类的静态方法。
 - 释放锁：wait() 释放锁，sleep() 不释放锁。
 - 用途不同：wait 通常被用于线程间交互/通信，sleep 通常被用于暂停执行。
-- 自动苏醒：wait() 方法被调用后，线程不会自动苏醒，需要别的线程调用同一个对象上的 notify() 或者 notifyAll() 方法。sleep() 方法执行完成后，线程会自动苏醒。或者可以使用wait(long timeout)超时后线程会自动苏醒。
+- 自动苏醒：wait() 方法被调用后，线程不会自动苏醒，需要别的线程调用同一个对象上的 notify() 或者 notifyAll() 方法。sleep() 方法执行完成后，线程会自动苏醒。或者可以使用 wait(long timeout) 超时后线程会自动苏醒。
 
 #### 你是如何调用 wait() 方法的？使用 if 块还是循环？为什么？
 
@@ -414,7 +411,7 @@ Java 中，任何对象都可以作为锁，并且线程通信的方法 wait()�
 
 1. sleep() 方法给其他线程运行机会时不考虑线程的优先级，因此会给低优先级的线程以运行的机会；
 
-	yield()方法只会给**相同或更高优先级**的线程以运行的机会；
+	yield() 方法只会给**相同或更高优先级**的线程以运行的机会；
 
 2. 线程执行 sleep() 方法后转入等待（waiting）状态，而执行 yield() 方法后转入就绪（ready）状态；
 
@@ -461,10 +458,10 @@ Java中线程通信协作的最常见的两种方式：
 
 线程互斥是对某一共享资源而言，任何时刻最多只允许一个线程去使用，其它要使用该资源的线程必须等待，直到占用资源者释放该资源。
 
-实现线程同步的方法
+实现线程同步的方法：
 
 - 同步代码方法 / 方法块：sychronized 关键字修饰的方法 / 代码块
-- 使用特殊变量域 volatile 实现线程同步：volatile关键字为域变量的访问提供了一种免锁机制
+- 使用特殊变量域 volatile 实现线程同步：volatile 关键字为域变量的访问提供了一种免锁机制
 - 使用重入锁实现线程同步：reentrantlock 类是可重入、互斥、实现了 lock 接口的锁，与 sychronized 方法具有相同的基本行为和语义
 
 #### 在监视器(Monitor)内部，是如何做线程同步的？
@@ -473,7 +470,7 @@ Java中线程通信协作的最常见的两种方式：
 
 一旦方法或者代码块被 **synchronized** 修饰，那么这个部分就放入了监视器的监视区域，**确保一次只能有一个线程执行该部分的代码**，线程在获取锁之前不允许执行该部分的代码
 
-另外 Java 还提供了显式监视器( Lock )和隐式监视器( synchronized )两种锁方案
+另外 Java 还提供了显式监视器 (Lock) 和隐式监视器 (synchronized) 两种锁方案
 
 #### Java 线程数过多会造成什么问题？
 
