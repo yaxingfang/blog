@@ -2,6 +2,51 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://yaxing97.com/algorithm-sort.html</loc>
+    
+    <lastmod>2023-01-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaxing97.com/mysql.html</loc>
+    
+    <lastmod>2023-01-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaxing97.com/computer-network.html</loc>
+    
+    <lastmod>2023-01-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaxing97.com/linux.html</loc>
+    
+    <lastmod>2023-01-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaxing97.com/redis.html</loc>
+    
+    <lastmod>2023-01-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://yaxing97.com/java-concurrent-programming.html</loc>
     
     <lastmod>2023-01-24</lastmod>
@@ -202,7 +247,7 @@
 
   <url>
     <loc>https://yaxing97.com/</loc>
-    <lastmod>2023-01-24</lastmod>
+    <lastmod>2023-01-25</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -212,42 +257,49 @@
   
   <url>
     <loc>https://yaxing97.com/categories/%E6%97%A5%E5%B8%B8%E5%B0%8F%E8%AE%B0/</loc>
-    <lastmod>2023-01-24</lastmod>
+    <lastmod>2023-01-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://yaxing97.com/categories/%E5%AE%9E%E4%B9%A0%E7%A7%8B%E6%8B%9B/</loc>
-    <lastmod>2023-01-24</lastmod>
+    <lastmod>2023-01-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://yaxing97.com/categories/Java%E5%85%AB%E8%82%A1%E6%96%87/</loc>
-    <lastmod>2023-01-24</lastmod>
+    <lastmod>2023-01-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://yaxing97.com/categories/%E5%AE%9E%E4%B9%A0%E7%A7%8B%E6%8B%9B/%E5%AE%9E%E4%B9%A0/</loc>
-    <lastmod>2023-01-24</lastmod>
+    <lastmod>2023-01-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://yaxing97.com/categories/%E5%AE%9E%E4%B9%A0%E7%A7%8B%E6%8B%9B/%E7%A7%8B%E6%8B%9B/</loc>
-    <lastmod>2023-01-24</lastmod>
+    <lastmod>2023-01-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://yaxing97.com/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/</loc>
-    <lastmod>2023-01-24</lastmod>
+    <lastmod>2023-01-25</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaxing97.com/categories/%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2023-01-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>

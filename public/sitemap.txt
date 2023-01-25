@@ -1,3 +1,8 @@
+https://yaxing97.com/algorithm-sort.html
+https://yaxing97.com/mysql.html
+https://yaxing97.com/computer-network.html
+https://yaxing97.com/linux.html
+https://yaxing97.com/redis.html
 https://yaxing97.com/java-concurrent-programming.html
 https://yaxing97.com/java-springmvc.html
 https://yaxing97.com/java-spring.html
@@ -27,3 +32,4 @@ https://yaxing97.com/categories/Java%E5%85%AB%E8%82%A1%E6%96%87/
 https://yaxing97.com/categories/%E5%AE%9E%E4%B9%A0%E7%A7%8B%E6%8B%9B/%E5%AE%9E%E4%B9%A0/
 https://yaxing97.com/categories/%E5%AE%9E%E4%B9%A0%E7%A7%8B%E6%8B%9B/%E7%A7%8B%E6%8B%9B/
 https://yaxing97.com/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/
+https://yaxing97.com/categories/%E7%AE%97%E6%B3%95/

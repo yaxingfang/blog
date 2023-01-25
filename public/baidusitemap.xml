@@ -1,6 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://yaxing97.com/algorithm-sort.html</loc>
+    <lastmod>2023-01-25</lastmod>
+  </url>
+  <url>
+    <loc>https://yaxing97.com/mysql.html</loc>
+    <lastmod>2023-01-25</lastmod>
+  </url>
+  <url>
+    <loc>https://yaxing97.com/computer-network.html</loc>
+    <lastmod>2023-01-25</lastmod>
+  </url>
+  <url>
+    <loc>https://yaxing97.com/linux.html</loc>
+    <lastmod>2023-01-25</lastmod>
+  </url>
+  <url>
+    <loc>https://yaxing97.com/redis.html</loc>
+    <lastmod>2023-01-25</lastmod>
+  </url>
+  <url>
     <loc>https://yaxing97.com/java-concurrent-programming.html</loc>
     <lastmod>2023-01-24</lastmod>
   </url>
