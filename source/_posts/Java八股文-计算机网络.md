@@ -26,8 +26,6 @@ urlname: computer-network
 - HTTPS 如何改进 HTTP 存在那些问题
 - HTTPS 工作原理是什么
 
-**想阅读更多优质文章请猛戳GitHub博客**,一年五十篇优质文章等着你！
-
 ### 一、什么是HTTPS
 
 HTTPS 是在 HTTP 上建立 SSL 加密层，并对传输数据进行加密，是 HTTP 协议的安全版。现在它被广泛用于万维网上安全敏感的通讯，例如交易支付方面。
@@ -724,15 +722,15 @@ B 返回给 A，A 若收到：说明 A 之前发给 B 的 B 收到了，同时 B
 
 于是 A 发送给 B，B 若收到：说明 B 的发送回信 A 能收到
 
-> 说明：B知道A可以收，B可以发，结合第一步，得到B也知道A能发能收，B能收能发
+> 说明：B 知道 A 可以收，B 可以发，结合第一步，得到 B 也知道 A 能发能收，B 能收能发
 
-![三次握手.png](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotesaHR0cHM6Ly91c2VyLWdvbGQtY2RuLnhpdHUuaW8vMjAyMC8xLzcvMTZmN2UwM2IxZWE1MDdlOA.png)
+![三次握手](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotesaHR0cHM6Ly91c2VyLWdvbGQtY2RuLnhpdHUuaW8vMjAyMC8xLzcvMTZmN2UwM2IxZWE1MDdlOA.png)
 
 ### 四次挥手
 
 > 四次挥手的目的是关闭一个连接
 
-![四次挥手.jpeg](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotesaHR0cHM6Ly91c2VyLWdvbGQtY2RuLnhpdHUuaW8vMjAyMC8xLzcvMTZmN2UwM2IyMWEwN2YwYw.png)
+![四次挥手](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotesaHR0cHM6Ly91c2VyLWdvbGQtY2RuLnhpdHUuaW8vMjAyMC8xLzcvMTZmN2UwM2IyMWEwN2YwYw.png)
 
 A 和 B 打电话，通话即将结束后，
 A 说“我没啥要说的了”，

@@ -52,7 +52,7 @@ Exception 中除 RuntimeException 及其子类之外的异常。（受检异常�
 
 ### 直接抛出异常
 
-通常，应该捕获那些知道如何处理的异常，将不知道如何处理的异常继续传递下去。传递异常可以在方法签名处使用 **throws** 关键字声明可能会抛出的异常。调用该方法的方法需要注意 catch 这个可能跑出的异常。
+通常，应该捕获那些知道如何处理的异常，将不知道如何处理的异常继续传递下去。传递异常可以在方法签名处使用 **throws** 关键字声明可能会抛出的异常。调用该方法的方法需要注意 catch 这个可能抛出的异常。
 
 ```java
 private static void readFile(String filePath) throws IOException {

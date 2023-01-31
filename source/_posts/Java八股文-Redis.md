@@ -7,40 +7,36 @@ categories:
 date: 2023-01-25 13:43:59
 tags:
 toc: true
-urlname: redis
+urlname: Redis
 ---
 
 > 整理的 Redis 相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～	<!--more-->
 
 ## 什么是NoSQL？
 
-Nosql = not only sql（不仅仅是 SQL）
+NoSQL = not only sql（不仅仅是 SQL）
 
 关系型数据库：列+行，同一个表下数据的结构是一样的。
 
 非关系型数据库：数据存储没有固定的格式，并且可以进行横向扩展。
 
-NoSQL 泛指非关系型数据库，随着 web2.0 互联网的诞生，传统的关系型数据库很难对付 web2.0 大数据时代！尤其是超大规模的高并发的社区，暴露出来很多 j 克服的问题，NoSQL 在当今大数据环境下发展的十分迅速，Redis 是发展最快的。
+NoSQL 泛指非关系型数据库，随着 web2.0 互联网的诞生，传统的关系型数据库很难对付 web2.0 大数据时代。尤其是超大规模的高并发的社区，暴露出来很多难以克服的问题，NoSQL 在当今大数据环境下发展的十分迅速，Redis 是发展最快的。
 
 传统 RDBMS（关系数据库管理系统）和 NoSQL（非关系型数据库）比较：
 
-```
-RDBMS
+RDBMS：
  - 组织化结构
- - 固定SQL
+ - 固定 SQL
  - 数据和关系都存在单独的表中（行列）
  - DML（数据操作语言）、DDL（数据定义语言）等
- - 严格的一致性（ACID): 原子性、一致性、隔离性、持久性
+ - 严格的一致性（ACID）：原子性、一致性、隔离性、持久性
  - 基础的事务
-```
 
-```
-NoSQL
+NoSQL：
  - 不仅仅是数据
  - 没有固定查询语言
- - 键值对存储（redis）、列存储（HBase）、文档存储（MongoDB）、图形数据库（不是存图形，放的是关系）（Neo4j）
+ - 键值对存储（Redis）、列存储（HBase）、文档存储（MongoDB）、图形数据库（不是存图形，放的是关系）（Neo4j）
  - 最终一致性（BASE）：基本可用、软状态/柔性事务、最终一致性
-```
 
 ***
 
@@ -50,19 +46,19 @@ NoSQL
 
 Redis = Remote Dictionary Server，即远程字典服务。
 
-Redis 是一个用 C 语言开发的、基于内存结构进行 键值对 数据存储的、高性能的、非关系型 NoSQL 数据库
+Redis 是一个用 C 语言开发的、基于内存结构进行**键值对**数据存储的、高性能的、非关系型 NoSQL 数据库
 
 ### 优缺点
 
-纯内存操作，性能非常出色，每秒可以处理超过 10 万次读写操作，是已知性能最快的 Key-Value DB。支持保存多种数据结构，可以用来实现很多有用的功能。
+**纯内存操作，性能非常出色**，每秒可以处理超过 10 万次读写操作，是已知性能最快的 Key-Value DB。支持保存多种数据结构，可以用来实现很多有用的功能。
 
-Redis 的主要缺点是数据库容量受到物理内存的限制，不能用作海量数据的高性能读写，因此 Redis 适合的场景主要局限在较小数据量的高性能操作和运算上。
+Redis 的主要缺点是**数据库容量受到物理内存的限制，不能用作海量数据的高性能读写**，因此 Redis 适合的场景主要局限在较小数据量的高性能操作和运算上。
 
 ### 为什么要用缓存
 
 **1、 高性能：**
 
-假如用户第一次访问数据库中的某些数据。这个过程会比较慢，因为是从硬盘上读取的。将该用户访问的数据存在数缓存中，这样下一次再访问这些数据的时候就可以直接从缓存中获取了。操作缓存就是直接操作内存，所以速度相当快。如果数据库中的对应数据改变的之后，同步改变缓存中相应的数据即可！
+假如用户第一次访问数据库中的某些数据。这个过程会比较慢，因为是从硬盘上读取的。将该用户访问的数据存在数缓存中，这样下一次再访问这些数据的时候就可以直接从缓存中获取了。操作缓存就是直接操作内存，所以速度相当快。如果数据库中的对应数据改变的之后，同步改变缓存中相应的数据即可。
 
 **2、高并发：**
 
@@ -72,7 +68,7 @@ Redis 的主要缺点是数据库容量受到物理内存的限制，不能用�
 
 Redis 支持更丰富的数据类型（支持更复杂的应用场景）
 
-Redis 支持数据的持久化，可以将内存中的数据保持在磁盘中，重启的时候可以再次加载进行使用,而 Memecache 把数据全部存在内存之中。
+Redis 支持数据的持久化，可以将内存中的数据保持在磁盘中，重启的时候可以再次加载进行使用，而 Memecache 把数据全部存在内存之中。
 
 Redis 使用单线程的多路 IO 复用模型；Memcached 是多线程，非阻塞 IO 复用的网络模型。
 
@@ -80,38 +76,40 @@ Redis 使用单线程的多路 IO 复用模型；Memcached 是多线程，非阻
 
 ## Redis五大基本类型
 
-[Redis 命令大全](https://www.redis.net.cn/order/)
+[Redis 命令大全](https://www.Redis.net.cn/order/)
 
 [Redis 应用场景](https://juejin.cn/post/6857667542652190728)
 
-### 1、String（字符串）
+### String（字符串）
 
-> 1.String类型是redis的最基础的数据结构，也是最经常使用到的类型。而且其他的四种类型多多少少都是在字符串类型的基础上构建的，所以String类型是redis的基础。2.String 类型的值最大能存储 512MB，这里的String类型可以是简单字符串、  复杂的xml/json的字符串、二进制图像或者音频的字符串、以及可以是数字的字符串
-
-**应用场景**
-
-1、缓存功能：String 字符串是最常用的数据类型，不仅仅是 redis，各个语言都是最基本类型，因此，利用 redis 作为缓存，配合其它数据库作为存储层，利用 redis 支持高并发的特点，可以大大加快系统的读写速度、以及降低后端数据库的压力。
-
-2、计数器：许多系统都会使用 redis 作为系统的实时计数器，可以快速实现计数和查询的功能。而且最终的数据结果可以按照特定的时间落地到数据库或者其它存储介质当中进行永久保存。
-
-3、共享用户 session：用户重新刷新一次界面，可能需要访问一下数据进行重新登录，或者访问页面缓存 cookie，这两种方式做有一定弊端，1）每次都重新登录效率低下 2）cookie 保存在客户端，有安全隐患。这时可以利用 redis 将用户的 session 集中管理，在这种模式只需要保证 redis 的高可用，每次用户 session 的更新和获取都可以快速完成。大大提高效率。（分布式会话）
-
-### 2、List（列表）
-
-> 1.list是简单的字符串列表
-> 2.redis可以从列表的两端进行插入（pubsh）和弹出（pop）元素，支持读取指定范围的元素集，或者读取指定下标的元素等操作。redis列表是一种比较灵活的链表数据结构，它可以充当队列或者栈的角色。
+> 1. String 类型是 Redis 的最基础的数据结构，也是最经常使用到的类型。而且其他的四种类型多多少少都是在字符串类型的基础上构建的，所以 String 类型是 Redis 的基础。
+>
+> 2. String 类型的值最大能存储 512MB，这里的 String 类型可以是简单字符串、  复杂的 xml/json 的字符串、二进制图像或者音频的字符串、以及可以是数字的字符串。
 
 **应用场景**
 
-1、消息队列：reids 的链表结构，可以轻松实现阻塞队列，可以使用左进右出的命令组成来完成队列的设计。比如：数据的生产者可以通过 lpush 命令从左边插入数据，多个数据消费者，可以使用 rpop 命令阻塞的“抢”列表尾部的数据。
+1、缓存功能：String 字符串是最常用的数据类型，不仅仅是 Redis，各个语言都是最基本类型，因此，利用 Redis 作为缓存，配合其它数据库作为存储层，利用 Redis 支持高并发的特点，可以大大加快系统的读写速度、以及降低后端数据库的压力。
 
-2、文章列表或者数据分页展示的应用。比如，我们常用的博客网站的文章列表，当用户量越来越多时，而且每一个用户都有自己的文章列表，而且当文章多时，都需要分页展示，这时可以考虑使用 redis 的列表，列表不但有序同时还支持按照范围内获取元素，可以完美解决分页查询功能。大大提高查询效率。
+2、计数器：许多系统都会使用 Redis 作为系统的实时计数器，可以快速实现计数和查询的功能。而且最终的数据结果可以按照特定的时间落地到数据库或者其它存储介质当中进行永久保存。
 
-### 3、Set（集合）
+3、共享用户 session：用户重新刷新一次界面，可能需要访问一下数据进行重新登录，或者访问页面缓存 cookie，这两种方式做有一定弊端，1）每次都重新登录效率低下 2）cookie 保存在客户端，有安全隐患。这时可以利用 Redis 将用户的 session 集中管理，在这种模式只需要保证 Redis 的高可用，每次用户 session 的更新和获取都可以快速完成。大大提高效率。（分布式会话）
 
-> 1.redis集合set类型和list列表类型类似，都可以用来存储多个字符串元素的集合。
-> 2.但是和list不同的是set集合当中不允许重复的元素。而且set集合当中元素是没有顺序的，不存在元素下标。
-> 3.redis的set类型是使用哈希表构造的，因此复杂度是O(1)，它支持集合内的增删改查，并且支持多个集合间的交集、并集、差集操作。可以利用这些集合操作，解决程序开发过程当中很多数据集合间的问题。
+### List（列表）
+
+> 1. List 是简单的字符串列表
+> 2. Redis 可以从列表的两端进行插入（pubsh）和弹出（pop）元素，支持读取指定范围的元素集，或者读取指定下标的元素等操作。Redis列表是一种比较灵活的链表数据结构，它可以充当队列或者栈的角色。
+
+**应用场景**
+
+1、消息队列：Redis 的链表结构，可以轻松实现阻塞队列，可以使用左进右出的命令组成来完成队列的设计。比如：数据的生产者可以通过 lpush 命令从左边插入数据，多个数据消费者，可以使用 rpop 命令阻塞的“抢”列表尾部的数据。
+
+2、文章列表或者数据分页展示的应用。比如，我们常用的博客网站的文章列表，当用户量越来越多时，而且每一个用户都有自己的文章列表，而且当文章多时，都需要分页展示，这时可以考虑使用 Redis 的列表，列表不但有序同时还支持按照范围内获取元素，可以完美解决分页查询功能。大大提高查询效率。
+
+### Set（集合）
+
+> 1. Redis 集合 set 类型和 list 列表类型类似，都可以用来存储多个字符串元素的集合。
+> 2. 但是和 list 不同的是 set 集合当中不允许重复的元素。而且 set 集合当中元素是没有顺序的，不存在元素下标。
+> 3. Redis 的 set 类型是使用哈希表构造的，因此复杂度是 O(1)，它支持集合内的增删改查，并且支持多个集合间的交集、并集、差集操作。可以利用这些集合操作，解决程序开发过程当中很多数据集合间的问题。
 
 **应用场景**
 
@@ -121,9 +119,9 @@ Redis 使用单线程的多路 IO 复用模型；Memcached 是多线程，非阻
 
 3、统计网站的独立 IP。利用 set 集合当中元素不唯一性，可以快速实时统计访问网站的独立 IP。
 
-### 4、sorted set（有序集合）
+### sorted set（有序集合）
 
-> redis有序集合也是集合类型的一部分，所以它保留了集合中元素不能重复的特性，但是不同的是，有序集合给每个元素多设置了一个分数，利用该分数作为排序的依据。
+> Redis 有序集合也是集合类型的一部分，所以它保留了集合中元素不能重复的特性，但是不同的是，有序集合给每个元素多设置了一个分数，利用该分数作为排序的依据。
 
 #### 应用场景
 
@@ -131,37 +129,35 @@ Redis 使用单线程的多路 IO 复用模型；Memcached 是多线程，非阻
 
 2、用 Sorted Sets 来做带权重的队列，比如普通消息的 score 为 1，重要消息的 score 为 2，然后工作线程可以选择按 score 的倒序来获取工作任务。让重要的任务优先执行。
 
-### 5、hash（哈希）
+### hash（哈希）
 
-Redis hash 数据结构 是一个键值对（key-value）集合,它是一个 string 类型的 field 和 value 的映射表，redis 本身就是一个 key-value 型数据库，因此 hash 数据结构相当于在 value 中又套了一层 key-value 型数据。所以 redis 中 hash 数据结构特别适合存储关系型对象
+Redis hash 数据结构 是一个键值对（key-value）集合，它是一个 string 类型的 field 和 value 的映射表，Redis 本身就是一个 key-value 型数据库，因此 hash 数据结构相当于在 value 中又套了一层 key-value 型数据。所以 Redis 中 hash 数据结构特别适合存储关系型对象。
 
-> 用户ID为查找的key，存储的value用户对象包含姓名，年龄，生日等信息，如果用普通的key/value结构来存储
+> 用户 ID 为查找的key，存储的 value 用户对象包含姓名，年龄，生日等信息，如果用普通的 key/value 结构来存储
 >
-> 1. 将用户ID作为key，姓名属性+姓名数据整体作为value
+> 1. 将用户 ID 作为 key，姓名属性+姓名数据整体作为 value。缺点是每次修改用户的某个属性，都需要先反序列化 属性+数据，修改好，然后将 属性+数据 序列化之后在修改回去，开销较大。
 >
-> ![1650356860189](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes1650356860189.png)
+> ![ID -> 属性+数据](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes1650356860189.png)
 >
-> 缺点是每次修改用户的某个属性，都需要先反序列化 属性+数据，修改好，然后将 属性+数据 序列化之后在修改回去，开销较大。
+> 2. 将用户 ID+姓名属性作为 key，姓名数据作为 value。缺点是用户 ID 使用多次，数据冗余
 >
-> 2. 将用户ID+姓名属性作为key，姓名数据作为value
+> ![ID+属性 -> 数据](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes1650356955204.png)
 >
-> ![1650356955204](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes1650356955204.png)
+> 
 >
-> 缺点是用户ID使用多次，数据冗余
+> 3. 因此通过 key(用户 ID) + field(属性标签) 就可以操作对应属性数据了，既不需要重复存储数据，也不会带来序列化和并发修改控制的问题。
 >
-> 3. 因此通过 key(用户ID) + field(属性标签) 就可以操作对应属性数据了，既不需要重复存储数据，也不会带来序列化和并发修改控制的问题
->
-> ![1650356950290](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes1650356950290.png)
+> ![ID -> 属性 -> 数据](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes1650356950290.png)
 
 #### 应用场景
 
-1、由于 hash 数据类型的 key-value 的特性，用来存储关系型数据库中表记录，是 redis 中哈希类型最常用的场景。一条记录作为一个 key-value，把每列属性值对应成 field-value 存储在哈希表当中，然后通过 key 值来区分表当中的主键。
+1、由于 hash 数据类型的 key-value 的特性，用来存储关系型数据库中表记录，是 Redis 中哈希类型最常用的场景。一条记录作为一个 key-value，把每列属性值对应成 field-value 存储在哈希表当中，然后通过 key 值来区分表当中的主键。
 
 2、经常被用来存储用户相关信息。优化用户信息的获取，不需要重复从数据库当中读取，提高系统性能。
 
 ***
 
-## 五大基本类型底层数据存储结构
+## 五大基本类型底层数据结构
 
 Redis 整体的存储结构：
 
@@ -169,32 +165,30 @@ Redis 内部整体的存储结构是一个大的 hashmap，内部是数组实现
 
 结构图如下：
 
-![图片](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650433179786.png)
+![Redis 整体的存储结构](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650433179786.png)
 
 dictEntry 是存储 key->value 的地方，其中包含指向具体的 redisObject 的指针。
 
-redisObject 中*ptr 指向具体的数据结构的地址；type 表示该对象的类型，即 String,List,Hash,Set,Zset 中的一个
+redisObject 中*ptr 指向具体的数据结构的地址；type 表示该对象的类型，即 String、List、Hash、Set、Zset 中的一个
 
-![图片](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640.png)
+### String (arrayList)
 
-### 1、String (ArrayList)
+String 的数据结构为简单动态字符串(Simple Dynamic String，缩写 SDS)。是可以修改的字符串，内部结构实现上类似于 Java 的 ArrayList，采用预分配冗余空间的方式来减少内存的频繁分配。
 
-String 的数据结构为简单动态字符串(Simple Dynamic String,缩写 SDS)。是可以修改的字符串，内部结构实现上类似于 Java 的 ArrayList，采用预分配冗余空间的方式来减少内存的频繁分配。
-
-![1650356547555](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes1650356547555.png)
+![String 的数据结构](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes1650356547555.png)
 
 如图中所示，内部为当前字符串实际分配的空间 capacity 一般要高于实际字符串长度 len。当字符串长度小于 1M 时，扩容都是加倍现有的空间，如果超过 1M，扩容时一次只会多扩 1M 的空间。需要注意的是字符串最大长度为 512M。
 
-### 2、List （quickList）
+### List (ziplist - quickList)
 
-1、Redis3.2 之前的底层实现方式：压缩列表 ziplist 或者 双向循环链表 linkedlist
+1、Redis 3.2 之前的底层实现方式：压缩列表 ziplist 或者 双向循环链表 linkedlist
 
 当 list 存储的数据量比较少且同时满足下面两个条件时，list 就使用 ziplist 存储数据：
 
 - list 中保存的每个元素的长度小于 64 字节；
-- 列表中数据个数少于 512 个
+- 列表中数据个数少于 512 个。
 
-2、Redis3.2 及之后的底层实现方式：quicklist
+2、Redis 3.2 及之后的底层实现方式：quicklist
 
 quicklist 是一个基于 ziplist 的双向链表，quicklist 的每个节点都是一个 ziplist，结合了双向链表和 ziplist 的优点。
 
@@ -204,7 +198,7 @@ ziplist 是压缩列表，它的好处是能节省内存空间，因为它所存
 
 ziplist 结构如下：
 
-![图片](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650419709341.png)
+![ziplist 结构图](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650419709341.png)
 
 1、zlbytes：用于记录整个压缩列表占用字节数
 
@@ -216,7 +210,7 @@ ziplist 结构如下：
 
 5、zlend：用于标记压缩列表的末端，用来快速定位到最后一个元素，然后倒着遍历。（entry 块的 prevlen 字段表示前一个 entry 的字节长度，当压缩列表倒着遍历时，需要通过这个字段来快速定位到下一个元素的位置。）
 
-**为什么数据量大时不用ziplist？**
+**为什么数据量大时不用 ziplist？**
 
 因为 ziplist 是一段连续的内存，插入的时间复杂化度为 O(n)，而且每当插入新的元素需要 realloc 做内存扩展；而且如果超出 ziplist 内存大小，还会做重新分配的内存空间，并将内容复制到新的地址。如果数量大的话，重新分配内存和拷贝内存会消耗大量时间。所以不适合大型字符串，也不适合存储量多的元素。
 
@@ -224,13 +218,13 @@ ziplist 结构如下：
 
 快速列表是 ziplist 和 linkedlist 的混合体，是将 linkedlist 按段切分，每一段用 ziplist 来紧凑存储，多个 ziplist 之间使用双向指针链接。
 
-**为什么不直接使用linkedlist？**
+**为什么不直接使用 linkedlist？**
 
 linkedlist 的附加空间相对太高，prev 和 next 指针就要占去 16 个字节，而且每一个结点都是单独分配，会加剧内存的碎片化，影响内存管理效率。
 
 quicklist 结构图如下：
 
-![图片](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650419719663.png)
+![quicklist 结构图](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650419719663.png)
 
 **ziplist的长度**
 
@@ -240,108 +234,97 @@ quicklist 内部默认单个 ziplist 长度为 8k 字节，超出了这个字节
 
 我们上面说到了 quicklist 下是用多个 ziplist 组成的，同时为了进一步节约空间，Redis 还会对 ziplist 进行压缩存储，使用 LZF 算法压缩，可以选择压缩深度。quicklist 默认的压缩深度是 0，也就是不压缩。压缩的实际深度由配置参数 list-compress-depth 决定。为了支持快速 push/pop 操作，quicklist 的首尾两个 ziplist 不压缩，此时深度就是 1。如果深度为 2，就表示 quicklist 的首尾第一个 ziplist 以及首尾第二个 ziplist 都不压缩。
 
-### 3、Hash (dict)
+### Hash (ziplist - dict)
 
 #### ziplist
 
 当 Hash 中数据项比较少的情况下，Hash 底层才用压缩列表 ziplist 进行存储数据，随着数据的增加，底层的 ziplist 就可能会转成 dict，具体配置如下
 
-```
-hash-max-ziplist-entries 512
-hash-max-ziplist-value 64
-```
+> hash-max-ziplist-entries 512
+> hash-max-ziplist-value 64
 
 在如下两个条件之一满足的时候，ziplist 会转成 dict：
 
-- 当 hash 中的数据项的数目超过 512 的时候，也就是 ziplist 数据项超过 1024 的时候
-- 当 hash 中插入的任意一个 value 的长度超过了 64 的时候
+- 当 hash 中的数据项的数目超过 512 的时候，也就是 ziplist 数据项超过 1024 的时候；
+- 当 hash 中插入的任意一个 value 的长度超过了 64 的时候。
 
 每当有新的键值对加入到哈希对象时，先压入键，再压入值，如图：
 
-![img](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/20190703171927309.png)
+![ziplist实现的hash](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/20190703171927309.png)
 
 当遍历时，从头到尾的遍历，且跳过值节点。
 
 #### dict
 
-字典的哈希表结构和 Java 的 HashMap 结构几乎是一样的，都是通过某个哈希函数从 key 计算得到在哈希表中的位置，采用链表法解决冲突。Redis 这里使用的是单链表，为了查询效率每次把新数据插入到链表头位置（新插入的数据被访问的概率大）
+字典的哈希表结构和 Java 的 HashMap 结构几乎是一样的，都是通过某个哈希函数从 key 计算得到在哈希表中的位置，采用链表法解决冲突。Redis 这里使用的是单链表，为了查询效率每次把新数据插入到链表头位置（使用头插法是因为新插入的数据被访问的概率大，可以更快访问到）。
 
 我们可以看到每个 dict 中都有两个 hashtable，结构图如下：
 
-![图片](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650420119549.png)
+![dict实现的hash](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650420119549.png)
 
 虽然 dict 结构有两个 hashtable，但是通常情况下只有一个 hashtable 是有值的。但是在 dict 扩容缩容的时候，需要分配新的 hashtable，然后进行渐近式搬迁，这时候两个 hashtable 存储的旧的 hashtable 和新的 hashtable。搬迁结束后，旧 hashtable 删除，新的取而代之。
 
-**渐进式rehash**
+**渐进式 rehash**
 
-所谓渐进式 rehash 是指我们的大字典的扩容是比较消耗时间的，需要重新申请新的数组，然后将旧字典所有链表的元素重新挂接到新的数组下面，是一个 O(n)的操作。但是因为我们的 redis 是单线程的，无法承受这样的耗时过程，所以采用了渐进式 rehash 小步搬迁，虽然慢一点，但是可以搬迁完毕。
+所谓渐进式 rehash 是指我们的大字典的扩容是比较消耗时间的，需要重新申请新的数组，然后将旧字典所有链表的元素重新挂接到新的数组下面，是一个 O(n)的操作。但是因为我们的 Redis 是单线程的，无法承受这样的耗时过程，所以采用了渐进式 rehash 小步搬迁，虽然慢一点，但是可以搬迁完毕。
 
 **扩容条件**
 
-我们的扩容一般会在 Hash 表中的元素个数等于第一维数组的长度的时候，就会开始扩容。扩容的大小是原数组的两倍。不过在 redis 在做 bgsave（RDB 持久化操作的过程），为了减少内存页的过多分离（Copy On Write），redis 不会去扩容。但是如果 hash 表的元素个数已经到达了第一维数组长度的 5 倍的时候，就会强制扩容，不管你是否在持久化。
+我们的扩容一般会在 Hash 表中的元素个数等于第一维数组的长度的时候，就会开始扩容。扩容的大小是原数组的两倍。不过在 Redis 在做 bgsave（RDB 持久化操作的过程），为了减少内存页的过多分离（Copy On Write），Redis 不会去扩容。但是如果 hash 表的元素个数已经到达了第一维数组长度的 5 倍的时候，就会强制扩容，不管你是否在持久化。
 
 不扩容主要是为了尽可能减少内存页过多分离，系统需要更多的开销去回收内存。
 
 **缩容条件**
 
-当我们的 hash 表元素逐渐删除的越来越少的时候。redis 于是就会对 hash 表进行缩容来减少第一维数组长度的空间占用。缩容的条件是元素个数低于数组长度的 10%，并且缩容不考虑是否在做 redis 持久化。
+当我们的 hash 表元素逐渐删除的越来越少的时候。Redis 于是就会对 hash 表进行缩容来减少第一维数组长度的空间占用。缩容的条件是元素个数低于数组长度的 10%，并且缩容不考虑是否在做 Redis 持久化。
 
 不用考虑 bgsave 主要是因为我们的缩容的内存都是已经使用过的，缩容的时候可以直接置空，而且由于申请的内存比较小，同时会释放掉一些已经使用的内存，不会增大系统的压力。
 
-**rehash步骤**
+**rehash 步骤**
 
-过程如下图：
+![rehash 步骤](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650420130964.png)
 
-![图片](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650420130964.png)
-
-### 4、Set (hashSet)
+### Set (intset - hashSet)
 
 Redis 的集合相当于 Java 中的 HashSet，它内部的键值对是无序、唯一的。它的内部实现相当于一个特殊的字典，字典中所有的 value 都是一个值 NULL。集合 Set 类型底层编码包括 inset 和 hashtable。
 
 当存储的数据同时满足下面这样两个条件的时候，Redis 就采用整数集合 intset 来实现 set 这种数据类型：
 
-```
-存储的数据都是整数
-存储的数据元素个数小于512个
-```
+> 存储的数据都是整数
+> 存储的数据元素个数小于512个
 
 当不能同时满足这两个条件的时候，Redis 就使用 dict 来存储集合中的数据
 
-**inset**
+**intset**
 
 intset 是一个有序集合，查找元素的复杂度为 O(logN)（采用二分法），但插入时不一定为 O(logN)，因为有可能涉及到升级操作。比如当集合里全是 int16_t 型的整数，这时要插入一个 int32_t，那么为了维持集合中数据类型的一致，那么所有的数据都会被转换成 int32_t 类型，涉及到内存的重新分配，这时插入的复杂度就为 O(N)了。是 intset 不支持降级操作。
 
-**inset是有序不要和我们zset搞混，zset是设置一个score来进行排序，而inset这里只是单纯的对整数进行升序而已**
+**intset 是有序不要和 zset 搞混，zset 是设置一个 score 来进行排序，而 intset 这里只是单纯的对整数进行升序而已**
 
+### Sorted Set (ziplist - zset(dict + skipList))
 
+Zset 有序集合和 set 集合有着必然的联系，他保留了集合不能有重复成员的特性，但不同的是，有序集合中的元素是可以排序的，但是它和列表的使用索引下标作为排序依据不同的是，它给每个元素设置一个分数 score，作为排序的依据。
 
-### 5、Sorted Set (zset(hash + skipList))
-
-Zset 有序集合和 set 集合有着必然的联系，他保留了集合不能有重复成员的特性，但不同的是，有序集合中的元素是可以排序的，但是它和列表的使用索引下标作为排序依据不同的是，它给每个元素设置一个分数，作为排序的依据。
-
-
-
-当数据较少时，sorted set 是由一个 ziplist(另起一篇文章单独介绍)来实现的。
-当数据多的时候，sorted set 是由一个叫 zset 的数据结构来实现的，这个 zset 包含一个 dict + 一个 skiplist。dict 用来查询数据到分数(score)的对应关系，而 skiplist 用来根据分数查询数据（可能是范围查找,skiplist 根据分数查找数据）。
+当数据较少时，sorted set 是由 ziplist 来实现的。
+当数据多的时候，sorted set 是由 zset 的数据结构来实现的，这个 zset 包含一个 dict + 一个 skiplist。dict 用来查询数据到分数(score)的对应关系，而 skiplist 用来根据指定分数 score 的范围来获取 value 列表。
 
 **sorted set ziplist 实现**
-在这里我们先来讨论一下前一种情况——基于 ziplist 实现的 sorted set。ziplist 就是由很多数据项组成的一大块连续内存。由于 sorted set 的每一项元素都由数据和 score 组成，因此，当使用 zadd 命令插入一个(数据,score)对的时候，底层在相应的 ziplist 上就插入两个数据项：数据在前，score 在后。
 
-![图片](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650431975904.png)
+在这里我们先来讨论一下前一种情况——基于 ziplist 实现的 sorted set。ziplist 就是由很多数据项组成的一大块连续内存。由于 sorted set 的每一项元素都由数据和 score 组成，因此，当使用 zadd 命令插入一个(数据, score)对的时候，底层在相应的 ziplist 上就插入两个数据项：数据在前，score 在后。
+
+![基于 ziplist 实现的 sorted set](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650431975904.png)
 
 ziplist 的主要优点是节省内存，但它上面的查找操作只能按顺序查找（可以正序也可以倒序）。因此，sorted set 的各个查询操作，就是在 ziplist 上从前向后（或从后向前）一步步查找，每一步前进两个数据项，跨域一个(数据, score)对。
 
 随着数据的插入，sorted set 底层的这个 ziplist 就可能会转成 zset 的实现。那么到底插入多少才会转呢？
 
-```
-zset-max-ziplist-entries 128	# 当sorted set中的元素个数，即(数据, score)对的数目超过128的时候
-zset-max-ziplist-value 64	# 当sorted set中插入的任意一个数据的长度超过了64的时候。
-```
+> zset-max-ziplist-entries 128	# 当sorted set中的元素个数，即(数据， score)对的数目超过128的时候
+> zset-max-ziplist-value 64	# 当sorted set中插入的任意一个数据的长度超过了64的时候。
 
 **sorted set ziplist实现**
 Redis 的 zset 是一个复合结构，一方面它需要一个 hash 结构来存储 value 和 score 的对应关系，另一方面需要提供按照 score 来排序的功能，还需要能够指定 score 的范围来获取 value 列表的功能，这就需要另外一个结构「跳跃表」。
 
-```
+```c
 typedef struct zset {
     dict *dict;
     zskiplist *zsl;
@@ -358,36 +341,30 @@ typedef struct zset {
 
 ## 三大特殊数据类型
 
-### 1、geospatial（地理位置）
-
-#### **应用场景**
+### geospatial（地理位置）
 
 1. 查看附近的人
 2. 微信位置共享
 3. 地图上直线距离的展示
 
-### 2、Hyperloglog（基数）
+### Hyperloglog（基数）
 
 基数：不重复的元素
 
-#### **应用场景**
-
-> 网页统计UV （浏览用户数量，同一天同一个ip多次访问算一次访问，目的是计数，而不是保存用户）
+网页统计 UV （浏览用户数量，同一天同一个 ip 多次访问算一次访问，目的是计数，而不是保存用户）
 
 传统的方式，set 保存用户的 id，可以统计 set 中元素数量作为标准判断。
 
 但如果这种方式保存大量用户 id，会占用大量内存，我们的目的是为了计数，而不是去保存 id。
 
-### 3、Bitmaps（位存储）
-
-##### 定义
+### Bitmaps（位存储）
 
 Redis 提供了 Bitmaps 这个“数据类型”可以实现对位的操作：
 
 1. Bitmaps 本身不是一种数据类型， 实际上它就是字符串（key-value） ， 但是它可以对字符串的位进行操作。
 2. Bitmaps 单独提供了一套命令， 所以在 Redis 中使用 Bitmaps 和使用字符串的方法不太相同。 可以把 Bitmaps 想象成一个以位为单位的数组， 数组的每个单元只能存储 0 和 1， 数组的下标在 Bitmaps 中叫做偏移量。
 
-##### 命令
+#### 命令
 
 1. setbit
 
@@ -411,7 +388,7 @@ Redis 提供了 Bitmaps 这个“数据类型”可以实现对位的操作：
 
 #### **应用场景**
 
-两种状态的统计都可以使用 bitmaps，例如：统计用户活跃与非活跃数量、登录与非登录、上班打卡等等。
+**两种状态的统计**都可以使用 bitmaps，例如：统计用户活跃与非活跃数量、登录与非登录、上班打卡等等。
 
 ***
 
@@ -419,7 +396,7 @@ Redis 提供了 Bitmaps 这个“数据类型”可以实现对位的操作：
 
 ### 事务
 
-> 事务本质：一组命令的集合
+事务本质：一组命令的集合
 
 #### **数据库的事务**
 
@@ -427,25 +404,25 @@ Redis 提供了 Bitmaps 这个“数据类型”可以实现对位的操作：
 
 数据库中除查询操作以外，插入(Insert)、删除(Delete)和更新(Update)这三种操作都会对数据造成影响，因为事务处理能够保证一系列操作可以完全地执行或者完全不执行，因此在一个事务被提交以后，该事务中的任何一条 SQL 语句在被执行的时候，都会生成一条撤销日志(Undo Log)。
 
-#### Redis事务
+#### Redis 事务
 
 Redis 事务提供了一种“将多个命令打包， 然后一次性、按顺序地执行”的机制， 并且事务在执行的期间不会主动中断 —— 服务器在执行完事务中的所有命令之后， 才会继续处理其他客户端的其他命令。事务中如果有一条命令执行失败，其后的命令仍然会被执行，没有回滚。
 
-Redis 中一个事务从开始到执行会经历开始事务（Muiti）、命令入队和执行事务(Exec)三个阶段，事务中的命令在加入时都没有被执行，直到提交时才会开始执行(Exec)一次性完成。
+Redis 中一个事务从开始到执行会经历**开始**事务（Muiti）、命令**组队**和**执行**事务(Exec)三个阶段，事务中的命令在加入时都没有被执行，直到提交时才会开始执行(Exec)一次性完成。
 
 组队的过程中可以通过 discard 来放弃组队。
 
 **事务的错误处理**
 
-组队中某个命令出现了报告错误，执行时整个的所有队列都会被取消。
+组队阶段某个命令报错，执行时整个队列都会被取消。
 
-![1650372301056](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes1650372301056.png)
+![组队阶段某个命令报错](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes1650372301056.png)
 
-如果执行阶段某个命令报出了错误，则只有报错的命令不会被执行，而其他的命令都会执行，不会回滚。（不保证事务的原子性）
+如果执行阶段某个命令报错，则只有报错的命令不会被执行，而其他的命令都会执行，不会回滚。（不保证事务的原子性）
 
-![1650372359361](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes1650372359361.png)
+![执行阶段某个命令报错](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes1650372359361.png)
 
-**为什么redis不支持回滚来保证原子性**
+**为什么 Redis 不支持回滚来保证原子性**
 
 Redis 命令只会因为错误的语法而失败，然而没有任何机制能避免程序员自己造成的错误， 并且这类错误通常不会在生产环境中出现， 所以 Redis 选择了更简单、更快速的无回滚方式来处理事务。
 
@@ -453,31 +430,19 @@ Redis 命令只会因为错误的语法而失败，然而没有任何机制能�
 
 #### 悲观锁
 
-**悲观锁(Pessimistic Lock)**, 顾名思义，就是很悲观，每次去拿数据的时候都认为别人会修改，所以每次在拿数据的时候都会上锁，这样别人想拿这个数据就会 block 直到它拿到锁。**传统的关系型数据库里边就用到了很多这种锁机制**，比如**行锁**，**表锁**等，**读锁**，**写锁**等，都是在做操作之前先上锁。
+**悲观锁(Pessimistic Lock)**， 顾名思义，就是很悲观，每次去拿数据的时候都认为别人会修改，所以每次在拿数据的时候都会上锁，这样别人想拿这个数据就会阻塞直到它拿到锁。**传统的关系型数据库里边就用到了很多这种锁机制**，比如**行锁**，**表锁**等，**读锁**，**写锁**等，都是在做操作之前先上锁。
 
-![1650417157625](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes1650417157625.png)
+![悲观锁](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes1650417157625.png)
 
-> 线程1拿到账户后把账户锁住，然后操作，这时候线程2也想拿账户，发现加了锁拿不到，只能阻塞等到锁释放。
+> 线程 1 拿到账户后把账户锁住，然后操作，这时候线程 2 也想拿账户，发现加了锁拿不到，只能阻塞等到锁释放。
 
 #### 乐观锁
 
-**乐观锁(Optimistic Lock),** 顾名思义，就是很乐观，每次去拿数据的时候都认为别人不会修改，所以不会上锁，但是在更新的时候会判断一下在此期间别人有没有去更新这个数据，可以使用版本号等机制。**乐观锁适用于多读的应用类型，这样可以提高吞吐量**。Redis 就是利用这种机制实现事务的。
+**乐观锁(Optimistic Lock)，** 顾名思义，就是很乐观，每次去拿数据的时候都认为别人不会修改，所以不会上锁，但是在**更新的时候判断**一下在此期间别人有没有去更新这个数据，可以使用版本号等机制。**乐观锁适用于多读的应用类型，这样可以提高吞吐量**。Redis 就是利用这种机制实现事务的。
 
-![1650417222072](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes1650417222072.png)
+![乐观锁](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes1650417222072.png)
 
-> 给账户数据加一个版本号，假如线程1、2都拿到账户，线程1使用账户前先进行版本号比较，v1.0 = v1.0，则扣减账户余额，账户版本号变更为 v1.1，线程2准备操作数据库，发现自己预期的账户版本号 v1.0 和当前账户版本号 v1.1 不同（CAS），则不能操作。
-
-#### WATCH
-
-在执行 multi 之前，先执行 watch key1 [key2],可以监视一个(或多个) key ，如果在事务**执行之前这个(或这些) key 被其他命令所改动，那么事务将被打断。**（乐观锁）
-
-#### UNWATCH
-
-取消 WATCH 命令对所有 key 的监视。
-
-如果在执行 WATCH 命令之后，EXEC 命令或 DISCARD 命令先被执行了的话，那么就不需要再执行 UNWATCH 了。
-
-![图片](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650434409078.png) 
+> 给账户数据加一个版本号，假如线程 1、2 都拿到账户，线程 1 使用账户前先进行版本号比较，v1.0 = v1.0，则扣减账户余额，账户版本号变更为 v1.1，线程 2 准备操作数据库，发现自己预期的账户版本号 v1.0 和当前账户版本号 v1.1 不同（CAS），则不能操作。 
 
 ***
 
@@ -493,20 +458,20 @@ Redis 是一种内存型数据库，一旦服务器进程退出，数据库的�
 
 - 两种方式的持久化是可以同时存在的，但是当 Redis 重启时，AOF 文件会被优先用于重建数据。
 
-### 1、RDB(Redis Database)
+### RDB(Redis Database)
 
 > 在满足特定的  Redis 操作条件（时间周期、写操作次数）时，将内存中的数据以 **数据快照** 的形式存储到 db 文件中
 
 #### **工作原理**
 
-> 参考 [Redis_RDB持久化之写时复制技术的应用](https://www.cnblogs.com/zyf98/p/15934058.html)
+> [Redis_RDB持久化之写时复制技术的应用](https://www.cnblogs.com/zyf98/p/15934058.html)
 
 RDB 是一次的全量备份，即周期性的把 Redis 当前内存中的全量数据写入到一个快照文件中。Redis 是单线程程序，这个线程要同时负责多个客户端的读写请求，还要负责周期性的把当前内存中的数据写到快照文件中 RDB 中，那么就会带来以下两个问题：
 
 1. 数据写到 RDB 文件是 IO 操作，IO 操作会严重影响 Redis 的性能，甚至在持久化的过程中，读写请求会阻塞
 2. 假如 Redis 正在进行持久化一个大的数据结构，在这个过程中客户端发送一个删除请求，把这个大的数据结构删掉了，这时候持久化的动作还没有完成。
 
-于是 Redis 使用操作系统的多进程 **写时复制(Copy On Write)机制** 来实现快照的持久化，在持久化过程中调用**glibc**(Linux 下的 C 函数库)的函数**fork()**产生一个子进程，该子进程和父进程共享内存里面的代码段和数据段，快照持久化完全交给子进程来处理，父进程继续处理客户端的读写请求。
+于是 Redis 使用操作系统的多进程 **写时复制(Copy On Write)机制** 来实现快照的持久化，在持久化过程中调用**glibc**(Linux 下的 C 函数库)的函数 **fork()** 产生一个子进程，该子进程和父进程共享内存里面的代码段和数据段，快照持久化完全交给子进程来处理，父进程继续处理客户端的读写请求。
 
 > 子进程将数据写入到一个临时 RDB 文件中。当子进程完成持久化时，Redis 用新 RDB 文件替换原来的 RDB 文件，并删除旧的 RDB 文件。
 
@@ -514,7 +479,7 @@ RDB 是一次的全量备份，即周期性的把 Redis 当前内存中的全量
 
 正因为修改的部分数据会被额外的复制一份，所以会占用额外的内存，当在进行 RDB 持久化操作的过程中，与此同时如果持续往 Redis 中写入的数据量越多，就会导致占用的额外内存消耗越大。
 
-![img](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes2093494-20220226233822789-2067752089.png)
+![RDB 持久化](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes2093494-20220226233822789-2067752089.png)
 
 **优点**：
 
@@ -528,7 +493,7 @@ RDB 是一次的全量备份，即周期性的把 Redis 当前内存中的全量
 1. 因为 RDB 只能保存某个时间间隔的数据，如果中途 Redis 服务被意外终止了，则会丢失一段时间内的 Redis 数据。
 2. RDB 需要经常 fork() 才能使用子进程将其持久化在磁盘上。如果数据集很大，fork() 可能很耗时，并且如果数据集很大且 CPU 性能不佳，则可能导致 Redis 停止为客户端服务几毫秒甚至一秒钟。
 
-### 2、AOF(Append Only File)
+### AOF(Append Only File)
 
 以日志的形式来记录每个写的操作，将 Redis 执行过的所有指令记录下来（读操作不记录），只许追加文件但不可以改写文件，Redis 启动之初会读取该文件重新构建数据，换言之，Redis 重启的话就根据日志文件的内容将写指令从前到后执行一次以完成数据的恢复工作。
 
@@ -545,7 +510,7 @@ appendfilename "appendonly.aof"
 # appendfsync always
 # 每秒执行一次 sync 可能会丢失这一秒的数据
 appendfsync everysec
-# 不执行 sync ,这时候操作系统自己同步数据，速度最快
+# 不执行 sync ，这时候操作系统自己同步数据，速度最快
 # appendfsync no 
 ```
 
@@ -557,7 +522,7 @@ AOF 的整个流程大体来看可以分为两步，第一步是命令的实时�
 
 Redis 提供了 bgrewriteaof 指令用于对 AOF 日志进行重写，该指令运行时会开辟一个子进程对内存进行遍历，然后将其转换为一系列的 Redis 的操作指令，再序列化到一个日志文件中。完成后再替换原有的 AOF 文件，至此完成。
 
-同样的也可以在 redis.config 中对重写机制的触发进行配置：
+同样的也可以在 Redis.config 中对重写机制的触发进行配置：
 
 通过将 no-appendfsync-on-rewrite 设置为 yes，开启重写机制；auto-aof-rewrite-percentage 100 意为比上次从写后文件大小增长了 100%再次触发重写；
 
@@ -567,7 +532,7 @@ auto-aof-rewrite-min-size 64mb 意为当文件至少要达到 64mb 才会触发�
 
 1、数据安全，AOF 是对指令文件进行 **增量更新**，更适合实时性持久化。
 
-2、通过 append 模式写文件，即使中途服务器宕机，可以通过 redis-check-aof 工具解决数据一致性问题。
+2、通过 append 模式写文件，即使中途服务器宕机，可以通过 Redis-check-aof 工具解决数据一致性问题。
 
 3、AOF 机制的 rewrite 模式。AOF 文件没被 rewrite 之前（文件过大时会对命令 进行合并重写），可以删除其中的某些命令（比如误操作的 flushall）)
 
@@ -577,7 +542,7 @@ auto-aof-rewrite-min-size 64mb 意为当文件至少要达到 64mb 才会触发�
 
 2、数据集大的时候，比 RDB 启动效率低。
 
-### 3、RDB与AOF对比
+### RDB与AOF对比
 
 Redis 官方建议同时开启两种持久化策略，AOF 和 RDB 同时开启，系统默认取 AOF 的数据（数据不会存在丢失）
 
@@ -592,19 +557,19 @@ Redis 官方建议同时开启两种持久化策略，AOF 和 RDB 同时开启�
 
 ## 发布与订阅
 
-redis 发布与订阅是一种消息通信的模式：发送者（pub）发送消息，订阅者（sub）接收消息。
+Redis 发布与订阅是一种消息通信的模式：发送者（pub）发送消息，订阅者（sub）接收消息。
 
-redis 通过 PUBLISH 和 SUBSCRIBE 等命令实现了订阅与发布模式，这个功能提供两种信息机制，分别是订阅/发布到频道、订阅/发布到模式的客户端。
+Redis 通过 PUBLISH 和 SUBSCRIBE 等命令实现了订阅与发布模式，这个功能提供两种信息机制，分别是订阅/发布到频道、订阅/发布到模式的客户端。
 
-### 1、频道（channel）
+### 频道（channel）
 
 **订阅**
 
-![图片](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650436261125.png)
+![频道订阅](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650436261125.png)
 
 **发布**
 
-![图片](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650436267143.png)
+![频道发布](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650436267143.png)
 
 #### **完整流程**
 
@@ -628,11 +593,11 @@ Reading messages... (press Ctrl-C to quit)
 
 订阅频道后的客户端可能会收到三种消息类型
 
-- subscribe。表示订阅成功的反馈信息。第二个值是订阅成功的频道名称，第三个是当前客户端订阅的频道数量。
+- subscribe：表示订阅成功的反馈信息。第二个值是订阅成功的频道名称，第三个是当前客户端订阅的频道数量。
 
-- message。表示接收到的消息，第二个值表示产生消息的频道名称，第三个值是消息的内容。
+- message：表示接收到的消息，第二个值表示产生消息的频道名称，第三个值是消息的内容。
 
-- unsubscribe。表示成功取消订阅某个频道。第二个值是对应的频道名称，第三个值是当前客户端订阅的频道数量，当此值为 0 时客户端会退出订阅状态，之后就可以执行其他非"发布/订阅"模式的命令了。
+- unsubscribe：表示成功取消订阅某个频道。第二个值是对应的频道名称，第三个值是当前客户端订阅的频道数量，当此值为 0 时客户端会退出订阅状态，之后就可以执行其他非"发布/订阅"模式的命令了。
 
 
 
@@ -644,7 +609,7 @@ Reading messages... (press Ctrl-C to quit)
 
 其中，字典的键为正在被订阅的频道， 而字典的值则是一个链表， 链表中保存了所有订阅这个频道的客户端。
 
-![图片](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650420774862.png)
+![频道模式数据结构模型](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650420774862.png)
 
 **订阅**
 
@@ -652,7 +617,7 @@ Reading messages... (press Ctrl-C to quit)
 
 当 client 10 执行 `subscribe channel1 channel2 channel3` 时，会将 client 10 分别加到 channel1 channel2 channel3 关联的链表尾部。
 
-![图片](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650420784179.png)
+![频道订阅](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650420784179.png)
 
 **发布**
 
@@ -664,7 +629,7 @@ Reading messages... (press Ctrl-C to quit)
 
 
 
-### 2、模式（pattern）
+### 模式（pattern）
 
 pattern 使用了通配符的方式来订阅
 
@@ -672,7 +637,7 @@ pattern 使用了通配符的方式来订阅
 
 所以当使用 publish 命令发送信息到某个频道时， 不仅所有订阅该频道的客户端会收到信息， 如果有某个/某些模式和这个频道匹配的话， 那么所有订阅这个/这些频道的客户端也同样会收到信息。
 
-![图片](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650420803487.png)
+![模式](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650420803487.png)
 
 #### **订阅发布完整流程**
 
@@ -717,13 +682,13 @@ pattern 属性是一个链表，链表中保存着所有和模式相关的信息
 
 数据结构图如下：
 
-![图片](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650420905733.png)
+![模式数据结构](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650420905733.png)
 
 **订阅**
 
 当有信的订阅时，会将订阅的客户端和模式信息添加到链表后面。
 
-![图片](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650420913717.png)
+![模式订阅](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650420913717.png)
 
 **发布**
 
@@ -754,11 +719,11 @@ pattern 属性是一个链表，链表中保存着所有和模式相关的信息
 
 - 高可用基石：除了上述作用以外，主从复制还是哨兵和集群能够实施的基础，因此说主从复制是 Redis 高可用的基础。
 
-主从库采用的是读写分离的方式
+主从库采用的是读写分离的方式：
 
-![图片](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650420963646.png) 
+![主从库读写分离](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650420963646.png) 
 
-### 1、原理
+### 原理
 
 分为全量复制与增量复制
 
@@ -766,9 +731,9 @@ pattern 属性是一个链表，链表中保存着所有和模式相关的信息
 
 增量复制：只会把主从库网络断连期间主库收到的命令，同步给从库
 
-### 2、全量复制的三个阶段
+### 全量复制的三个阶段
 
-![img](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNoteskjk7gr48ft.jpeg)
+![全量复制](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNoteskjk7gr48ft.jpeg)
 
 第一阶段是主从库间建立连接、协商同步的过程。
 
@@ -784,11 +749,11 @@ pattern 属性是一个链表，链表中保存着所有和模式相关的信息
 
 > 具体的操作是，当主库完成 RDB 文件发送后，就会把此时 replication buffer 中的修改操作发给从库，从库再重新执行这些操作。这样一来，主从库就实现同步了。
 
-### 3、断网增量更新
+### 断网增量更新
 
 当主从库断连后，主库会把断连期间收到的写操作命令，写入 replication buffer，同时也会把这些操作命令也写入 repl_backlog_buffer 这个缓冲区。
 
-![img](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotesg0eezljwqy.jpeg)
+![断网增量更新](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotesg0eezljwqy.jpeg)
 
 ## 哨兵机制
 
@@ -798,9 +763,9 @@ pattern 属性是一个链表，链表中保存着所有和模式相关的信息
 > 2. 主库 如果宕机，则从 从库 中 选举成为 主库（因此需要奇数个哨兵）
 > 3. 更改主从配置
 
-下图是一个典型的哨兵集群监控的逻辑图
+下图是一个典型的哨兵集群监控的逻辑图：
 
-![图片](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650420977306.png)
+![哨兵机制](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650420977306.png)
 
 ![图片](data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVQImWNgYGBgAAAABQABh6FO1AAAAABJRU5ErkJggg==)
 
@@ -819,8 +784,6 @@ Redis Sentinel 包含了若个 Sentinel 节点，这样做也带来了两个好�
 4. 配置中心：在 Redis Sentinel 模式中，客户端在初始化的时候连接的是 Sentinel 节点集合，从中获取主节点信息
 
 其中，监控和自动故障转移功能，使得哨兵可以及时发现主节点故障并完成转移；而配置中心和通知功能，则需要在与客户端的交互中才能体现。
-
-
 
 ### 监控
 
@@ -888,46 +851,46 @@ Sentinel 节点集合会将原来的 master 节点更新为 slave 节点，并�
 ### 传统哈希
 
 最简单的数据分布算法，对进来的 key 进行 hash，然后对节点数据进行取模，就知道分布到哪个节点上了；
-缺点就是: 如果一个节点宕机，所有缓存的位置都要发生改变，当服务器数量发生改变时,所有缓存在一定时间内是失效的，会引起缓存的雪崩,可能会引起整体系统压力过大而崩溃（大量缓存同一时间失效）
+缺点就是: 如果一个节点宕机，所有缓存的位置都要发生改变，当服务器数量发生改变时，所有缓存在一定时间内是失效的，会引起缓存的雪崩，可能会引起整体系统压力过大而崩溃（大量缓存同一时间失效）
 
 ### 一致性哈希
 
-实际上就是引入了一个圆环的概念, 让每个数据的 hash 分布到整个圆环,然后顺时针去找离他最近的节点存储
+实际上就是引入了一个圆环的概念， 让每个数据的 hash 分布到整个圆环，然后顺时针去找离他最近的节点存储
 
-![1650525022243](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes1650525022243.png)
+<img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes1650525022243.png" alt="一致性哈希" style="zoom: 50%;" />
 
 hash 算法的取模法是对服务器的数量进行取模，而一致性哈希算法是对 2^32 取模，
 dubbo 的复杂均衡有用到该算法；
 
 好处:
 
-使用 hash 算法，服务器数量发生改变时,所有服务器的所有缓存在同一时间失效了；
+使用 hash 算法，服务器数量发生改变时，所有服务器的所有缓存在同一时间失效了；
 而使用一致性哈希算法时，服务器的数量如果发生改变，并不是所有缓存都会失效，而是只有部分缓存会失效。上图中如果节点 A 失效，则 C → A 之间的数据会重新缓存到节点 B 上。
 
 hash 环偏斜：
 
-![1650525154544](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes1650525154544.png)
+<img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes1650525154544.png" alt="hash 环偏斜" style="zoom: 50%;" />
 
 1 号、2 号、3 号、4 号、6 号数据均被缓存在了服务器 A 上；只有 5 号被缓存在了服务器 B 上；服务器 C 上甚至没有缓存任何图片
-如果出现上图中的情况，A、B、C 三台服务器并没有被合理的平均的充分利用,缓存分布的极度不均匀,而且,如果此时服务器 A 出现故障,那么失效缓存的数量也将达到最大值,在极端情况下,仍然有可能引起系统的崩溃；
+如果出现上图中的情况，A、B、C 三台服务器并没有被合理的平均的充分利用，缓存分布的极度不均匀，而且，如果此时服务器 A 出现故障，那么失效缓存的数量也将达到最大值，在极端情况下，仍然有可能引起系统的崩溃；
 
 上图中的情况则被称之为 hash 环的偏斜 ；
 我们应该怎样防止 hash 环的偏斜？
 增加虚拟节点：
 
-![1650525203417](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes1650525203417.png)
+<img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes1650525203417.png" alt="增加虚拟节点防止 hash 环的偏斜" style="zoom:50%;" />
 
-为了解决这个数据负载均衡的问题,搞出来虚拟节点，把真实节点搞一堆虚拟节点分布到环，那么整个区间的数据会落到这些虚拟节点上；
+为了解决这个数据负载均衡的问题，搞出来虚拟节点，把真实节点搞一堆虚拟节点分布到环，那么整个区间的数据会落到这些虚拟节点上；
 
 虚拟节点越多，hash 环上的节点就越多，缓存被均匀分布的概率就越大。
 
 ### 哈希槽
 
-redis 集群（cluster）并没有选用上面一致性哈希，而是采用了哈希槽（slot）的这种概念。主要的原因就是上面所说的，一致性哈希算法对于数据分布、节点位置的控制并不是很友好。
+Redis 集群（cluster）并没有选用上面一致性哈希，而是采用了哈希槽（slot）的这种概念。主要的原因就是上面所说的，一致性哈希算法对于数据分布、节点位置的控制并不是很友好。
 
-首先哈希槽其实是两个概念，第一个是哈希算法。redis cluster 的 hash 算法不是简单的 hash()，而是 crc16 算法，一种校验算法。另外一个就是槽位的概念，空间分配的规则。其实哈希槽的本质和一致性哈希算法非常相似，不同点就是对于哈希空间的定义。一致性哈希的空间是一个圆环，节点分布是基于圆环的，无法很好的控制数据分布。而 redis cluster 的槽位空间是自定义分配的，类似于 windows 盘分区的概念。这种分区是可以自定义大小，自定义位置的。
+首先哈希槽其实是两个概念，第一个是哈希算法。Redis cluster 的 hash 算法不是简单的 hash()，而是 crc16 算法，一种校验算法。另外一个就是槽位的概念，空间分配的规则。其实哈希槽的本质和一致性哈希算法非常相似，不同点就是对于哈希空间的定义。一致性哈希的空间是一个圆环，节点分布是基于圆环的，无法很好的控制数据分布。而 Redis cluster 的槽位空间是自定义分配的，类似于 windows 盘分区的概念。这种分区是可以自定义大小，自定义位置的。
 
-redis cluster 包含了 16384 个哈希槽，每个 key 通过计算后都会落在具体一个槽位上，而这个槽位是属于哪个存储节点的，则由用户自己定义分配。例如机器硬盘小的，可以分配少一点槽位，硬盘大的可以分配多一点。如果节点硬盘都差不多则可以平均分配。所以哈希槽这种概念很好地解决了一致性哈希的弊端。
+Redis cluster 包含了 16384 个哈希槽，每个 key 通过计算后都会落在具体一个槽位上，而这个槽位是属于哪个存储节点的，则由用户自己定义分配。例如机器硬盘小的，可以分配少一点槽位，硬盘大的可以分配多一点。如果节点硬盘都差不多则可以平均分配。所以哈希槽这种概念很好地解决了一致性哈希的弊端。
 
 **为什么哈希槽的大小是固定的16384？**
 
@@ -941,11 +904,11 @@ redis cluster 包含了 16384 个哈希槽，每个 key 通过计算后都会落
 
 由于 bitmap 在传输过程中会进行压缩，bitmap 的填充率用 slots/N 表示（N 即节点数），对于同样的 slots，如果 N 太小，导致其填充率过高，压缩率就很低。
 
-
+***
 
 ## 缓存穿透、击穿、雪崩
 
-### 1、缓存穿透
+### 缓存穿透
 
 **问题来源**
 
@@ -955,7 +918,7 @@ redis cluster 包含了 16384 个哈希槽，每个 key 通过计算后都会落
 
 **解决方案**
 
-1. **接口校验**：接口层增加校验，例如对 id<=0 的直接拦截；
+1. **接口校验**：接口层增加校验，例如对 id<=0 的直接拦截。
 
 2. **缓存空值**：从缓存取不到的数据，在数据库中也没有取到，这时也可以将 key-value 对写为 key-null，缓存有效时间可以设置短点，如 10 秒（设置太长会导致正常情况也没法使用）。
 
@@ -965,7 +928,7 @@ redis cluster 包含了 16384 个哈希槽，每个 key 通过计算后都会落
 
 	> [布隆过滤器](https://javaguide.cn/cs-basics/data-structure/bloom-filter.html)
 	>
-	> [缓存穿透-布隆过滤器](https://javaguide.cn/database/redis/redis-questions-01.html#%E7%BC%93%E5%AD%98%E7%A9%BF%E9%80%8F)
+	> [缓存穿透-布隆过滤器](https://javaguide.cn/database/Redis/Redis-questions-01.html#%E7%BC%93%E5%AD%98%E7%A9%BF%E9%80%8F)
 
 	具体而言：
 
@@ -977,7 +940,7 @@ redis cluster 包含了 16384 个哈希槽，每个 key 通过计算后都会落
 
 	1. 使用布隆过滤器中的哈希函数对元素值进行计算，得到哈希值（有几个哈希函数得到几个哈希值）。
 
-		> hashVal1 = hashMethod1(key), hashVal2= hashMethod2(key)...
+		> hashVal1 = hashMethod1(key)， hashVal2= hashMethod2(key)...
 
 	2. 根据得到的哈希值，在位数组中把对应下标的值置为 1。
 
@@ -987,7 +950,7 @@ redis cluster 包含了 16384 个哈希槽，每个 key 通过计算后都会落
 
 	1. 对给定元素再次进行相同的哈希计算；
 
-		> hashVal1 = hashMethod1(key), hashVal2= hashMethod2(key)...
+		> hashVal1 = hashMethod1(key)， hashVal2= hashMethod2(key)...
 
 	2. 得到值之后判断位数组中的每个元素是否都为 1，如果值都为 1，那么说明这个值在布隆过滤器中，如果存在一个值不为 1，说明该元素不在布隆过滤器中。
 
@@ -997,9 +960,8 @@ redis cluster 包含了 16384 个哈希槽，每个 key 通过计算后都会落
 
 	> **⭐例如**：val1 经过两次hash得到下标 1， 3，将1、3处置为1，val2经过两次hash得到下标2、4，将2、4处置为1，对于新元素val3经过两次hash得到下标1、2，判断这两个位置都为1，误判以为val3存在，实际上不存在。
 
-	
 
-### 2、缓存击穿
+### 缓存击穿
 
 **问题来源**
 
@@ -1015,9 +977,7 @@ redis cluster 包含了 16384 个哈希槽，每个 key 通过计算后都会落
 
 3、加互斥锁：如果缓存失效的情况，只有拿到锁才可以查询数据库，分布式场景下可以使用分布式锁。
 
-
-
-### 3、缓存雪崩
+### 缓存雪崩
 
 **问题来源**
 
@@ -1038,9 +998,9 @@ redis cluster 包含了 16384 个哈希槽，每个 key 通过计算后都会落
 
 > Redis 是基于内存结构进行数据缓存的，当内存资源消耗完毕，当将要有新的数据缓存进来时，为了腾出空间放新的数据，需要将内存中的一些数据释放掉，这种释放数据的策略称为 Redis 的淘汰策略。
 
-LRU means Least Recently Used
+LRU：Least Recently Used
 
-LFU means Least Frequently Used
+LFU：Least Frequently Used
 
 LRU 淘汰的是最久未访问到的数据，而 LFU 是淘汰的是最不经常使用的数据（若两个或多个数据的使用频率相同时，LFU 会再选择最久未访问到的数据淘汰）。
 
@@ -1071,15 +1031,15 @@ LRU 淘汰的是最久未访问到的数据，而 LFU 是淘汰的是最不经�
 
 **Redis中同时使用了定期过期和惰性过期两种过期策略。**
 
-所谓定期删除，指的是 redis 默认是每隔 100ms 就随机抽取一些设置了过期时间的 key，检查其是否过期，如果过期就删除。
+所谓定期删除，指的是 Redis 默认是每隔 100ms 就随机抽取一些设置了过期时间的 key，检查其是否过期，如果过期就删除。
 
-**假设 redis 里放了 10w 个 key，都设置了过期时间，**你每隔几百毫秒，就检查 10w 个 key，那 redis 基本上就死了，cpu 负载会很高的，消耗在你的检查过期 key 上了。**注意，**这里可不是每隔 100ms 就遍历所有的设置过期时间的 key，那样就是一场性能上的灾难。实际上 redis 是每隔 100ms 随机抽取一些 key 来检查和删除的。
+**假设 Redis 里放了 10w 个 key，都设置了过期时间，**你每隔几百毫秒，就检查 10w 个 key，那 Redis 基本上就死了，cpu 负载会很高的，消耗在你的检查过期 key 上了。**注意，**这里可不是每隔 100ms 就遍历所有的设置过期时间的 key，那样就是一场性能上的灾难。实际上 Redis 是每隔 100ms 随机抽取一些 key 来检查和删除的。
 
-**但是问题是，定期删除可能会导致很多过期 key 到了时间并没有被删除掉，那咋整呢？**所以就是惰性删除了。这就是说，在你获取某个 key 的时候，redis 会检查一下 ，这个 key 如果设置了过期时间那么是否过期了？如果过期了此时就会删除，不会给你返回任何东西。
+**但是问题是，定期删除可能会导致很多过期 key 到了时间并没有被删除掉，那咋整呢？**所以就是惰性删除了。这就是说，在你获取某个 key 的时候，Redis 会检查一下 ，这个 key 如果设置了过期时间那么是否过期了？如果过期了此时就会删除，不会给你返回任何东西。
 
-**获取 key 的时候，如果此时 key 已经过期，就删除，不会返回任何东西。**但是实际上这还是有问题的，如果定期删除漏掉了很多过期 key，然后你也没及时去查，也就没走惰性删除，此时会怎么样？如果大量过期 key 堆积在内存里，导致 redis 内存快耗尽了，咋整？**答案是：走内存淘汰机制。**
+**获取 key 的时候，如果此时 key 已经过期，就删除，不会返回任何东西。**但是实际上这还是有问题的，如果定期删除漏掉了很多过期 key，然后你也没及时去查，也就没走惰性删除，此时会怎么样？如果大量过期 key 堆积在内存里，导致 Redis 内存快耗尽了，咋整？**答案是：走内存淘汰机制。**
 
-
+***
 
 ## Redis分布式并发问题
 
@@ -1098,7 +1058,7 @@ public Map<String, String> addOrder(String cids, Orders orders) {
     Map<String, String> map = new HashMap<>();
 
     // 1、根据cids查询当前订单中关联的购物车记录详情（包括库存）
-    String[] arr = cids.split(",");
+    String[] arr = cids.split("，");
     List<Integer> cidsList = new ArrayList<>();
     for (String s : arr) {
         cidsList.add(Integer.parseInt(s));
@@ -1110,7 +1070,7 @@ public Map<String, String> addOrder(String cids, Orders orders) {
     List<String> lockedSkuIds = new ArrayList<>();
     Map<String, String> values = new HashMap<>();
     for (ShoppingCartVO sc : list1) {
-        String skuId = sc.getSkuId(), value = UUID.randomUUID().toString();
+        String skuId = sc.getSkuId()， value = UUID.randomUUID().toString();
         Boolean thisLocked = srt.boundValueOps(sc.getSkuId()).setIfAbsent(value, 10, TimeUnit.SECONDS);
         if (!thisLocked) {   // 返回 false 说明之前有该数据，即有线程在操作这个 商品库存
             allLocked = false;  // 因此这个sku就没有锁住，不能继续操作
@@ -1130,7 +1090,7 @@ public Map<String, String> addOrder(String cids, Orders orders) {
                 f = false;
             }
             //获取所有商品的名称，以逗号拼接成字符串
-            sb.append(sc.getProductName()).append(",");
+            sb.append(sc.getProductName()).append("，");
         }
         String untitled = sb.toString();
 
@@ -1144,7 +1104,7 @@ public Map<String, String> addOrder(String cids, Orders orders) {
             orders.setStatus("1");
 
             // 生成订单编号
-            String orderId = UUID.randomUUID().toString().replace("-", "");
+            String orderId = UUID.randomUUID().toString().replace("-"， "");
             orders.setOrderId(orderId);
 
             // 保存订单
@@ -1153,8 +1113,8 @@ public Map<String, String> addOrder(String cids, Orders orders) {
             for (ShoppingCartVO sc : list) {
                 int cnum = Integer.parseInt(sc.getCartNum());
                 String itemId = System.currentTimeMillis() + "" + (new Random().nextInt(89999) + 10000);
-                OrderItem orderItem = new OrderItem(itemId, orderId, sc.getProductId(), sc.getProductName(), sc.getProductImg(), sc.getSkuId(),
-                                                    sc.getSkuName(), BigDecimal.valueOf(sc.getSellPrice()), cnum, new BigDecimal(sc.getSellPrice() * cnum), new Date(), new Date(), 0);
+                OrderItem orderItem = new OrderItem(itemId, orderId, sc.getProductId()， sc.getProductName()， sc.getProductImg()， sc.getSkuId()，
+                                                    sc.getSkuName()， BigDecimal.valueOf(sc.getSellPrice())， cnum, new BigDecimal(sc.getSellPrice() * cnum)， new Date()， new Date()， 0);
                 orderItemMapper.insert(orderItem);
             }
 
@@ -1185,15 +1145,15 @@ public Map<String, String> addOrder(String cids, Orders orders) {
 
             log.info("add order finished... ");
 
-            map.put("orderId", orderId);
-            map.put("productNames", untitled);
+            map.put("orderId"， orderId);
+            map.put("productNames"， untitled);
             return map;
         } else {
             // 表示库存不足
             return null;
         }
     } else {    // 加锁失败
-        // 要将部分锁定的sku释放锁，即从redis中移除锁住的skuId
+        // 要将部分锁定的sku释放锁，即从Redis中移除锁住的skuId
         for (String lockedSkuId : lockedSkuIds) {
             srt.delete(lockedSkuId);
         }
@@ -1219,10 +1179,10 @@ public Map<String, String> addOrder(String cids, Orders orders) {
 	> ```java
 	> // 释放锁
 	> for (String lockedSkuId : lockedSkuIds) {
-	>  String value = srt.boundValueOps(lockedSkuId).get();
-	>  if (values.get(lockedSkuId).equals(value)) {
-	>    srt.delete(lockedSkuId);
-	>  }
+	>    String value = srt.boundValueOps(lockedSkuId).get();
+	>    if (values.get(lockedSkuId).equals(value)) {
+	>      	srt.delete(lockedSkuId);
+	>    }
 	> }
 	> ```
 
@@ -1253,7 +1213,7 @@ public Map<String, String> addOrder(String cids, Orders orders) {
 	redisson:
 	  addr:
 	    singleAddr:
-	      host: redis://47.110.247.63:6389
+	      host: Redis://47.110.247.63:6389
 	      password: FYX123fyx.
 	      database: 0
 	```
@@ -1292,7 +1252,7 @@ public Map<String, String> addOrder(String cids, Orders orders) {
 	    log.info("add order begin...");
 	
 	    // 1、根据cids查询当前订单中关联的购物车记录详情（包括库存）
-	    String[] arr = cids.split(",");
+	    String[] arr = cids.split("，");
 	    List<Integer> cidsList = new ArrayList<>();
 	    for (String s : arr) {
 	        cidsList.add(Integer.parseInt(s));
@@ -1332,7 +1292,7 @@ public Map<String, String> addOrder(String cids, Orders orders) {
 	                    f = false;
 	                }
 	                //获取所有商品的名称，以逗号拼接成字符串
-	                sb.append(sc.getProductName()).append(",");
+	                sb.append(sc.getProductName()).append("，");
 	            }
 	            String untitled = sb.toString();
 	
@@ -1346,7 +1306,7 @@ public Map<String, String> addOrder(String cids, Orders orders) {
 	                orders.setStatus("1");
 	
 	                // 生成订单编号
-	                String orderId = UUID.randomUUID().toString().replace("-", "");
+	                String orderId = UUID.randomUUID().toString().replace("-"， "");
 	                orders.setOrderId(orderId);
 	
 	                // 保存订单
@@ -1355,8 +1315,8 @@ public Map<String, String> addOrder(String cids, Orders orders) {
 	                for (ShoppingCartVO sc : list) {
 	                    int cnum = Integer.parseInt(sc.getCartNum());
 	                    String itemId = System.currentTimeMillis() + "" + (new Random().nextInt(89999) + 10000);
-	                    OrderItem orderItem = new OrderItem(itemId, orderId, sc.getProductId(), sc.getProductName(), sc.getProductImg(), sc.getSkuId(),
-	                                                        sc.getSkuName(), BigDecimal.valueOf(sc.getSellPrice()), cnum, new BigDecimal(sc.getSellPrice() * cnum), new Date(), new Date(), 0);
+	                    OrderItem orderItem = new OrderItem(itemId, orderId, sc.getProductId()， sc.getProductName()， sc.getProductImg()， sc.getSkuId()，
+	                                                        sc.getSkuName()， BigDecimal.valueOf(sc.getSellPrice())， cnum, new BigDecimal(sc.getSellPrice() * cnum)， new Date()， new Date()， 0);
 	                    orderItemMapper.insert(orderItem);
 	                }
 	
@@ -1380,8 +1340,8 @@ public Map<String, String> addOrder(String cids, Orders orders) {
 	                log.info("add order finished... ");
 	
 	                map = new HashMap<>();
-	                map.put("orderId", orderId);
-	                map.put("productNames", untitled);
+	                map.put("orderId"， orderId);
+	                map.put("productNames"， untitled);
 	
 	            }
 	
@@ -1414,7 +1374,7 @@ public Map<String, String> addOrder(String cids, Orders orders) {
 
 4. 高效、高可用
 
-	支持单节点 redis、主从 redis、集群 redis
+	支持单节点 Redis、主从 Redis、集群 Redis
 
 5. 支持阻塞和非阻塞
 
@@ -1502,7 +1462,7 @@ public Map<String, String> addOrder(String cids, Orders orders) {
 
 接下来，我们详细说说这 4 种方案。
 
-### 1、先写缓存，再写数据库
+### 先写缓存，再写数据库
 
 对于更新缓存的方案，很多人第一个想到的可能是在写操作中直接更新缓存（写缓存），更直接明了。
 
@@ -1524,7 +1484,7 @@ public Map<String, String> addOrder(String cids, Orders orders) {
 
 因此，先写缓存，再写数据库的方案是不可取的，在实际工作中用得不多。
 
-### 2、先写数据库，再写缓存
+### 先写数据库，再写缓存
 
 ![图片](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650526499487.png)
 
@@ -1569,7 +1529,7 @@ public Map<String, String> addOrder(String cids, Orders orders) {
 
 还不如不用 Redis，反正写数据库都要写，我读数据又比较少，Redis 使用频率低，却还要一直更新 Redis 中数据。
 
-### 3、先删缓存，再写数据库
+### 先删缓存，再写数据库
 
 不然是先写缓存还是先写数据库都有很多问题，那么考虑不是 `更新缓存` 而是 `删除缓存`。
 
@@ -1622,7 +1582,7 @@ public Map<String, String> addOrder(String cids, Orders orders) {
 
 接下来，还有一个问题：如果第二次删除缓存时，删除失败了该怎么办？
 
-### 4、先写数据库，再删缓存
+### 先写数据库，再删缓存
 
 ![图片](https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes640-1650528137396.png)
 
@@ -1764,11 +1724,11 @@ mq 的生产者，生产了消息之后，通过指定的 topic 发送到 mq 服
 
 ### 单线程的Redis为什么这么快
 
-1、纯内存操作
+1. 纯内存操作
 
-2、单线程操作，避免了频繁的上下文切换
+2. 单线程操作，避免了频繁的上下文切换
 
-3、采用了非阻塞 I/O 多路复用机制
+3. 采用了非阻塞 I/O 多路复用机制
 
 ### Redis 为什么是单线程的
 
@@ -1778,26 +1738,24 @@ mq 的生产者，生产了消息之后，通过指定的 topic 发送到 mq 服
 
 1、绝大部分请求是纯粹的内存操作（非常快速）
 
-2、采用单线程,避免了不必要的上下文切换和竞争条件
+2、采用单线程，避免了不必要的上下文切换和竞争条件
 
 3、非阻塞 IO 优点：
 
 - 速度快，因为数据存在内存中，类似于 HashMap，HashMap 的优势就是查找和操作的时间复杂度都是 O(1)
 - 支持丰富数据类型，支持 string，list，set，sorted set，hash
 - 支持事务，操作都是原子性，所谓的原子性就是对数据的更改要么全部执行，要么全部不执行
-- 丰富的特性：可用于缓存，消息，按 key 设置过期时间，过期后将会自动删除如何解决 redis 的并发竞争 key 问题
+- 丰富的特性：可用于缓存，消息，按 key 设置过期时间，过期后将会自动删除如何解决 Redis 的并发竞争 key 问题
 
 **同时有多个子系统去set一个key。这个时候要注意什么呢？**
 
-不推荐使用 redis 的事务机制。因为我们的生产环境，基本都是 redis 集群环境，做了数据分片操作。你一个事务中有涉及到多个 key 操作的时候，这多个 key 不一定都存储在同一个 redis-server 上。因此，redis 的事务机制，十分鸡肋。
+不推荐使用 Redis 的事务机制。因为我们的生产环境，基本都是 Redis 集群环境，做了数据分片操作。你一个事务中有涉及到多个 key 操作的时候，这多个 key 不一定都存储在同一个 Redis-server 上。因此，Redis 的事务机制，十分鸡肋。
 
 - 如果对这个 key 操作，不要求顺序：准备一个分布式锁，大家去抢锁，抢到锁就做 set 操作即可
 - 如果对这个 key 操作，要求顺序：分布式锁+时间戳。假设这会系统 B 先抢到锁，将 key1 设置为{valueB 3:05}。接下来系统 A 抢到锁，发现自己的 valueA 的时间戳早于缓存中的时间戳，那就不做 set 操作了。以此类推。
-- 利用队列，将 set 方法变成串行访问也可以 redis 遇到高并发，如果保证读写 key 的一致性
+- 利用队列，将 set 方法变成串行访问也可以 Redis 遇到高并发，如果保证读写 key 的一致性
 
-对 redis 的操作都是具有原子性的,是线程安全的操作,你不用考虑并发问题,redis 内部已经帮你处理好并发的问题了。
-
-
+对 Redis 的操作都是具有原子性的，是线程安全的操作，你不用考虑并发问题,Redis 内部已经帮你处理好并发的问题了。
 
 ### 为什么Redis的操作是原子性的，怎么保证原子性的？
 
@@ -1827,7 +1785,7 @@ I/O 多路复用程序负责监听多个套接字， 并向文件事件分派器
 
 当上一个套接字产生的事件被处理完毕之后（该套接字为事件所关联的事件处理器执行完毕）， I/O 多路复用程序才会继续向文件事件分派器传送下一个套接字。如果一个套接字又可读又可写的话， 那么服务器将先读套接字， 后写套接字。
 
-## 参考
+## 其他参考
 
 [原创 一洺 [阿里开发者](javascript:void(0);) 2022-03-24 08:00](https://mp.weixin.qq.com/s?__biz=MzIzOTU0NTQ0MA==&mid=2247507942&idx=1&sn=e00fd16ec56d0e10cc830678ee25c417&chksm=e92ae2e9de5d6bff6d227646c12685a5c45a4c3322e2186954555a14ebcd9510e8ae579a4941&mpshare=1&scene=24&srcid=0324gng7YtX5XX0z9bf7aObR&sharer_sharetime=1648080975816&sharer_shareid=ebfad4e5798246e3d3928c1f4ee9048e#rd)
 
