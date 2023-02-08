@@ -2,10 +2,10 @@
 <img src="https://rishavanand.github.io/static/images/greetings.gif" align="center" style="width: 100%" />
 </div>  
 
-🔭 本科：苏州大学纳米科学与技术学院，纳米物理方向；硕士：苏州大学计算机科学与技术学院，计算机技术。
+🔭 本科：苏州大学纳米科学与技术学院，半导体器件方向；硕士：苏州大学计算机科学与技术学院，计算机技术。
 
-🌱 在字节跳动实习过4个月，担任飞书 EA-finance - 后端开发一职，秋招拿到了字节跳动、上海银行、高中信息技术老师等offer。
+🌱 在字节跳动飞书下某部门后端开发实习过 4 个月，秋招拿到了字节跳动、上海银行、苏州农行、高中信息老师等 offer。
 
-⚡ 编程语言熟悉Java、Python，数据库熟悉MySQL、Redis，框架熟悉Spring全家桶，常用工具熟悉Git、Maven、Linux……
+⚡ 编程语言熟悉 Java、Python，数据库熟悉 MySQL、Redis，框架熟悉 Spring 全家桶，常用工具熟悉 Git、Maven、Linux 等。
 
-❓ 欢迎交流计算机考研、实习、秋招、编程、互联网等问题，我的邮箱 yaxingfang@163.com
+❓ 欢迎交流计算机考研、实习、秋招、编程、互联网等问题，我的邮箱 yaxingfang@163.com ～

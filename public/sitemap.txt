@@ -1,3 +1,4 @@
+https://yaxing97.com/about/index.html
 https://yaxing97.com/about-within-the-system.html
 https://yaxing97.com/algorithm-sort.html
 https://yaxing97.com/computer-network.html
@@ -6,8 +7,8 @@ https://yaxing97.com/Redis.html
 https://yaxing97.com/java-exception-error.html
 https://yaxing97.com/java-basic-knowledge.html
 https://yaxing97.com/2022-jiangsu-gwy.html
-https://yaxing97.com/new-desk.html
 https://yaxing97.com/202301-it-info.html
+https://yaxing97.com/new-desk.html
 https://yaxing97.com/build-blog.html
 https://yaxing97.com/my-bytedance-internship-friends-offer.html
 https://yaxing97.com/bilibili-vip.html
@@ -23,7 +24,6 @@ https://yaxing97.com/2022-memory.html
 https://yaxing97.com/2022-internship-summary.html
 https://yaxing97.com/week-back-home.html
 https://yaxing97.com/2023-happy-spring-festival.html
-https://yaxing97.com/about/index.html
 https://yaxing97.com/tags/index.html
 https://yaxing97.com/categories/index.html
 https://yaxing97.com/
@@ -31,7 +31,7 @@ https://yaxing97.com/categories/%E6%97%A5%E5%B8%B8%E5%B0%8F%E8%AE%B0/
 https://yaxing97.com/categories/%E5%AE%9E%E4%B9%A0%E7%A7%8B%E6%8B%9B/
 https://yaxing97.com/categories/Java%E5%85%AB%E8%82%A1%E6%96%87/
 https://yaxing97.com/categories/%E5%AE%9E%E4%B9%A0%E7%A7%8B%E6%8B%9B/%E5%AE%9E%E4%B9%A0/
+https://yaxing97.com/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/
 https://yaxing97.com/categories/%E5%AE%9E%E4%B9%A0%E7%A7%8B%E6%8B%9B/%E7%A7%8B%E6%8B%9B/
 https://yaxing97.com/categories/%E4%B8%AA%E4%BA%BA%E6%80%9D%E8%80%83/
-https://yaxing97.com/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/
 https://yaxing97.com/categories/%E7%AE%97%E6%B3%95/

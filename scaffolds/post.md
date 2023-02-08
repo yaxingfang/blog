@@ -4,7 +4,7 @@ date: {{ date }}
 copyright: true
 mathjax: false
 categories: 
-  - 实习秋招/技术总结/Java八股文/日常小记/算法
+  - 实习秋招/技术总结/Java八股文/日常小记/算法/个人思考/读书笔记
 tags: 
 toc: true
 urlname: 
