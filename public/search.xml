@@ -87,6 +87,35 @@
       </categories>
   </entry>
   <entry>
+    <title>2022秋招总结</title>
+    <url>/2022-autumn-recruitment-summary.html</url>
+    <content><![CDATA[<p>19 年乘着人见人吹的计算机大热，跨考计算机一站未果，二战上岸本校计算机。</p>
+<p>研二暑期留校科研，很幸运做出来两篇文章，接下来可以去实习了。</p>
+<p>从 12 月到 2 月，断断续续复习 Java 后端开发所需的知识。</p>
+<p>从 2 月底找实习，4 月底入职字节跳动，8 月底离职返校，直到 11 月底（11.27）正式签订三方，过程坎坷，内心惆怅。</p>
+<p>秋招投了约 50 家公司，都是 Java 后端，主要有以下：</p>
+<span id="more"></span>
+
+<p>蚂蚁，二面挂</p>
+<p>中移苏研，第二批次，面试走完，没有收到体检</p>
+<p>浙商银行，面试走完，没有材料审核</p>
+<p>山石网科，hr 面挂</p>
+<p>荣耀，面试走完，口头谈薪</p>
+<p>上海银行，总行苏州 base，收到 offer</p>
+<p>苏州农行，收到体检</p>
+<p>字节跳动，转正 offer，sp</p>
+<p>总体而言，今年强的人还是能拿到多个大厂 offer，但是大厂门槛比年高了很多。在互联网颓势的今年，芯片、嵌入式成为香饽饽，薪资高、发展好，不少人甚至直呼赶紧转行（我有朋友在零基础情况下拿了五六家嵌入式中小厂的 offer）。</p>
+<p>关于 offer 选择，最终是考虑字节跳动 base 杭州，还有一个江苏省某地级市 top1 高中的信息技术老师（进编）的 offer。在考虑家庭情况、个人卷度承受度、稳定性，最终选择了做一名教师。</p>
+<p>未来的发展，大概率就是做一名普通的信息技术教师，有卷的心还有机会尝试加入学校带竞赛的队伍。</p>
+<p>不管什么 offer 选择，有得必定有失，十全十美的工作几乎没有。所以在进行 offer 选择时，如果没有明确的爱好想做的工作的话（比如我），那就好好综合考虑以上几点进行判断得出选择了。</p>
+<p>做出选择就好好冲吧，未来可期。大家都有光明的未来！</p>
+]]></content>
+      <categories>
+        <category>实习秋招</category>
+        <category>秋招</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Java八股文 - Java基础</title>
     <url>/java-basic-knowledge.html</url>
     <content><![CDATA[<blockquote>
@@ -410,104 +439,6 @@
 ]]></content>
       <categories>
         <category>Java八股文</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Java八股文 - Java异常</title>
-    <url>/java-exception-error.html</url>
-    <content><![CDATA[<blockquote>
-<p>整理的Java异常相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～	<span id="more"></span></p>
-</blockquote>
-<h2 id="Java异常架构"><a href="#Java异常架构" class="headerlink" title="Java异常架构"></a>Java异常架构</h2><p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes20200314173417278.png" alt="Java异常架构"></p>
-<h3 id="1-Throwable"><a href="#1-Throwable" class="headerlink" title="1. Throwable"></a>1. Throwable</h3><p>Throwable 是 Java 语言中所有错误与异常的超类。</p>
-<p>Throwable 包含两个子类：Error（错误）和 Exception（异常），它们通常用于指示发生了异常情况。</p>
-<h3 id="2-Error（错误）"><a href="#2-Error（错误）" class="headerlink" title="2. Error（错误）"></a>2. Error（错误）</h3><p>Error 类及其子类。程序中无法处理的错误，表示运行应用程序中出现了严重的错误。</p>
-<p>非受检异常，一般表示代码运行时 JVM 出现问题。比如 OutOfMemoryError：内存不足错误；StackOverflowError：栈溢出错误。此类错误发生时，JVM 将终止线程。</p>
-<h3 id="3-Exception（异常）"><a href="#3-Exception（异常）" class="headerlink" title="3. Exception（异常）"></a>3. Exception（异常）</h3><p>程序本身可以捕获并且可以处理的异常。Exception 这种异常又分为两类：运行时异常和编译时异常。</p>
-<h4 id="运行时异常"><a href="#运行时异常" class="headerlink" title="运行时异常"></a>运行时异常</h4><p>Exception 中 RuntimeException 类及其子类，表示 JVM 在运行期间可能出现的异常。（非受检异常，编译时不会检查出异常，运行时会发生异常，需要对异常进行特殊处理，否则会发生逻辑错误）</p>
-<h4 id="编译时异常"><a href="#编译时异常" class="headerlink" title="编译时异常"></a>编译时异常</h4><p>Exception 中除 RuntimeException 及其子类之外的异常。（受检异常，编译时会检查到该异常 ）</p>
-<h2 id="Java异常关键字"><a href="#Java异常关键字" class="headerlink" title="Java异常关键字"></a>Java异常关键字</h2><p>• <strong>try</strong> – 用于监听。将要被监听的代（可能抛出异常的代码）放在 try 语句块之内，当 try 语句块内发生异常时，异常就被抛出。<br>• <strong>catch</strong> – 用于捕获异常。catch 用来捕获 try 语句块中发生的异常。<br>• <strong>finally</strong> – finally 语句块总是会被执行。它主要用于回收在 try 块里打开的资源(如数据库连接、网络连接和磁盘文件)。<br>• <strong>throw</strong> – 用于手动抛出 catch 到的异常。<br>• <strong>throws</strong> – 用在方法签名中，用于声明该方法可能抛出的异常，调用该方法的方法需要注意 catch 这个可能跑出的异常。</p>
-<h2 id="Java异常处理"><a href="#Java异常处理" class="headerlink" title="Java异常处理"></a>Java异常处理</h2><h3 id="直接抛出异常"><a href="#直接抛出异常" class="headerlink" title="直接抛出异常"></a>直接抛出异常</h3><p>通常，应该捕获那些知道如何处理的异常，将不知道如何处理的异常继续传递下去。传递异常可以在方法签名处使用 <strong>throws</strong> 关键字声明可能会抛出的异常。调用该方法的方法需要注意 catch 这个可能抛出的异常。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">readFile</span><span class="params">(String filePath)</span> <span class="keyword">throws</span> IOException &#123;</span><br><span class="line">    <span class="type">File</span> <span class="variable">file</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">File</span>(filePath);</span><br><span class="line">    String result;</span><br><span class="line">    <span class="type">BufferedReader</span> <span class="variable">reader</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BufferedReader</span>(<span class="keyword">new</span> <span class="title class_">FileReader</span>(file));</span><br><span class="line">    <span class="keyword">while</span>((result = reader.readLine())!=<span class="literal">null</span>) &#123;</span><br><span class="line">        System.out.println(result);</span><br><span class="line">    &#125;</span><br><span class="line">    reader.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="封装异常再抛出"><a href="#封装异常再抛出" class="headerlink" title="封装异常再抛出"></a>封装异常再抛出</h3><p>有时我们会从 catch 中抛出一个异常，目的是为了改变异常的类型。多用于在多系统集成时，当某个子系统故障，异常类型可能有多种，可以用统一的异常类型向外暴露，不需暴露太多内部异常细节。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">readFile</span><span class="params">(String filePath)</span> <span class="keyword">throws</span> MyException &#123;    </span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// code</span></span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">        <span class="type">MyException</span> <span class="variable">ex</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MyException</span>(<span class="string">&quot;read file failed.&quot;</span>);</span><br><span class="line">        ex.initCause(e);</span><br><span class="line">        <span class="keyword">throw</span> ex;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="捕获异常"><a href="#捕获异常" class="headerlink" title="捕获异常"></a>捕获异常</h3><p>在一个 try-catch 语句块中可以捕获多个异常类型，并对不同类型的异常做出不同的处理</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">readFile</span><span class="params">(String filePath)</span> &#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// code</span></span><br><span class="line">    &#125; <span class="keyword">catch</span> (FileNotFoundException e) &#123;</span><br><span class="line">        <span class="comment">// handle FileNotFoundException</span></span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e)&#123;</span><br><span class="line">        <span class="comment">// handle IOException</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>同一个 catch 也可以捕获多种类型异常，用 | 隔开</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">readFile</span><span class="params">(String filePath)</span> &#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// code</span></span><br><span class="line">    &#125; <span class="keyword">catch</span> (FileNotFoundException | UnknownHostException e) &#123;</span><br><span class="line">        <span class="comment">// handle FileNotFoundException or UnknownHostException</span></span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e)&#123;</span><br><span class="line">        <span class="comment">// handle IOException</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="自定义异常"><a href="#自定义异常" class="headerlink" title="自定义异常"></a>自定义异常</h3><p>习惯上，定义一个异常类应包含两个构造函数，一个无参构造函数和一个带有详细描述信息的构造函数（Throwable 的 toString 方法会打印这些详细信息，调试时很有用）</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyException</span> <span class="keyword">extends</span> <span class="title class_">Exception</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyException</span><span class="params">()</span>&#123; &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyException</span><span class="params">(String msg)</span>&#123;</span><br><span class="line">        <span class="built_in">super</span>(msg);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Java异常常见面试题"><a href="#Java异常常见面试题" class="headerlink" title="Java异常常见面试题"></a>Java异常常见面试题</h2><h3 id="1-Error-和-Exception-区别是什么？"><a href="#1-Error-和-Exception-区别是什么？" class="headerlink" title="1. Error 和 Exception 区别是什么？"></a>1. Error 和 Exception 区别是什么？</h3><p>Error 类型的错误通常为虚拟机相关错误，如系统崩溃，内存不足，堆栈溢出等，编译器不会对这类错误进行检测，Java 应用程序也不应对这类错误进行捕获，一旦这类错误发生，通常应用程序会被终止，仅靠应用程序本身无法恢复；</p>
-<p>Exception 类的错误是可以在应用程序中进行捕获并处理的，通常遇到这种错误，应对其进行处理，使应用程序可以继续正常运行。</p>
-<h3 id="2-运行时异常和一般异常-受检异常-区别是什么？"><a href="#2-运行时异常和一般异常-受检异常-区别是什么？" class="headerlink" title="2. 运行时异常和一般异常(受检异常)区别是什么？"></a>2. 运行时异常和一般异常(受检异常)区别是什么？</h3><p>运行时异常包括 RuntimeException 类及其子类，表示 JVM 在运行期间可能出现的异常。 Java 编译器不会检查运行时异常。</p>
-<p>受检异常是 Exception 中除 RuntimeException 及其子类之外的异常。 Java 编译器会检查受检异常。</p>
-<p><strong>RuntimeException异常和受检异常之间的区别</strong>：是否强制要求调用者必须处理此异常，如果强制要求调用者必须进行处理，那么就使用受检异常，否则就选择非受检异常(RuntimeException)。一般来讲，如果没有特殊的要求，我们建议使用 RuntimeException 异常。</p>
-<h3 id="3-JVM-是如何处理异常的？"><a href="#3-JVM-是如何处理异常的？" class="headerlink" title="3. JVM 是如何处理异常的？"></a>3. JVM 是如何处理异常的？</h3><p>在一个方法中如果发生异常，这个方法会创建一个异常对象，并转交给 JVM，该异常对象包含异常名称，异常描述以及异常发生时应用程序的状态。创建异常对象并转交给 JVM 的过程称为抛出异常。可能有一系列的方法调用，最终才进入抛出异常的方法，这一系列方法调用的有序列表叫做调用栈。</p>
-<p>JVM 会顺着调用栈去查找看是否有可以处理异常的代码，如果有，则调用异常处理代码。当 JVM 发现可以处理异常的代码时，会把发生的异常传递给它。如果 JVM 没有找到可以处理该异常的代码块，JVM 就会将该异常转交给默认的异常处理器（默认处理器为 JVM 的一部分），默认异常处理器打印出异常信息并终止应用程序。</p>
-<h3 id="4-throw-和-throws-的区别是什么？"><a href="#4-throw-和-throws-的区别是什么？" class="headerlink" title="4. throw 和 throws 的区别是什么？"></a>4. throw 和 throws 的区别是什么？</h3><p>Java 中的异常处理除了包括捕获异常和处理异常之外，还包括声明异常和拋出异常，可以通过 throws 关键字在方法上声明该方法要拋出的异常，或者在方法内部通过 throw 拋出异常对象。</p>
-<p><strong>throws 关键字和 throw 关键字在使用上的几点区别如下</strong>：</p>
-<ul>
-<li>throw 关键字用在方法内部，只能用于抛出一种异常，用来抛出方法或代码块中的异常，受查异常和非受查异常都可以被抛出。</li>
-<li>throws 关键字用在方法声明上，可以抛出多个异常，用来标识该方法可能抛出的异常列表。一个方法用 throws 标识了可能抛出的异常列表，调用该方法的方法中必须包含可处理异常的代码，否则也要在方法签名中用 throws 关键字声明相应的异常。</li>
-</ul>
-<h3 id="5-try-catch-finally-中，如果-catch-中-return-了，finally-还会执行吗？"><a href="#5-try-catch-finally-中，如果-catch-中-return-了，finally-还会执行吗？" class="headerlink" title="5. try-catch-finally 中，如果 catch 中 return 了，finally 还会执行吗？"></a>5. try-catch-finally 中，如果 catch 中 return 了，finally 还会执行吗？</h3><p><strong>答：会执行，在 return 前执行。</strong></p>
-<p><strong>代码示例1：</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">getInt</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">10</span>;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        System.out.println(a / <span class="number">0</span>);</span><br><span class="line">        a = <span class="number">20</span>;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (ArithmeticException e) &#123;</span><br><span class="line">        a = <span class="number">30</span>;</span><br><span class="line">        <span class="keyword">return</span> a;	<span class="comment">// 不会直接return，先执行finally，finally执行过后回来执行return a</span></span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        a = <span class="number">40</span>;</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="keyword">return</span> a;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>执行结果：30</p>
-<p><strong>代码示例2：</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">getInt</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">10</span>;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        System.out.println(a / <span class="number">0</span>);</span><br><span class="line">        a = <span class="number">20</span>;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (ArithmeticException e) &#123;</span><br><span class="line">        a = <span class="number">30</span>;</span><br><span class="line">        <span class="keyword">return</span> a;	<span class="comment">// 不会直接return，先执行finally</span></span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        a = <span class="number">40</span>;</span><br><span class="line">        <span class="keyword">return</span> a;	<span class="comment">// finally中有return就直接return了</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>执行结果：40</p>
-<h3 id="6-类-ExampleA-继承-Exception，类-ExampleB-继承ExampleA。"><a href="#6-类-ExampleA-继承-Exception，类-ExampleB-继承ExampleA。" class="headerlink" title="6. 类 ExampleA 继承 Exception，类 ExampleB 继承ExampleA。"></a>6. 类 ExampleA 继承 Exception，类 ExampleB 继承ExampleA。</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ExceptionA</span> <span class="keyword">extends</span> <span class="title class_">Exception</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">ExceptionA</span><span class="params">(String message)</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>(message);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ExceptionB</span> <span class="keyword">extends</span> <span class="title class_">ExceptionA</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">ExceptionB</span><span class="params">(String message)</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>(message);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">  <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">ExceptionB</span>(<span class="string">&quot;a&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">catch</span> (ExceptionA ea) &#123;</span><br><span class="line">  System.out.println(<span class="string">&quot;ExceptionA&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">  System.out.println(<span class="string">&quot;Exception&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>输出：ExampleA。（根据里氏代换原则[能使用父类型的地方一定能使用子类型]，抓取 ExceptionA 类型异常的 catch 块能够抓住 try 块中抛出的 ExceptionB 类型的异常）</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">  <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">ExceptionB</span>(<span class="string">&quot;b&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">  System.out.println(<span class="string">&quot;Exception: &quot;</span> + e);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>输出：Exception: com.yaxing.demo.exceptiondemo.ExceptionB: b，仍会使用子类型。</p>
-<p>面试题 - 说出下面代码的运行结果。（此题的出处是《Java 编程思想》一书）</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Annoyance</span> <span class="keyword">extends</span> <span class="title class_">Exception</span> &#123;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Sneeze</span> <span class="keyword">extends</span> <span class="title class_">Annoyance</span> &#123;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Human</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception &#123;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			<span class="keyword">try</span> &#123;</span><br><span class="line">				<span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">Sneeze</span>();</span><br><span class="line">			&#125; <span class="keyword">catch</span> ( Annoyance a ) &#123;</span><br><span class="line">				System.out.println(<span class="string">&quot;Caught Annoyance&quot;</span>);</span><br><span class="line">				<span class="keyword">throw</span> a;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125; <span class="keyword">catch</span> ( Sneeze s ) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;Caught Sneeze&quot;</span>);</span><br><span class="line">			<span class="keyword">return</span> ;</span><br><span class="line">		&#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>结果</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Caught Annoyance</span><br><span class="line">Caught Sneeze</span><br><span class="line">Hello World!</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Java八股文</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>2022秋招总结</title>
-    <url>/2022-autumn-recruitment-summary.html</url>
-    <content><![CDATA[<p>19 年乘着人见人吹的计算机大热，跨考计算机一站未果，二战上岸本校计算机。</p>
-<p>研二暑期留校科研，很幸运做出来两篇文章，接下来可以去实习了。</p>
-<p>从 12 月到 2 月，断断续续复习 Java 后端开发所需的知识。</p>
-<p>从 2 月底找实习，4 月底入职字节跳动，8 月底离职返校，直到 11 月底（11.27）正式签订三方，过程坎坷，内心惆怅。</p>
-<p>秋招投了约 50 家公司，都是 Java 后端，主要有以下：</p>
-<span id="more"></span>
-
-<p>蚂蚁，二面挂</p>
-<p>中移苏研，第二批次，面试走完，没有收到体检</p>
-<p>浙商银行，面试走完，没有材料审核</p>
-<p>山石网科，hr 面挂</p>
-<p>荣耀，面试走完，口头谈薪</p>
-<p>上海银行，总行苏州 base，收到 offer</p>
-<p>苏州农行，收到体检</p>
-<p>字节跳动，转正 offer，sp</p>
-<p>总体而言，今年强的人还是能拿到多个大厂 offer，但是大厂门槛比年高了很多。在互联网颓势的今年，芯片、嵌入式成为香饽饽，薪资高、发展好，不少人甚至直呼赶紧转行（我有朋友在零基础情况下拿了五六家嵌入式中小厂的 offer）。</p>
-<p>关于 offer 选择，最终是考虑字节跳动 base 杭州，还有一个江苏省某地级市 top1 高中的信息技术老师（进编）的 offer。在考虑家庭情况、个人卷度承受度、稳定性，最终选择了做一名教师。</p>
-<p>未来的发展，大概率就是做一名普通的信息技术教师，有卷的心还有机会尝试加入学校带竞赛的队伍。</p>
-<p>不管什么 offer 选择，有得必定有失，十全十美的工作几乎没有。所以在进行 offer 选择时，如果没有明确的爱好想做的工作的话（比如我），那就好好综合考虑以上几点进行判断得出选择了。</p>
-<p>做出选择就好好冲吧，未来可期。大家都有光明的未来！</p>
-]]></content>
-      <categories>
-        <category>实习秋招</category>
-        <category>秋招</category>
       </categories>
   </entry>
   <entry>
@@ -1059,6 +990,75 @@
       </categories>
   </entry>
   <entry>
+    <title>Java八股文 - Java异常</title>
+    <url>/java-exception-error.html</url>
+    <content><![CDATA[<blockquote>
+<p>整理的Java异常相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～	<span id="more"></span></p>
+</blockquote>
+<h2 id="Java异常架构"><a href="#Java异常架构" class="headerlink" title="Java异常架构"></a>Java异常架构</h2><p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes20200314173417278.png" alt="Java异常架构"></p>
+<h3 id="1-Throwable"><a href="#1-Throwable" class="headerlink" title="1. Throwable"></a>1. Throwable</h3><p>Throwable 是 Java 语言中所有错误与异常的超类。</p>
+<p>Throwable 包含两个子类：Error（错误）和 Exception（异常），它们通常用于指示发生了异常情况。</p>
+<h3 id="2-Error（错误）"><a href="#2-Error（错误）" class="headerlink" title="2. Error（错误）"></a>2. Error（错误）</h3><p>Error 类及其子类。程序中无法处理的错误，表示运行应用程序中出现了严重的错误。</p>
+<p>非受检异常，一般表示代码运行时 JVM 出现问题。比如 OutOfMemoryError：内存不足错误；StackOverflowError：栈溢出错误。此类错误发生时，JVM 将终止线程。</p>
+<h3 id="3-Exception（异常）"><a href="#3-Exception（异常）" class="headerlink" title="3. Exception（异常）"></a>3. Exception（异常）</h3><p>程序本身可以捕获并且可以处理的异常。Exception 这种异常又分为两类：运行时异常和编译时异常。</p>
+<h4 id="运行时异常"><a href="#运行时异常" class="headerlink" title="运行时异常"></a>运行时异常</h4><p>Exception 中 RuntimeException 类及其子类，表示 JVM 在运行期间可能出现的异常。（非受检异常，编译时不会检查出异常，运行时会发生异常，需要对异常进行特殊处理，否则会发生逻辑错误）</p>
+<h4 id="编译时异常"><a href="#编译时异常" class="headerlink" title="编译时异常"></a>编译时异常</h4><p>Exception 中除 RuntimeException 及其子类之外的异常。（受检异常，编译时会检查到该异常 ）</p>
+<h2 id="Java异常关键字"><a href="#Java异常关键字" class="headerlink" title="Java异常关键字"></a>Java异常关键字</h2><p>• <strong>try</strong> – 用于监听。将要被监听的代（可能抛出异常的代码）放在 try 语句块之内，当 try 语句块内发生异常时，异常就被抛出。<br>• <strong>catch</strong> – 用于捕获异常。catch 用来捕获 try 语句块中发生的异常。<br>• <strong>finally</strong> – finally 语句块总是会被执行。它主要用于回收在 try 块里打开的资源(如数据库连接、网络连接和磁盘文件)。<br>• <strong>throw</strong> – 用于手动抛出 catch 到的异常。<br>• <strong>throws</strong> – 用在方法签名中，用于声明该方法可能抛出的异常，调用该方法的方法需要注意 catch 这个可能跑出的异常。</p>
+<h2 id="Java异常处理"><a href="#Java异常处理" class="headerlink" title="Java异常处理"></a>Java异常处理</h2><h3 id="直接抛出异常"><a href="#直接抛出异常" class="headerlink" title="直接抛出异常"></a>直接抛出异常</h3><p>通常，应该捕获那些知道如何处理的异常，将不知道如何处理的异常继续传递下去。传递异常可以在方法签名处使用 <strong>throws</strong> 关键字声明可能会抛出的异常。调用该方法的方法需要注意 catch 这个可能抛出的异常。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">readFile</span><span class="params">(String filePath)</span> <span class="keyword">throws</span> IOException &#123;</span><br><span class="line">    <span class="type">File</span> <span class="variable">file</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">File</span>(filePath);</span><br><span class="line">    String result;</span><br><span class="line">    <span class="type">BufferedReader</span> <span class="variable">reader</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BufferedReader</span>(<span class="keyword">new</span> <span class="title class_">FileReader</span>(file));</span><br><span class="line">    <span class="keyword">while</span>((result = reader.readLine())!=<span class="literal">null</span>) &#123;</span><br><span class="line">        System.out.println(result);</span><br><span class="line">    &#125;</span><br><span class="line">    reader.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="封装异常再抛出"><a href="#封装异常再抛出" class="headerlink" title="封装异常再抛出"></a>封装异常再抛出</h3><p>有时我们会从 catch 中抛出一个异常，目的是为了改变异常的类型。多用于在多系统集成时，当某个子系统故障，异常类型可能有多种，可以用统一的异常类型向外暴露，不需暴露太多内部异常细节。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">readFile</span><span class="params">(String filePath)</span> <span class="keyword">throws</span> MyException &#123;    </span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// code</span></span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">        <span class="type">MyException</span> <span class="variable">ex</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MyException</span>(<span class="string">&quot;read file failed.&quot;</span>);</span><br><span class="line">        ex.initCause(e);</span><br><span class="line">        <span class="keyword">throw</span> ex;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="捕获异常"><a href="#捕获异常" class="headerlink" title="捕获异常"></a>捕获异常</h3><p>在一个 try-catch 语句块中可以捕获多个异常类型，并对不同类型的异常做出不同的处理</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">readFile</span><span class="params">(String filePath)</span> &#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// code</span></span><br><span class="line">    &#125; <span class="keyword">catch</span> (FileNotFoundException e) &#123;</span><br><span class="line">        <span class="comment">// handle FileNotFoundException</span></span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e)&#123;</span><br><span class="line">        <span class="comment">// handle IOException</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>同一个 catch 也可以捕获多种类型异常，用 | 隔开</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">readFile</span><span class="params">(String filePath)</span> &#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// code</span></span><br><span class="line">    &#125; <span class="keyword">catch</span> (FileNotFoundException | UnknownHostException e) &#123;</span><br><span class="line">        <span class="comment">// handle FileNotFoundException or UnknownHostException</span></span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e)&#123;</span><br><span class="line">        <span class="comment">// handle IOException</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="自定义异常"><a href="#自定义异常" class="headerlink" title="自定义异常"></a>自定义异常</h3><p>习惯上，定义一个异常类应包含两个构造函数，一个无参构造函数和一个带有详细描述信息的构造函数（Throwable 的 toString 方法会打印这些详细信息，调试时很有用）</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyException</span> <span class="keyword">extends</span> <span class="title class_">Exception</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyException</span><span class="params">()</span>&#123; &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyException</span><span class="params">(String msg)</span>&#123;</span><br><span class="line">        <span class="built_in">super</span>(msg);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Java异常常见面试题"><a href="#Java异常常见面试题" class="headerlink" title="Java异常常见面试题"></a>Java异常常见面试题</h2><h3 id="1-Error-和-Exception-区别是什么？"><a href="#1-Error-和-Exception-区别是什么？" class="headerlink" title="1. Error 和 Exception 区别是什么？"></a>1. Error 和 Exception 区别是什么？</h3><p>Error 类型的错误通常为虚拟机相关错误，如系统崩溃，内存不足，堆栈溢出等，编译器不会对这类错误进行检测，Java 应用程序也不应对这类错误进行捕获，一旦这类错误发生，通常应用程序会被终止，仅靠应用程序本身无法恢复；</p>
+<p>Exception 类的错误是可以在应用程序中进行捕获并处理的，通常遇到这种错误，应对其进行处理，使应用程序可以继续正常运行。</p>
+<h3 id="2-运行时异常和一般异常-受检异常-区别是什么？"><a href="#2-运行时异常和一般异常-受检异常-区别是什么？" class="headerlink" title="2. 运行时异常和一般异常(受检异常)区别是什么？"></a>2. 运行时异常和一般异常(受检异常)区别是什么？</h3><p>运行时异常包括 RuntimeException 类及其子类，表示 JVM 在运行期间可能出现的异常。 Java 编译器不会检查运行时异常。</p>
+<p>受检异常是 Exception 中除 RuntimeException 及其子类之外的异常。 Java 编译器会检查受检异常。</p>
+<p><strong>RuntimeException异常和受检异常之间的区别</strong>：是否强制要求调用者必须处理此异常，如果强制要求调用者必须进行处理，那么就使用受检异常，否则就选择非受检异常(RuntimeException)。一般来讲，如果没有特殊的要求，我们建议使用 RuntimeException 异常。</p>
+<h3 id="3-JVM-是如何处理异常的？"><a href="#3-JVM-是如何处理异常的？" class="headerlink" title="3. JVM 是如何处理异常的？"></a>3. JVM 是如何处理异常的？</h3><p>在一个方法中如果发生异常，这个方法会创建一个异常对象，并转交给 JVM，该异常对象包含异常名称，异常描述以及异常发生时应用程序的状态。创建异常对象并转交给 JVM 的过程称为抛出异常。可能有一系列的方法调用，最终才进入抛出异常的方法，这一系列方法调用的有序列表叫做调用栈。</p>
+<p>JVM 会顺着调用栈去查找看是否有可以处理异常的代码，如果有，则调用异常处理代码。当 JVM 发现可以处理异常的代码时，会把发生的异常传递给它。如果 JVM 没有找到可以处理该异常的代码块，JVM 就会将该异常转交给默认的异常处理器（默认处理器为 JVM 的一部分），默认异常处理器打印出异常信息并终止应用程序。</p>
+<h3 id="4-throw-和-throws-的区别是什么？"><a href="#4-throw-和-throws-的区别是什么？" class="headerlink" title="4. throw 和 throws 的区别是什么？"></a>4. throw 和 throws 的区别是什么？</h3><p>Java 中的异常处理除了包括捕获异常和处理异常之外，还包括声明异常和拋出异常，可以通过 throws 关键字在方法上声明该方法要拋出的异常，或者在方法内部通过 throw 拋出异常对象。</p>
+<p><strong>throws 关键字和 throw 关键字在使用上的几点区别如下</strong>：</p>
+<ul>
+<li>throw 关键字用在方法内部，只能用于抛出一种异常，用来抛出方法或代码块中的异常，受查异常和非受查异常都可以被抛出。</li>
+<li>throws 关键字用在方法声明上，可以抛出多个异常，用来标识该方法可能抛出的异常列表。一个方法用 throws 标识了可能抛出的异常列表，调用该方法的方法中必须包含可处理异常的代码，否则也要在方法签名中用 throws 关键字声明相应的异常。</li>
+</ul>
+<h3 id="5-try-catch-finally-中，如果-catch-中-return-了，finally-还会执行吗？"><a href="#5-try-catch-finally-中，如果-catch-中-return-了，finally-还会执行吗？" class="headerlink" title="5. try-catch-finally 中，如果 catch 中 return 了，finally 还会执行吗？"></a>5. try-catch-finally 中，如果 catch 中 return 了，finally 还会执行吗？</h3><p><strong>答：会执行，在 return 前执行。</strong></p>
+<p><strong>代码示例1：</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">getInt</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">10</span>;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        System.out.println(a / <span class="number">0</span>);</span><br><span class="line">        a = <span class="number">20</span>;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (ArithmeticException e) &#123;</span><br><span class="line">        a = <span class="number">30</span>;</span><br><span class="line">        <span class="keyword">return</span> a;	<span class="comment">// 不会直接return，先执行finally，finally执行过后回来执行return a</span></span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        a = <span class="number">40</span>;</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="keyword">return</span> a;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>执行结果：30</p>
+<p><strong>代码示例2：</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">getInt</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">10</span>;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        System.out.println(a / <span class="number">0</span>);</span><br><span class="line">        a = <span class="number">20</span>;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (ArithmeticException e) &#123;</span><br><span class="line">        a = <span class="number">30</span>;</span><br><span class="line">        <span class="keyword">return</span> a;	<span class="comment">// 不会直接return，先执行finally</span></span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        a = <span class="number">40</span>;</span><br><span class="line">        <span class="keyword">return</span> a;	<span class="comment">// finally中有return就直接return了</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>执行结果：40</p>
+<h3 id="6-类-ExampleA-继承-Exception，类-ExampleB-继承ExampleA。"><a href="#6-类-ExampleA-继承-Exception，类-ExampleB-继承ExampleA。" class="headerlink" title="6. 类 ExampleA 继承 Exception，类 ExampleB 继承ExampleA。"></a>6. 类 ExampleA 继承 Exception，类 ExampleB 继承ExampleA。</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ExceptionA</span> <span class="keyword">extends</span> <span class="title class_">Exception</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">ExceptionA</span><span class="params">(String message)</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>(message);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ExceptionB</span> <span class="keyword">extends</span> <span class="title class_">ExceptionA</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">ExceptionB</span><span class="params">(String message)</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>(message);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">  <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">ExceptionB</span>(<span class="string">&quot;a&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">catch</span> (ExceptionA ea) &#123;</span><br><span class="line">  System.out.println(<span class="string">&quot;ExceptionA&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">  System.out.println(<span class="string">&quot;Exception&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>输出：ExampleA。（根据里氏代换原则[能使用父类型的地方一定能使用子类型]，抓取 ExceptionA 类型异常的 catch 块能够抓住 try 块中抛出的 ExceptionB 类型的异常）</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">  <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">ExceptionB</span>(<span class="string">&quot;b&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">  System.out.println(<span class="string">&quot;Exception: &quot;</span> + e);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>输出：Exception: com.yaxing.demo.exceptiondemo.ExceptionB: b，仍会使用子类型。</p>
+<p>面试题 - 说出下面代码的运行结果。（此题的出处是《Java 编程思想》一书）</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Annoyance</span> <span class="keyword">extends</span> <span class="title class_">Exception</span> &#123;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Sneeze</span> <span class="keyword">extends</span> <span class="title class_">Annoyance</span> &#123;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Human</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception &#123;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			<span class="keyword">try</span> &#123;</span><br><span class="line">				<span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">Sneeze</span>();</span><br><span class="line">			&#125; <span class="keyword">catch</span> ( Annoyance a ) &#123;</span><br><span class="line">				System.out.println(<span class="string">&quot;Caught Annoyance&quot;</span>);</span><br><span class="line">				<span class="keyword">throw</span> a;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125; <span class="keyword">catch</span> ( Sneeze s ) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;Caught Sneeze&quot;</span>);</span><br><span class="line">			<span class="keyword">return</span> ;</span><br><span class="line">		&#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>结果</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Caught Annoyance</span><br><span class="line">Caught Sneeze</span><br><span class="line">Hello World!</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Java八股文</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Java八股文 - MyBatis</title>
     <url>/java-mybatis.html</url>
     <content><![CDATA[<blockquote>
@@ -1160,102 +1160,6 @@
 <li>通过注解绑定，就是在接口的方法上面加上 @Select、@Update 等注解，里面包含 Sql 语句来绑定；</li>
 <li>通过 xml 里面写 SQL 来绑定, 在这种情况下,要指定 xml 映射文件里面的 namespace 必须为接口的全路径名。当 Sql 语句比较简单时候,用注解绑定, 当 SQL 语句比较复杂时候,用 xml 绑定,一般用 xml 绑定的比较多。</li>
 </ol>
-]]></content>
-      <categories>
-        <category>Java八股文</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Java八股文 - SpringMVC</title>
-    <url>/java-springmvc.html</url>
-    <content><![CDATA[<blockquote>
-<p>整理的SpringMVC相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～<span id="more"></span></p>
-</blockquote>
-<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><h3 id="什么是Spring-MVC？简单介绍下你对Spring-MVC的理解？"><a href="#什么是Spring-MVC？简单介绍下你对Spring-MVC的理解？" class="headerlink" title="什么是Spring MVC？简单介绍下你对Spring MVC的理解？"></a>什么是Spring MVC？简单介绍下你对Spring MVC的理解？</h3><p>Spring MVC 是一个基于 Java 的实现了 MVC 设计模式的请求驱动类型的轻量级 Web 框架，通过把模型-视图-控制器分离，将 web 层进行职责解耦，简化开发。</p>
-<h2 id="核心组件"><a href="#核心组件" class="headerlink" title="核心组件"></a>核心组件</h2><h3 id="Spring-MVC的主要组件？"><a href="#Spring-MVC的主要组件？" class="headerlink" title="Spring MVC的主要组件？"></a>Spring MVC的主要组件？</h3><p>（1）前端控制器 DispatcherServlet（不需要程序员开发）</p>
-<p>作用：接收请求、响应结果，相当于转发器，有了 DispatcherServlet 就减少了其它组件之间的耦合度。</p>
-<p>（2）处理器映射器 HandlerMapping（不需要程序员开发）</p>
-<p>作用：根据请求的 URL 来查找 Handler</p>
-<p>（3）处理器适配器 HandlerAdapter</p>
-<p>注意：在编写 Handler 的时候要按照 HandlerAdapter 要求的规则去编写，这样适配器 HandlerAdapter 才可以正确的去执行 Handler。</p>
-<p>（4）处理器 Handler（需要程序员开发）</p>
-<p>（5）视图解析器 ViewResolver（不需要程序员开发）</p>
-<p>作用：进行视图的解析，根据视图逻辑名解析成真正的视图（view）</p>
-<p>（6）视图 View（需要程序员开发 jsp）</p>
-<p>View 是一个接口， 它的实现类支持不同的视图类型（jsp，freemarker，pdf 等等）</p>
-<h3 id="什么是DispatcherServlet"><a href="#什么是DispatcherServlet" class="headerlink" title="什么是DispatcherServlet"></a>什么是DispatcherServlet</h3><p>Spring 的 MVC 框架是围绕 DispatcherServlet 来设计的，它用来处理所有的 HTTP 请求和响应。</p>
-<h3 id="什么是Spring-MVC框架的控制器？"><a href="#什么是Spring-MVC框架的控制器？" class="headerlink" title="什么是Spring MVC框架的控制器？"></a>什么是Spring MVC框架的控制器？</h3><p>控制器使用@Controller 注解，并且提供了@RequestMapping 注解，通过解析 url 中的路径，可以找到相应的控制器进行逻辑处理，响应数据等。</p>
-<h3 id="Spring-MVC的控制器是不是单例模式-如果是-有什么问题-怎么解决？"><a href="#Spring-MVC的控制器是不是单例模式-如果是-有什么问题-怎么解决？" class="headerlink" title="Spring MVC的控制器是不是单例模式,如果是,有什么问题,怎么解决？"></a>Spring MVC的控制器是不是单例模式,如果是,有什么问题,怎么解决？</h3><p>单例模式,所以在多线程访问的时候有线程安全问题,不要用同步,会影响性能的，解决方案是在控制器保持控制器无状态（不要写字段）。</p>
-<h2 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h2><h3 id="请描述Spring-MVC的工作流程？描述一下-DispatcherServlet-的工作流程？"><a href="#请描述Spring-MVC的工作流程？描述一下-DispatcherServlet-的工作流程？" class="headerlink" title="请描述Spring MVC的工作流程？描述一下 DispatcherServlet 的工作流程？"></a>请描述Spring MVC的工作流程？描述一下 DispatcherServlet 的工作流程？</h3><ol>
-<li>用户发送请求至前端控制器 DispatcherServlet；</li>
-<li>DispatcherServlet 收到请求后，调用 HandlerMapping 处理器映射器，请求获取 Handler；</li>
-<li>HandlerMapping 处理器映射器根据请求 url<strong>找到具体的处理器</strong>，生成处理器对象及处理器拦截器(如果有则生成)一并返回给 DispatcherServlet；</li>
-<li>DispatcherServlet 调用 HandlerAdapter 处理器适配器；</li>
-<li>HandlerAdapter 经过适配 <strong>调用具体处理器</strong>(Handler，也叫后端控制器)；</li>
-<li>Handler 执行完成返回 ModelAndView；</li>
-<li>HandlerAdapter 将 Handler 执行结果 ModelAndView 返回给 DispatcherServlet；</li>
-<li>DispatcherServlet 将 ModelAndView 传给 ViewResolver 视图解析器进行解析；</li>
-<li>ViewResolver 解析后返回具体 View；</li>
-<li>DispatcherServlet 对 View 进行渲染成为视图（即将模型数据填充至视图中）；</li>
-<li>DispatcherServlet 响应用户。</li>
-</ol>
-<p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes20200208211439106.png" alt="Spring MVC的工作流程"></p>
-<h2 id="常用注解"><a href="#常用注解" class="headerlink" title="常用注解"></a>常用注解</h2><h3 id="注解原理是什么"><a href="#注解原理是什么" class="headerlink" title="注解原理是什么"></a>注解原理是什么</h3><p>注解本质是一个继承了 Annotation 的特殊接口，其具体实现类是 Java 运行时生成的动态代理类。我们通过反射获取注解时，返回的是 Java 运行时生成的动态代理对象。通过代理对象调用自定义注解的方法。</p>
-<h3 id="Spring-MVC常用的注解有哪些？"><a href="#Spring-MVC常用的注解有哪些？" class="headerlink" title="Spring MVC常用的注解有哪些？"></a>Spring MVC常用的注解有哪些？</h3><p>@RequestMapping：用于处理请求 url 映射的注解，可用于类或方法上。用于类上，则表示类中的所有响应请求的方法都是以该地址作为父路径。</p>
-<p>@RequestBody：注解实现接收 http 请求的 json 数据，将 json 转换为 java 对象。</p>
-<p>@ResponseBody：注解实现将 controller 方法返回对象转化为 json 对象响应给客户。</p>
-<h3 id="Sping-MVC中的控制器的注解一般用哪个-有没有别的注解可以替代？"><a href="#Sping-MVC中的控制器的注解一般用哪个-有没有别的注解可以替代？" class="headerlink" title="Sping MVC中的控制器的注解一般用哪个,有没有别的注解可以替代？"></a>Sping MVC中的控制器的注解一般用哪个,有没有别的注解可以替代？</h3><p>答：一般用@Controller 注解，也可以使用@RestController，@RestController 注解相当于@ResponseBody ＋ @Controller，@ResponseBody 用于返回 json 数据＋ @Controller 用于表明控制器</p>
-<h3 id="Controller注解的作用"><a href="#Controller注解的作用" class="headerlink" title="@Controller注解的作用"></a>@Controller注解的作用</h3><p>@Controller 用于标记在一个类上，使用它标记的类就是一个 Spring MVC Controller 对象。通过请求的 url 和@RequestMapping 注解对应到实际处理请求的处理器。需要开启 mvc 注解扫描找到@Controller 的控制器。</p>
-<h3 id="RequestMapping注解的作用"><a href="#RequestMapping注解的作用" class="headerlink" title="@RequestMapping注解的作用"></a>@RequestMapping注解的作用</h3><p>RequestMapping 是一个用来处理请求地址映射的注解，可用于类或方法上。</p>
-<p>用于类上，表示类中的所有响应请求的方法都是以该地址作为父路径。</p>
-<p>RequestMapping 注解有六个属性：</p>
-<p><strong>path&#x2F;value， method</strong></p>
-<ul>
-<li><p>value： 指定请求的实际地址，指定的地址可以是 URI Template 模式（后面将会说明）；</p>
-</li>
-<li><p>method： 指定请求的 method 类型， GET、POST、PUT、DELETE 等；</p>
-</li>
-</ul>
-<p><strong>consumes，produces</strong></p>
-<ul>
-<li><p>consumes： 指定处理请求的提交内容类型（Content-Type），例如 application&#x2F;json, text&#x2F;html;</p>
-</li>
-<li><p>produces: 指定返回的内容类型，仅当 request 请求头中的(Accept)类型中包含该指定类型才返回；</p>
-</li>
-</ul>
-<p><strong>params，headers</strong></p>
-<ul>
-<li><p>params： 指定 request 中必须包含某些参数值时，才让该方法处理。</p>
-</li>
-<li><p>headers： 指定 request 中必须包含某些指定的 header 值，才能让该方法处理请求。</p>
-</li>
-</ul>
-<h3 id="PathVariable和-RequestParam的区别"><a href="#PathVariable和-RequestParam的区别" class="headerlink" title="@PathVariable和@RequestParam的区别"></a>@PathVariable和@RequestParam的区别</h3><p>@PathVariable 作用： 用于绑定 url 中的占位符。例如：请求 url 中 &#x2F;delete&#x2F;{id}，这个{id}就是 url 占位符。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 根据path /anno/testPathVariable/10 找到 testPathVariable 方法</span></span><br><span class="line"><span class="comment">* 然后，其中的10就是sid占位符所占的位置的数据，然后通过<span class="doctag">@PathVaribale</span>注解将其赋值给 id</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">@RequestMapping(path = &quot;testPathVariable/&#123;sid&#125;&quot;)</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">testPathVariable</span><span class="params">(<span class="meta">@PathVariable(value = &quot;sid&quot;)</span> String id)</span> &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;执行了testPathVariable...&quot;</span>);</span><br><span class="line">    System.out.println(id);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;success&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>@RequestParam 作用： 把请求中指定名称的参数给控制器中的形参赋值。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Controller中的代码：</span></span><br><span class="line"><span class="meta">@RequestMapping(path = &quot;/testRequestParam&quot;)</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">testRequestParam</span><span class="params">(<span class="meta">@RequestParam(value = &quot;name&quot;)</span> String username)</span> &#123;</span><br><span class="line">    <span class="comment">// 把请求中指定的name赋值给控制器中的形参username</span></span><br><span class="line">    System.out.println(<span class="string">&quot;执行了testRequestParam...&quot;</span>);</span><br><span class="line">    System.out.println(username);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;success&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="Spring-MVC怎么样设定转发和重定向的？"><a href="#Spring-MVC怎么样设定转发和重定向的？" class="headerlink" title="Spring MVC怎么样设定转发和重定向的？"></a>Spring MVC怎么样设定转发和重定向的？</h3><p>（1）转发：使用 forward<br>forward 是指内部转发，相当于服务器内部方法跳转调用。请求一次服务器。转发地址不变。</p>
-<p>（2）重定向：使用 redirect<br>重定向是指当浏览器请求一个 URL 时，服务器返回一个重定向指令，告诉浏览器地址已经变了，麻烦使用新的 URL 再重新发送新请求。请求两次服务器。重定向地址改变。</p>
-<h3 id="Spring-MVC怎么和AJAX相互调用的？"><a href="#Spring-MVC怎么和AJAX相互调用的？" class="headerlink" title="Spring MVC怎么和AJAX相互调用的？"></a>Spring MVC怎么和AJAX相互调用的？</h3><p>通过 Jackson 或者是 fastjson 就可以把 Java 里面的对象直接转化成 Js 可以识别的 Json 对象，来进行传输。</p>
-<h3 id="如何解决POST请求中文乱码问题，GET的又如何处理呢？"><a href="#如何解决POST请求中文乱码问题，GET的又如何处理呢？" class="headerlink" title="如何解决POST请求中文乱码问题，GET的又如何处理呢？"></a>如何解决POST请求中文乱码问题，GET的又如何处理呢？</h3><p>（1）解决 post 请求乱码问题：</p>
-<p>在 web.xml 中配置一个 CharacterEncodingFilter 过滤器，设置成 utf-8；</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">filter</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-class</span>&gt;</span>org.springframework.web.filter.CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-class</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">init-param</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-name</span>&gt;</span>encoding<span class="tag">&lt;/<span class="name">param-name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-value</span>&gt;</span>utf-8<span class="tag">&lt;/<span class="name">param-value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">init-param</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">filter</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">filter-mapping</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/*<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">filter-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>（2）get 请求中文参数出现乱码解决方法有两个：</p>
-<p>修改 tomcat 配置文件添加编码与工程编码一致，如下：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">&lt;ConnectorURIEncoding=&quot;utf-8&quot; connectionTimeout=&quot;20000&quot; port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot; redirectPort=&quot;8443&quot;/&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="Spring-MVC的异常处理"><a href="#Spring-MVC的异常处理" class="headerlink" title="Spring MVC的异常处理"></a>Spring MVC的异常处理</h3><p>可以将异常抛给 Spring 框架，由 Spring 框架来处理；我们只需要配置简单的异常处理器，在异常处理器中添视图页面即可。</p>
-<h3 id="如果在拦截请求中，我想拦截get方式提交的方法-怎么配置"><a href="#如果在拦截请求中，我想拦截get方式提交的方法-怎么配置" class="headerlink" title="如果在拦截请求中，我想拦截get方式提交的方法,怎么配置"></a>如果在拦截请求中，我想拦截get方式提交的方法,怎么配置</h3><p>答：可以在@RequestMapping 注解里面加上 method&#x3D;RequestMethod.GET。</p>
-<h3 id="怎样在方法里面得到Request-或者Session？"><a href="#怎样在方法里面得到Request-或者Session？" class="headerlink" title="怎样在方法里面得到Request,或者Session？"></a>怎样在方法里面得到Request,或者Session？</h3><p>答：直接在方法的形参中声明 request,Spring MVC 就自动把 request 对象传入。</p>
-<h3 id="如果想在拦截的方法里面得到从前台传入的参数-怎么得到？"><a href="#如果想在拦截的方法里面得到从前台传入的参数-怎么得到？" class="headerlink" title="如果想在拦截的方法里面得到从前台传入的参数,怎么得到？"></a>如果想在拦截的方法里面得到从前台传入的参数,怎么得到？</h3><p>直接在形参里面声明这个参数就可以,但必须名字和传过来的参数一样。<br>或者使用 RequestParam 注解将前台的参数名 A 传给形参中的参数 B</p>
-<h3 id="如果前台有很多个参数传入-并且这些参数都是一个对象的-那么怎么样快速得到这个对象？"><a href="#如果前台有很多个参数传入-并且这些参数都是一个对象的-那么怎么样快速得到这个对象？" class="headerlink" title="如果前台有很多个参数传入,并且这些参数都是一个对象的,那么怎么样快速得到这个对象？"></a>如果前台有很多个参数传入,并且这些参数都是一个对象的,那么怎么样快速得到这个对象？</h3><p>直接在方法中声明这个对象,Spring MVC 就自动会把属性赋值到这个对象里面。</p>
-<h3 id="Spring-MVC中函数的返回值是什么？"><a href="#Spring-MVC中函数的返回值是什么？" class="headerlink" title="Spring MVC中函数的返回值是什么？"></a>Spring MVC中函数的返回值是什么？</h3><p>返回值可以有很多类型,有 String, ModelAndView（视图和数据合并在一起）。</p>
-<h3 id="Spring-MVC用什么对象从后台向前台传递数据的？"><a href="#Spring-MVC用什么对象从后台向前台传递数据的？" class="headerlink" title="Spring MVC用什么对象从后台向前台传递数据的？"></a>Spring MVC用什么对象从后台向前台传递数据的？</h3><p>通过 ModelMap 对象,可以在这个对象里面调用 put 方法,把对象加到里面,前台就可以通过 el 表达式拿到。</p>
-<h3 id="怎么样把ModelMap里面的数据放入Session里面？"><a href="#怎么样把ModelMap里面的数据放入Session里面？" class="headerlink" title="怎么样把ModelMap里面的数据放入Session里面？"></a>怎么样把ModelMap里面的数据放入Session里面？</h3><p>可以在类上面加上@SessionAttributes 注解,里面包含的字符串就是要放入 session 里面的 key。</p>
-<h3 id="Spring-MVC里面拦截器是怎么写的"><a href="#Spring-MVC里面拦截器是怎么写的" class="headerlink" title="Spring MVC里面拦截器是怎么写的"></a>Spring MVC里面拦截器是怎么写的</h3><p>有两种写法,一种是实现 HandlerInterceptor 接口，重写 prehandle 等方法，然后配置拦截器</p>
 ]]></content>
       <categories>
         <category>Java八股文</category>
@@ -1550,6 +1454,102 @@
 <p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotesaHR0cHM6Ly91c2VyLWdvbGQtY2RuLnhpdHUuaW8vMjAxOC84LzIzLzE2NTY2NzdhNmYwMDhiZTQ.png" alt="JDK1.7的ConcurrentHashMap分段锁"></p>
 <p>JDK1.8 的 ConcurrentHashMap（TreeBin: 红黑二叉树节点 Node: 链表节点）：</p>
 <p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotesaHR0cHM6Ly91c2VyLWdvbGQtY2RuLnhpdHUuaW8vMjAxOC84LzIzLzE2NTY2NzdhNmYxNGUwMzk.png" alt="JDK1.8的ConcurrentHashMap分段锁"></p>
+]]></content>
+      <categories>
+        <category>Java八股文</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Java八股文 - SpringMVC</title>
+    <url>/java-springmvc.html</url>
+    <content><![CDATA[<blockquote>
+<p>整理的SpringMVC相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～<span id="more"></span></p>
+</blockquote>
+<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><h3 id="什么是Spring-MVC？简单介绍下你对Spring-MVC的理解？"><a href="#什么是Spring-MVC？简单介绍下你对Spring-MVC的理解？" class="headerlink" title="什么是Spring MVC？简单介绍下你对Spring MVC的理解？"></a>什么是Spring MVC？简单介绍下你对Spring MVC的理解？</h3><p>Spring MVC 是一个基于 Java 的实现了 MVC 设计模式的请求驱动类型的轻量级 Web 框架，通过把模型-视图-控制器分离，将 web 层进行职责解耦，简化开发。</p>
+<h2 id="核心组件"><a href="#核心组件" class="headerlink" title="核心组件"></a>核心组件</h2><h3 id="Spring-MVC的主要组件？"><a href="#Spring-MVC的主要组件？" class="headerlink" title="Spring MVC的主要组件？"></a>Spring MVC的主要组件？</h3><p>（1）前端控制器 DispatcherServlet（不需要程序员开发）</p>
+<p>作用：接收请求、响应结果，相当于转发器，有了 DispatcherServlet 就减少了其它组件之间的耦合度。</p>
+<p>（2）处理器映射器 HandlerMapping（不需要程序员开发）</p>
+<p>作用：根据请求的 URL 来查找 Handler</p>
+<p>（3）处理器适配器 HandlerAdapter</p>
+<p>注意：在编写 Handler 的时候要按照 HandlerAdapter 要求的规则去编写，这样适配器 HandlerAdapter 才可以正确的去执行 Handler。</p>
+<p>（4）处理器 Handler（需要程序员开发）</p>
+<p>（5）视图解析器 ViewResolver（不需要程序员开发）</p>
+<p>作用：进行视图的解析，根据视图逻辑名解析成真正的视图（view）</p>
+<p>（6）视图 View（需要程序员开发 jsp）</p>
+<p>View 是一个接口， 它的实现类支持不同的视图类型（jsp，freemarker，pdf 等等）</p>
+<h3 id="什么是DispatcherServlet"><a href="#什么是DispatcherServlet" class="headerlink" title="什么是DispatcherServlet"></a>什么是DispatcherServlet</h3><p>Spring 的 MVC 框架是围绕 DispatcherServlet 来设计的，它用来处理所有的 HTTP 请求和响应。</p>
+<h3 id="什么是Spring-MVC框架的控制器？"><a href="#什么是Spring-MVC框架的控制器？" class="headerlink" title="什么是Spring MVC框架的控制器？"></a>什么是Spring MVC框架的控制器？</h3><p>控制器使用@Controller 注解，并且提供了@RequestMapping 注解，通过解析 url 中的路径，可以找到相应的控制器进行逻辑处理，响应数据等。</p>
+<h3 id="Spring-MVC的控制器是不是单例模式-如果是-有什么问题-怎么解决？"><a href="#Spring-MVC的控制器是不是单例模式-如果是-有什么问题-怎么解决？" class="headerlink" title="Spring MVC的控制器是不是单例模式,如果是,有什么问题,怎么解决？"></a>Spring MVC的控制器是不是单例模式,如果是,有什么问题,怎么解决？</h3><p>单例模式,所以在多线程访问的时候有线程安全问题,不要用同步,会影响性能的，解决方案是在控制器保持控制器无状态（不要写字段）。</p>
+<h2 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h2><h3 id="请描述Spring-MVC的工作流程？描述一下-DispatcherServlet-的工作流程？"><a href="#请描述Spring-MVC的工作流程？描述一下-DispatcherServlet-的工作流程？" class="headerlink" title="请描述Spring MVC的工作流程？描述一下 DispatcherServlet 的工作流程？"></a>请描述Spring MVC的工作流程？描述一下 DispatcherServlet 的工作流程？</h3><ol>
+<li>用户发送请求至前端控制器 DispatcherServlet；</li>
+<li>DispatcherServlet 收到请求后，调用 HandlerMapping 处理器映射器，请求获取 Handler；</li>
+<li>HandlerMapping 处理器映射器根据请求 url<strong>找到具体的处理器</strong>，生成处理器对象及处理器拦截器(如果有则生成)一并返回给 DispatcherServlet；</li>
+<li>DispatcherServlet 调用 HandlerAdapter 处理器适配器；</li>
+<li>HandlerAdapter 经过适配 <strong>调用具体处理器</strong>(Handler，也叫后端控制器)；</li>
+<li>Handler 执行完成返回 ModelAndView；</li>
+<li>HandlerAdapter 将 Handler 执行结果 ModelAndView 返回给 DispatcherServlet；</li>
+<li>DispatcherServlet 将 ModelAndView 传给 ViewResolver 视图解析器进行解析；</li>
+<li>ViewResolver 解析后返回具体 View；</li>
+<li>DispatcherServlet 对 View 进行渲染成为视图（即将模型数据填充至视图中）；</li>
+<li>DispatcherServlet 响应用户。</li>
+</ol>
+<p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes20200208211439106.png" alt="Spring MVC的工作流程"></p>
+<h2 id="常用注解"><a href="#常用注解" class="headerlink" title="常用注解"></a>常用注解</h2><h3 id="注解原理是什么"><a href="#注解原理是什么" class="headerlink" title="注解原理是什么"></a>注解原理是什么</h3><p>注解本质是一个继承了 Annotation 的特殊接口，其具体实现类是 Java 运行时生成的动态代理类。我们通过反射获取注解时，返回的是 Java 运行时生成的动态代理对象。通过代理对象调用自定义注解的方法。</p>
+<h3 id="Spring-MVC常用的注解有哪些？"><a href="#Spring-MVC常用的注解有哪些？" class="headerlink" title="Spring MVC常用的注解有哪些？"></a>Spring MVC常用的注解有哪些？</h3><p>@RequestMapping：用于处理请求 url 映射的注解，可用于类或方法上。用于类上，则表示类中的所有响应请求的方法都是以该地址作为父路径。</p>
+<p>@RequestBody：注解实现接收 http 请求的 json 数据，将 json 转换为 java 对象。</p>
+<p>@ResponseBody：注解实现将 controller 方法返回对象转化为 json 对象响应给客户。</p>
+<h3 id="Sping-MVC中的控制器的注解一般用哪个-有没有别的注解可以替代？"><a href="#Sping-MVC中的控制器的注解一般用哪个-有没有别的注解可以替代？" class="headerlink" title="Sping MVC中的控制器的注解一般用哪个,有没有别的注解可以替代？"></a>Sping MVC中的控制器的注解一般用哪个,有没有别的注解可以替代？</h3><p>答：一般用@Controller 注解，也可以使用@RestController，@RestController 注解相当于@ResponseBody ＋ @Controller，@ResponseBody 用于返回 json 数据＋ @Controller 用于表明控制器</p>
+<h3 id="Controller注解的作用"><a href="#Controller注解的作用" class="headerlink" title="@Controller注解的作用"></a>@Controller注解的作用</h3><p>@Controller 用于标记在一个类上，使用它标记的类就是一个 Spring MVC Controller 对象。通过请求的 url 和@RequestMapping 注解对应到实际处理请求的处理器。需要开启 mvc 注解扫描找到@Controller 的控制器。</p>
+<h3 id="RequestMapping注解的作用"><a href="#RequestMapping注解的作用" class="headerlink" title="@RequestMapping注解的作用"></a>@RequestMapping注解的作用</h3><p>RequestMapping 是一个用来处理请求地址映射的注解，可用于类或方法上。</p>
+<p>用于类上，表示类中的所有响应请求的方法都是以该地址作为父路径。</p>
+<p>RequestMapping 注解有六个属性：</p>
+<p><strong>path&#x2F;value， method</strong></p>
+<ul>
+<li><p>value： 指定请求的实际地址，指定的地址可以是 URI Template 模式（后面将会说明）；</p>
+</li>
+<li><p>method： 指定请求的 method 类型， GET、POST、PUT、DELETE 等；</p>
+</li>
+</ul>
+<p><strong>consumes，produces</strong></p>
+<ul>
+<li><p>consumes： 指定处理请求的提交内容类型（Content-Type），例如 application&#x2F;json, text&#x2F;html;</p>
+</li>
+<li><p>produces: 指定返回的内容类型，仅当 request 请求头中的(Accept)类型中包含该指定类型才返回；</p>
+</li>
+</ul>
+<p><strong>params，headers</strong></p>
+<ul>
+<li><p>params： 指定 request 中必须包含某些参数值时，才让该方法处理。</p>
+</li>
+<li><p>headers： 指定 request 中必须包含某些指定的 header 值，才能让该方法处理请求。</p>
+</li>
+</ul>
+<h3 id="PathVariable和-RequestParam的区别"><a href="#PathVariable和-RequestParam的区别" class="headerlink" title="@PathVariable和@RequestParam的区别"></a>@PathVariable和@RequestParam的区别</h3><p>@PathVariable 作用： 用于绑定 url 中的占位符。例如：请求 url 中 &#x2F;delete&#x2F;{id}，这个{id}就是 url 占位符。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 根据path /anno/testPathVariable/10 找到 testPathVariable 方法</span></span><br><span class="line"><span class="comment">* 然后，其中的10就是sid占位符所占的位置的数据，然后通过<span class="doctag">@PathVaribale</span>注解将其赋值给 id</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">@RequestMapping(path = &quot;testPathVariable/&#123;sid&#125;&quot;)</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">testPathVariable</span><span class="params">(<span class="meta">@PathVariable(value = &quot;sid&quot;)</span> String id)</span> &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;执行了testPathVariable...&quot;</span>);</span><br><span class="line">    System.out.println(id);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;success&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>@RequestParam 作用： 把请求中指定名称的参数给控制器中的形参赋值。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Controller中的代码：</span></span><br><span class="line"><span class="meta">@RequestMapping(path = &quot;/testRequestParam&quot;)</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">testRequestParam</span><span class="params">(<span class="meta">@RequestParam(value = &quot;name&quot;)</span> String username)</span> &#123;</span><br><span class="line">    <span class="comment">// 把请求中指定的name赋值给控制器中的形参username</span></span><br><span class="line">    System.out.println(<span class="string">&quot;执行了testRequestParam...&quot;</span>);</span><br><span class="line">    System.out.println(username);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;success&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="Spring-MVC怎么样设定转发和重定向的？"><a href="#Spring-MVC怎么样设定转发和重定向的？" class="headerlink" title="Spring MVC怎么样设定转发和重定向的？"></a>Spring MVC怎么样设定转发和重定向的？</h3><p>（1）转发：使用 forward<br>forward 是指内部转发，相当于服务器内部方法跳转调用。请求一次服务器。转发地址不变。</p>
+<p>（2）重定向：使用 redirect<br>重定向是指当浏览器请求一个 URL 时，服务器返回一个重定向指令，告诉浏览器地址已经变了，麻烦使用新的 URL 再重新发送新请求。请求两次服务器。重定向地址改变。</p>
+<h3 id="Spring-MVC怎么和AJAX相互调用的？"><a href="#Spring-MVC怎么和AJAX相互调用的？" class="headerlink" title="Spring MVC怎么和AJAX相互调用的？"></a>Spring MVC怎么和AJAX相互调用的？</h3><p>通过 Jackson 或者是 fastjson 就可以把 Java 里面的对象直接转化成 Js 可以识别的 Json 对象，来进行传输。</p>
+<h3 id="如何解决POST请求中文乱码问题，GET的又如何处理呢？"><a href="#如何解决POST请求中文乱码问题，GET的又如何处理呢？" class="headerlink" title="如何解决POST请求中文乱码问题，GET的又如何处理呢？"></a>如何解决POST请求中文乱码问题，GET的又如何处理呢？</h3><p>（1）解决 post 请求乱码问题：</p>
+<p>在 web.xml 中配置一个 CharacterEncodingFilter 过滤器，设置成 utf-8；</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">filter</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-class</span>&gt;</span>org.springframework.web.filter.CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-class</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">init-param</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-name</span>&gt;</span>encoding<span class="tag">&lt;/<span class="name">param-name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-value</span>&gt;</span>utf-8<span class="tag">&lt;/<span class="name">param-value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">init-param</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">filter</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">filter-mapping</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/*<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">filter-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>（2）get 请求中文参数出现乱码解决方法有两个：</p>
+<p>修改 tomcat 配置文件添加编码与工程编码一致，如下：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">&lt;ConnectorURIEncoding=&quot;utf-8&quot; connectionTimeout=&quot;20000&quot; port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot; redirectPort=&quot;8443&quot;/&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Spring-MVC的异常处理"><a href="#Spring-MVC的异常处理" class="headerlink" title="Spring MVC的异常处理"></a>Spring MVC的异常处理</h3><p>可以将异常抛给 Spring 框架，由 Spring 框架来处理；我们只需要配置简单的异常处理器，在异常处理器中添视图页面即可。</p>
+<h3 id="如果在拦截请求中，我想拦截get方式提交的方法-怎么配置"><a href="#如果在拦截请求中，我想拦截get方式提交的方法-怎么配置" class="headerlink" title="如果在拦截请求中，我想拦截get方式提交的方法,怎么配置"></a>如果在拦截请求中，我想拦截get方式提交的方法,怎么配置</h3><p>答：可以在@RequestMapping 注解里面加上 method&#x3D;RequestMethod.GET。</p>
+<h3 id="怎样在方法里面得到Request-或者Session？"><a href="#怎样在方法里面得到Request-或者Session？" class="headerlink" title="怎样在方法里面得到Request,或者Session？"></a>怎样在方法里面得到Request,或者Session？</h3><p>答：直接在方法的形参中声明 request,Spring MVC 就自动把 request 对象传入。</p>
+<h3 id="如果想在拦截的方法里面得到从前台传入的参数-怎么得到？"><a href="#如果想在拦截的方法里面得到从前台传入的参数-怎么得到？" class="headerlink" title="如果想在拦截的方法里面得到从前台传入的参数,怎么得到？"></a>如果想在拦截的方法里面得到从前台传入的参数,怎么得到？</h3><p>直接在形参里面声明这个参数就可以,但必须名字和传过来的参数一样。<br>或者使用 RequestParam 注解将前台的参数名 A 传给形参中的参数 B</p>
+<h3 id="如果前台有很多个参数传入-并且这些参数都是一个对象的-那么怎么样快速得到这个对象？"><a href="#如果前台有很多个参数传入-并且这些参数都是一个对象的-那么怎么样快速得到这个对象？" class="headerlink" title="如果前台有很多个参数传入,并且这些参数都是一个对象的,那么怎么样快速得到这个对象？"></a>如果前台有很多个参数传入,并且这些参数都是一个对象的,那么怎么样快速得到这个对象？</h3><p>直接在方法中声明这个对象,Spring MVC 就自动会把属性赋值到这个对象里面。</p>
+<h3 id="Spring-MVC中函数的返回值是什么？"><a href="#Spring-MVC中函数的返回值是什么？" class="headerlink" title="Spring MVC中函数的返回值是什么？"></a>Spring MVC中函数的返回值是什么？</h3><p>返回值可以有很多类型,有 String, ModelAndView（视图和数据合并在一起）。</p>
+<h3 id="Spring-MVC用什么对象从后台向前台传递数据的？"><a href="#Spring-MVC用什么对象从后台向前台传递数据的？" class="headerlink" title="Spring MVC用什么对象从后台向前台传递数据的？"></a>Spring MVC用什么对象从后台向前台传递数据的？</h3><p>通过 ModelMap 对象,可以在这个对象里面调用 put 方法,把对象加到里面,前台就可以通过 el 表达式拿到。</p>
+<h3 id="怎么样把ModelMap里面的数据放入Session里面？"><a href="#怎么样把ModelMap里面的数据放入Session里面？" class="headerlink" title="怎么样把ModelMap里面的数据放入Session里面？"></a>怎么样把ModelMap里面的数据放入Session里面？</h3><p>可以在类上面加上@SessionAttributes 注解,里面包含的字符串就是要放入 session 里面的 key。</p>
+<h3 id="Spring-MVC里面拦截器是怎么写的"><a href="#Spring-MVC里面拦截器是怎么写的" class="headerlink" title="Spring MVC里面拦截器是怎么写的"></a>Spring MVC里面拦截器是怎么写的</h3><p>有两种写法,一种是实现 HandlerInterceptor 接口，重写 prehandle 等方法，然后配置拦截器</p>
 ]]></content>
       <categories>
         <category>Java八股文</category>
@@ -3252,279 +3252,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Typora配置阿里云OSS图床</title>
-    <url>/image-host.html</url>
-    <content><![CDATA[<p>在我们日常使用 Typora 写文档时，一般图片都是放在本地的一个相对路径下，如果将 markdown 文件发送给别人，那么这个文件中的图片别人自然是访问不到的。图床的作用就是把图片存在网站上，对应的图片生成一个链接，markdown 文件中使用该链接访问图片。在本文中我们使用 Typora + PicGo + 阿里云 OSS 图床实现图片自动上传并自由访问。</p>
-<span id="more"></span>
-
-<h2 id="下载-Typora"><a href="#下载-Typora" class="headerlink" title="下载 Typora"></a>下载 Typora</h2><p><a href="https://typora.io/">Typora官网</a> 官网拉到最下，点击 <a href="https://typora.io/releases/all">History Releases</a>，选择 Dev/Beta Releases，拉到最下 More Beta,</p>
-<p>选择对应系统的链接 <a href="https://typora.io/windows/dev_release.html">old Windows / Linux beta</a>，<a href="https://typora.io/dev_release.html">old macOS beta</a></p>
-<p>Windows x64：<a href="https://download.typora.io/windows/typora-update-x64-1016.exe">Download old version (Windows x64)</a></p>
-<p>Mac OS：<a href="https://download.typora.io/mac/Typora-0.11.18.dmg">Download v0.11.18</a></p>
-<h2 id="常用设置"><a href="#常用设置" class="headerlink" title="常用设置"></a>常用设置</h2><h3 id="通用"><a href="#通用" class="headerlink" title="通用"></a>通用</h3><ol>
-<li>打开自动保存</li>
-<li>关闭自动检查更新</li>
-<li>关闭发送匿名使用数据</li>
-</ol>
-<h3 id="外观"><a href="#外观" class="headerlink" title="外观"></a>外观</h3><ol>
-<li><p>自定义字体</p>
-</li>
-<li><p>勾选侧边栏大纲视图折叠和展开</p>
-</li>
-<li><p>配置 Next 主题</p>
-<ol>
-<li><p>官网：<a href="https://theme.typora.io/theme/NexT/">https://theme.typora.io/theme/NexT/</a></p>
-</li>
-<li><p>下载 zip 压缩包：<a href="https://github.com/BillChen2k/typora-theme-next/releases/download/1.1.1/typora-theme-next.zip">typora-theme-next.zip</a></p>
-</li>
-<li><p>Typora 左上角，文件 - 偏好设置 - 外观 - 打开主题文件夹<code>xxx</code></p>
-</li>
-<li><p>把 typora-theme-next.zip 解压，将所有文件复制/剪切到主题文件夹<code>xxx</code>下</p>
-</li>
-<li><p>重启 Typora，设置外观选择 Next 即可</p>
-</li>
-<li><p>如果感觉页面宽度太小，可以打开 next.css，搜索并配置 max-width</p>
-</li>
-<li><p>如果感觉整体页面偏小，可以<code>Ctrl Shift +/-</code>增大/减小整体页面</p>
-</li>
-</ol>
-</li>
-</ol>
-<h3 id="编辑器"><a href="#编辑器" class="headerlink" title="编辑器"></a>编辑器</h3><ol>
-<li>设置默认换行符</li>
-<li>取消拼写检查，勾选<code>不使用拼写检查</code></li>
-</ol>
-<h3 id="图像"><a href="#图像" class="headerlink" title="图像"></a>图像</h3><ol>
-<li><p>插入图片时</p>
-<p> 选择上传图片，勾选<code>对本地位置的图片应用上述规则</code>和<code>对网络位置的图片应用上述规则</code></p>
-</li>
-<li><p>上传服务设定</p>
-<p> 接下来会具体讲到图床的配置</p>
-</li>
-</ol>
-<h3 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h3><ol>
-<li>勾选显示代码块行号</li>
-</ol>
-<h2 id="图床配置"><a href="#图床配置" class="headerlink" title="图床配置"></a>图床配置</h2><h3 id="1、安装PicGo"><a href="#1、安装PicGo" class="headerlink" title="1、安装PicGo"></a>1、安装PicGo</h3><p>下载地址：<a href="https://github.com/Molunerfinn/PicGo/releases">https://github.com/Molunerfinn/PicGo/releases</a></p>
-<p>安装 PicGo-Setup-2.3.0-beta.7-ia32.exe，在 PicGo 中打开 PicGo 设置，找到设置 Server，点击设置，点击开启 Server，点击确定即可。</p>
-<h3 id="2、配置Typora"><a href="#2、配置Typora" class="headerlink" title="2、配置Typora"></a>2、配置Typora</h3><p>文件-偏好设置-图像-设置插入图片时 上传图片-上传服务选择 picgo.app，选择 picgo 的安装路径，验证图片上传选项</p>
-<h3 id="3、阿里云OSS搭建图床"><a href="#3、阿里云OSS搭建图床" class="headerlink" title="3、阿里云OSS搭建图床"></a>3、阿里云OSS搭建图床</h3><h4 id="3-1、开通阿里云对象存储"><a href="#3-1、开通阿里云对象存储" class="headerlink" title="3.1、开通阿里云对象存储"></a>3.1、开通阿里云对象存储</h4><p>开通阿里云对象存储<a href="https://www.aliyun.com/product/oss%EF%BC%8C%E6%B3%A8%E5%86%8C%E9%98%BF%E9%87%8C%E4%BA%91%E8%B4%A6%E5%8F%B7%E5%90%8E%EF%BC%8C%E5%BC%80%E9%80%9A%E5%AF%B9%E8%B1%A1%E5%82%A8%E5%AD%98%EF%BC%8C%E8%BF%9B%E5%85%A5%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8OSS%E7%9A%84%E6%8E%A7%E5%88%B6%E5%8F%B0">https://www.aliyun.com/product/oss，注册阿里云账号后，开通对象储存，进入对象存储OSS的控制台</a></p>
-<h4 id="3-2、创建bucket"><a href="#3-2、创建bucket" class="headerlink" title="3.2、创建bucket"></a>3.2、创建bucket</h4><ul>
-<li><p>在左侧选择概览，然后在右侧 Bucket 管理中创建一个新的 bucket</p>
-</li>
-<li><p>创建 Bucket 具体配置</p>
-<blockquote>
-<p>Bucket名字不能有大写字母、地域就近选择、存储类型选择<code>标准存储</code>，读写权限<code>公共读</code></p>
-</blockquote>
-</li>
-<li><p>创建成功后，可以在 Bucket 列表中查看，记住自己的访问域名和地域节点，后面会用到。</p>
-</li>
-</ul>
-<h4 id="3-3、创建AccessKey"><a href="#3-3、创建AccessKey" class="headerlink" title="3.3、创建AccessKey"></a>3.3、创建AccessKey</h4><p>页面右上角，鼠标放在头像处，在弹出的框里选择 AccessKey 管理，在弹出的选项框里，选择<code>继续使用AccessKey</code>。</p>
-<p>进入后，创建一个<code>AccessKey</code>。</p>
-<p>在弹出的界面里，记住你的<code>accessKeyId</code>和<code>accessKeySecret</code>。</p>
-<h4 id="3-4、了解收费标准"><a href="#3-4、了解收费标准" class="headerlink" title="3.4、了解收费标准"></a>3.4、了解收费标准</h4><p>使用默认的 0.12 元/1GB/1 个月即可。</p>
-<h3 id="4、配置PicGo"><a href="#4、配置PicGo" class="headerlink" title="4、配置PicGo"></a>4、配置PicGo</h3><p>我们打开打开 PicGo 的主界面,在图床设置里面选择阿里云 OSS，依照下面注意事项填写信息。</p>
-<p>设定 Keyld：填写我们在第三步中获得的 AccessKeyID</p>
-<p>设定 KeySecret：填写我们在第三步中获得的 AccessKeyIDSecret</p>
-<p>设定储存空间名：填写我们在第二步中填写的 bucket 名称</p>
-<p>确认存储区域：填写我们在第二步中查看的地域节点，注意复制的格式：只需要复制 oss-cn-Xxxx 即可，不需要后面的.aliyuncs.com</p>
-<h3 id="5、测试使用"><a href="#5、测试使用" class="headerlink" title="5、测试使用"></a>5、测试使用</h3><p>经过上面的一系列配置之后，我们就完成了 Typora 的图床配置，现在我们可以使用 Markdown 开始写文章了，图片、截图会在粘贴之后，自动通过 PicGo 上传到了远端图床。同时也可以手动将以前在本地存储的图片上传到图床上。</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.csdn.net/qq_51808107/article/details/124044961">https://blog.csdn.net/qq_51808107/article/details/124044961</a></p>
-]]></content>
-      <categories>
-        <category>技术总结</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>关于体制内的一些思考</title>
-    <url>/about-within-the-system.html</url>
-    <content><![CDATA[<p>面临秋招毕业季，进体制内还是体制外无疑是摆在毕业生面前的两个大方向选择。本人秋招以来也经历了类似选择，也谈谈我个人的一些思考。<span id="more"></span></p>
-<h2 id="体制内-x2F-外的对比"><a href="#体制内-x2F-外的对比" class="headerlink" title="体制内&#x2F;外的对比"></a>体制内&#x2F;外的对比</h2><h3 id="工作单位"><a href="#工作单位" class="headerlink" title="工作单位"></a>工作单位</h3><p>体制内狭义上指公务员和事业编，广义上的体制内还包含一些泛体制内的单位，比如烟草、电网、银行等国央企。</p>
-<p>体制外就是指私企了，互联网行业的话比如 “BAT”、”TMD”，外企如微软、ZOOM、SAP 等。</p>
-<h3 id="工作内容、时间、压力"><a href="#工作内容、时间、压力" class="headerlink" title="工作内容、时间、压力"></a>工作内容、时间、压力</h3><p>体制内的工作一般都不会很难。公务员一般是写材料、整理材料，事业编根据岗位不同具体工作内容也不同，比如教师编也属于事业编，教师一般除了承担教学任务以外，还要被安排一些杂活；加班一般都不会很多，不过疫情期间很多公务员承担防疫角色，加班情况十分严重，甚至半夜被叫醒去单位搞防疫工作；工作压力一般不会很大，就算完成不了也可以躺平摆烂，毕竟辞退一名体制内人员几乎不可能。</p>
-<p>体制外的工作一般而言都是和 OKR、KPI 相关，完成 ld、mt 派发的任务；加班一般比较多，资本主义吸血，996、995、10105、12126，互联网行业加班情况就更严重了；工作压力一般而言比较大，如果部门效益不好，有裁员指标，很容易被裁员，因此得不停的卷。</p>
-<h3 id="薪资待遇"><a href="#薪资待遇" class="headerlink" title="薪资待遇"></a>薪资待遇</h3><p>体制内的薪资待遇比较一般，在当地城市一般属于中等偏上的收入，吃得饱但也吃不好。公务员工资一般高于事业编，好的国央企的薪资待遇也还不错。薪资待遇较好的地区比如苏南、浙北一些城市。体制内最近火热跟房地产发展息息相关，土地财政大大增加了体制内的收入。如今房地产业萎靡的情况下，体制内降薪频繁，未来体制内的薪资待遇还会怎样，我们不得而知。</p>
-<p>体制外的薪资待遇无非就是看个人能力和个人机遇了，计算机应届生进入互联网大厂薪资好点的都有35+w年薪，一般的也能拿到20+w，在私企干几年跳槽还能收获不错的薪资涨幅。虽然互联网发展停滞，但是未来仍然有大量的数字化人才需求。</p>
-<h2 id="选择体制内还是体制外"><a href="#选择体制内还是体制外" class="headerlink" title="选择体制内还是体制外"></a>选择体制内还是体制外</h2><p>近年来，由于全球经济发展停滞、行业周期、疫情等各种原因，很多人在私企内混的不是很如意，pua、压迫、裁员。近几年体制内的薪资也增加很多，20 年的深圳高中 40w 招高中老师、余杭区街道办办事员录取的学生都是清北等顶尖高校的硕士生甚至博士生。清华的毕业生就业去向也显示 70% 的学生进入了体制内。</p>
-<p>那么，体制内真的就无敌嘛，宇宙的尽头真的是体制内嘛，还是选择体制外打拼打拼闯出自己的一片天呢？</p>
-<p>应届生在就业选择时一般都会跟家里人商量，听听父母的看法。于父母而言，父母一般都比较想让孩子进入体制内，我们作为子女应当尊重父母，但是不是完全听从父母，因为他们是那个时代的那些经验，在当今这个时代，要有自己的思想。把自己的生命过好了，过出精彩来，才是对父母最大的尊重，也是父母最大的幸福。</p>
-<p>很多人毕业时不知道选择什么，盲目从众，随大流进入体制内，进去之后觉得不是自己想要的。这种情况无非是无法在体制内获得自己想要取得的价值感、成就感。投入过的生命才会有温度，不管是体制内还是体制外，这样才会获得巨大的价值感。</p>
-<p>我们的社会、生活一直在发展变化，这个才是一直不变的。做选择一定要看清楚自己想要什么，可以想想自己死去的时候，那时候是一个什么样的身份、什么样的职位，因为这其实就是我们心底的追求，明确自己的追求，体制内还是体制外，往自己的追求上靠近就可以了。体制内还是体制外没有对错，只有适合，适合自己、适合自己的未来发展、适合自己的人生追求。</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>以下是一些我觉得讲的很在理的视频，非劝退性质，看完之后感悟很多。</p>
-<p><a href="https://www.bilibili.com/video/BV1JT41117Lx/?share_source=copy_web&vd_source=0ee37b99b6275b36190f1dd4aff8f80a">不适合就别考公务员了</a></p>
-<p><a href="https://www.bilibili.com/video/BV1Ga4y1p7Tw/?share_source=copy_web&vd_source=0ee37b99b6275b36190f1dd4aff8f80a">“别瞎混了，公务员才是正经工作”进体制真的香吗？【复旦梁永安】</a></p>
-<p><a href="https://www.bilibili.com/video/BV1RS4y1d7R9/?share_source=copy_web&vd_source=0ee37b99b6275b36190f1dd4aff8f80a">60万年薪比不上公务员月薪4000？同志们，千万别再高估“体制内”的性价比了！【毯叔盘钱】</a></p>
-<p><a href="https://www.bilibili.com/video/BV1CM4y1F7PN/?share_source=copy_web&vd_source=0ee37b99b6275b36190f1dd4aff8f80a">【考编？看这一条就够了】8年！！宇宙尽头真不是编制！！</a></p>
-<p><a href="https://www.bilibili.com/video/BV1VY4y1A7XM/?share_source=copy_web&vd_source=0ee37b99b6275b36190f1dd4aff8f80a">537万人考公，500万人失业，宇宙的尽头是考编吗？</a> </p>
-]]></content>
-      <categories>
-        <category>个人思考</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>回老家的一周</title>
-    <url>/week-back-home.html</url>
-    <content><![CDATA[<p>上周从常州省考回来，当天晚上正好是世界杯决赛，看到了凌晨两点，第二天一大早起床，和爸妈一起开车回老家，然后就开始了在老家的一周生活。</p>
-<span id="more"></span>
-
-<p>在老家的一周除了吃饭就是喝酒，无聊的很。第一天晚上有点头痛，还以为是阳了，后面一直没什么大的症状，不过每天都是头昏脑胀的，感觉应该只是普通流感（到现在还没好）。老家好多人都有点发烧，诊所里都是老人在挂水，也不知道挂的是什么水，老年人挂水好像会舒服很多。</p>
-<p>在老家还简单过了个小生日，老爸老妈在镇上酒店办了两桌酒席接客，姨妈给买了个大蛋糕，表弟从市里回来还买了一束花，有点小温馨。</p>
-<p>表侄今年六岁了，很可爱，活蹦乱跳的。</p>
-<p>爷爷、奶奶那一辈的好多人年纪都很大了，希望他们健健康康。</p>
-<p>今天下午回到常州了，准备最近搞搞毕业论文的事了。</p>
-]]></content>
-      <categories>
-        <category>日常小记</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>字节暑期实习同组实习生秋招情况分享</title>
-    <url>/my-bytedance-internship-friends-offer.html</url>
-    <content><![CDATA[<p>突然想起来做这个分享，是因为刚好下午有个字节跳动暑期实习时同组的朋友刚签约三方，和父母也顺便分享了其他同组实习生的签约情况。这边也给大家分享下。</p>
-<span id="more"></span>
-
-<p>在字节跳动暑期实习期间，前前后后加上我一共有 5 名实习生。</p>
-<p>实习生 A：浙大硕，在我们组从 4 月中干到 7 月中，走字节的活水平台活水到其他部门继续暑期实习了，未能转正成功，后续情况不清楚。</p>
-<p>实习生 B：山大硕，多段实习（包括量化，字节多段实习）大佬，7 月离职，未参加实习转正，投递字节另一个部门的秋招提前批，最终斩获大 sp offer 并顺利签约。</p>
-<p>实习生 C：重邮本，参加本部门实习转正，顺利收到小 sp offer 并签约。</p>
-<p>实习生 D：南开硕，由于实习时间短产出不足未能转正成功，秋招收到华为和农行等 offer，选择 wlb 的农行。</p>
-<p>实习生 E（本人），具体情况可见我的<a href="https://yaxing97.com/2022-autumn-recruitment-summary.html">2022秋招总结</a> 。</p>
-<p>这两天看了很多脉脉，有一个评论我觉得说的很对：“很多暑期实习过的人，都不想再去大厂了，选择去国企。”</p>
-<p>我觉得说的真的很对，实习过体会了大厂的卷，况且还是实习生，当时我的 mentor 比我累多了，每天晚上回去还要干活。我每天回到家感觉整个人都被抽空了，虽说我回家的也很早，一般 8 点左右就润了。到家什么都不想做，更别提学习了。幸好 618 入手了 ps5，靠战神 4、瑞奇与叮当、只狼等游戏度过一个又一个夜晚，不然我觉得我可能会抑郁。说实话，如果没有这段暑期实习，我拿到字节等大厂 offer 可能无脑去了，经历过才知道自己所能承受的身心压力。</p>
-<p>因此，暑期实习还是推荐去大厂的，一方面给秋招简历润色，另一方面看看自己是否能适应大厂工作生活节奏。</p>
-<p>以上。</p>
-]]></content>
-      <categories>
-        <category>实习秋招</category>
-        <category>实习</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>开了个B站大会员</title>
-    <url>/bilibili-vip.html</url>
-    <content><![CDATA[<p>最近巫师 3 更新了次世代版本（画质优化+中文配音），由于 PS5 放在了学校里，笔记本也带不太动，只能看老戴的视频云玩家二周目了（<a href="https://www.bilibili.com/video/BV1L14y1N7b3">链接</a>）。</p>
-<span id="more"></span>
-
-<p>看了一会，诶，咋更新了还这么糊，一看原来是只开了 1080P 画质，一冲动上某多多买了三个月的大会员，点开 4K 画质选项，好家伙，直接感受到了次世代的魅力。配音配的也很出色，没什么槽点。回头 PS5 上再三周目吧，并且期待一手巫师 4。</p>
-<p>充了大会员，接下来闲的时候再把 B 站上的电影再看看，总不能浪费了不是 hhh。</p>
-<p>最近多个平台都在搞年终总结了，比如 Apple Music 和 PlayStation，准备等其他平台都推出年终总结之后搞波分享～</p>
-]]></content>
-      <categories>
-        <category>日常小记</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>手把手带你搭建个人博客</title>
-    <url>/build-blog.html</url>
-    <content><![CDATA[<h2 id="系统环境-amp-工具"><a href="#系统环境-amp-工具" class="headerlink" title="系统环境&工具"></a>系统环境&amp;工具</h2><p>系统环境：MacOS</p>
-<p>工具：博客框架为 hexo，博客文件托管于 GitHub，博客网站用 Netlify 生成，国内访问采用 CloudFlare 进行 CDN 加速</p>
-<span id="more"></span>
-
-<h2 id="hexo博客框架安装"><a href="#hexo博客框架安装" class="headerlink" title="hexo博客框架安装"></a>hexo博客框架安装</h2><h3 id="预先环境"><a href="#预先环境" class="headerlink" title="预先环境"></a>预先环境</h3><p>1、安装 node（使用 homebrew）</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">brew install node</span><br></pre></td></tr></table></figure>
-
-<p>2、查看版本信息，正常看到版本信息即为成功</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
-
-<p>3、切换 npm 的源将源设置为淘宝源（速度快）</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm config get registry	<span class="comment"># 查看源</span></span><br><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org <span class="comment"># 修改为淘宝源</span></span><br></pre></td></tr></table></figure>
-
-<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>1、安装 hexo</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g <span class="comment"># 全局安装hexo命令行工具</span></span><br></pre></td></tr></table></figure>
-
-<p>2、初始化博客项目</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init <span class="string">"博客目录名称"</span></span><br><span class="line"><span class="comment"># hexo init "blog" 即我的博客目录名称为blog，后续都用该目录来讲解</span></span><br></pre></td></tr></table></figure>
-
-<p>3、切换至博客目录安装依赖</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
-
-<p>4、运行</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
-
-<p>打开链接，本地出现博客界面，即本地搭建成功！</p>
-<h3 id="添加建站脚本"><a href="#添加建站脚本" class="headerlink" title="添加建站脚本"></a>添加建站脚本</h3><p>为了后续<code>netlify</code>建站方便，在<code>package.json</code>里面添加一个命令：</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">JSON</span><br><span class="line"><span class="punctuation">{</span></span><br><span class="line">    <span class="comment">// ......</span></span><br><span class="line">    <span class="attr">"scripts"</span><span class="punctuation">:</span> <span class="punctuation">{</span></span><br><span class="line">        <span class="attr">"build"</span><span class="punctuation">:</span> <span class="string">"hexo generate"</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">"clean"</span><span class="punctuation">:</span> <span class="string">"hexo clean"</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">"deploy"</span><span class="punctuation">:</span> <span class="string">"hexo deploy"</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">"server"</span><span class="punctuation">:</span> <span class="string">"hexo server"</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">"netlify"</span><span class="punctuation">:</span> <span class="string">"npm run clean &amp;&amp; npm run build"</span> <span class="comment">// 新加行</span></span><br><span class="line">    <span class="punctuation">}</span><span class="punctuation">,</span></span><br><span class="line">    <span class="comment">// ......</span></span><br><span class="line"><span class="punctuation">}</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="GitHub托管项目文件"><a href="#GitHub托管项目文件" class="headerlink" title="GitHub托管项目文件"></a>GitHub托管项目文件</h2><p>创建本地仓库，推送到远端服务器</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"my blog first commit"</span></span><br><span class="line">git remote add origin <span class="string">"远端github仓库地址"</span></span><br><span class="line">git branch -M main</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure>
-
-<h2 id="Netlify建站"><a href="#Netlify建站" class="headerlink" title="Netlify建站"></a>Netlify建站</h2><p>由于 GitHub 自带的 gitpage 访问速度较慢，我们使用 Netlify（一个国外的免费的提供静态网站部署服务的平台）将托管 GitHub 上的静态网站部署上线。</p>
-<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><p>1、注册并登陆 Netlify</p>
-<p>2、add new site - import an existing project</p>
-<p>3、连接到 GitHub，选择我们托管在 GitHub 上的博客项目</p>
-<p>4、在设置中注意修改一处，Basic build settings - Build command 修改为 <code>npm run netlify</code></p>
-<p>5、构建完成可以看到一个 xxx.netlify.app 的 url，即为我们博客的 url，修改该 url 中的 xxx 为 yaxing97，即设置我的个人博客域名为<code>yaxing97.netlify.app</code></p>
-<h3 id="配置域名"><a href="#配置域名" class="headerlink" title="配置域名"></a>配置域名</h3><p>1、购买域名（国内国外都可）</p>
-<p>2、购买完成后在域名列表找到自己的域名，点击操作中的解析按钮</p>
-<p>3、设置域名解析，类型为<code>CNAME</code>，主机记录为<code>@</code>，记录值为<code>yaxing97.netlify.app</code>，其中<code>yaxing97</code>是之前建站步骤中设置的个性二级域名</p>
-<p>4、在 netlify 中配置域名，domain management - domains - add custom domain，一路通过即可</p>
-<h2 id="CloudFlare加速"><a href="#CloudFlare加速" class="headerlink" title="CloudFlare加速"></a>CloudFlare加速</h2><p>Netlify 虽然已经提供了 CDN 加速，但在使用过程中发现国内访问还是比较慢，Cloudflare 相对于国内的七牛云、阿里云等云服务商的 CDN 速度会慢一些，但是它有免费版本，而且最重要的是域名不用备案。</p>
-<h3 id="步骤-1"><a href="#步骤-1" class="headerlink" title="步骤"></a>步骤</h3><p>1、注册 Cloudflare 并登陆</p>
-<p>2、输入您的站点（yaxing97.com），点击添加站点</p>
-<p>3、选择免费套餐</p>
-<p>4、添加 DNS，Type 为<code>CNAME</code>，Name 为<code>yaxing97.com</code>，Content 为<code>yaxing97.netlify.app</code></p>
-<p>5、使用 cloudflare 提供的 dns 解析服务器（Cloudflare Nameservers）对 <code>yaxing97.com</code> 进行 dns 解析</p>
-<p>6、到阿里云控制台中，DNS 管理 - DNS 修改，修改 DNS 服务器</p>
-<h2 id="配置https"><a href="#配置https" class="headerlink" title="配置https"></a>配置https</h2><p>回到 netlify 中，Domain management - HTTPS，点击 verify DNS configuration，结果如下即为配置完成</p>
-<p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/image-20221212214817015.png" alt="配置HTTPS"></p>
-<h2 id="文章编写"><a href="#文章编写" class="headerlink" title="文章编写"></a>文章编写</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">"文章标题"</span></span><br><span class="line"><span class="comment"># 编写好之后</span></span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">git add *</span><br><span class="line">git commit -m <span class="string">"commit信息"</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
-
-<p>过片刻，访问我们的<code>https://yaxing97.com</code>，可以看到新添加的文章。</p>
-<h2 id="参考-amp-更多"><a href="#参考-amp-更多" class="headerlink" title="参考&更多"></a>参考&amp;更多</h2><p><a href="https://blog.cuijiacai.com/blog-building/">https://blog.cuijiacai.com/blog-building/</a></p>
-<p><a href="https://www.mdnice.com/writing/382af676baff4ed4ad5511074fb736da">https://www.mdnice.com/writing/382af676baff4ed4ad5511074fb736da</a></p>
-]]></content>
-      <categories>
-        <category>技术总结</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>最近关于校招、互联网的一些信息</title>
-    <url>/202301-it-info.html</url>
-    <content><![CDATA[<p>最近刷脉脉、知乎等记录下一些网友发布的一些信息，仅作记录，不对其真实性等作深究，侵删。</p>
-<span id="more"></span>
-
-<p>1、字节飞书 EA，base 杭州的很多 22 届校招生没过试用期。</p>
-<p>2、抖音上一商家 C++基础课程卖 2999 一份，销量 1700+。</p>
-<p>3、银行类开发岗，从体量、发展、制度等方面考虑，建议去国有大型银行，以及头部的股份制银行。</p>
-<p>4、若是去大城市当程序员，以后可能会想象在老家当老师多舒服呀；若是回家当老师，或许一辈子都会后悔为什么年轻的时候不去大城市闯一闯，这就是人生。希望若干年后，都能和自己和解，这辈子过的还不错。</p>
-<p>5、以前进大专技校中小学等当老师门槛很低，现在越来越高，越来越卷。</p>
-<p>6、不热爱编程，没自信成为行业精英，不喜欢加班，不推荐成为程序员。</p>
-<p>7、这是一位字节战略离职的老哥/老姐对飞书的看法：个人不看好。欧美的企业 saas 能做起来有两个前提：一是欧美有很成熟的职业经理人体系，职业经理人来做采购决策，而中国大部分公司是不追求效率的国企或者抠门创始人搞一言堂的私企；二是企业 saas 的本质是提升员工工作效率，从而实现减少员工数量，降低人力成本，美国人平均工资是 5-7 万美元，省一个人就是大量的成本，中国人力成本这么低，为什么会愿意向飞书这样的企业 saas 付费呢？</p>
-<p>8、上海银行开发岗今年降薪，22 年及以前很香的上银，今年风评逐渐变差。</p>
-<p>9、脉脉投票显示四大行研发中心当一辈子程序员的职业生涯开局比去大厂应届试用期被裁下家不确定更好。</p>
-<p>10、职场 pua：这个需求交给你做是为了培养你，你要开发三天，我交给老员工只要一天；你能力不行，不像别的员工，你离开这个平台寸步难行，要珍惜学习的机会。</p>
-<p>11、某银行：一个内部几十个人用的单体系统，还要搞 devops。千余人，大部分还是僵尸用户的系统逼着你做熔断限流。</p>
-<p>12、农行的一些研发中心风评较差，变更问题、免费加班、削减福利、变相降薪、晋升困难、出市审批、各种考核，要仔细甄别。</p>
-<p>13、互联网企业的卷已经是共识了，在经济环境不好的大势下，仍然有源源不断的年轻小伙伴假如到卷动大潮。这个卷能不能避免？我以前认为不能，因为业务发展速度太快，变化太大，很难避免加班加点的卷。事实上跳出来看看，至少有一半以上的卷都是因为管理者无知，没有思路，不给团队指导和方向导致的“扯淡卷”。也许年轻鲜活的生命不卷白不卷，所谓少年得志的管理者自己也是这么被卷至今。企业成长的代价，最后一半被投资人买单，一半被员工买单，如果花了代价能买来成长，也算值得，可悲的是，多半买不来成长，买来的是失败后的教训。</p>
-<p>14、国家已经拉响了低生育警报，你对提高年轻人生育有什么建议？ - <a href="https://www.zhihu.com/question/576438196/answer/2830715899">宇宙区长孙连城的回答</a></p>
-<p>15、字节杭州有部门全撤转 base 了，虽然人不多。</p>
-<p>16、邮储研发中心总包能到 30+w，很香，但是貌似要 996，个人感觉还是比较香。</p>
-<p>17、字节教育剩下的人不用背指标，不用承担集团的高预期，只需探索新方向和打磨新产品，而且集团每个月固定拨钱养业务，何尝不是一种幸福呢？</p>
-<p>18、前几年当老师门槛很低，如果以当初的条件，现在去应聘，根本进不去。</p>
-<p>19、“围城”这个词一定能在今年秋招占据一席之地。大城小城，国企央企私企外企体制，银行券商互联网制造业军工研究所。究竟是选个能安家的小城还是尽情享受大城市的年轻与自由？是选择一步到位还是将悬念留个未来？是挤出时间来工作还是选择工作外的生活？是坚定走自己的专业还是另辟蹊径？是选择一眼看到头的安心还是未知伴随的风险与机遇？最后，希望各位都能有满意的选择。我们已是当代青年，我们的选择便是新一代青年的选择。与诸位共勉。</p>
-<p>20、从北大来读书的，最近看工作，越来越觉得，在北京挣三十和挣五十没有太大区别，做互联网和做其他行业也没有太大区别，可见的未来的工作只是作为糊口的工具，很难有什么热爱可言。越来越想回家乡找个体制内的稳定工作了，把更多的时间用在生活上面。是我太躺了吗？还是我格局不够？</p>
-]]></content>
-      <categories>
-        <category>日常小记</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>新买的小书桌</title>
-    <url>/new-desk.html</url>
-    <content><![CDATA[<p>之前买了个 LG 的 27 寸显示器，放在书房的桌子上，一方面不能升高（上面有架板挡住），另一方面是桌子宽度不够（只有 50cm），显示器靠墙前面只能勉强放下我的 mac，导致屏幕离我很近，观感极差。于是在淘宝上淘了个书桌，还算不错。</p>
-<span id="more"></span>
-
-<p>如果要使用 27 寸及以上尺寸显示器的话，建议购买宽度至少 70cm 的，我购买的尺寸为 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="16.416ex" height="1.581ex" role="img" focusable="false" viewBox="0 -677 7255.9 699"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(500,0)"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(1000,0)"></path></g><g data-mml-node="mo" transform="translate(1722.2,0)"><path data-c="D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path></g><g data-mml-node="mn" transform="translate(2722.4,0)"><path data-c="38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(500,0)"></path></g><g data-mml-node="mo" transform="translate(3944.7,0)"><path data-c="D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path></g><g data-mml-node="mn" transform="translate(4944.9,0)"><path data-c="37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"></path><path data-c="34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" transform="translate(500,0)"></path></g><g data-mml-node="mi" transform="translate(5944.9,0)"><path data-c="1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path></g><g data-mml-node="mi" transform="translate(6377.9,0)"><path data-c="1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g></g></g></svg></mjx-container>，店铺是“新尚美家居”。</p>
-<p>注意到手需要自己拧螺丝固定桌腿和桌板（用电动螺丝刀）以及桌腿和桌腿之间的连接（手拧即可）。</p>
-<p>以下是实拍图 hh。</p>
-<p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/IMG_1396.JPG" alt="新书桌实拍图"></p>
-]]></content>
-      <categories>
-        <category>日常小记</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Java八股文 - Linux</title>
     <url>/linux.html</url>
     <content><![CDATA[<blockquote>
@@ -4604,25 +4331,242 @@
       </categories>
   </entry>
   <entry>
-    <title>江苏省考考完啦</title>
-    <url>/2022-jiangsu-gwy.html</url>
-    <content><![CDATA[<p>坐标常州钟楼区肯德基青山店，看了下下一班回家的班车要到下午一点了，遂坐在肯德基里，沐浴暖冬的阳光，简单回顾一下我备考这次江苏省考的一些事情吧。</p>
+    <title>关于体制内的一些思考</title>
+    <url>/about-within-the-system.html</url>
+    <content><![CDATA[<p>面临秋招毕业季，进体制内还是体制外无疑是摆在毕业生面前的两个大方向选择。本人秋招以来也经历了类似选择，也谈谈我个人的一些思考。<span id="more"></span></p>
+<h2 id="体制内-x2F-外的对比"><a href="#体制内-x2F-外的对比" class="headerlink" title="体制内&#x2F;外的对比"></a>体制内&#x2F;外的对比</h2><h3 id="工作单位"><a href="#工作单位" class="headerlink" title="工作单位"></a>工作单位</h3><p>体制内狭义上指公务员和事业编，广义上的体制内还包含一些泛体制内的单位，比如烟草、电网、银行等国央企。</p>
+<p>体制外就是指私企了，互联网行业的话比如 “BAT”、”TMD”，外企如微软、ZOOM、SAP 等。</p>
+<h3 id="工作内容、时间、压力"><a href="#工作内容、时间、压力" class="headerlink" title="工作内容、时间、压力"></a>工作内容、时间、压力</h3><p>体制内的工作一般都不会很难。公务员一般是写材料、整理材料，事业编根据岗位不同具体工作内容也不同，比如教师编也属于事业编，教师一般除了承担教学任务以外，还要被安排一些杂活；加班一般都不会很多，不过疫情期间很多公务员承担防疫角色，加班情况十分严重，甚至半夜被叫醒去单位搞防疫工作；工作压力一般不会很大，就算完成不了也可以躺平摆烂，毕竟辞退一名体制内人员几乎不可能。</p>
+<p>体制外的工作一般而言都是和 OKR、KPI 相关，完成 ld、mt 派发的任务；加班一般比较多，资本主义吸血，996、995、10105、12126，互联网行业加班情况就更严重了；工作压力一般而言比较大，如果部门效益不好，有裁员指标，很容易被裁员，因此得不停的卷。</p>
+<h3 id="薪资待遇"><a href="#薪资待遇" class="headerlink" title="薪资待遇"></a>薪资待遇</h3><p>体制内的薪资待遇比较一般，在当地城市一般属于中等偏上的收入，吃得饱但也吃不好。公务员工资一般高于事业编，好的国央企的薪资待遇也还不错。薪资待遇较好的地区比如苏南、浙北一些城市。体制内最近火热跟房地产发展息息相关，土地财政大大增加了体制内的收入。如今房地产业萎靡的情况下，体制内降薪频繁，未来体制内的薪资待遇还会怎样，我们不得而知。</p>
+<p>体制外的薪资待遇无非就是看个人能力和个人机遇了，计算机应届生进入互联网大厂薪资好点的都有35+w年薪，一般的也能拿到20+w，在私企干几年跳槽还能收获不错的薪资涨幅。虽然互联网发展停滞，但是未来仍然有大量的数字化人才需求。</p>
+<h2 id="选择体制内还是体制外"><a href="#选择体制内还是体制外" class="headerlink" title="选择体制内还是体制外"></a>选择体制内还是体制外</h2><p>近年来，由于全球经济发展停滞、行业周期、疫情等各种原因，很多人在私企内混的不是很如意，pua、压迫、裁员。近几年体制内的薪资也增加很多，20 年的深圳高中 40w 招高中老师、余杭区街道办办事员录取的学生都是清北等顶尖高校的硕士生甚至博士生。清华的毕业生就业去向也显示 70% 的学生进入了体制内。</p>
+<p>那么，体制内真的就无敌嘛，宇宙的尽头真的是体制内嘛，还是选择体制外打拼打拼闯出自己的一片天呢？</p>
+<p>应届生在就业选择时一般都会跟家里人商量，听听父母的看法。于父母而言，父母一般都比较想让孩子进入体制内，我们作为子女应当尊重父母，但是不是完全听从父母，因为他们是那个时代的那些经验，在当今这个时代，要有自己的思想。把自己的生命过好了，过出精彩来，才是对父母最大的尊重，也是父母最大的幸福。</p>
+<p>很多人毕业时不知道选择什么，盲目从众，随大流进入体制内，进去之后觉得不是自己想要的。这种情况无非是无法在体制内获得自己想要取得的价值感、成就感。投入过的生命才会有温度，不管是体制内还是体制外，这样才会获得巨大的价值感。</p>
+<p>我们的社会、生活一直在发展变化，这个才是一直不变的。做选择一定要看清楚自己想要什么，可以想想自己死去的时候，那时候是一个什么样的身份、什么样的职位，因为这其实就是我们心底的追求，明确自己的追求，体制内还是体制外，往自己的追求上靠近就可以了。体制内还是体制外没有对错，只有适合，适合自己、适合自己的未来发展、适合自己的人生追求。</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>以下是一些我觉得讲的很在理的视频，非劝退性质，看完之后感悟很多。</p>
+<p><a href="https://www.bilibili.com/video/BV1JT41117Lx/?share_source=copy_web&vd_source=0ee37b99b6275b36190f1dd4aff8f80a">不适合就别考公务员了</a></p>
+<p><a href="https://www.bilibili.com/video/BV1Ga4y1p7Tw/?share_source=copy_web&vd_source=0ee37b99b6275b36190f1dd4aff8f80a">“别瞎混了，公务员才是正经工作”进体制真的香吗？【复旦梁永安】</a></p>
+<p><a href="https://www.bilibili.com/video/BV1RS4y1d7R9/?share_source=copy_web&vd_source=0ee37b99b6275b36190f1dd4aff8f80a">60万年薪比不上公务员月薪4000？同志们，千万别再高估“体制内”的性价比了！【毯叔盘钱】</a></p>
+<p><a href="https://www.bilibili.com/video/BV1CM4y1F7PN/?share_source=copy_web&vd_source=0ee37b99b6275b36190f1dd4aff8f80a">【考编？看这一条就够了】8年！！宇宙尽头真不是编制！！</a></p>
+<p><a href="https://www.bilibili.com/video/BV1VY4y1A7XM/?share_source=copy_web&vd_source=0ee37b99b6275b36190f1dd4aff8f80a">537万人考公，500万人失业，宇宙的尽头是考编吗？</a> </p>
+]]></content>
+      <categories>
+        <category>个人思考</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Typora配置阿里云OSS图床</title>
+    <url>/image-host.html</url>
+    <content><![CDATA[<p>在我们日常使用 Typora 写文档时，一般图片都是放在本地的一个相对路径下，如果将 markdown 文件发送给别人，那么这个文件中的图片别人自然是访问不到的。图床的作用就是把图片存在网站上，对应的图片生成一个链接，markdown 文件中使用该链接访问图片。在本文中我们使用 Typora + PicGo + 阿里云 OSS 图床实现图片自动上传并自由访问。</p>
 <span id="more"></span>
 
-<p>8 月底从字节回学校，本来是准备用 80%的时间准备 gwy 考试，剩下时间参加秋招的。然而，事与愿违，由于考公的意愿不是很强烈，再加上一波又一波的笔试面试，严重挤占了复习时间。更关键的是，在后期秋招快结束的时候，由于 offer 选择等问题让人心烦，备考甚至中断过一段时间。</p>
-<p>来常州也是不太顺利，最近疫情管控放开，礼拜五中午来常之前特意做了单管核酸检测，问了下说是晚上六七点就能出结果，并且听朋友说如果第二天早上八点不出结果，就是阳了。等啊等，到晚上七八点了反复查看核酸结果，无。十一点睡前再看了一次，还是无，睡吧，能咋办呢。第二天一早，醒来第一件事就是看核酸结果，结果出来了，阴性，大舒一口气，不然不是浪费了报名费跟酒店费嘛（笑死）。</p>
-<p>昨天早上行测，135 题，厚礼蟹，感觉以我目前的水平 120 分钟做完 125 题是个极限了，还有浙江省考竟然 115 题，晕。下午申论，写了三小时小学生写作，不得不说我的字写的太挫了，以后有空可以练练（flag 已立），不过以后有小孩这个一定要放到高优项。今天上午刚考完专业科目，跟前两天粉笔上做的去年和前年的专业课感觉差不多，都是该会的会，不会的猜，毕竟裸考。</p>
-<p>总体而言，对于我这个岗位而言，报录比 80:2，如果从七月份好好准备，心无旁骛，我觉得应该是可以进面试的（蜜汁自信）。</p>
-<p>下个月还有国考，这几天再带着看看行测吧。</p>
+<h2 id="下载-Typora"><a href="#下载-Typora" class="headerlink" title="下载 Typora"></a>下载 Typora</h2><p><a href="https://typora.io/">Typora官网</a> 官网拉到最下，点击 <a href="https://typora.io/releases/all">History Releases</a>，选择 Dev/Beta Releases，拉到最下 More Beta,</p>
+<p>选择对应系统的链接 <a href="https://typora.io/windows/dev_release.html">old Windows / Linux beta</a>，<a href="https://typora.io/dev_release.html">old macOS beta</a></p>
+<p>Windows x64：<a href="https://download.typora.io/windows/typora-update-x64-1016.exe">Download old version (Windows x64)</a></p>
+<p>Mac OS：<a href="https://download.typora.io/mac/Typora-0.11.18.dmg">Download v0.11.18</a></p>
+<h2 id="常用设置"><a href="#常用设置" class="headerlink" title="常用设置"></a>常用设置</h2><h3 id="通用"><a href="#通用" class="headerlink" title="通用"></a>通用</h3><ol>
+<li>打开自动保存</li>
+<li>关闭自动检查更新</li>
+<li>关闭发送匿名使用数据</li>
+</ol>
+<h3 id="外观"><a href="#外观" class="headerlink" title="外观"></a>外观</h3><ol>
+<li><p>自定义字体</p>
+</li>
+<li><p>勾选侧边栏大纲视图折叠和展开</p>
+</li>
+<li><p>配置 Next 主题</p>
+<ol>
+<li><p>官网：<a href="https://theme.typora.io/theme/NexT/">https://theme.typora.io/theme/NexT/</a></p>
+</li>
+<li><p>下载 zip 压缩包：<a href="https://github.com/BillChen2k/typora-theme-next/releases/download/1.1.1/typora-theme-next.zip">typora-theme-next.zip</a></p>
+</li>
+<li><p>Typora 左上角，文件 - 偏好设置 - 外观 - 打开主题文件夹<code>xxx</code></p>
+</li>
+<li><p>把 typora-theme-next.zip 解压，将所有文件复制/剪切到主题文件夹<code>xxx</code>下</p>
+</li>
+<li><p>重启 Typora，设置外观选择 Next 即可</p>
+</li>
+<li><p>如果感觉页面宽度太小，可以打开 next.css，搜索并配置 max-width</p>
+</li>
+<li><p>如果感觉整体页面偏小，可以<code>Ctrl Shift +/-</code>增大/减小整体页面</p>
+</li>
+</ol>
+</li>
+</ol>
+<h3 id="编辑器"><a href="#编辑器" class="headerlink" title="编辑器"></a>编辑器</h3><ol>
+<li>设置默认换行符</li>
+<li>取消拼写检查，勾选<code>不使用拼写检查</code></li>
+</ol>
+<h3 id="图像"><a href="#图像" class="headerlink" title="图像"></a>图像</h3><ol>
+<li><p>插入图片时</p>
+<p> 选择上传图片，勾选<code>对本地位置的图片应用上述规则</code>和<code>对网络位置的图片应用上述规则</code></p>
+</li>
+<li><p>上传服务设定</p>
+<p> 接下来会具体讲到图床的配置</p>
+</li>
+</ol>
+<h3 id="Markdown"><a href="#Markdown" class="headerlink" title="Markdown"></a>Markdown</h3><ol>
+<li>勾选显示代码块行号</li>
+</ol>
+<h2 id="图床配置"><a href="#图床配置" class="headerlink" title="图床配置"></a>图床配置</h2><h3 id="1、安装PicGo"><a href="#1、安装PicGo" class="headerlink" title="1、安装PicGo"></a>1、安装PicGo</h3><p>下载地址：<a href="https://github.com/Molunerfinn/PicGo/releases">https://github.com/Molunerfinn/PicGo/releases</a></p>
+<p>安装 PicGo-Setup-2.3.0-beta.7-ia32.exe，在 PicGo 中打开 PicGo 设置，找到设置 Server，点击设置，点击开启 Server，点击确定即可。</p>
+<h3 id="2、配置Typora"><a href="#2、配置Typora" class="headerlink" title="2、配置Typora"></a>2、配置Typora</h3><p>文件-偏好设置-图像-设置插入图片时 上传图片-上传服务选择 picgo.app，选择 picgo 的安装路径，验证图片上传选项</p>
+<h3 id="3、阿里云OSS搭建图床"><a href="#3、阿里云OSS搭建图床" class="headerlink" title="3、阿里云OSS搭建图床"></a>3、阿里云OSS搭建图床</h3><h4 id="3-1、开通阿里云对象存储"><a href="#3-1、开通阿里云对象存储" class="headerlink" title="3.1、开通阿里云对象存储"></a>3.1、开通阿里云对象存储</h4><p>开通阿里云对象存储<a href="https://www.aliyun.com/product/oss%EF%BC%8C%E6%B3%A8%E5%86%8C%E9%98%BF%E9%87%8C%E4%BA%91%E8%B4%A6%E5%8F%B7%E5%90%8E%EF%BC%8C%E5%BC%80%E9%80%9A%E5%AF%B9%E8%B1%A1%E5%82%A8%E5%AD%98%EF%BC%8C%E8%BF%9B%E5%85%A5%E5%AF%B9%E8%B1%A1%E5%AD%98%E5%82%A8OSS%E7%9A%84%E6%8E%A7%E5%88%B6%E5%8F%B0">https://www.aliyun.com/product/oss，注册阿里云账号后，开通对象储存，进入对象存储OSS的控制台</a></p>
+<h4 id="3-2、创建bucket"><a href="#3-2、创建bucket" class="headerlink" title="3.2、创建bucket"></a>3.2、创建bucket</h4><ul>
+<li><p>在左侧选择概览，然后在右侧 Bucket 管理中创建一个新的 bucket</p>
+</li>
+<li><p>创建 Bucket 具体配置</p>
+<blockquote>
+<p>Bucket名字不能有大写字母、地域就近选择、存储类型选择<code>标准存储</code>，读写权限<code>公共读</code></p>
+</blockquote>
+</li>
+<li><p>创建成功后，可以在 Bucket 列表中查看，记住自己的访问域名和地域节点，后面会用到。</p>
+</li>
+</ul>
+<h4 id="3-3、创建AccessKey"><a href="#3-3、创建AccessKey" class="headerlink" title="3.3、创建AccessKey"></a>3.3、创建AccessKey</h4><p>页面右上角，鼠标放在头像处，在弹出的框里选择 AccessKey 管理，在弹出的选项框里，选择<code>继续使用AccessKey</code>。</p>
+<p>进入后，创建一个<code>AccessKey</code>。</p>
+<p>在弹出的界面里，记住你的<code>accessKeyId</code>和<code>accessKeySecret</code>。</p>
+<h4 id="3-4、了解收费标准"><a href="#3-4、了解收费标准" class="headerlink" title="3.4、了解收费标准"></a>3.4、了解收费标准</h4><p>使用默认的 0.12 元/1GB/1 个月即可。</p>
+<h3 id="4、配置PicGo"><a href="#4、配置PicGo" class="headerlink" title="4、配置PicGo"></a>4、配置PicGo</h3><p>我们打开打开 PicGo 的主界面,在图床设置里面选择阿里云 OSS，依照下面注意事项填写信息。</p>
+<p>设定 Keyld：填写我们在第三步中获得的 AccessKeyID</p>
+<p>设定 KeySecret：填写我们在第三步中获得的 AccessKeyIDSecret</p>
+<p>设定储存空间名：填写我们在第二步中填写的 bucket 名称</p>
+<p>确认存储区域：填写我们在第二步中查看的地域节点，注意复制的格式：只需要复制 oss-cn-Xxxx 即可，不需要后面的.aliyuncs.com</p>
+<h3 id="5、测试使用"><a href="#5、测试使用" class="headerlink" title="5、测试使用"></a>5、测试使用</h3><p>经过上面的一系列配置之后，我们就完成了 Typora 的图床配置，现在我们可以使用 Markdown 开始写文章了，图片、截图会在粘贴之后，自动通过 PicGo 上传到了远端图床。同时也可以手动将以前在本地存储的图片上传到图床上。</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://blog.csdn.net/qq_51808107/article/details/124044961">https://blog.csdn.net/qq_51808107/article/details/124044961</a></p>
+]]></content>
+      <categories>
+        <category>技术总结</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>回老家的一周</title>
+    <url>/week-back-home.html</url>
+    <content><![CDATA[<p>上周从常州省考回来，当天晚上正好是世界杯决赛，看到了凌晨两点，第二天一大早起床，和爸妈一起开车回老家，然后就开始了在老家的一周生活。</p>
+<span id="more"></span>
+
+<p>在老家的一周除了吃饭就是喝酒，无聊的很。第一天晚上有点头痛，还以为是阳了，后面一直没什么大的症状，不过每天都是头昏脑胀的，感觉应该只是普通流感（到现在还没好）。老家好多人都有点发烧，诊所里都是老人在挂水，也不知道挂的是什么水，老年人挂水好像会舒服很多。</p>
+<p>在老家还简单过了个小生日，老爸老妈在镇上酒店办了两桌酒席接客，姨妈给买了个大蛋糕，表弟从市里回来还买了一束花，有点小温馨。</p>
+<p>表侄今年六岁了，很可爱，活蹦乱跳的。</p>
+<p>爷爷、奶奶那一辈的好多人年纪都很大了，希望他们健健康康。</p>
+<p>今天下午回到常州了，准备最近搞搞毕业论文的事了。</p>
 ]]></content>
       <categories>
         <category>日常小记</category>
       </categories>
   </entry>
   <entry>
-    <title>新年快乐！</title>
-    <url>/2023-happy-spring-festival.html</url>
-    <content><![CDATA[<p>今年是大年初一，过新年。祝愿我和各位读者们新年快乐，事事如意，日进斗金，财运亨通，兔年大吉🎉</p>
+    <title>字节暑期实习同组实习生秋招情况分享</title>
+    <url>/my-bytedance-internship-friends-offer.html</url>
+    <content><![CDATA[<p>突然想起来做这个分享，是因为刚好下午有个字节跳动暑期实习时同组的朋友刚签约三方，和父母也顺便分享了其他同组实习生的签约情况。这边也给大家分享下。</p>
+<span id="more"></span>
+
+<p>在字节跳动暑期实习期间，前前后后加上我一共有 5 名实习生。</p>
+<p>实习生 A：浙大硕，在我们组从 4 月中干到 7 月中，走字节的活水平台活水到其他部门继续暑期实习了，未能转正成功，后续情况不清楚。</p>
+<p>实习生 B：山大硕，多段实习（包括量化，字节多段实习）大佬，7 月离职，未参加实习转正，投递字节另一个部门的秋招提前批，最终斩获大 sp offer 并顺利签约。</p>
+<p>实习生 C：重邮本，参加本部门实习转正，顺利收到小 sp offer 并签约。</p>
+<p>实习生 D：南开硕，由于实习时间短产出不足未能转正成功，秋招收到华为和农行等 offer，选择 wlb 的农行。</p>
+<p>实习生 E（本人），具体情况可见我的<a href="https://yaxing97.com/2022-autumn-recruitment-summary.html">2022秋招总结</a> 。</p>
+<p>这两天看了很多脉脉，有一个评论我觉得说的很对：“很多暑期实习过的人，都不想再去大厂了，选择去国企。”</p>
+<p>我觉得说的真的很对，实习过体会了大厂的卷，况且还是实习生，当时我的 mentor 比我累多了，每天晚上回去还要干活。我每天回到家感觉整个人都被抽空了，虽说我回家的也很早，一般 8 点左右就润了。到家什么都不想做，更别提学习了。幸好 618 入手了 ps5，靠战神 4、瑞奇与叮当、只狼等游戏度过一个又一个夜晚，不然我觉得我可能会抑郁。说实话，如果没有这段暑期实习，我拿到字节等大厂 offer 可能无脑去了，经历过才知道自己所能承受的身心压力。</p>
+<p>因此，暑期实习还是推荐去大厂的，一方面给秋招简历润色，另一方面看看自己是否能适应大厂工作生活节奏。</p>
+<p>以上。</p>
+]]></content>
+      <categories>
+        <category>实习秋招</category>
+        <category>实习</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>开了个B站大会员</title>
+    <url>/bilibili-vip.html</url>
+    <content><![CDATA[<p>最近巫师 3 更新了次世代版本（画质优化+中文配音），由于 PS5 放在了学校里，笔记本也带不太动，只能看老戴的视频云玩家二周目了（<a href="https://www.bilibili.com/video/BV1L14y1N7b3">链接</a>）。</p>
+<span id="more"></span>
+
+<p>看了一会，诶，咋更新了还这么糊，一看原来是只开了 1080P 画质，一冲动上某多多买了三个月的大会员，点开 4K 画质选项，好家伙，直接感受到了次世代的魅力。配音配的也很出色，没什么槽点。回头 PS5 上再三周目吧，并且期待一手巫师 4。</p>
+<p>充了大会员，接下来闲的时候再把 B 站上的电影再看看，总不能浪费了不是 hhh。</p>
+<p>最近多个平台都在搞年终总结了，比如 Apple Music 和 PlayStation，准备等其他平台都推出年终总结之后搞波分享～</p>
+]]></content>
+      <categories>
+        <category>日常小记</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>手把手带你搭建个人博客</title>
+    <url>/build-blog.html</url>
+    <content><![CDATA[<h2 id="系统环境-amp-工具"><a href="#系统环境-amp-工具" class="headerlink" title="系统环境&工具"></a>系统环境&amp;工具</h2><p>系统环境：MacOS</p>
+<p>工具：博客框架为 hexo，博客文件托管于 GitHub，博客网站用 Netlify 生成，国内访问采用 CloudFlare 进行 CDN 加速</p>
+<span id="more"></span>
+
+<h2 id="hexo博客框架安装"><a href="#hexo博客框架安装" class="headerlink" title="hexo博客框架安装"></a>hexo博客框架安装</h2><h3 id="预先环境"><a href="#预先环境" class="headerlink" title="预先环境"></a>预先环境</h3><p>1、安装 node（使用 homebrew）</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">brew install node</span><br></pre></td></tr></table></figure>
+
+<p>2、查看版本信息，正常看到版本信息即为成功</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">node -v</span><br><span class="line">npm -v</span><br></pre></td></tr></table></figure>
+
+<p>3、切换 npm 的源将源设置为淘宝源（速度快）</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm config get registry	<span class="comment"># 查看源</span></span><br><span class="line">npm config <span class="built_in">set</span> registry https://registry.npm.taobao.org <span class="comment"># 修改为淘宝源</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>1、安装 hexo</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">npm install hexo-cli -g <span class="comment"># 全局安装hexo命令行工具</span></span><br></pre></td></tr></table></figure>
+
+<p>2、初始化博客项目</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo init <span class="string">"博客目录名称"</span></span><br><span class="line"><span class="comment"># hexo init "blog" 即我的博客目录名称为blog，后续都用该目录来讲解</span></span><br></pre></td></tr></table></figure>
+
+<p>3、切换至博客目录安装依赖</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">npm install</span><br></pre></td></tr></table></figure>
+
+<p>4、运行</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">hexo s</span><br></pre></td></tr></table></figure>
+
+<p>打开链接，本地出现博客界面，即本地搭建成功！</p>
+<h3 id="添加建站脚本"><a href="#添加建站脚本" class="headerlink" title="添加建站脚本"></a>添加建站脚本</h3><p>为了后续<code>netlify</code>建站方便，在<code>package.json</code>里面添加一个命令：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">JSON</span><br><span class="line"><span class="punctuation">{</span></span><br><span class="line">    <span class="comment">// ......</span></span><br><span class="line">    <span class="attr">"scripts"</span><span class="punctuation">:</span> <span class="punctuation">{</span></span><br><span class="line">        <span class="attr">"build"</span><span class="punctuation">:</span> <span class="string">"hexo generate"</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">"clean"</span><span class="punctuation">:</span> <span class="string">"hexo clean"</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">"deploy"</span><span class="punctuation">:</span> <span class="string">"hexo deploy"</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">"server"</span><span class="punctuation">:</span> <span class="string">"hexo server"</span><span class="punctuation">,</span></span><br><span class="line">        <span class="attr">"netlify"</span><span class="punctuation">:</span> <span class="string">"npm run clean &amp;&amp; npm run build"</span> <span class="comment">// 新加行</span></span><br><span class="line">    <span class="punctuation">}</span><span class="punctuation">,</span></span><br><span class="line">    <span class="comment">// ......</span></span><br><span class="line"><span class="punctuation">}</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="GitHub托管项目文件"><a href="#GitHub托管项目文件" class="headerlink" title="GitHub托管项目文件"></a>GitHub托管项目文件</h2><p>创建本地仓库，推送到远端服务器</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line"><span class="built_in">cd</span> blog</span><br><span class="line">git init</span><br><span class="line">git add .</span><br><span class="line">git commit -m <span class="string">"my blog first commit"</span></span><br><span class="line">git remote add origin <span class="string">"远端github仓库地址"</span></span><br><span class="line">git branch -M main</span><br><span class="line">git push -u origin main</span><br></pre></td></tr></table></figure>
+
+<h2 id="Netlify建站"><a href="#Netlify建站" class="headerlink" title="Netlify建站"></a>Netlify建站</h2><p>由于 GitHub 自带的 gitpage 访问速度较慢，我们使用 Netlify（一个国外的免费的提供静态网站部署服务的平台）将托管 GitHub 上的静态网站部署上线。</p>
+<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><p>1、注册并登陆 Netlify</p>
+<p>2、add new site - import an existing project</p>
+<p>3、连接到 GitHub，选择我们托管在 GitHub 上的博客项目</p>
+<p>4、在设置中注意修改一处，Basic build settings - Build command 修改为 <code>npm run netlify</code></p>
+<p>5、构建完成可以看到一个 xxx.netlify.app 的 url，即为我们博客的 url，修改该 url 中的 xxx 为 yaxing97，即设置我的个人博客域名为<code>yaxing97.netlify.app</code></p>
+<h3 id="配置域名"><a href="#配置域名" class="headerlink" title="配置域名"></a>配置域名</h3><p>1、购买域名（国内国外都可）</p>
+<p>2、购买完成后在域名列表找到自己的域名，点击操作中的解析按钮</p>
+<p>3、设置域名解析，类型为<code>CNAME</code>，主机记录为<code>@</code>，记录值为<code>yaxing97.netlify.app</code>，其中<code>yaxing97</code>是之前建站步骤中设置的个性二级域名</p>
+<p>4、在 netlify 中配置域名，domain management - domains - add custom domain，一路通过即可</p>
+<h2 id="CloudFlare加速"><a href="#CloudFlare加速" class="headerlink" title="CloudFlare加速"></a>CloudFlare加速</h2><p>Netlify 虽然已经提供了 CDN 加速，但在使用过程中发现国内访问还是比较慢，Cloudflare 相对于国内的七牛云、阿里云等云服务商的 CDN 速度会慢一些，但是它有免费版本，而且最重要的是域名不用备案。</p>
+<h3 id="步骤-1"><a href="#步骤-1" class="headerlink" title="步骤"></a>步骤</h3><p>1、注册 Cloudflare 并登陆</p>
+<p>2、输入您的站点（yaxing97.com），点击添加站点</p>
+<p>3、选择免费套餐</p>
+<p>4、添加 DNS，Type 为<code>CNAME</code>，Name 为<code>yaxing97.com</code>，Content 为<code>yaxing97.netlify.app</code></p>
+<p>5、使用 cloudflare 提供的 dns 解析服务器（Cloudflare Nameservers）对 <code>yaxing97.com</code> 进行 dns 解析</p>
+<p>6、到阿里云控制台中，DNS 管理 - DNS 修改，修改 DNS 服务器</p>
+<h2 id="配置https"><a href="#配置https" class="headerlink" title="配置https"></a>配置https</h2><p>回到 netlify 中，Domain management - HTTPS，点击 verify DNS configuration，结果如下即为配置完成</p>
+<p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/image-20221212214817015.png" alt="配置HTTPS"></p>
+<h2 id="文章编写"><a href="#文章编写" class="headerlink" title="文章编写"></a>文章编写</h2><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">hexo new <span class="string">"文章标题"</span></span><br><span class="line"><span class="comment"># 编写好之后</span></span><br><span class="line">hexo clean</span><br><span class="line">hexo g</span><br><span class="line">git add *</span><br><span class="line">git commit -m <span class="string">"commit信息"</span></span><br><span class="line">git push</span><br></pre></td></tr></table></figure>
+
+<p>过片刻，访问我们的<code>https://yaxing97.com</code>，可以看到新添加的文章。</p>
+<h2 id="参考-amp-更多"><a href="#参考-amp-更多" class="headerlink" title="参考&更多"></a>参考&amp;更多</h2><p><a href="https://blog.cuijiacai.com/blog-building/">https://blog.cuijiacai.com/blog-building/</a></p>
+<p><a href="https://www.mdnice.com/writing/382af676baff4ed4ad5511074fb736da">https://www.mdnice.com/writing/382af676baff4ed4ad5511074fb736da</a></p>
+]]></content>
+      <categories>
+        <category>技术总结</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>新买的小书桌</title>
+    <url>/new-desk.html</url>
+    <content><![CDATA[<p>之前买了个 LG 的 27 寸显示器，放在书房的桌子上，一方面不能升高（上面有架板挡住），另一方面是桌子宽度不够（只有 50cm），显示器靠墙前面只能勉强放下我的 mac，导致屏幕离我很近，观感极差。于是在淘宝上淘了个书桌，还算不错。</p>
+<span id="more"></span>
+
+<p>如果要使用 27 寸及以上尺寸显示器的话，建议购买宽度至少 70cm 的，我购买的尺寸为 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="16.416ex" height="1.581ex" role="img" focusable="false" viewBox="0 -677 7255.9 699"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(500,0)"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(1000,0)"></path></g><g data-mml-node="mo" transform="translate(1722.2,0)"><path data-c="D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path></g><g data-mml-node="mn" transform="translate(2722.4,0)"><path data-c="38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(500,0)"></path></g><g data-mml-node="mo" transform="translate(3944.7,0)"><path data-c="D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path></g><g data-mml-node="mn" transform="translate(4944.9,0)"><path data-c="37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"></path><path data-c="34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" transform="translate(500,0)"></path></g><g data-mml-node="mi" transform="translate(5944.9,0)"><path data-c="1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path></g><g data-mml-node="mi" transform="translate(6377.9,0)"><path data-c="1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g></g></g></svg></mjx-container>，店铺是“新尚美家居”。</p>
+<p>注意到手需要自己拧螺丝固定桌腿和桌板（用电动螺丝刀）以及桌腿和桌腿之间的连接（手拧即可）。</p>
+<p>以下是实拍图 hh。</p>
+<p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/IMG_1396.JPG" alt="新书桌实拍图"></p>
 ]]></content>
       <categories>
         <category>日常小记</category>
@@ -5090,6 +5034,15 @@
 ]]></content>
       <categories>
         <category>Java八股文</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>新年快乐！</title>
+    <url>/2023-happy-spring-festival.html</url>
+    <content><![CDATA[<p>今年是大年初一，过新年。祝愿我和各位读者们新年快乐，事事如意，日进斗金，财运亨通，兔年大吉🎉</p>
+]]></content>
+      <categories>
+        <category>日常小记</category>
       </categories>
   </entry>
   <entry>
@@ -6016,6 +5969,53 @@
 ]]></content>
       <categories>
         <category>Java八股文</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>最近关于校招、互联网的一些信息</title>
+    <url>/202301-it-info.html</url>
+    <content><![CDATA[<p>最近刷脉脉、知乎等记录下一些网友发布的一些信息，仅作记录，不对其真实性等作深究，侵删。</p>
+<span id="more"></span>
+
+<p>1、字节飞书 EA，base 杭州的很多 22 届校招生没过试用期。</p>
+<p>2、抖音上一商家 C++基础课程卖 2999 一份，销量 1700+。</p>
+<p>3、银行类开发岗，从体量、发展、制度等方面考虑，建议去国有大型银行，以及头部的股份制银行。</p>
+<p>4、若是去大城市当程序员，以后可能会想象在老家当老师多舒服呀；若是回家当老师，或许一辈子都会后悔为什么年轻的时候不去大城市闯一闯，这就是人生。希望若干年后，都能和自己和解，这辈子过的还不错。</p>
+<p>5、以前进大专技校中小学等当老师门槛很低，现在越来越高，越来越卷。</p>
+<p>6、不热爱编程，没自信成为行业精英，不喜欢加班，不推荐成为程序员。</p>
+<p>7、这是一位字节战略离职的老哥/老姐对飞书的看法：个人不看好。欧美的企业 saas 能做起来有两个前提：一是欧美有很成熟的职业经理人体系，职业经理人来做采购决策，而中国大部分公司是不追求效率的国企或者抠门创始人搞一言堂的私企；二是企业 saas 的本质是提升员工工作效率，从而实现减少员工数量，降低人力成本，美国人平均工资是 5-7 万美元，省一个人就是大量的成本，中国人力成本这么低，为什么会愿意向飞书这样的企业 saas 付费呢？</p>
+<p>8、上海银行开发岗今年降薪，22 年及以前很香的上银，今年风评逐渐变差。</p>
+<p>9、脉脉投票显示四大行研发中心当一辈子程序员的职业生涯开局比去大厂应届试用期被裁下家不确定更好。</p>
+<p>10、职场 pua：这个需求交给你做是为了培养你，你要开发三天，我交给老员工只要一天；你能力不行，不像别的员工，你离开这个平台寸步难行，要珍惜学习的机会。</p>
+<p>11、某银行：一个内部几十个人用的单体系统，还要搞 devops。千余人，大部分还是僵尸用户的系统逼着你做熔断限流。</p>
+<p>12、农行的一些研发中心风评较差，变更问题、免费加班、削减福利、变相降薪、晋升困难、出市审批、各种考核，要仔细甄别。</p>
+<p>13、互联网企业的卷已经是共识了，在经济环境不好的大势下，仍然有源源不断的年轻小伙伴假如到卷动大潮。这个卷能不能避免？我以前认为不能，因为业务发展速度太快，变化太大，很难避免加班加点的卷。事实上跳出来看看，至少有一半以上的卷都是因为管理者无知，没有思路，不给团队指导和方向导致的“扯淡卷”。也许年轻鲜活的生命不卷白不卷，所谓少年得志的管理者自己也是这么被卷至今。企业成长的代价，最后一半被投资人买单，一半被员工买单，如果花了代价能买来成长，也算值得，可悲的是，多半买不来成长，买来的是失败后的教训。</p>
+<p>14、国家已经拉响了低生育警报，你对提高年轻人生育有什么建议？ - <a href="https://www.zhihu.com/question/576438196/answer/2830715899">宇宙区长孙连城的回答</a></p>
+<p>15、字节杭州有部门全撤转 base 了，虽然人不多。</p>
+<p>16、邮储研发中心总包能到 30+w，很香，但是貌似要 996，个人感觉还是比较香。</p>
+<p>17、字节教育剩下的人不用背指标，不用承担集团的高预期，只需探索新方向和打磨新产品，而且集团每个月固定拨钱养业务，何尝不是一种幸福呢？</p>
+<p>18、前几年当老师门槛很低，如果以当初的条件，现在去应聘，根本进不去。</p>
+<p>19、“围城”这个词一定能在今年秋招占据一席之地。大城小城，国企央企私企外企体制，银行券商互联网制造业军工研究所。究竟是选个能安家的小城还是尽情享受大城市的年轻与自由？是选择一步到位还是将悬念留个未来？是挤出时间来工作还是选择工作外的生活？是坚定走自己的专业还是另辟蹊径？是选择一眼看到头的安心还是未知伴随的风险与机遇？最后，希望各位都能有满意的选择。我们已是当代青年，我们的选择便是新一代青年的选择。与诸位共勉。</p>
+<p>20、从北大来读书的，最近看工作，越来越觉得，在北京挣三十和挣五十没有太大区别，做互联网和做其他行业也没有太大区别，可见的未来的工作只是作为糊口的工具，很难有什么热爱可言。越来越想回家乡找个体制内的稳定工作了，把更多的时间用在生活上面。是我太躺了吗？还是我格局不够？</p>
+]]></content>
+      <categories>
+        <category>日常小记</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>江苏省考考完啦</title>
+    <url>/2022-jiangsu-gwy.html</url>
+    <content><![CDATA[<p>坐标常州钟楼区肯德基青山店，看了下下一班回家的班车要到下午一点了，遂坐在肯德基里，沐浴暖冬的阳光，简单回顾一下我备考这次江苏省考的一些事情吧。</p>
+<span id="more"></span>
+
+<p>8 月底从字节回学校，本来是准备用 80%的时间准备 gwy 考试，剩下时间参加秋招的。然而，事与愿违，由于考公的意愿不是很强烈，再加上一波又一波的笔试面试，严重挤占了复习时间。更关键的是，在后期秋招快结束的时候，由于 offer 选择等问题让人心烦，备考甚至中断过一段时间。</p>
+<p>来常州也是不太顺利，最近疫情管控放开，礼拜五中午来常之前特意做了单管核酸检测，问了下说是晚上六七点就能出结果，并且听朋友说如果第二天早上八点不出结果，就是阳了。等啊等，到晚上七八点了反复查看核酸结果，无。十一点睡前再看了一次，还是无，睡吧，能咋办呢。第二天一早，醒来第一件事就是看核酸结果，结果出来了，阴性，大舒一口气，不然不是浪费了报名费跟酒店费嘛（笑死）。</p>
+<p>昨天早上行测，135 题，厚礼蟹，感觉以我目前的水平 120 分钟做完 125 题是个极限了，还有浙江省考竟然 115 题，晕。下午申论，写了三小时小学生写作，不得不说我的字写的太挫了，以后有空可以练练（flag 已立），不过以后有小孩这个一定要放到高优项。今天上午刚考完专业科目，跟前两天粉笔上做的去年和前年的专业课感觉差不多，都是该会的会，不会的猜，毕竟裸考。</p>
+<p>总体而言，对于我这个岗位而言，报录比 80:2，如果从七月份好好准备，心无旁骛，我觉得应该是可以进面试的（蜜汁自信）。</p>
+<p>下个月还有国考，这几天再带着看看行测吧。</p>
+]]></content>
+      <categories>
+        <category>日常小记</category>
       </categories>
   </entry>
   <entry>
