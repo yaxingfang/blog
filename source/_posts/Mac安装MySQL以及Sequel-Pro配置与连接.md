@@ -43,3 +43,5 @@ mysqladmin -u用户名 -p旧密码 password 新密码
 ```
 
 然后重新执行第一条命令，Sequel Pro 可以正常连接。
+
+P.S. 本机 Sequel Pro 导入 SQL 建表语句 loading 过久，不好用，不如使用 IDEA 自带的数据库工具，或者可以使用 Jet 家的 DataGrip。
