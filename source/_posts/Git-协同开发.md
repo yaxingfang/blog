@@ -1,5 +1,5 @@
 ---
-title: Git协同开发
+title: Git 协同开发
 copyright: true
 mathjax: false
 categories:

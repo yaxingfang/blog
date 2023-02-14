@@ -1,5 +1,5 @@
 ---
-title: Mac安装MySQL以及Sequel Pro配置与连接
+title: Mac 安装 MySQL 以及 Sequel Pro 配置与连接
 copyright: true
 mathjax: false
 categories:

@@ -4,6 +4,7 @@ copyright: true
 mathjax: false
 categories:
   - 技术总结
+  - SpringBoot
 toc: false
 date: 2023-02-13 15:09:10
 tags:
