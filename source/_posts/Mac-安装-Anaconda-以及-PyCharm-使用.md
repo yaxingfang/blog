@@ -29,6 +29,12 @@ export PATH=/Users/yaxing/opt/anaconda3/bin:$PATH
 conda info
 ```
 
+P.S. 每次打开终端都会自动激活 conda 的基础环境 base，通过以下方法取消自动激活
+
+```sh
+conda config --set auto_activate_base false
+```
+
 5、配置 [清华大学镜像](https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/)，方便后续下载包
 
 6、打开 PyCharm，new project > Add Interpreter > Add Local Interpreter > 选择左侧的 Conda Environment
