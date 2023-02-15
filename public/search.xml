@@ -36,57 +36,6 @@
       </categories>
   </entry>
   <entry>
-    <title>2022实习总结</title>
-    <url>/2022-internship-summary.html</url>
-    <content><![CDATA[<blockquote>
-<p>写在前面：作为一名硕转码的选手，今年暑期实习貌似又格外的难，身边的朋友、脉脉、牛客上的同学都表示今年大环境很差，实习很难找。各个大厂从裁员，”毕业季”，到锁 hc、停止流程、甚至主动毁约已签的 offer，无不表现出今年大环境有多差。以下是本人二月底以来找后端开发岗的暑期实习对各个公司面试流程一个大概的回顾和总结。</p>
-</blockquote>
-<span id="more"></span>
-
-<h2 id="已面试"><a href="#已面试" class="headerlink" title="已面试"></a>已面试</h2><h3 id="微软"><a href="#微软" class="headerlink" title="微软"></a>微软</h3><p>3.7 一面 →  3.10 （一二面平行面，一面过直达终面） → 3.16 挂 </p>
-<ul>
-<li>微软很看重算法，全程无八股，做题时没有思路可以和面试官沟通，不要自己一个人硬想，微软很看重沟通能力。</li>
-<li>尽量早投，微软今年暑期实习提前批差不多去年 12 月就开始了，身边有朋友提前批进的，相较于正式批而言难度感觉也没有更大，而且其实到了正式批剩余的 hc 就不多了。有朋友投简历有点晚连面试都没有安排到。</li>
-</ul>
-<h3 id="美团"><a href="#美团" class="headerlink" title="美团"></a>美团</h3><p>3.12 笔试（3.18 / 5） →  3.18 一面 →  3.18 挂</p>
-<p>面试体验很不好（当然自己面的也不好），后续脉脉牛客上看到这个部门貌似一面挂了不少人不乏顶级 985。</p>
-<h3 id="字节"><a href="#字节" class="headerlink" title="字节"></a>字节</h3><p>3.22 一面 →  3.23 二面 →  3.29 三面 →  4.2 offer 审批 →  4.11 offer 邮件</p>
-<ul>
-<li>字节比较看重基础和算法，题至少要有思路和面试官沟通，最好做出来。</li>
-<li>流程很快，一面二面都是当天晚上直接通知通过，三面过后好几天等到 HR 电话，然后 offer 审批跨了清明节，然后又过了一个周末，蛮痛苦的。</li>
-<li>综合而言，字节的面试体验很好，面试官会引导你去说，包括一些八股、场景题。</li>
-</ul>
-<h3 id="携程"><a href="#携程" class="headerlink" title="携程"></a>携程</h3><p>3.24 笔试（2.7 / 4） →  3.31 一面 →  4.13 约了二面（躺平不面了）</p>
-<p>携程一面问的比较基础，算法也比较简单。</p>
-<h3 id="阿里"><a href="#阿里" class="headerlink" title="阿里"></a>阿里</h3><p>3.24 初面 →  3.25 笔试（惨） →  4.7 二面 →  4.11 补笔试</p>
-<p>阿里一面看基础，二面看项目，项目不太熟悉了，被拷打烂了。<br>更新：4.11 晚上临时约做题，两道，一道多线程打印数据问题、一道高并发转账接口设计问题</p>
-<h3 id="恒生"><a href="#恒生" class="headerlink" title="恒生"></a>恒生</h3><p>3.31 笔试（无难度） → 4.6 一面 → 4.11 查看 已结束 → 4.12 HR 电话</p>
-<p>问的偏业务，貌似一面过了，拿了字节 offer 就拒了。</p>
-<h2 id="已笔试"><a href="#已笔试" class="headerlink" title="已笔试"></a>已笔试</h2><ul>
-<li><p>360 3.19 笔试（1.9 / 2） </p>
-</li>
-<li><p>贝壳 3.21 笔试（1.6 / 3）</p>
-</li>
-<li><p>网易雷火 3.26 笔试（1.5 / 2）</p>
-</li>
-<li><p>网易互联网 3.27 笔试（AK） → 4.2 查看 笔试未通过（今年貌似很多 AK 的同学被笔试挂的，挺迷）</p>
-</li>
-<li><p>便利蜂 3.31 笔试（惨）</p>
-</li>
-<li><p>京东 4.2 笔试（0.7 / 2）</p>
-</li>
-<li><p>百度 4.12 笔试 终止流程</p>
-</li>
-</ul>
-<h2 id="已投递简历挂"><a href="#已投递简历挂" class="headerlink" title="已投递简历挂"></a>已投递简历挂</h2><p>OPPO、网易互娱</p>
-<h2 id="已投递无后续"><a href="#已投递无后续" class="headerlink" title="已投递无后续"></a>已投递无后续</h2><p>顺丰、58 同城、联想、趋势科技</p>
-]]></content>
-      <categories>
-        <category>实习秋招</category>
-        <category>实习</category>
-      </categories>
-  </entry>
-  <entry>
     <title>2022秋招总结</title>
     <url>/2022-autumn-recruitment-summary.html</url>
     <content><![CDATA[<p>19 年乘着人见人吹的计算机大热，跨考计算机一站未果，二战上岸本校计算机。</p>
@@ -165,6 +114,75 @@
 ]]></content>
       <categories>
         <category>技术总结</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Java八股文 - Java异常</title>
+    <url>/java-exception-error.html</url>
+    <content><![CDATA[<blockquote>
+<p>整理的Java异常相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～	<span id="more"></span></p>
+</blockquote>
+<h2 id="Java异常架构"><a href="#Java异常架构" class="headerlink" title="Java异常架构"></a>Java异常架构</h2><p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes20200314173417278.png" alt="Java异常架构"></p>
+<h3 id="1-Throwable"><a href="#1-Throwable" class="headerlink" title="1. Throwable"></a>1. Throwable</h3><p>Throwable 是 Java 语言中所有错误与异常的超类。</p>
+<p>Throwable 包含两个子类：Error（错误）和 Exception（异常），它们通常用于指示发生了异常情况。</p>
+<h3 id="2-Error（错误）"><a href="#2-Error（错误）" class="headerlink" title="2. Error（错误）"></a>2. Error（错误）</h3><p>Error 类及其子类。程序中无法处理的错误，表示运行应用程序中出现了严重的错误。</p>
+<p>非受检异常，一般表示代码运行时 JVM 出现问题。比如 OutOfMemoryError：内存不足错误；StackOverflowError：栈溢出错误。此类错误发生时，JVM 将终止线程。</p>
+<h3 id="3-Exception（异常）"><a href="#3-Exception（异常）" class="headerlink" title="3. Exception（异常）"></a>3. Exception（异常）</h3><p>程序本身可以捕获并且可以处理的异常。Exception 这种异常又分为两类：运行时异常和编译时异常。</p>
+<h4 id="运行时异常"><a href="#运行时异常" class="headerlink" title="运行时异常"></a>运行时异常</h4><p>Exception 中 RuntimeException 类及其子类，表示 JVM 在运行期间可能出现的异常。（非受检异常，编译时不会检查出异常，运行时会发生异常，需要对异常进行特殊处理，否则会发生逻辑错误）</p>
+<h4 id="编译时异常"><a href="#编译时异常" class="headerlink" title="编译时异常"></a>编译时异常</h4><p>Exception 中除 RuntimeException 及其子类之外的异常。（受检异常，编译时会检查到该异常 ）</p>
+<h2 id="Java异常关键字"><a href="#Java异常关键字" class="headerlink" title="Java异常关键字"></a>Java异常关键字</h2><p>• <strong>try</strong> – 用于监听。将要被监听的代（可能抛出异常的代码）放在 try 语句块之内，当 try 语句块内发生异常时，异常就被抛出。<br>• <strong>catch</strong> – 用于捕获异常。catch 用来捕获 try 语句块中发生的异常。<br>• <strong>finally</strong> – finally 语句块总是会被执行。它主要用于回收在 try 块里打开的资源(如数据库连接、网络连接和磁盘文件)。<br>• <strong>throw</strong> – 用于手动抛出 catch 到的异常。<br>• <strong>throws</strong> – 用在方法签名中，用于声明该方法可能抛出的异常，调用该方法的方法需要注意 catch 这个可能跑出的异常。</p>
+<h2 id="Java异常处理"><a href="#Java异常处理" class="headerlink" title="Java异常处理"></a>Java异常处理</h2><h3 id="直接抛出异常"><a href="#直接抛出异常" class="headerlink" title="直接抛出异常"></a>直接抛出异常</h3><p>通常，应该捕获那些知道如何处理的异常，将不知道如何处理的异常继续传递下去。传递异常可以在方法签名处使用 <strong>throws</strong> 关键字声明可能会抛出的异常。调用该方法的方法需要注意 catch 这个可能抛出的异常。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">readFile</span><span class="params">(String filePath)</span> <span class="keyword">throws</span> IOException &#123;</span><br><span class="line">    <span class="type">File</span> <span class="variable">file</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">File</span>(filePath);</span><br><span class="line">    String result;</span><br><span class="line">    <span class="type">BufferedReader</span> <span class="variable">reader</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BufferedReader</span>(<span class="keyword">new</span> <span class="title class_">FileReader</span>(file));</span><br><span class="line">    <span class="keyword">while</span>((result = reader.readLine())!=<span class="literal">null</span>) &#123;</span><br><span class="line">        System.out.println(result);</span><br><span class="line">    &#125;</span><br><span class="line">    reader.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="封装异常再抛出"><a href="#封装异常再抛出" class="headerlink" title="封装异常再抛出"></a>封装异常再抛出</h3><p>有时我们会从 catch 中抛出一个异常，目的是为了改变异常的类型。多用于在多系统集成时，当某个子系统故障，异常类型可能有多种，可以用统一的异常类型向外暴露，不需暴露太多内部异常细节。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">readFile</span><span class="params">(String filePath)</span> <span class="keyword">throws</span> MyException &#123;    </span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// code</span></span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">        <span class="type">MyException</span> <span class="variable">ex</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MyException</span>(<span class="string">&quot;read file failed.&quot;</span>);</span><br><span class="line">        ex.initCause(e);</span><br><span class="line">        <span class="keyword">throw</span> ex;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="捕获异常"><a href="#捕获异常" class="headerlink" title="捕获异常"></a>捕获异常</h3><p>在一个 try-catch 语句块中可以捕获多个异常类型，并对不同类型的异常做出不同的处理</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">readFile</span><span class="params">(String filePath)</span> &#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// code</span></span><br><span class="line">    &#125; <span class="keyword">catch</span> (FileNotFoundException e) &#123;</span><br><span class="line">        <span class="comment">// handle FileNotFoundException</span></span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e)&#123;</span><br><span class="line">        <span class="comment">// handle IOException</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>同一个 catch 也可以捕获多种类型异常，用 | 隔开</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">readFile</span><span class="params">(String filePath)</span> &#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// code</span></span><br><span class="line">    &#125; <span class="keyword">catch</span> (FileNotFoundException | UnknownHostException e) &#123;</span><br><span class="line">        <span class="comment">// handle FileNotFoundException or UnknownHostException</span></span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e)&#123;</span><br><span class="line">        <span class="comment">// handle IOException</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h3 id="自定义异常"><a href="#自定义异常" class="headerlink" title="自定义异常"></a>自定义异常</h3><p>习惯上，定义一个异常类应包含两个构造函数，一个无参构造函数和一个带有详细描述信息的构造函数（Throwable 的 toString 方法会打印这些详细信息，调试时很有用）</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyException</span> <span class="keyword">extends</span> <span class="title class_">Exception</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyException</span><span class="params">()</span>&#123; &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyException</span><span class="params">(String msg)</span>&#123;</span><br><span class="line">        <span class="built_in">super</span>(msg);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="Java异常常见面试题"><a href="#Java异常常见面试题" class="headerlink" title="Java异常常见面试题"></a>Java异常常见面试题</h2><h3 id="1-Error-和-Exception-区别是什么？"><a href="#1-Error-和-Exception-区别是什么？" class="headerlink" title="1. Error 和 Exception 区别是什么？"></a>1. Error 和 Exception 区别是什么？</h3><p>Error 类型的错误通常为虚拟机相关错误，如系统崩溃，内存不足，堆栈溢出等，编译器不会对这类错误进行检测，Java 应用程序也不应对这类错误进行捕获，一旦这类错误发生，通常应用程序会被终止，仅靠应用程序本身无法恢复；</p>
+<p>Exception 类的错误是可以在应用程序中进行捕获并处理的，通常遇到这种错误，应对其进行处理，使应用程序可以继续正常运行。</p>
+<h3 id="2-运行时异常和一般异常-受检异常-区别是什么？"><a href="#2-运行时异常和一般异常-受检异常-区别是什么？" class="headerlink" title="2. 运行时异常和一般异常(受检异常)区别是什么？"></a>2. 运行时异常和一般异常(受检异常)区别是什么？</h3><p>运行时异常包括 RuntimeException 类及其子类，表示 JVM 在运行期间可能出现的异常。 Java 编译器不会检查运行时异常。</p>
+<p>受检异常是 Exception 中除 RuntimeException 及其子类之外的异常。 Java 编译器会检查受检异常。</p>
+<p><strong>RuntimeException异常和受检异常之间的区别</strong>：是否强制要求调用者必须处理此异常，如果强制要求调用者必须进行处理，那么就使用受检异常，否则就选择非受检异常(RuntimeException)。一般来讲，如果没有特殊的要求，我们建议使用 RuntimeException 异常。</p>
+<h3 id="3-JVM-是如何处理异常的？"><a href="#3-JVM-是如何处理异常的？" class="headerlink" title="3. JVM 是如何处理异常的？"></a>3. JVM 是如何处理异常的？</h3><p>在一个方法中如果发生异常，这个方法会创建一个异常对象，并转交给 JVM，该异常对象包含异常名称，异常描述以及异常发生时应用程序的状态。创建异常对象并转交给 JVM 的过程称为抛出异常。可能有一系列的方法调用，最终才进入抛出异常的方法，这一系列方法调用的有序列表叫做调用栈。</p>
+<p>JVM 会顺着调用栈去查找看是否有可以处理异常的代码，如果有，则调用异常处理代码。当 JVM 发现可以处理异常的代码时，会把发生的异常传递给它。如果 JVM 没有找到可以处理该异常的代码块，JVM 就会将该异常转交给默认的异常处理器（默认处理器为 JVM 的一部分），默认异常处理器打印出异常信息并终止应用程序。</p>
+<h3 id="4-throw-和-throws-的区别是什么？"><a href="#4-throw-和-throws-的区别是什么？" class="headerlink" title="4. throw 和 throws 的区别是什么？"></a>4. throw 和 throws 的区别是什么？</h3><p>Java 中的异常处理除了包括捕获异常和处理异常之外，还包括声明异常和拋出异常，可以通过 throws 关键字在方法上声明该方法要拋出的异常，或者在方法内部通过 throw 拋出异常对象。</p>
+<p><strong>throws 关键字和 throw 关键字在使用上的几点区别如下</strong>：</p>
+<ul>
+<li>throw 关键字用在方法内部，只能用于抛出一种异常，用来抛出方法或代码块中的异常，受查异常和非受查异常都可以被抛出。</li>
+<li>throws 关键字用在方法声明上，可以抛出多个异常，用来标识该方法可能抛出的异常列表。一个方法用 throws 标识了可能抛出的异常列表，调用该方法的方法中必须包含可处理异常的代码，否则也要在方法签名中用 throws 关键字声明相应的异常。</li>
+</ul>
+<h3 id="5-try-catch-finally-中，如果-catch-中-return-了，finally-还会执行吗？"><a href="#5-try-catch-finally-中，如果-catch-中-return-了，finally-还会执行吗？" class="headerlink" title="5. try-catch-finally 中，如果 catch 中 return 了，finally 还会执行吗？"></a>5. try-catch-finally 中，如果 catch 中 return 了，finally 还会执行吗？</h3><p><strong>答：会执行，在 return 前执行。</strong></p>
+<p><strong>代码示例1：</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">getInt</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">10</span>;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        System.out.println(a / <span class="number">0</span>);</span><br><span class="line">        a = <span class="number">20</span>;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (ArithmeticException e) &#123;</span><br><span class="line">        a = <span class="number">30</span>;</span><br><span class="line">        <span class="keyword">return</span> a;	<span class="comment">// 不会直接return，先执行finally，finally执行过后回来执行return a</span></span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        a = <span class="number">40</span>;</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="keyword">return</span> a;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>执行结果：30</p>
+<p><strong>代码示例2：</strong></p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">getInt</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">10</span>;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        System.out.println(a / <span class="number">0</span>);</span><br><span class="line">        a = <span class="number">20</span>;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (ArithmeticException e) &#123;</span><br><span class="line">        a = <span class="number">30</span>;</span><br><span class="line">        <span class="keyword">return</span> a;	<span class="comment">// 不会直接return，先执行finally</span></span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        a = <span class="number">40</span>;</span><br><span class="line">        <span class="keyword">return</span> a;	<span class="comment">// finally中有return就直接return了</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>执行结果：40</p>
+<h3 id="6-类-ExampleA-继承-Exception，类-ExampleB-继承ExampleA。"><a href="#6-类-ExampleA-继承-Exception，类-ExampleB-继承ExampleA。" class="headerlink" title="6. 类 ExampleA 继承 Exception，类 ExampleB 继承ExampleA。"></a>6. 类 ExampleA 继承 Exception，类 ExampleB 继承ExampleA。</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ExceptionA</span> <span class="keyword">extends</span> <span class="title class_">Exception</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">ExceptionA</span><span class="params">(String message)</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>(message);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ExceptionB</span> <span class="keyword">extends</span> <span class="title class_">ExceptionA</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">ExceptionB</span><span class="params">(String message)</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>(message);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">  <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">ExceptionB</span>(<span class="string">&quot;a&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">catch</span> (ExceptionA ea) &#123;</span><br><span class="line">  System.out.println(<span class="string">&quot;ExceptionA&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">  System.out.println(<span class="string">&quot;Exception&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>输出：ExampleA。（根据里氏代换原则[能使用父类型的地方一定能使用子类型]，抓取 ExceptionA 类型异常的 catch 块能够抓住 try 块中抛出的 ExceptionB 类型的异常）</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">  <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">ExceptionB</span>(<span class="string">&quot;b&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">  System.out.println(<span class="string">&quot;Exception: &quot;</span> + e);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>输出：Exception: com.yaxing.demo.exceptiondemo.ExceptionB: b，仍会使用子类型。</p>
+<p>面试题 - 说出下面代码的运行结果。（此题的出处是《Java 编程思想》一书）</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Annoyance</span> <span class="keyword">extends</span> <span class="title class_">Exception</span> &#123;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Sneeze</span> <span class="keyword">extends</span> <span class="title class_">Annoyance</span> &#123;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Human</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception &#123;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			<span class="keyword">try</span> &#123;</span><br><span class="line">				<span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">Sneeze</span>();</span><br><span class="line">			&#125; <span class="keyword">catch</span> ( Annoyance a ) &#123;</span><br><span class="line">				System.out.println(<span class="string">&quot;Caught Annoyance&quot;</span>);</span><br><span class="line">				<span class="keyword">throw</span> a;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125; <span class="keyword">catch</span> ( Sneeze s ) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;Caught Sneeze&quot;</span>);</span><br><span class="line">			<span class="keyword">return</span> ;</span><br><span class="line">		&#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>结果</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Caught Annoyance</span><br><span class="line">Caught Sneeze</span><br><span class="line">Hello World!</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Java八股文</category>
       </categories>
   </entry>
   <entry>
@@ -487,75 +505,6 @@
 </blockquote>
 <p>对于对象引用类型：&#x3D;&#x3D;比较的是对象的内存地址。<br>对于基本数据类型：&#x3D;&#x3D;比较的是值。</p>
 <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> &#123;</span><br><span class="line">    <span class="type">Integer</span> <span class="variable">a</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Integer</span>(<span class="number">3</span>);</span><br><span class="line">  	<span class="type">Integer</span> <span class="variable">b</span> <span class="operator">=</span> <span class="number">3</span>;</span><br><span class="line">    <span class="type">int</span> <span class="variable">c</span> <span class="operator">=</span> <span class="number">3</span>;</span><br><span class="line">    <span class="type">Integer</span> <span class="variable">d</span> <span class="operator">=</span> <span class="number">3</span>;</span><br><span class="line">    System.out.println(a == b); <span class="comment">// false，两个对象比较</span></span><br><span class="line">    System.out.println(a == c); <span class="comment">// true，a自动拆箱</span></span><br><span class="line">    System.out.println(b == c); <span class="comment">// true，b自动拆箱</span></span><br><span class="line">    System.out.println(b == d); <span class="comment">// true，包装类自动装箱且数值范围在cache范围内</span></span><br><span class="line"></span><br><span class="line">    <span class="type">Integer</span> <span class="variable">a</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Integer</span>(<span class="number">128</span>);</span><br><span class="line">    <span class="type">Integer</span> <span class="variable">b</span> <span class="operator">=</span> <span class="number">128</span>;</span><br><span class="line">    <span class="type">int</span> <span class="variable">c</span> <span class="operator">=</span> <span class="number">128</span>;</span><br><span class="line">    <span class="type">Integer</span> <span class="variable">d</span> <span class="operator">=</span> <span class="number">128</span>;</span><br><span class="line">    System.out.println(a == b); <span class="comment">// false，两个对象比较</span></span><br><span class="line">    System.out.println(a == c); <span class="comment">// true，a自动拆箱</span></span><br><span class="line">    System.out.println(b == c); <span class="comment">// true，b自动拆箱</span></span><br><span class="line">    System.out.println(b == d); <span class="comment">// false，包装类自动装箱但是数值范围不在cache范围内</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Java八股文</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Java八股文 - Java异常</title>
-    <url>/java-exception-error.html</url>
-    <content><![CDATA[<blockquote>
-<p>整理的Java异常相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～	<span id="more"></span></p>
-</blockquote>
-<h2 id="Java异常架构"><a href="#Java异常架构" class="headerlink" title="Java异常架构"></a>Java异常架构</h2><p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes20200314173417278.png" alt="Java异常架构"></p>
-<h3 id="1-Throwable"><a href="#1-Throwable" class="headerlink" title="1. Throwable"></a>1. Throwable</h3><p>Throwable 是 Java 语言中所有错误与异常的超类。</p>
-<p>Throwable 包含两个子类：Error（错误）和 Exception（异常），它们通常用于指示发生了异常情况。</p>
-<h3 id="2-Error（错误）"><a href="#2-Error（错误）" class="headerlink" title="2. Error（错误）"></a>2. Error（错误）</h3><p>Error 类及其子类。程序中无法处理的错误，表示运行应用程序中出现了严重的错误。</p>
-<p>非受检异常，一般表示代码运行时 JVM 出现问题。比如 OutOfMemoryError：内存不足错误；StackOverflowError：栈溢出错误。此类错误发生时，JVM 将终止线程。</p>
-<h3 id="3-Exception（异常）"><a href="#3-Exception（异常）" class="headerlink" title="3. Exception（异常）"></a>3. Exception（异常）</h3><p>程序本身可以捕获并且可以处理的异常。Exception 这种异常又分为两类：运行时异常和编译时异常。</p>
-<h4 id="运行时异常"><a href="#运行时异常" class="headerlink" title="运行时异常"></a>运行时异常</h4><p>Exception 中 RuntimeException 类及其子类，表示 JVM 在运行期间可能出现的异常。（非受检异常，编译时不会检查出异常，运行时会发生异常，需要对异常进行特殊处理，否则会发生逻辑错误）</p>
-<h4 id="编译时异常"><a href="#编译时异常" class="headerlink" title="编译时异常"></a>编译时异常</h4><p>Exception 中除 RuntimeException 及其子类之外的异常。（受检异常，编译时会检查到该异常 ）</p>
-<h2 id="Java异常关键字"><a href="#Java异常关键字" class="headerlink" title="Java异常关键字"></a>Java异常关键字</h2><p>• <strong>try</strong> – 用于监听。将要被监听的代（可能抛出异常的代码）放在 try 语句块之内，当 try 语句块内发生异常时，异常就被抛出。<br>• <strong>catch</strong> – 用于捕获异常。catch 用来捕获 try 语句块中发生的异常。<br>• <strong>finally</strong> – finally 语句块总是会被执行。它主要用于回收在 try 块里打开的资源(如数据库连接、网络连接和磁盘文件)。<br>• <strong>throw</strong> – 用于手动抛出 catch 到的异常。<br>• <strong>throws</strong> – 用在方法签名中，用于声明该方法可能抛出的异常，调用该方法的方法需要注意 catch 这个可能跑出的异常。</p>
-<h2 id="Java异常处理"><a href="#Java异常处理" class="headerlink" title="Java异常处理"></a>Java异常处理</h2><h3 id="直接抛出异常"><a href="#直接抛出异常" class="headerlink" title="直接抛出异常"></a>直接抛出异常</h3><p>通常，应该捕获那些知道如何处理的异常，将不知道如何处理的异常继续传递下去。传递异常可以在方法签名处使用 <strong>throws</strong> 关键字声明可能会抛出的异常。调用该方法的方法需要注意 catch 这个可能抛出的异常。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">readFile</span><span class="params">(String filePath)</span> <span class="keyword">throws</span> IOException &#123;</span><br><span class="line">    <span class="type">File</span> <span class="variable">file</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">File</span>(filePath);</span><br><span class="line">    String result;</span><br><span class="line">    <span class="type">BufferedReader</span> <span class="variable">reader</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">BufferedReader</span>(<span class="keyword">new</span> <span class="title class_">FileReader</span>(file));</span><br><span class="line">    <span class="keyword">while</span>((result = reader.readLine())!=<span class="literal">null</span>) &#123;</span><br><span class="line">        System.out.println(result);</span><br><span class="line">    &#125;</span><br><span class="line">    reader.close();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="封装异常再抛出"><a href="#封装异常再抛出" class="headerlink" title="封装异常再抛出"></a>封装异常再抛出</h3><p>有时我们会从 catch 中抛出一个异常，目的是为了改变异常的类型。多用于在多系统集成时，当某个子系统故障，异常类型可能有多种，可以用统一的异常类型向外暴露，不需暴露太多内部异常细节。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">readFile</span><span class="params">(String filePath)</span> <span class="keyword">throws</span> MyException &#123;    </span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// code</span></span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e) &#123;</span><br><span class="line">        <span class="type">MyException</span> <span class="variable">ex</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">MyException</span>(<span class="string">&quot;read file failed.&quot;</span>);</span><br><span class="line">        ex.initCause(e);</span><br><span class="line">        <span class="keyword">throw</span> ex;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="捕获异常"><a href="#捕获异常" class="headerlink" title="捕获异常"></a>捕获异常</h3><p>在一个 try-catch 语句块中可以捕获多个异常类型，并对不同类型的异常做出不同的处理</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">readFile</span><span class="params">(String filePath)</span> &#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// code</span></span><br><span class="line">    &#125; <span class="keyword">catch</span> (FileNotFoundException e) &#123;</span><br><span class="line">        <span class="comment">// handle FileNotFoundException</span></span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e)&#123;</span><br><span class="line">        <span class="comment">// handle IOException</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>同一个 catch 也可以捕获多种类型异常，用 | 隔开</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">private</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">readFile</span><span class="params">(String filePath)</span> &#123;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        <span class="comment">// code</span></span><br><span class="line">    &#125; <span class="keyword">catch</span> (FileNotFoundException | UnknownHostException e) &#123;</span><br><span class="line">        <span class="comment">// handle FileNotFoundException or UnknownHostException</span></span><br><span class="line">    &#125; <span class="keyword">catch</span> (IOException e)&#123;</span><br><span class="line">        <span class="comment">// handle IOException</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h3 id="自定义异常"><a href="#自定义异常" class="headerlink" title="自定义异常"></a>自定义异常</h3><p>习惯上，定义一个异常类应包含两个构造函数，一个无参构造函数和一个带有详细描述信息的构造函数（Throwable 的 toString 方法会打印这些详细信息，调试时很有用）</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">MyException</span> <span class="keyword">extends</span> <span class="title class_">Exception</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyException</span><span class="params">()</span>&#123; &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">MyException</span><span class="params">(String msg)</span>&#123;</span><br><span class="line">        <span class="built_in">super</span>(msg);</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="comment">// ...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="Java异常常见面试题"><a href="#Java异常常见面试题" class="headerlink" title="Java异常常见面试题"></a>Java异常常见面试题</h2><h3 id="1-Error-和-Exception-区别是什么？"><a href="#1-Error-和-Exception-区别是什么？" class="headerlink" title="1. Error 和 Exception 区别是什么？"></a>1. Error 和 Exception 区别是什么？</h3><p>Error 类型的错误通常为虚拟机相关错误，如系统崩溃，内存不足，堆栈溢出等，编译器不会对这类错误进行检测，Java 应用程序也不应对这类错误进行捕获，一旦这类错误发生，通常应用程序会被终止，仅靠应用程序本身无法恢复；</p>
-<p>Exception 类的错误是可以在应用程序中进行捕获并处理的，通常遇到这种错误，应对其进行处理，使应用程序可以继续正常运行。</p>
-<h3 id="2-运行时异常和一般异常-受检异常-区别是什么？"><a href="#2-运行时异常和一般异常-受检异常-区别是什么？" class="headerlink" title="2. 运行时异常和一般异常(受检异常)区别是什么？"></a>2. 运行时异常和一般异常(受检异常)区别是什么？</h3><p>运行时异常包括 RuntimeException 类及其子类，表示 JVM 在运行期间可能出现的异常。 Java 编译器不会检查运行时异常。</p>
-<p>受检异常是 Exception 中除 RuntimeException 及其子类之外的异常。 Java 编译器会检查受检异常。</p>
-<p><strong>RuntimeException异常和受检异常之间的区别</strong>：是否强制要求调用者必须处理此异常，如果强制要求调用者必须进行处理，那么就使用受检异常，否则就选择非受检异常(RuntimeException)。一般来讲，如果没有特殊的要求，我们建议使用 RuntimeException 异常。</p>
-<h3 id="3-JVM-是如何处理异常的？"><a href="#3-JVM-是如何处理异常的？" class="headerlink" title="3. JVM 是如何处理异常的？"></a>3. JVM 是如何处理异常的？</h3><p>在一个方法中如果发生异常，这个方法会创建一个异常对象，并转交给 JVM，该异常对象包含异常名称，异常描述以及异常发生时应用程序的状态。创建异常对象并转交给 JVM 的过程称为抛出异常。可能有一系列的方法调用，最终才进入抛出异常的方法，这一系列方法调用的有序列表叫做调用栈。</p>
-<p>JVM 会顺着调用栈去查找看是否有可以处理异常的代码，如果有，则调用异常处理代码。当 JVM 发现可以处理异常的代码时，会把发生的异常传递给它。如果 JVM 没有找到可以处理该异常的代码块，JVM 就会将该异常转交给默认的异常处理器（默认处理器为 JVM 的一部分），默认异常处理器打印出异常信息并终止应用程序。</p>
-<h3 id="4-throw-和-throws-的区别是什么？"><a href="#4-throw-和-throws-的区别是什么？" class="headerlink" title="4. throw 和 throws 的区别是什么？"></a>4. throw 和 throws 的区别是什么？</h3><p>Java 中的异常处理除了包括捕获异常和处理异常之外，还包括声明异常和拋出异常，可以通过 throws 关键字在方法上声明该方法要拋出的异常，或者在方法内部通过 throw 拋出异常对象。</p>
-<p><strong>throws 关键字和 throw 关键字在使用上的几点区别如下</strong>：</p>
-<ul>
-<li>throw 关键字用在方法内部，只能用于抛出一种异常，用来抛出方法或代码块中的异常，受查异常和非受查异常都可以被抛出。</li>
-<li>throws 关键字用在方法声明上，可以抛出多个异常，用来标识该方法可能抛出的异常列表。一个方法用 throws 标识了可能抛出的异常列表，调用该方法的方法中必须包含可处理异常的代码，否则也要在方法签名中用 throws 关键字声明相应的异常。</li>
-</ul>
-<h3 id="5-try-catch-finally-中，如果-catch-中-return-了，finally-还会执行吗？"><a href="#5-try-catch-finally-中，如果-catch-中-return-了，finally-还会执行吗？" class="headerlink" title="5. try-catch-finally 中，如果 catch 中 return 了，finally 还会执行吗？"></a>5. try-catch-finally 中，如果 catch 中 return 了，finally 还会执行吗？</h3><p><strong>答：会执行，在 return 前执行。</strong></p>
-<p><strong>代码示例1：</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">getInt</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">10</span>;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        System.out.println(a / <span class="number">0</span>);</span><br><span class="line">        a = <span class="number">20</span>;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (ArithmeticException e) &#123;</span><br><span class="line">        a = <span class="number">30</span>;</span><br><span class="line">        <span class="keyword">return</span> a;	<span class="comment">// 不会直接return，先执行finally，finally执行过后回来执行return a</span></span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        a = <span class="number">40</span>;</span><br><span class="line">    &#125;</span><br><span class="line">	<span class="keyword">return</span> a;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>执行结果：30</p>
-<p><strong>代码示例2：</strong></p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">static</span> <span class="type">int</span> <span class="title function_">getInt</span><span class="params">()</span> &#123;</span><br><span class="line">    <span class="type">int</span> <span class="variable">a</span> <span class="operator">=</span> <span class="number">10</span>;</span><br><span class="line">    <span class="keyword">try</span> &#123;</span><br><span class="line">        System.out.println(a / <span class="number">0</span>);</span><br><span class="line">        a = <span class="number">20</span>;</span><br><span class="line">    &#125; <span class="keyword">catch</span> (ArithmeticException e) &#123;</span><br><span class="line">        a = <span class="number">30</span>;</span><br><span class="line">        <span class="keyword">return</span> a;	<span class="comment">// 不会直接return，先执行finally</span></span><br><span class="line">    &#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">        a = <span class="number">40</span>;</span><br><span class="line">        <span class="keyword">return</span> a;	<span class="comment">// finally中有return就直接return了</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>执行结果：40</p>
-<h3 id="6-类-ExampleA-继承-Exception，类-ExampleB-继承ExampleA。"><a href="#6-类-ExampleA-继承-Exception，类-ExampleB-继承ExampleA。" class="headerlink" title="6. 类 ExampleA 继承 Exception，类 ExampleB 继承ExampleA。"></a>6. 类 ExampleA 继承 Exception，类 ExampleB 继承ExampleA。</h3><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ExceptionA</span> <span class="keyword">extends</span> <span class="title class_">Exception</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">ExceptionA</span><span class="params">(String message)</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>(message);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ExceptionB</span> <span class="keyword">extends</span> <span class="title class_">ExceptionA</span> &#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="title function_">ExceptionB</span><span class="params">(String message)</span> &#123;</span><br><span class="line">        <span class="built_in">super</span>(message);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">  <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">ExceptionB</span>(<span class="string">&quot;a&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">catch</span> (ExceptionA ea) &#123;</span><br><span class="line">  System.out.println(<span class="string">&quot;ExceptionA&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">  System.out.println(<span class="string">&quot;Exception&quot;</span>);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>输出：ExampleA。（根据里氏代换原则[能使用父类型的地方一定能使用子类型]，抓取 ExceptionA 类型异常的 catch 块能够抓住 try 块中抛出的 ExceptionB 类型的异常）</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">try</span> &#123;</span><br><span class="line">  <span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">ExceptionB</span>(<span class="string">&quot;b&quot;</span>);</span><br><span class="line">&#125; <span class="keyword">catch</span> (Exception e) &#123;</span><br><span class="line">  System.out.println(<span class="string">&quot;Exception: &quot;</span> + e);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>输出：Exception: com.yaxing.demo.exceptiondemo.ExceptionB: b，仍会使用子类型。</p>
-<p>面试题 - 说出下面代码的运行结果。（此题的出处是《Java 编程思想》一书）</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">class</span> <span class="title class_">Annoyance</span> <span class="keyword">extends</span> <span class="title class_">Exception</span> &#123;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Sneeze</span> <span class="keyword">extends</span> <span class="title class_">Annoyance</span> &#123;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Human</span> &#123;</span><br><span class="line">	<span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title function_">main</span><span class="params">(String[] args)</span> <span class="keyword">throws</span> Exception &#123;</span><br><span class="line">		<span class="keyword">try</span> &#123;</span><br><span class="line">			<span class="keyword">try</span> &#123;</span><br><span class="line">				<span class="keyword">throw</span> <span class="keyword">new</span> <span class="title class_">Sneeze</span>();</span><br><span class="line">			&#125; <span class="keyword">catch</span> ( Annoyance a ) &#123;</span><br><span class="line">				System.out.println(<span class="string">&quot;Caught Annoyance&quot;</span>);</span><br><span class="line">				<span class="keyword">throw</span> a;</span><br><span class="line">			&#125;</span><br><span class="line">		&#125; <span class="keyword">catch</span> ( Sneeze s ) &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;Caught Sneeze&quot;</span>);</span><br><span class="line">			<span class="keyword">return</span> ;</span><br><span class="line">		&#125; <span class="keyword">finally</span> &#123;</span><br><span class="line">			System.out.println(<span class="string">&quot;Hello World!&quot;</span>);</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>结果</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line">Caught Annoyance</span><br><span class="line">Caught Sneeze</span><br><span class="line">Hello World!</span><br></pre></td></tr></table></figure>
 
 ]]></content>
       <categories>
@@ -1512,6 +1461,102 @@
       </categories>
   </entry>
   <entry>
+    <title>Java八股文 - SpringMVC</title>
+    <url>/java-springmvc.html</url>
+    <content><![CDATA[<blockquote>
+<p>整理的SpringMVC相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～<span id="more"></span></p>
+</blockquote>
+<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><h3 id="什么是Spring-MVC？简单介绍下你对Spring-MVC的理解？"><a href="#什么是Spring-MVC？简单介绍下你对Spring-MVC的理解？" class="headerlink" title="什么是Spring MVC？简单介绍下你对Spring MVC的理解？"></a>什么是Spring MVC？简单介绍下你对Spring MVC的理解？</h3><p>Spring MVC 是一个基于 Java 的实现了 MVC 设计模式的请求驱动类型的轻量级 Web 框架，通过把模型-视图-控制器分离，将 web 层进行职责解耦，简化开发。</p>
+<h2 id="核心组件"><a href="#核心组件" class="headerlink" title="核心组件"></a>核心组件</h2><h3 id="Spring-MVC的主要组件？"><a href="#Spring-MVC的主要组件？" class="headerlink" title="Spring MVC的主要组件？"></a>Spring MVC的主要组件？</h3><p>（1）前端控制器 DispatcherServlet（不需要程序员开发）</p>
+<p>作用：接收请求、响应结果，相当于转发器，有了 DispatcherServlet 就减少了其它组件之间的耦合度。</p>
+<p>（2）处理器映射器 HandlerMapping（不需要程序员开发）</p>
+<p>作用：根据请求的 URL 来查找 Handler</p>
+<p>（3）处理器适配器 HandlerAdapter</p>
+<p>注意：在编写 Handler 的时候要按照 HandlerAdapter 要求的规则去编写，这样适配器 HandlerAdapter 才可以正确的去执行 Handler。</p>
+<p>（4）处理器 Handler（需要程序员开发）</p>
+<p>（5）视图解析器 ViewResolver（不需要程序员开发）</p>
+<p>作用：进行视图的解析，根据视图逻辑名解析成真正的视图（view）</p>
+<p>（6）视图 View（需要程序员开发 jsp）</p>
+<p>View 是一个接口， 它的实现类支持不同的视图类型（jsp，freemarker，pdf 等等）</p>
+<h3 id="什么是DispatcherServlet"><a href="#什么是DispatcherServlet" class="headerlink" title="什么是DispatcherServlet"></a>什么是DispatcherServlet</h3><p>Spring 的 MVC 框架是围绕 DispatcherServlet 来设计的，它用来处理所有的 HTTP 请求和响应。</p>
+<h3 id="什么是Spring-MVC框架的控制器？"><a href="#什么是Spring-MVC框架的控制器？" class="headerlink" title="什么是Spring MVC框架的控制器？"></a>什么是Spring MVC框架的控制器？</h3><p>控制器使用@Controller 注解，并且提供了@RequestMapping 注解，通过解析 url 中的路径，可以找到相应的控制器进行逻辑处理，响应数据等。</p>
+<h3 id="Spring-MVC的控制器是不是单例模式-如果是-有什么问题-怎么解决？"><a href="#Spring-MVC的控制器是不是单例模式-如果是-有什么问题-怎么解决？" class="headerlink" title="Spring MVC的控制器是不是单例模式,如果是,有什么问题,怎么解决？"></a>Spring MVC的控制器是不是单例模式,如果是,有什么问题,怎么解决？</h3><p>单例模式,所以在多线程访问的时候有线程安全问题,不要用同步,会影响性能的，解决方案是在控制器保持控制器无状态（不要写字段）。</p>
+<h2 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h2><h3 id="请描述Spring-MVC的工作流程？描述一下-DispatcherServlet-的工作流程？"><a href="#请描述Spring-MVC的工作流程？描述一下-DispatcherServlet-的工作流程？" class="headerlink" title="请描述Spring MVC的工作流程？描述一下 DispatcherServlet 的工作流程？"></a>请描述Spring MVC的工作流程？描述一下 DispatcherServlet 的工作流程？</h3><ol>
+<li>用户发送请求至前端控制器 DispatcherServlet；</li>
+<li>DispatcherServlet 收到请求后，调用 HandlerMapping 处理器映射器，请求获取 Handler；</li>
+<li>HandlerMapping 处理器映射器根据请求 url<strong>找到具体的处理器</strong>，生成处理器对象及处理器拦截器(如果有则生成)一并返回给 DispatcherServlet；</li>
+<li>DispatcherServlet 调用 HandlerAdapter 处理器适配器；</li>
+<li>HandlerAdapter 经过适配 <strong>调用具体处理器</strong>(Handler，也叫后端控制器)；</li>
+<li>Handler 执行完成返回 ModelAndView；</li>
+<li>HandlerAdapter 将 Handler 执行结果 ModelAndView 返回给 DispatcherServlet；</li>
+<li>DispatcherServlet 将 ModelAndView 传给 ViewResolver 视图解析器进行解析；</li>
+<li>ViewResolver 解析后返回具体 View；</li>
+<li>DispatcherServlet 对 View 进行渲染成为视图（即将模型数据填充至视图中）；</li>
+<li>DispatcherServlet 响应用户。</li>
+</ol>
+<p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes20200208211439106.png" alt="Spring MVC的工作流程"></p>
+<h2 id="常用注解"><a href="#常用注解" class="headerlink" title="常用注解"></a>常用注解</h2><h3 id="注解原理是什么"><a href="#注解原理是什么" class="headerlink" title="注解原理是什么"></a>注解原理是什么</h3><p>注解本质是一个继承了 Annotation 的特殊接口，其具体实现类是 Java 运行时生成的动态代理类。我们通过反射获取注解时，返回的是 Java 运行时生成的动态代理对象。通过代理对象调用自定义注解的方法。</p>
+<h3 id="Spring-MVC常用的注解有哪些？"><a href="#Spring-MVC常用的注解有哪些？" class="headerlink" title="Spring MVC常用的注解有哪些？"></a>Spring MVC常用的注解有哪些？</h3><p>@RequestMapping：用于处理请求 url 映射的注解，可用于类或方法上。用于类上，则表示类中的所有响应请求的方法都是以该地址作为父路径。</p>
+<p>@RequestBody：注解实现接收 http 请求的 json 数据，将 json 转换为 java 对象。</p>
+<p>@ResponseBody：注解实现将 controller 方法返回对象转化为 json 对象响应给客户。</p>
+<h3 id="Sping-MVC中的控制器的注解一般用哪个-有没有别的注解可以替代？"><a href="#Sping-MVC中的控制器的注解一般用哪个-有没有别的注解可以替代？" class="headerlink" title="Sping MVC中的控制器的注解一般用哪个,有没有别的注解可以替代？"></a>Sping MVC中的控制器的注解一般用哪个,有没有别的注解可以替代？</h3><p>答：一般用@Controller 注解，也可以使用@RestController，@RestController 注解相当于@ResponseBody ＋ @Controller，@ResponseBody 用于返回 json 数据＋ @Controller 用于表明控制器</p>
+<h3 id="Controller注解的作用"><a href="#Controller注解的作用" class="headerlink" title="@Controller注解的作用"></a>@Controller注解的作用</h3><p>@Controller 用于标记在一个类上，使用它标记的类就是一个 Spring MVC Controller 对象。通过请求的 url 和@RequestMapping 注解对应到实际处理请求的处理器。需要开启 mvc 注解扫描找到@Controller 的控制器。</p>
+<h3 id="RequestMapping注解的作用"><a href="#RequestMapping注解的作用" class="headerlink" title="@RequestMapping注解的作用"></a>@RequestMapping注解的作用</h3><p>RequestMapping 是一个用来处理请求地址映射的注解，可用于类或方法上。</p>
+<p>用于类上，表示类中的所有响应请求的方法都是以该地址作为父路径。</p>
+<p>RequestMapping 注解有六个属性：</p>
+<p><strong>path&#x2F;value， method</strong></p>
+<ul>
+<li><p>value： 指定请求的实际地址，指定的地址可以是 URI Template 模式（后面将会说明）；</p>
+</li>
+<li><p>method： 指定请求的 method 类型， GET、POST、PUT、DELETE 等；</p>
+</li>
+</ul>
+<p><strong>consumes，produces</strong></p>
+<ul>
+<li><p>consumes： 指定处理请求的提交内容类型（Content-Type），例如 application&#x2F;json, text&#x2F;html;</p>
+</li>
+<li><p>produces: 指定返回的内容类型，仅当 request 请求头中的(Accept)类型中包含该指定类型才返回；</p>
+</li>
+</ul>
+<p><strong>params，headers</strong></p>
+<ul>
+<li><p>params： 指定 request 中必须包含某些参数值时，才让该方法处理。</p>
+</li>
+<li><p>headers： 指定 request 中必须包含某些指定的 header 值，才能让该方法处理请求。</p>
+</li>
+</ul>
+<h3 id="PathVariable和-RequestParam的区别"><a href="#PathVariable和-RequestParam的区别" class="headerlink" title="@PathVariable和@RequestParam的区别"></a>@PathVariable和@RequestParam的区别</h3><p>@PathVariable 作用： 用于绑定 url 中的占位符。例如：请求 url 中 &#x2F;delete&#x2F;{id}，这个{id}就是 url 占位符。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 根据path /anno/testPathVariable/10 找到 testPathVariable 方法</span></span><br><span class="line"><span class="comment">* 然后，其中的10就是sid占位符所占的位置的数据，然后通过<span class="doctag">@PathVaribale</span>注解将其赋值给 id</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">@RequestMapping(path = &quot;testPathVariable/&#123;sid&#125;&quot;)</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">testPathVariable</span><span class="params">(<span class="meta">@PathVariable(value = &quot;sid&quot;)</span> String id)</span> &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;执行了testPathVariable...&quot;</span>);</span><br><span class="line">    System.out.println(id);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;success&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>@RequestParam 作用： 把请求中指定名称的参数给控制器中的形参赋值。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Controller中的代码：</span></span><br><span class="line"><span class="meta">@RequestMapping(path = &quot;/testRequestParam&quot;)</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">testRequestParam</span><span class="params">(<span class="meta">@RequestParam(value = &quot;name&quot;)</span> String username)</span> &#123;</span><br><span class="line">    <span class="comment">// 把请求中指定的name赋值给控制器中的形参username</span></span><br><span class="line">    System.out.println(<span class="string">&quot;执行了testRequestParam...&quot;</span>);</span><br><span class="line">    System.out.println(username);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;success&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="Spring-MVC怎么样设定转发和重定向的？"><a href="#Spring-MVC怎么样设定转发和重定向的？" class="headerlink" title="Spring MVC怎么样设定转发和重定向的？"></a>Spring MVC怎么样设定转发和重定向的？</h3><p>（1）转发：使用 forward<br>forward 是指内部转发，相当于服务器内部方法跳转调用。请求一次服务器。转发地址不变。</p>
+<p>（2）重定向：使用 redirect<br>重定向是指当浏览器请求一个 URL 时，服务器返回一个重定向指令，告诉浏览器地址已经变了，麻烦使用新的 URL 再重新发送新请求。请求两次服务器。重定向地址改变。</p>
+<h3 id="Spring-MVC怎么和AJAX相互调用的？"><a href="#Spring-MVC怎么和AJAX相互调用的？" class="headerlink" title="Spring MVC怎么和AJAX相互调用的？"></a>Spring MVC怎么和AJAX相互调用的？</h3><p>通过 Jackson 或者是 fastjson 就可以把 Java 里面的对象直接转化成 Js 可以识别的 Json 对象，来进行传输。</p>
+<h3 id="如何解决POST请求中文乱码问题，GET的又如何处理呢？"><a href="#如何解决POST请求中文乱码问题，GET的又如何处理呢？" class="headerlink" title="如何解决POST请求中文乱码问题，GET的又如何处理呢？"></a>如何解决POST请求中文乱码问题，GET的又如何处理呢？</h3><p>（1）解决 post 请求乱码问题：</p>
+<p>在 web.xml 中配置一个 CharacterEncodingFilter 过滤器，设置成 utf-8；</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">filter</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-class</span>&gt;</span>org.springframework.web.filter.CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-class</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">init-param</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-name</span>&gt;</span>encoding<span class="tag">&lt;/<span class="name">param-name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-value</span>&gt;</span>utf-8<span class="tag">&lt;/<span class="name">param-value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">init-param</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">filter</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">filter-mapping</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/*<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">filter-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>（2）get 请求中文参数出现乱码解决方法有两个：</p>
+<p>修改 tomcat 配置文件添加编码与工程编码一致，如下：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">&lt;ConnectorURIEncoding=&quot;utf-8&quot; connectionTimeout=&quot;20000&quot; port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot; redirectPort=&quot;8443&quot;/&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Spring-MVC的异常处理"><a href="#Spring-MVC的异常处理" class="headerlink" title="Spring MVC的异常处理"></a>Spring MVC的异常处理</h3><p>可以将异常抛给 Spring 框架，由 Spring 框架来处理；我们只需要配置简单的异常处理器，在异常处理器中添视图页面即可。</p>
+<h3 id="如果在拦截请求中，我想拦截get方式提交的方法-怎么配置"><a href="#如果在拦截请求中，我想拦截get方式提交的方法-怎么配置" class="headerlink" title="如果在拦截请求中，我想拦截get方式提交的方法,怎么配置"></a>如果在拦截请求中，我想拦截get方式提交的方法,怎么配置</h3><p>答：可以在@RequestMapping 注解里面加上 method&#x3D;RequestMethod.GET。</p>
+<h3 id="怎样在方法里面得到Request-或者Session？"><a href="#怎样在方法里面得到Request-或者Session？" class="headerlink" title="怎样在方法里面得到Request,或者Session？"></a>怎样在方法里面得到Request,或者Session？</h3><p>答：直接在方法的形参中声明 request,Spring MVC 就自动把 request 对象传入。</p>
+<h3 id="如果想在拦截的方法里面得到从前台传入的参数-怎么得到？"><a href="#如果想在拦截的方法里面得到从前台传入的参数-怎么得到？" class="headerlink" title="如果想在拦截的方法里面得到从前台传入的参数,怎么得到？"></a>如果想在拦截的方法里面得到从前台传入的参数,怎么得到？</h3><p>直接在形参里面声明这个参数就可以,但必须名字和传过来的参数一样。<br>或者使用 RequestParam 注解将前台的参数名 A 传给形参中的参数 B</p>
+<h3 id="如果前台有很多个参数传入-并且这些参数都是一个对象的-那么怎么样快速得到这个对象？"><a href="#如果前台有很多个参数传入-并且这些参数都是一个对象的-那么怎么样快速得到这个对象？" class="headerlink" title="如果前台有很多个参数传入,并且这些参数都是一个对象的,那么怎么样快速得到这个对象？"></a>如果前台有很多个参数传入,并且这些参数都是一个对象的,那么怎么样快速得到这个对象？</h3><p>直接在方法中声明这个对象,Spring MVC 就自动会把属性赋值到这个对象里面。</p>
+<h3 id="Spring-MVC中函数的返回值是什么？"><a href="#Spring-MVC中函数的返回值是什么？" class="headerlink" title="Spring MVC中函数的返回值是什么？"></a>Spring MVC中函数的返回值是什么？</h3><p>返回值可以有很多类型,有 String, ModelAndView（视图和数据合并在一起）。</p>
+<h3 id="Spring-MVC用什么对象从后台向前台传递数据的？"><a href="#Spring-MVC用什么对象从后台向前台传递数据的？" class="headerlink" title="Spring MVC用什么对象从后台向前台传递数据的？"></a>Spring MVC用什么对象从后台向前台传递数据的？</h3><p>通过 ModelMap 对象,可以在这个对象里面调用 put 方法,把对象加到里面,前台就可以通过 el 表达式拿到。</p>
+<h3 id="怎么样把ModelMap里面的数据放入Session里面？"><a href="#怎么样把ModelMap里面的数据放入Session里面？" class="headerlink" title="怎么样把ModelMap里面的数据放入Session里面？"></a>怎么样把ModelMap里面的数据放入Session里面？</h3><p>可以在类上面加上@SessionAttributes 注解,里面包含的字符串就是要放入 session 里面的 key。</p>
+<h3 id="Spring-MVC里面拦截器是怎么写的"><a href="#Spring-MVC里面拦截器是怎么写的" class="headerlink" title="Spring MVC里面拦截器是怎么写的"></a>Spring MVC里面拦截器是怎么写的</h3><p>有两种写法,一种是实现 HandlerInterceptor 接口，重写 prehandle 等方法，然后配置拦截器</p>
+]]></content>
+      <categories>
+        <category>Java八股文</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Java八股文 - Spring</title>
     <url>/java-spring.html</url>
     <content><![CDATA[<blockquote>
@@ -1820,102 +1865,6 @@
 </ul>
 <p>可以简单地认为, 使用 @Aspect 注解的类就是切面</p>
 <p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes2020021212264438.png" alt="在这里插入图片描述"></p>
-]]></content>
-      <categories>
-        <category>Java八股文</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Java八股文 - SpringMVC</title>
-    <url>/java-springmvc.html</url>
-    <content><![CDATA[<blockquote>
-<p>整理的SpringMVC相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～<span id="more"></span></p>
-</blockquote>
-<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><h3 id="什么是Spring-MVC？简单介绍下你对Spring-MVC的理解？"><a href="#什么是Spring-MVC？简单介绍下你对Spring-MVC的理解？" class="headerlink" title="什么是Spring MVC？简单介绍下你对Spring MVC的理解？"></a>什么是Spring MVC？简单介绍下你对Spring MVC的理解？</h3><p>Spring MVC 是一个基于 Java 的实现了 MVC 设计模式的请求驱动类型的轻量级 Web 框架，通过把模型-视图-控制器分离，将 web 层进行职责解耦，简化开发。</p>
-<h2 id="核心组件"><a href="#核心组件" class="headerlink" title="核心组件"></a>核心组件</h2><h3 id="Spring-MVC的主要组件？"><a href="#Spring-MVC的主要组件？" class="headerlink" title="Spring MVC的主要组件？"></a>Spring MVC的主要组件？</h3><p>（1）前端控制器 DispatcherServlet（不需要程序员开发）</p>
-<p>作用：接收请求、响应结果，相当于转发器，有了 DispatcherServlet 就减少了其它组件之间的耦合度。</p>
-<p>（2）处理器映射器 HandlerMapping（不需要程序员开发）</p>
-<p>作用：根据请求的 URL 来查找 Handler</p>
-<p>（3）处理器适配器 HandlerAdapter</p>
-<p>注意：在编写 Handler 的时候要按照 HandlerAdapter 要求的规则去编写，这样适配器 HandlerAdapter 才可以正确的去执行 Handler。</p>
-<p>（4）处理器 Handler（需要程序员开发）</p>
-<p>（5）视图解析器 ViewResolver（不需要程序员开发）</p>
-<p>作用：进行视图的解析，根据视图逻辑名解析成真正的视图（view）</p>
-<p>（6）视图 View（需要程序员开发 jsp）</p>
-<p>View 是一个接口， 它的实现类支持不同的视图类型（jsp，freemarker，pdf 等等）</p>
-<h3 id="什么是DispatcherServlet"><a href="#什么是DispatcherServlet" class="headerlink" title="什么是DispatcherServlet"></a>什么是DispatcherServlet</h3><p>Spring 的 MVC 框架是围绕 DispatcherServlet 来设计的，它用来处理所有的 HTTP 请求和响应。</p>
-<h3 id="什么是Spring-MVC框架的控制器？"><a href="#什么是Spring-MVC框架的控制器？" class="headerlink" title="什么是Spring MVC框架的控制器？"></a>什么是Spring MVC框架的控制器？</h3><p>控制器使用@Controller 注解，并且提供了@RequestMapping 注解，通过解析 url 中的路径，可以找到相应的控制器进行逻辑处理，响应数据等。</p>
-<h3 id="Spring-MVC的控制器是不是单例模式-如果是-有什么问题-怎么解决？"><a href="#Spring-MVC的控制器是不是单例模式-如果是-有什么问题-怎么解决？" class="headerlink" title="Spring MVC的控制器是不是单例模式,如果是,有什么问题,怎么解决？"></a>Spring MVC的控制器是不是单例模式,如果是,有什么问题,怎么解决？</h3><p>单例模式,所以在多线程访问的时候有线程安全问题,不要用同步,会影响性能的，解决方案是在控制器保持控制器无状态（不要写字段）。</p>
-<h2 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h2><h3 id="请描述Spring-MVC的工作流程？描述一下-DispatcherServlet-的工作流程？"><a href="#请描述Spring-MVC的工作流程？描述一下-DispatcherServlet-的工作流程？" class="headerlink" title="请描述Spring MVC的工作流程？描述一下 DispatcherServlet 的工作流程？"></a>请描述Spring MVC的工作流程？描述一下 DispatcherServlet 的工作流程？</h3><ol>
-<li>用户发送请求至前端控制器 DispatcherServlet；</li>
-<li>DispatcherServlet 收到请求后，调用 HandlerMapping 处理器映射器，请求获取 Handler；</li>
-<li>HandlerMapping 处理器映射器根据请求 url<strong>找到具体的处理器</strong>，生成处理器对象及处理器拦截器(如果有则生成)一并返回给 DispatcherServlet；</li>
-<li>DispatcherServlet 调用 HandlerAdapter 处理器适配器；</li>
-<li>HandlerAdapter 经过适配 <strong>调用具体处理器</strong>(Handler，也叫后端控制器)；</li>
-<li>Handler 执行完成返回 ModelAndView；</li>
-<li>HandlerAdapter 将 Handler 执行结果 ModelAndView 返回给 DispatcherServlet；</li>
-<li>DispatcherServlet 将 ModelAndView 传给 ViewResolver 视图解析器进行解析；</li>
-<li>ViewResolver 解析后返回具体 View；</li>
-<li>DispatcherServlet 对 View 进行渲染成为视图（即将模型数据填充至视图中）；</li>
-<li>DispatcherServlet 响应用户。</li>
-</ol>
-<p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes20200208211439106.png" alt="Spring MVC的工作流程"></p>
-<h2 id="常用注解"><a href="#常用注解" class="headerlink" title="常用注解"></a>常用注解</h2><h3 id="注解原理是什么"><a href="#注解原理是什么" class="headerlink" title="注解原理是什么"></a>注解原理是什么</h3><p>注解本质是一个继承了 Annotation 的特殊接口，其具体实现类是 Java 运行时生成的动态代理类。我们通过反射获取注解时，返回的是 Java 运行时生成的动态代理对象。通过代理对象调用自定义注解的方法。</p>
-<h3 id="Spring-MVC常用的注解有哪些？"><a href="#Spring-MVC常用的注解有哪些？" class="headerlink" title="Spring MVC常用的注解有哪些？"></a>Spring MVC常用的注解有哪些？</h3><p>@RequestMapping：用于处理请求 url 映射的注解，可用于类或方法上。用于类上，则表示类中的所有响应请求的方法都是以该地址作为父路径。</p>
-<p>@RequestBody：注解实现接收 http 请求的 json 数据，将 json 转换为 java 对象。</p>
-<p>@ResponseBody：注解实现将 controller 方法返回对象转化为 json 对象响应给客户。</p>
-<h3 id="Sping-MVC中的控制器的注解一般用哪个-有没有别的注解可以替代？"><a href="#Sping-MVC中的控制器的注解一般用哪个-有没有别的注解可以替代？" class="headerlink" title="Sping MVC中的控制器的注解一般用哪个,有没有别的注解可以替代？"></a>Sping MVC中的控制器的注解一般用哪个,有没有别的注解可以替代？</h3><p>答：一般用@Controller 注解，也可以使用@RestController，@RestController 注解相当于@ResponseBody ＋ @Controller，@ResponseBody 用于返回 json 数据＋ @Controller 用于表明控制器</p>
-<h3 id="Controller注解的作用"><a href="#Controller注解的作用" class="headerlink" title="@Controller注解的作用"></a>@Controller注解的作用</h3><p>@Controller 用于标记在一个类上，使用它标记的类就是一个 Spring MVC Controller 对象。通过请求的 url 和@RequestMapping 注解对应到实际处理请求的处理器。需要开启 mvc 注解扫描找到@Controller 的控制器。</p>
-<h3 id="RequestMapping注解的作用"><a href="#RequestMapping注解的作用" class="headerlink" title="@RequestMapping注解的作用"></a>@RequestMapping注解的作用</h3><p>RequestMapping 是一个用来处理请求地址映射的注解，可用于类或方法上。</p>
-<p>用于类上，表示类中的所有响应请求的方法都是以该地址作为父路径。</p>
-<p>RequestMapping 注解有六个属性：</p>
-<p><strong>path&#x2F;value， method</strong></p>
-<ul>
-<li><p>value： 指定请求的实际地址，指定的地址可以是 URI Template 模式（后面将会说明）；</p>
-</li>
-<li><p>method： 指定请求的 method 类型， GET、POST、PUT、DELETE 等；</p>
-</li>
-</ul>
-<p><strong>consumes，produces</strong></p>
-<ul>
-<li><p>consumes： 指定处理请求的提交内容类型（Content-Type），例如 application&#x2F;json, text&#x2F;html;</p>
-</li>
-<li><p>produces: 指定返回的内容类型，仅当 request 请求头中的(Accept)类型中包含该指定类型才返回；</p>
-</li>
-</ul>
-<p><strong>params，headers</strong></p>
-<ul>
-<li><p>params： 指定 request 中必须包含某些参数值时，才让该方法处理。</p>
-</li>
-<li><p>headers： 指定 request 中必须包含某些指定的 header 值，才能让该方法处理请求。</p>
-</li>
-</ul>
-<h3 id="PathVariable和-RequestParam的区别"><a href="#PathVariable和-RequestParam的区别" class="headerlink" title="@PathVariable和@RequestParam的区别"></a>@PathVariable和@RequestParam的区别</h3><p>@PathVariable 作用： 用于绑定 url 中的占位符。例如：请求 url 中 &#x2F;delete&#x2F;{id}，这个{id}就是 url 占位符。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 根据path /anno/testPathVariable/10 找到 testPathVariable 方法</span></span><br><span class="line"><span class="comment">* 然后，其中的10就是sid占位符所占的位置的数据，然后通过<span class="doctag">@PathVaribale</span>注解将其赋值给 id</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">@RequestMapping(path = &quot;testPathVariable/&#123;sid&#125;&quot;)</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">testPathVariable</span><span class="params">(<span class="meta">@PathVariable(value = &quot;sid&quot;)</span> String id)</span> &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;执行了testPathVariable...&quot;</span>);</span><br><span class="line">    System.out.println(id);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;success&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>@RequestParam 作用： 把请求中指定名称的参数给控制器中的形参赋值。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Controller中的代码：</span></span><br><span class="line"><span class="meta">@RequestMapping(path = &quot;/testRequestParam&quot;)</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">testRequestParam</span><span class="params">(<span class="meta">@RequestParam(value = &quot;name&quot;)</span> String username)</span> &#123;</span><br><span class="line">    <span class="comment">// 把请求中指定的name赋值给控制器中的形参username</span></span><br><span class="line">    System.out.println(<span class="string">&quot;执行了testRequestParam...&quot;</span>);</span><br><span class="line">    System.out.println(username);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;success&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="Spring-MVC怎么样设定转发和重定向的？"><a href="#Spring-MVC怎么样设定转发和重定向的？" class="headerlink" title="Spring MVC怎么样设定转发和重定向的？"></a>Spring MVC怎么样设定转发和重定向的？</h3><p>（1）转发：使用 forward<br>forward 是指内部转发，相当于服务器内部方法跳转调用。请求一次服务器。转发地址不变。</p>
-<p>（2）重定向：使用 redirect<br>重定向是指当浏览器请求一个 URL 时，服务器返回一个重定向指令，告诉浏览器地址已经变了，麻烦使用新的 URL 再重新发送新请求。请求两次服务器。重定向地址改变。</p>
-<h3 id="Spring-MVC怎么和AJAX相互调用的？"><a href="#Spring-MVC怎么和AJAX相互调用的？" class="headerlink" title="Spring MVC怎么和AJAX相互调用的？"></a>Spring MVC怎么和AJAX相互调用的？</h3><p>通过 Jackson 或者是 fastjson 就可以把 Java 里面的对象直接转化成 Js 可以识别的 Json 对象，来进行传输。</p>
-<h3 id="如何解决POST请求中文乱码问题，GET的又如何处理呢？"><a href="#如何解决POST请求中文乱码问题，GET的又如何处理呢？" class="headerlink" title="如何解决POST请求中文乱码问题，GET的又如何处理呢？"></a>如何解决POST请求中文乱码问题，GET的又如何处理呢？</h3><p>（1）解决 post 请求乱码问题：</p>
-<p>在 web.xml 中配置一个 CharacterEncodingFilter 过滤器，设置成 utf-8；</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">filter</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-class</span>&gt;</span>org.springframework.web.filter.CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-class</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">init-param</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-name</span>&gt;</span>encoding<span class="tag">&lt;/<span class="name">param-name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-value</span>&gt;</span>utf-8<span class="tag">&lt;/<span class="name">param-value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">init-param</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">filter</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">filter-mapping</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/*<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">filter-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>（2）get 请求中文参数出现乱码解决方法有两个：</p>
-<p>修改 tomcat 配置文件添加编码与工程编码一致，如下：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">&lt;ConnectorURIEncoding=&quot;utf-8&quot; connectionTimeout=&quot;20000&quot; port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot; redirectPort=&quot;8443&quot;/&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="Spring-MVC的异常处理"><a href="#Spring-MVC的异常处理" class="headerlink" title="Spring MVC的异常处理"></a>Spring MVC的异常处理</h3><p>可以将异常抛给 Spring 框架，由 Spring 框架来处理；我们只需要配置简单的异常处理器，在异常处理器中添视图页面即可。</p>
-<h3 id="如果在拦截请求中，我想拦截get方式提交的方法-怎么配置"><a href="#如果在拦截请求中，我想拦截get方式提交的方法-怎么配置" class="headerlink" title="如果在拦截请求中，我想拦截get方式提交的方法,怎么配置"></a>如果在拦截请求中，我想拦截get方式提交的方法,怎么配置</h3><p>答：可以在@RequestMapping 注解里面加上 method&#x3D;RequestMethod.GET。</p>
-<h3 id="怎样在方法里面得到Request-或者Session？"><a href="#怎样在方法里面得到Request-或者Session？" class="headerlink" title="怎样在方法里面得到Request,或者Session？"></a>怎样在方法里面得到Request,或者Session？</h3><p>答：直接在方法的形参中声明 request,Spring MVC 就自动把 request 对象传入。</p>
-<h3 id="如果想在拦截的方法里面得到从前台传入的参数-怎么得到？"><a href="#如果想在拦截的方法里面得到从前台传入的参数-怎么得到？" class="headerlink" title="如果想在拦截的方法里面得到从前台传入的参数,怎么得到？"></a>如果想在拦截的方法里面得到从前台传入的参数,怎么得到？</h3><p>直接在形参里面声明这个参数就可以,但必须名字和传过来的参数一样。<br>或者使用 RequestParam 注解将前台的参数名 A 传给形参中的参数 B</p>
-<h3 id="如果前台有很多个参数传入-并且这些参数都是一个对象的-那么怎么样快速得到这个对象？"><a href="#如果前台有很多个参数传入-并且这些参数都是一个对象的-那么怎么样快速得到这个对象？" class="headerlink" title="如果前台有很多个参数传入,并且这些参数都是一个对象的,那么怎么样快速得到这个对象？"></a>如果前台有很多个参数传入,并且这些参数都是一个对象的,那么怎么样快速得到这个对象？</h3><p>直接在方法中声明这个对象,Spring MVC 就自动会把属性赋值到这个对象里面。</p>
-<h3 id="Spring-MVC中函数的返回值是什么？"><a href="#Spring-MVC中函数的返回值是什么？" class="headerlink" title="Spring MVC中函数的返回值是什么？"></a>Spring MVC中函数的返回值是什么？</h3><p>返回值可以有很多类型,有 String, ModelAndView（视图和数据合并在一起）。</p>
-<h3 id="Spring-MVC用什么对象从后台向前台传递数据的？"><a href="#Spring-MVC用什么对象从后台向前台传递数据的？" class="headerlink" title="Spring MVC用什么对象从后台向前台传递数据的？"></a>Spring MVC用什么对象从后台向前台传递数据的？</h3><p>通过 ModelMap 对象,可以在这个对象里面调用 put 方法,把对象加到里面,前台就可以通过 el 表达式拿到。</p>
-<h3 id="怎么样把ModelMap里面的数据放入Session里面？"><a href="#怎么样把ModelMap里面的数据放入Session里面？" class="headerlink" title="怎么样把ModelMap里面的数据放入Session里面？"></a>怎么样把ModelMap里面的数据放入Session里面？</h3><p>可以在类上面加上@SessionAttributes 注解,里面包含的字符串就是要放入 session 里面的 key。</p>
-<h3 id="Spring-MVC里面拦截器是怎么写的"><a href="#Spring-MVC里面拦截器是怎么写的" class="headerlink" title="Spring MVC里面拦截器是怎么写的"></a>Spring MVC里面拦截器是怎么写的</h3><p>有两种写法,一种是实现 HandlerInterceptor 接口，重写 prehandle 等方法，然后配置拦截器</p>
 ]]></content>
       <categories>
         <category>Java八股文</category>
@@ -4383,26 +4332,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Lombok 使用小记</title>
-    <url>/lombok.html</url>
-    <content><![CDATA[<p>本文对 Lombok 的使用做简单小记。<span id="more"></span></p>
-<h2 id="Lombok-简介"><a href="#Lombok-简介" class="headerlink" title="Lombok 简介"></a>Lombok 简介</h2><p>Lombok 利用注解自动生成 Java Bean 中的 Getter、Setter、Equals、ToString、HashCode 等方法，省去自己添加这些方法。</p>
-<h2 id="Lombok-安装"><a href="#Lombok-安装" class="headerlink" title="Lombok 安装"></a>Lombok 安装</h2><p>1、IDEA 设置</p>
-<p>​	1.1、安装插件 Lombok</p>
-<p>​	1.2、在设置 Build &gt; Compiler &gt; Annotation Processors 中，勾选 Enable annotation processing</p>
-<p>2、引入依赖</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- https://mvnrepository.com/artifact/org.projectlombok/lombok --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.projectlombok<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>lombok<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.18.24<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">scope</span>&gt;</span>provided<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<h2 id="Lombok-使用"><a href="#Lombok-使用" class="headerlink" title="Lombok 使用"></a>Lombok 使用</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="meta">@NoArgsConstructor</span></span><br><span class="line"><span class="meta">@AllArgsConstructor</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Person</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> String address;</span><br><span class="line">    <span class="keyword">private</span> Integer age;</span><br><span class="line">    <span class="keyword">private</span> String hobbit;</span><br><span class="line">    <span class="keyword">private</span> String phone;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p><code>@Data</code>：注在类上，提供类的 Getter、Setter、Equals、ToString、HashCode 方法<br><code>@NoArgsConstructor</code>：注在类上，提供类的无参构造<br><code>@AllArgsConstructor</code>：注在类上，提供类的全参构造</p>
-]]></content>
-      <categories>
-        <category>技术总结</category>
-        <category>SpringBoot</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Logback + Slf4j 使用小记</title>
     <url>/Logback-Slf4j.html</url>
     <content><![CDATA[<p>本文对 Logback + Slf4j 的配置和使用做简单小记。<span id="more"></span></p>
@@ -4426,6 +4355,77 @@
       </categories>
   </entry>
   <entry>
+    <title>Lombok 使用小记</title>
+    <url>/lombok.html</url>
+    <content><![CDATA[<p>本文对 Lombok 的使用做简单小记。<span id="more"></span></p>
+<h2 id="Lombok-简介"><a href="#Lombok-简介" class="headerlink" title="Lombok 简介"></a>Lombok 简介</h2><p>Lombok 利用注解自动生成 Java Bean 中的 Getter、Setter、Equals、ToString、HashCode 等方法，省去自己添加这些方法。</p>
+<h2 id="Lombok-安装"><a href="#Lombok-安装" class="headerlink" title="Lombok 安装"></a>Lombok 安装</h2><p>1、IDEA 设置</p>
+<p>​	1.1、安装插件 Lombok</p>
+<p>​	1.2、在设置 Build &gt; Compiler &gt; Annotation Processors 中，勾选 Enable annotation processing</p>
+<p>2、引入依赖</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="comment">&lt;!-- https://mvnrepository.com/artifact/org.projectlombok/lombok --&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.projectlombok<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>lombok<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.18.24<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">scope</span>&gt;</span>provided<span class="tag">&lt;/<span class="name">scope</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h2 id="Lombok-使用"><a href="#Lombok-使用" class="headerlink" title="Lombok 使用"></a>Lombok 使用</h2><figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="meta">@NoArgsConstructor</span></span><br><span class="line"><span class="meta">@AllArgsConstructor</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Person</span> &#123;</span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line">    <span class="keyword">private</span> String address;</span><br><span class="line">    <span class="keyword">private</span> Integer age;</span><br><span class="line">    <span class="keyword">private</span> String hobbit;</span><br><span class="line">    <span class="keyword">private</span> String phone;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><code>@Data</code>：注在类上，提供类的 Getter、Setter、Equals、ToString、HashCode 方法<br><code>@NoArgsConstructor</code>：注在类上，提供类的无参构造<br><code>@AllArgsConstructor</code>：注在类上，提供类的全参构造</p>
+]]></content>
+      <categories>
+        <category>技术总结</category>
+        <category>SpringBoot</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>2022实习总结</title>
+    <url>/2022-internship-summary.html</url>
+    <content><![CDATA[<blockquote>
+<p>写在前面：作为一名硕转码的选手，今年暑期实习貌似又格外的难，身边的朋友、脉脉、牛客上的同学都表示今年大环境很差，实习很难找。各个大厂从裁员，”毕业季”，到锁 hc、停止流程、甚至主动毁约已签的 offer，无不表现出今年大环境有多差。以下是本人二月底以来找后端开发岗的暑期实习对各个公司面试流程一个大概的回顾和总结。</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="已面试"><a href="#已面试" class="headerlink" title="已面试"></a>已面试</h2><h3 id="微软"><a href="#微软" class="headerlink" title="微软"></a>微软</h3><p>3.7 一面 →  3.10 （一二面平行面，一面过直达终面） → 3.16 挂 </p>
+<ul>
+<li>微软很看重算法，全程无八股，做题时没有思路可以和面试官沟通，不要自己一个人硬想，微软很看重沟通能力。</li>
+<li>尽量早投，微软今年暑期实习提前批差不多去年 12 月就开始了，身边有朋友提前批进的，相较于正式批而言难度感觉也没有更大，而且其实到了正式批剩余的 hc 就不多了。有朋友投简历有点晚连面试都没有安排到。</li>
+</ul>
+<h3 id="美团"><a href="#美团" class="headerlink" title="美团"></a>美团</h3><p>3.12 笔试（3.18 / 5） →  3.18 一面 →  3.18 挂</p>
+<p>面试体验很不好（当然自己面的也不好），后续脉脉牛客上看到这个部门貌似一面挂了不少人不乏顶级 985。</p>
+<h3 id="字节"><a href="#字节" class="headerlink" title="字节"></a>字节</h3><p>3.22 一面 →  3.23 二面 →  3.29 三面 →  4.2 offer 审批 →  4.11 offer 邮件</p>
+<ul>
+<li>字节比较看重基础和算法，题至少要有思路和面试官沟通，最好做出来。</li>
+<li>流程很快，一面二面都是当天晚上直接通知通过，三面过后好几天等到 HR 电话，然后 offer 审批跨了清明节，然后又过了一个周末，蛮痛苦的。</li>
+<li>综合而言，字节的面试体验很好，面试官会引导你去说，包括一些八股、场景题。</li>
+</ul>
+<h3 id="携程"><a href="#携程" class="headerlink" title="携程"></a>携程</h3><p>3.24 笔试（2.7 / 4） →  3.31 一面 →  4.13 约了二面（躺平不面了）</p>
+<p>携程一面问的比较基础，算法也比较简单。</p>
+<h3 id="阿里"><a href="#阿里" class="headerlink" title="阿里"></a>阿里</h3><p>3.24 初面 →  3.25 笔试（惨） →  4.7 二面 →  4.11 补笔试</p>
+<p>阿里一面看基础，二面看项目，项目不太熟悉了，被拷打烂了。<br>更新：4.11 晚上临时约做题，两道，一道多线程打印数据问题、一道高并发转账接口设计问题</p>
+<h3 id="恒生"><a href="#恒生" class="headerlink" title="恒生"></a>恒生</h3><p>3.31 笔试（无难度） → 4.6 一面 → 4.11 查看 已结束 → 4.12 HR 电话</p>
+<p>问的偏业务，貌似一面过了，拿了字节 offer 就拒了。</p>
+<h2 id="已笔试"><a href="#已笔试" class="headerlink" title="已笔试"></a>已笔试</h2><ul>
+<li><p>360 3.19 笔试（1.9 / 2） </p>
+</li>
+<li><p>贝壳 3.21 笔试（1.6 / 3）</p>
+</li>
+<li><p>网易雷火 3.26 笔试（1.5 / 2）</p>
+</li>
+<li><p>网易互联网 3.27 笔试（AK） → 4.2 查看 笔试未通过（今年貌似很多 AK 的同学被笔试挂的，挺迷）</p>
+</li>
+<li><p>便利蜂 3.31 笔试（惨）</p>
+</li>
+<li><p>京东 4.2 笔试（0.7 / 2）</p>
+</li>
+<li><p>百度 4.12 笔试 终止流程</p>
+</li>
+</ul>
+<h2 id="已投递简历挂"><a href="#已投递简历挂" class="headerlink" title="已投递简历挂"></a>已投递简历挂</h2><p>OPPO、网易互娱</p>
+<h2 id="已投递无后续"><a href="#已投递无后续" class="headerlink" title="已投递无后续"></a>已投递无后续</h2><p>顺丰、58 同城、联想、趋势科技</p>
+]]></content>
+      <categories>
+        <category>实习秋招</category>
+        <category>实习</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Mac 安装 MySQL 以及 Sequel Pro 配置与连接</title>
     <url>/mysql-sequel-pro.html</url>
     <content><![CDATA[<p>本文介绍在 Mac 上安装 MySQL 以及使用 Sequel Pro 作为可视化客户端的配置与连接。<span id="more"></span></p>
@@ -4446,6 +4446,26 @@
 
 <p>然后重新执行第一条命令，Sequel Pro 可以正常连接。</p>
 <p>P.S. 本机 Sequel Pro 导入 SQL 建表语句 loading 过久，不好用，不如使用 IDEA 自带的数据库工具，或者可以使用 Jet 家的 DataGrip。</p>
+]]></content>
+      <categories>
+        <category>Mac开发环境配置</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Mac 安装 Anaconda 以及 PyCharm 使用</title>
+    <url>/anaconda-pycharm.html</url>
+    <content><![CDATA[<p>本文介绍在 Mac 上安装 Anaconda 以及 PyCharm 使用 。<span id="more"></span></p>
+<p>1、官网下载 .dmg 文件，可以到一些国内镜像站上下载速度较快。</p>
+<p>2、下载完成后一路 next 安装。</p>
+<p>3、配置环境变量</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">vim ~/.bash_profile</span><br><span class="line"><span class="built_in">export</span> PATH=/Users/yaxing/opt/anaconda3/bin:<span class="variable">$PATH</span></span><br></pre></td></tr></table></figure>
+
+<p>4、check 是否安装配置成功</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">conda info</span><br></pre></td></tr></table></figure>
+
+<p>5、配置 <a href="https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/">清华大学镜像</a>，方便后续下载包</p>
+<p>6、打开 PyCharm，new project &gt; Add Interpreter &gt; Add Local Interpreter &gt; 选择左侧的 Conda Environment</p>
+<p>其中 location 表示环境的名称及其所在路径，选择 Python version 3.7，配置 Conda executable 为 <code>/Users/yaxing/opt/anaconda3/bin/conda</code>，路径修改为自己的安装位置。</p>
 ]]></content>
       <categories>
         <category>Mac开发环境配置</category>
@@ -4547,55 +4567,6 @@
 
 <p>3、测试运行</p>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">[Score(id=1, name=小明, subject=语文, score=92, create_time=Mon Feb 13 19:49:00 CST 2023, update_time=Mon Feb 13 20:03:48 CST 2023)]</span><br></pre></td></tr></table></figure>
-]]></content>
-      <categories>
-        <category>技术总结</category>
-        <category>SpringBoot</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>SpringBoot 集成 Swagger</title>
-    <url>/springboot-swagger.html</url>
-    <content><![CDATA[<p>本文对 SpringBoot 集成 Swagger 配置和使用做简单小记。<span id="more"></span></p>
-<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><ol>
-<li><p>引入依赖</p>
- <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>io.springfox<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>springfox-swagger2<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.9.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>io.springfox<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>springfox-swagger-ui<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.9.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>创建 Swagger 2 的配置类</p>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="meta">@EnableSwagger2</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">SwaggerConfig</span> &#123;</span><br><span class="line">    <span class="comment">/* swagger会帮助我们⽣成接⼝⽂档</span></span><br><span class="line"><span class="comment">     * 1：配置⽣成的⽂档信息</span></span><br><span class="line"><span class="comment">     * 2: 配置⽣成规则</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="comment">/* Docket封装接⼝⽂档信息 */</span></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="keyword">public</span> Docket <span class="title function_">getDocket</span><span class="params">()</span> &#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//创建封⾯信息对象</span></span><br><span class="line">        <span class="type">ApiInfoBuilder</span> <span class="variable">apiInfoBuilder</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ApiInfoBuilder</span>();</span><br><span class="line">        apiInfoBuilder</span><br><span class="line">                .title(<span class="string">&quot;后端接⼝说明&quot;</span>)</span><br><span class="line">                .description(<span class="string">&quot;此⽂档详细说明了SpringBootDemo项⽬后端接⼝规范&quot;</span>)</span><br><span class="line">                .version(<span class="string">&quot;1.0&quot;</span>)</span><br><span class="line">                .contact(<span class="keyword">new</span> <span class="title class_">Contact</span>(<span class="string">&quot;yaxing&quot;</span>, <span class="string">&quot;https://yaxing97.com&quot;</span>, <span class="string">&quot;yaxingfang@163.com&quot;</span>));</span><br><span class="line">        <span class="type">ApiInfo</span> <span class="variable">apiInfo</span> <span class="operator">=</span> apiInfoBuilder.build();</span><br><span class="line">        <span class="type">Docket</span> <span class="variable">docket</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Docket</span>(DocumentationType.SWAGGER_2)</span><br><span class="line">                .apiInfo(apiInfo)</span><br><span class="line">                .select()</span><br><span class="line">                .apis(RequestHandlerSelectors.basePackage(<span class="string">&quot;com.yaxing.controller&quot;</span>))</span><br><span class="line">                .paths(PathSelectors.any())</span><br><span class="line">                .build();</span><br><span class="line">        <span class="keyword">return</span> docket;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>运行</p>
-<p> 运行主启动类，此时若报错<code>Failed to start bean &#39;documentationPluginsBootstrapper&#39;</code>，解决方案参考<a href="https://blog.csdn.net/mapboo/article/details/121568519%EF%BC%8C%E9%99%8D%E4%BD%8Espringboot%E7%9A%84%E7%89%88%E6%9C%AC%E6%88%96%E6%B7%BB%E5%8A%A0%E4%BB%A5%E4%B8%8B%E9%85%8D%E7%BD%AE%E3%80%82">https://blog.csdn.net/mapboo/article/details/121568519，降低springboot的版本或添加以下配置。</a></p>
- <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">mvc:</span></span><br><span class="line">    <span class="attr">pathmatch:</span></span><br><span class="line">      <span class="attr">matching-strategy:</span> <span class="string">ANT_PATH_MATCHER</span></span><br></pre></td></tr></table></figure>
-
-<p> 访问 <a href="http://localhost:8080/swagger-ui.html">http://localhost:8080/swagger-ui.html</a></p>
-</li>
-</ol>
-<h2 id="注解使用"><a href="#注解使用" class="headerlink" title="注解使用"></a>注解使用</h2><ol>
-<li><p><code>@Api</code> 类注解，在控制器类上，可以对控制器类进行说明</p>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Api(tags = &quot;分数管理&quot;, value = &quot;提供分数管理相关接口&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ScoreController</span> &#123;&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>@ApiOperation</code> 方法注解，在接口方法上，可以对该接口方法进行说明</p>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@ApiOperation(&quot;新增用户学科分数&quot;)</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">addScore</span><span class="params">(String name, String subject, Integer score)</span> &#123;&#125;</span><br></pre></td></tr></table></figure>
-
-<p> 显示：GET &#x2F;user&#x2F;login 用户登陆接口</p>
-</li>
-<li><p><code>@ApiImplicitParams</code>和<code>@ApiImplicitParam</code>对接口的方法参数进行说明</p>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@ApiOperation(&quot;新增用户学科分数&quot;)</span></span><br><span class="line"><span class="meta">@ApiImplicitParams(&#123;</span></span><br><span class="line"><span class="meta">  @ApiImplicitParam(name = &quot;name&quot;, value = &quot;姓名&quot;, paramType = &quot;String&quot;),</span></span><br><span class="line"><span class="meta">  @ApiImplicitParam(name = &quot;subject&quot;, value = &quot;学科&quot;, paramType = &quot;String&quot;),</span></span><br><span class="line"><span class="meta">  @ApiImplicitParam(name = &quot;score&quot;, value = &quot;分数&quot;, paramType = &quot;Integer&quot;)</span></span><br><span class="line"><span class="meta">&#125;)</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">addScore</span><span class="params">(String name, String subject, Integer score)</span> &#123;&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>@ApiModel</code>和<code>@ApiModelProperty</code> 对实体类添加注解说明</p>
- <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@ApiModel</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Score</span> &#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 主键</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@ApiModelProperty(value = &quot;主键&quot;, dataType = &quot;Long&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> Long id;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p><code>@ApiIgnore</code>方法注解，如果不想对某个接口方法进行说明，在接口方法上添加该注解</p>
-</li>
-</ol>
-<h2 id="UI-插件"><a href="#UI-插件" class="headerlink" title="UI 插件"></a>UI 插件</h2><ol>
-<li><p>将 springfox-swagger-ui 修改为以下</p>
- <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.github.xiaoymin<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>swagger-bootstrap-ui<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.9.6<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>启动主启动类，打开 <a href="http://localhost:8080/doc.html">http://localhost:8080/doc.html</a></p>
-</li>
-</ol>
 ]]></content>
       <categories>
         <category>技术总结</category>
@@ -5067,6 +5038,90 @@
       </categories>
   </entry>
   <entry>
+    <title>SpringBoot 集成 Swagger</title>
+    <url>/springboot-swagger.html</url>
+    <content><![CDATA[<p>本文对 SpringBoot 集成 Swagger 配置和使用做简单小记。<span id="more"></span></p>
+<h2 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h2><ol>
+<li><p>引入依赖</p>
+ <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>io.springfox<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>springfox-swagger2<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.9.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>io.springfox<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>springfox-swagger-ui<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>2.9.2<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>创建 Swagger 2 的配置类</p>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="meta">@EnableSwagger2</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">SwaggerConfig</span> &#123;</span><br><span class="line">    <span class="comment">/* swagger会帮助我们⽣成接⼝⽂档</span></span><br><span class="line"><span class="comment">     * 1：配置⽣成的⽂档信息</span></span><br><span class="line"><span class="comment">     * 2: 配置⽣成规则</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="comment">/* Docket封装接⼝⽂档信息 */</span></span><br><span class="line">    <span class="meta">@Bean</span></span><br><span class="line">    <span class="keyword">public</span> Docket <span class="title function_">getDocket</span><span class="params">()</span> &#123;</span><br><span class="line"></span><br><span class="line">        <span class="comment">//创建封⾯信息对象</span></span><br><span class="line">        <span class="type">ApiInfoBuilder</span> <span class="variable">apiInfoBuilder</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">ApiInfoBuilder</span>();</span><br><span class="line">        apiInfoBuilder</span><br><span class="line">                .title(<span class="string">&quot;后端接⼝说明&quot;</span>)</span><br><span class="line">                .description(<span class="string">&quot;此⽂档详细说明了SpringBootDemo项⽬后端接⼝规范&quot;</span>)</span><br><span class="line">                .version(<span class="string">&quot;1.0&quot;</span>)</span><br><span class="line">                .contact(<span class="keyword">new</span> <span class="title class_">Contact</span>(<span class="string">&quot;yaxing&quot;</span>, <span class="string">&quot;https://yaxing97.com&quot;</span>, <span class="string">&quot;yaxingfang@163.com&quot;</span>));</span><br><span class="line">        <span class="type">ApiInfo</span> <span class="variable">apiInfo</span> <span class="operator">=</span> apiInfoBuilder.build();</span><br><span class="line">        <span class="type">Docket</span> <span class="variable">docket</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="title class_">Docket</span>(DocumentationType.SWAGGER_2)</span><br><span class="line">                .apiInfo(apiInfo)</span><br><span class="line">                .select()</span><br><span class="line">                .apis(RequestHandlerSelectors.basePackage(<span class="string">&quot;com.yaxing.controller&quot;</span>))</span><br><span class="line">                .paths(PathSelectors.any())</span><br><span class="line">                .build();</span><br><span class="line">        <span class="keyword">return</span> docket;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>运行</p>
+<p> 运行主启动类，此时若报错<code>Failed to start bean &#39;documentationPluginsBootstrapper&#39;</code>，解决方案参考<a href="https://blog.csdn.net/mapboo/article/details/121568519%EF%BC%8C%E9%99%8D%E4%BD%8Espringboot%E7%9A%84%E7%89%88%E6%9C%AC%E6%88%96%E6%B7%BB%E5%8A%A0%E4%BB%A5%E4%B8%8B%E9%85%8D%E7%BD%AE%E3%80%82">https://blog.csdn.net/mapboo/article/details/121568519，降低springboot的版本或添加以下配置。</a></p>
+ <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">mvc:</span></span><br><span class="line">    <span class="attr">pathmatch:</span></span><br><span class="line">      <span class="attr">matching-strategy:</span> <span class="string">ANT_PATH_MATCHER</span></span><br></pre></td></tr></table></figure>
+
+<p> 访问 <a href="http://localhost:8080/swagger-ui.html">http://localhost:8080/swagger-ui.html</a></p>
+</li>
+</ol>
+<h2 id="注解使用"><a href="#注解使用" class="headerlink" title="注解使用"></a>注解使用</h2><ol>
+<li><p><code>@Api</code> 类注解，在控制器类上，可以对控制器类进行说明</p>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Api(tags = &quot;分数管理&quot;, value = &quot;提供分数管理相关接口&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ScoreController</span> &#123;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>@ApiOperation</code> 方法注解，在接口方法上，可以对该接口方法进行说明</p>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@ApiOperation(&quot;新增用户学科分数&quot;)</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">addScore</span><span class="params">(String name, String subject, Integer score)</span> &#123;&#125;</span><br></pre></td></tr></table></figure>
+
+<p> 显示：GET &#x2F;user&#x2F;login 用户登陆接口</p>
+</li>
+<li><p><code>@ApiImplicitParams</code>和<code>@ApiImplicitParam</code>对接口的方法参数进行说明</p>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@ApiOperation(&quot;新增用户学科分数&quot;)</span></span><br><span class="line"><span class="meta">@ApiImplicitParams(&#123;</span></span><br><span class="line"><span class="meta">  @ApiImplicitParam(name = &quot;name&quot;, value = &quot;姓名&quot;, paramType = &quot;String&quot;),</span></span><br><span class="line"><span class="meta">  @ApiImplicitParam(name = &quot;subject&quot;, value = &quot;学科&quot;, paramType = &quot;String&quot;),</span></span><br><span class="line"><span class="meta">  @ApiImplicitParam(name = &quot;score&quot;, value = &quot;分数&quot;, paramType = &quot;Integer&quot;)</span></span><br><span class="line"><span class="meta">&#125;)</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">addScore</span><span class="params">(String name, String subject, Integer score)</span> &#123;&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>@ApiModel</code>和<code>@ApiModelProperty</code> 对实体类添加注解说明</p>
+ <figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@ApiModel</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Score</span> &#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 主键</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@ApiModelProperty(value = &quot;主键&quot;, dataType = &quot;Long&quot;)</span></span><br><span class="line">    <span class="keyword">private</span> Long id;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p><code>@ApiIgnore</code>方法注解，如果不想对某个接口方法进行说明，在接口方法上添加该注解</p>
+</li>
+</ol>
+<h2 id="UI-插件"><a href="#UI-插件" class="headerlink" title="UI 插件"></a>UI 插件</h2><ol>
+<li><p>将 springfox-swagger-ui 修改为以下</p>
+ <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>com.github.xiaoymin<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>swagger-bootstrap-ui<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">version</span>&gt;</span>1.9.6<span class="tag">&lt;/<span class="name">version</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>启动主启动类，打开 <a href="http://localhost:8080/doc.html">http://localhost:8080/doc.html</a></p>
+</li>
+</ol>
+]]></content>
+      <categories>
+        <category>技术总结</category>
+        <category>SpringBoot</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>从 0 搭建 SpringBoot 项目</title>
+    <url>/springboot-stater.html</url>
+    <content><![CDATA[<p>本文对从 0 搭建一个 SpringBoot 项目并实现简单查询逻辑进行小记。<span id="more"></span></p>
+<h2 id="建表"><a href="#建表" class="headerlink" title="建表"></a>建表</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">create table score</span><br><span class="line">(</span><br><span class="line">    id          bigint unsigned auto_increment comment &#x27;主键&#x27;</span><br><span class="line">        primary key,</span><br><span class="line">    name        varchar(255)                       not null comment &#x27;姓名&#x27;,</span><br><span class="line">    subject     varchar(255)                       not null comment &#x27;科目&#x27;,</span><br><span class="line">    score       int                                not null comment &#x27;得分&#x27;,</span><br><span class="line">    create_time datetime default CURRENT_TIMESTAMP not null comment &#x27;创建时间&#x27;,</span><br><span class="line">    update_time datetime default CURRENT_TIMESTAMP not null on update CURRENT_TIMESTAMP comment &#x27;更新时间&#x27;</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
+
+<h2 id="新建项目"><a href="#新建项目" class="headerlink" title="新建项目"></a>新建项目</h2><p>新建SpringBoot项目，勾选依赖 Lombok、Spring Web、MyBatis Framework</p>
+<p>手动添加依赖 mysql-connector-java、spring-boot-starter-test、spring-boot-starter-jdbc、druid-spring-boot-starter</p>
+<h2 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h2><p>修改 application.properties 后缀为 yaml，配置数据库连接池和 mybatis 映射路径</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">datasource:</span></span><br><span class="line">    <span class="attr">druid:</span></span><br><span class="line">      <span class="attr">driver-class-name:</span> <span class="string">com.mysql.cj.jdbc.Driver</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">jdbc:mysql://localhost:3306/java?characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=Asia/Shanghai</span></span><br><span class="line">      <span class="attr">username:</span> <span class="string">root</span></span><br><span class="line">      <span class="attr">password:</span> <span class="string">FYX123fyx.</span></span><br><span class="line"><span class="attr">mybatis:</span></span><br><span class="line">  <span class="attr">mapper-locations:</span> <span class="string">classpath:mappers/*Mapper.xml</span></span><br><span class="line">  <span class="attr">type-aliases-package:</span> <span class="string">com.yaxing.entity</span></span><br></pre></td></tr></table></figure>
+
+<p>在 IDEA 的数据库连接中连接数据库，右键相应的表，使用 MyBatisX 生成实体类和 mapper 文件</p>
+<p>实体类如下</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="meta">@NoArgsConstructor</span></span><br><span class="line"><span class="meta">@AllArgsConstructor</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Score</span> <span class="keyword">implements</span> <span class="title class_">Serializable</span> &#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 主键</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Long id;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 姓名</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 科目</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> String subject;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 得分</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Integer score;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 创建时间</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Date create_time;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 更新时间</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Date update_time;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>mapper生成好之后在 SpringBoot 启动类上加注解 <code>@MapperScan(&quot;com.yaxing.dao&quot;)</code>，并设置头文件中对应dao的namespace</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span></span></span><br><span class="line"><span class="meta">        <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span></span></span><br><span class="line"><span class="meta">        <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;com.yaxing.dao.ScoreDao&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">resultMap</span> <span class="attr">id</span>=<span class="string">&quot;BaseResultMap&quot;</span> <span class="attr">type</span>=<span class="string">&quot;com.yaxing.entity.Score&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span> <span class="attr">property</span>=<span class="string">&quot;id&quot;</span> <span class="attr">column</span>=<span class="string">&quot;id&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;BIGINT&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">&quot;name&quot;</span> <span class="attr">column</span>=<span class="string">&quot;name&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;VARCHAR&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">&quot;subject&quot;</span> <span class="attr">column</span>=<span class="string">&quot;subject&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;VARCHAR&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">&quot;score&quot;</span> <span class="attr">column</span>=<span class="string">&quot;score&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;INTEGER&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">&quot;create_time&quot;</span> <span class="attr">column</span>=<span class="string">&quot;create_time&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;TIMESTAMP&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">&quot;update_time&quot;</span> <span class="attr">column</span>=<span class="string">&quot;update_time&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;TIMESTAMP&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">resultMap</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">sql</span> <span class="attr">id</span>=<span class="string">&quot;Base_Column_List&quot;</span>&gt;</span></span><br><span class="line">        id,name,subject,</span><br><span class="line">        score,create_time,update_time</span><br><span class="line">    <span class="tag">&lt;/<span class="name">sql</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;queryAllScores&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.yaxing.entity.Score&quot;</span>&gt;</span></span><br><span class="line">        select <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;Base_Column_List&quot;</span>/&gt;</span> from score</span><br><span class="line">    <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>得到 dao 如下</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Mapper</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">ScoreDao</span> &#123;</span><br><span class="line">    List&lt;Score&gt; <span class="title function_">queryAllScores</span><span class="params">()</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="业务逻辑实现"><a href="#业务逻辑实现" class="headerlink" title="业务逻辑实现"></a>业务逻辑实现</h2><p>接下来编写 service 和 controller</p>
+<p>service</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">ScoreService</span> &#123;</span><br><span class="line">    List&lt;Score&gt; <span class="title function_">queryAllScores</span><span class="params">()</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Service</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ScoreServiceImpl</span> <span class="keyword">implements</span> <span class="title class_">ScoreService</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> ScoreDao scoreDao;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> List&lt;Score&gt; <span class="title function_">queryAllScores</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> scoreDao.queryAllScores();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>controller</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="meta">@RequestMapping(&quot;/score&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ScoreController</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> ScoreService scoreService;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping(&quot;/queryAll&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> List&lt;Score&gt; <span class="title function_">queryAllScores</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> scoreService.queryAllScores();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+]]></content>
+      <categories>
+        <category>技术总结</category>
+        <category>SpringBoot</category>
+      </categories>
+  </entry>
+  <entry>
     <title>Typora配置阿里云OSS图床</title>
     <url>/image-host.html</url>
     <content><![CDATA[<p>在我们日常使用 Typora 写文档时，一般图片都是放在本地的一个相对路径下，如果将 markdown 文件发送给别人，那么这个文件中的图片别人自然是访问不到的。图床的作用就是把图片存在网站上，对应的图片生成一个链接，markdown 文件中使用该链接访问图片。在本文中我们使用 Typora + PicGo + 阿里云 OSS 图床实现图片自动上传并自由访问。</p>
@@ -5152,38 +5207,29 @@
       </categories>
   </entry>
   <entry>
-    <title>从 0 搭建 SpringBoot 项目</title>
-    <url>/springboot-stater.html</url>
-    <content><![CDATA[<p>本文对从 0 搭建一个 SpringBoot 项目并实现简单查询逻辑进行小记。<span id="more"></span></p>
-<h2 id="建表"><a href="#建表" class="headerlink" title="建表"></a>建表</h2><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">create table score</span><br><span class="line">(</span><br><span class="line">    id          bigint unsigned auto_increment comment &#x27;主键&#x27;</span><br><span class="line">        primary key,</span><br><span class="line">    name        varchar(255)                       not null comment &#x27;姓名&#x27;,</span><br><span class="line">    subject     varchar(255)                       not null comment &#x27;科目&#x27;,</span><br><span class="line">    score       int                                not null comment &#x27;得分&#x27;,</span><br><span class="line">    create_time datetime default CURRENT_TIMESTAMP not null comment &#x27;创建时间&#x27;,</span><br><span class="line">    update_time datetime default CURRENT_TIMESTAMP not null on update CURRENT_TIMESTAMP comment &#x27;更新时间&#x27;</span><br><span class="line">);</span><br></pre></td></tr></table></figure>
-
-<h2 id="新建项目"><a href="#新建项目" class="headerlink" title="新建项目"></a>新建项目</h2><p>新建SpringBoot项目，勾选依赖 Lombok、Spring Web、MyBatis Framework</p>
-<p>手动添加依赖 mysql-connector-java、spring-boot-starter-test、spring-boot-starter-jdbc、druid-spring-boot-starter</p>
-<h2 id="修改配置文件"><a href="#修改配置文件" class="headerlink" title="修改配置文件"></a>修改配置文件</h2><p>修改 application.properties 后缀为 yaml，配置数据库连接池和 mybatis 映射路径</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">datasource:</span></span><br><span class="line">    <span class="attr">druid:</span></span><br><span class="line">      <span class="attr">driver-class-name:</span> <span class="string">com.mysql.cj.jdbc.Driver</span></span><br><span class="line">      <span class="attr">url:</span> <span class="string">jdbc:mysql://localhost:3306/java?characterEncoding=utf8&amp;useSSL=false&amp;serverTimezone=Asia/Shanghai</span></span><br><span class="line">      <span class="attr">username:</span> <span class="string">root</span></span><br><span class="line">      <span class="attr">password:</span> <span class="string">FYX123fyx.</span></span><br><span class="line"><span class="attr">mybatis:</span></span><br><span class="line">  <span class="attr">mapper-locations:</span> <span class="string">classpath:mappers/*Mapper.xml</span></span><br><span class="line">  <span class="attr">type-aliases-package:</span> <span class="string">com.yaxing.entity</span></span><br></pre></td></tr></table></figure>
-
-<p>在 IDEA 的数据库连接中连接数据库，右键相应的表，使用 MyBatisX 生成实体类和 mapper 文件</p>
-<p>实体类如下</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Data</span></span><br><span class="line"><span class="meta">@NoArgsConstructor</span></span><br><span class="line"><span class="meta">@AllArgsConstructor</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">Score</span> <span class="keyword">implements</span> <span class="title class_">Serializable</span> &#123;</span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 主键</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Long id;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 姓名</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> String name;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 科目</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> String subject;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 得分</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Integer score;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 创建时间</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Date create_time;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 更新时间</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="keyword">private</span> Date update_time;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>mapper生成好之后在 SpringBoot 启动类上加注解 <code>@MapperScan(&quot;com.yaxing.dao&quot;)</code>，并设置头文件中对应dao的namespace</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="meta">&lt;?xml version=<span class="string">&quot;1.0&quot;</span> encoding=<span class="string">&quot;UTF-8&quot;</span>?&gt;</span></span><br><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">mapper</span></span></span><br><span class="line"><span class="meta">        <span class="keyword">PUBLIC</span> <span class="string">&quot;-//mybatis.org//DTD Mapper 3.0//EN&quot;</span></span></span><br><span class="line"><span class="meta">        <span class="string">&quot;http://mybatis.org/dtd/mybatis-3-mapper.dtd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">mapper</span> <span class="attr">namespace</span>=<span class="string">&quot;com.yaxing.dao.ScoreDao&quot;</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">resultMap</span> <span class="attr">id</span>=<span class="string">&quot;BaseResultMap&quot;</span> <span class="attr">type</span>=<span class="string">&quot;com.yaxing.entity.Score&quot;</span>&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">id</span> <span class="attr">property</span>=<span class="string">&quot;id&quot;</span> <span class="attr">column</span>=<span class="string">&quot;id&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;BIGINT&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">&quot;name&quot;</span> <span class="attr">column</span>=<span class="string">&quot;name&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;VARCHAR&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">&quot;subject&quot;</span> <span class="attr">column</span>=<span class="string">&quot;subject&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;VARCHAR&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">&quot;score&quot;</span> <span class="attr">column</span>=<span class="string">&quot;score&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;INTEGER&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">&quot;create_time&quot;</span> <span class="attr">column</span>=<span class="string">&quot;create_time&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;TIMESTAMP&quot;</span>/&gt;</span></span><br><span class="line">            <span class="tag">&lt;<span class="name">result</span> <span class="attr">property</span>=<span class="string">&quot;update_time&quot;</span> <span class="attr">column</span>=<span class="string">&quot;update_time&quot;</span> <span class="attr">jdbcType</span>=<span class="string">&quot;TIMESTAMP&quot;</span>/&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">resultMap</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">sql</span> <span class="attr">id</span>=<span class="string">&quot;Base_Column_List&quot;</span>&gt;</span></span><br><span class="line">        id,name,subject,</span><br><span class="line">        score,create_time,update_time</span><br><span class="line">    <span class="tag">&lt;/<span class="name">sql</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;queryAllScores&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;com.yaxing.entity.Score&quot;</span>&gt;</span></span><br><span class="line">        select <span class="tag">&lt;<span class="name">include</span> <span class="attr">refid</span>=<span class="string">&quot;Base_Column_List&quot;</span>/&gt;</span> from score</span><br><span class="line">    <span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">mapper</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>得到 dao 如下</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Mapper</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">ScoreDao</span> &#123;</span><br><span class="line">    List&lt;Score&gt; <span class="title function_">queryAllScores</span><span class="params">()</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="业务逻辑实现"><a href="#业务逻辑实现" class="headerlink" title="业务逻辑实现"></a>业务逻辑实现</h2><p>接下来编写 service 和 controller</p>
-<p>service</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">interface</span> <span class="title class_">ScoreService</span> &#123;</span><br><span class="line">    List&lt;Score&gt; <span class="title function_">queryAllScores</span><span class="params">()</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@Service</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ScoreServiceImpl</span> <span class="keyword">implements</span> <span class="title class_">ScoreService</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> ScoreDao scoreDao;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="keyword">public</span> List&lt;Score&gt; <span class="title function_">queryAllScores</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> scoreDao.queryAllScores();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>controller</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="meta">@RestController</span></span><br><span class="line"><span class="meta">@RequestMapping(&quot;/score&quot;)</span></span><br><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">ScoreController</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@Autowired</span></span><br><span class="line">    <span class="keyword">private</span> ScoreService scoreService;</span><br><span class="line"></span><br><span class="line">    <span class="meta">@GetMapping(&quot;/queryAll&quot;)</span></span><br><span class="line">    <span class="keyword">public</span> List&lt;Score&gt; <span class="title function_">queryAllScores</span><span class="params">()</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> scoreService.queryAllScores();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+    <title>关于体制内的一些思考</title>
+    <url>/about-within-the-system.html</url>
+    <content><![CDATA[<p>面临秋招毕业季，进体制内还是体制外无疑是摆在毕业生面前的两个大方向选择。本人秋招以来也经历了类似选择，也谈谈我个人的一些思考。<span id="more"></span></p>
+<h2 id="体制内-x2F-外的对比"><a href="#体制内-x2F-外的对比" class="headerlink" title="体制内&#x2F;外的对比"></a>体制内&#x2F;外的对比</h2><h3 id="工作单位"><a href="#工作单位" class="headerlink" title="工作单位"></a>工作单位</h3><p>体制内狭义上指公务员和事业编，广义上的体制内还包含一些泛体制内的单位，比如烟草、电网、银行等国央企。</p>
+<p>体制外就是指私企了，互联网行业的话比如 “BAT”、”TMD”，外企如微软、ZOOM、SAP 等。</p>
+<h3 id="工作内容、时间、压力"><a href="#工作内容、时间、压力" class="headerlink" title="工作内容、时间、压力"></a>工作内容、时间、压力</h3><p>体制内的工作一般都不会很难。公务员一般是写材料、整理材料，事业编根据岗位不同具体工作内容也不同，比如教师编也属于事业编，教师一般除了承担教学任务以外，还要被安排一些杂活；加班一般都不会很多，不过疫情期间很多公务员承担防疫角色，加班情况十分严重，甚至半夜被叫醒去单位搞防疫工作；工作压力一般不会很大，就算完成不了也可以躺平摆烂，毕竟辞退一名体制内人员几乎不可能。</p>
+<p>体制外的工作一般而言都是和 OKR、KPI 相关，完成 ld、mt 派发的任务；加班一般比较多，资本主义吸血，996、995、10105、12126，互联网行业加班情况就更严重了；工作压力一般而言比较大，如果部门效益不好，有裁员指标，很容易被裁员，因此得不停的卷。</p>
+<h3 id="薪资待遇"><a href="#薪资待遇" class="headerlink" title="薪资待遇"></a>薪资待遇</h3><p>体制内的薪资待遇比较一般，在当地城市一般属于中等偏上的收入，吃得饱但也吃不好。公务员工资一般高于事业编，好的国央企的薪资待遇也还不错。薪资待遇较好的地区比如苏南、浙北一些城市。体制内最近火热跟房地产发展息息相关，土地财政大大增加了体制内的收入。如今房地产业萎靡的情况下，体制内降薪频繁，未来体制内的薪资待遇还会怎样，我们不得而知。</p>
+<p>体制外的薪资待遇无非就是看个人能力和个人机遇了，计算机应届生进入互联网大厂薪资好点的都有35+w年薪，一般的也能拿到20+w，在私企干几年跳槽还能收获不错的薪资涨幅。虽然互联网发展停滞，但是未来仍然有大量的数字化人才需求。</p>
+<h2 id="选择体制内还是体制外"><a href="#选择体制内还是体制外" class="headerlink" title="选择体制内还是体制外"></a>选择体制内还是体制外</h2><p>近年来，由于全球经济发展停滞、行业周期、疫情等各种原因，很多人在私企内混的不是很如意，pua、压迫、裁员。近几年体制内的薪资也增加很多，20 年的深圳高中 40w 招高中老师、余杭区街道办办事员录取的学生都是清北等顶尖高校的硕士生甚至博士生。清华的毕业生就业去向也显示 70% 的学生进入了体制内。</p>
+<p>那么，体制内真的就无敌嘛，宇宙的尽头真的是体制内嘛，还是选择体制外打拼打拼闯出自己的一片天呢？</p>
+<p>应届生在就业选择时一般都会跟家里人商量，听听父母的看法。于父母而言，父母一般都比较想让孩子进入体制内，我们作为子女应当尊重父母，但是不是完全听从父母，因为他们是那个时代的那些经验，在当今这个时代，要有自己的思想。把自己的生命过好了，过出精彩来，才是对父母最大的尊重，也是父母最大的幸福。</p>
+<p>很多人毕业时不知道选择什么，盲目从众，随大流进入体制内，进去之后觉得不是自己想要的。这种情况无非是无法在体制内获得自己想要取得的价值感、成就感。投入过的生命才会有温度，不管是体制内还是体制外，这样才会获得巨大的价值感。</p>
+<p>我们的社会、生活一直在发展变化，这个才是一直不变的。做选择一定要看清楚自己想要什么，可以想想自己死去的时候，那时候是一个什么样的身份、什么样的职位，因为这其实就是我们心底的追求，明确自己的追求，体制内还是体制外，往自己的追求上靠近就可以了。体制内还是体制外没有对错，只有适合，适合自己、适合自己的未来发展、适合自己的人生追求。</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>以下是一些我觉得讲的很在理的视频，非劝退性质，看完之后感悟很多。</p>
+<p><a href="https://www.bilibili.com/video/BV1JT41117Lx/?share_source=copy_web&vd_source=0ee37b99b6275b36190f1dd4aff8f80a">不适合就别考公务员了</a></p>
+<p><a href="https://www.bilibili.com/video/BV1Ga4y1p7Tw/?share_source=copy_web&vd_source=0ee37b99b6275b36190f1dd4aff8f80a">“别瞎混了，公务员才是正经工作”进体制真的香吗？【复旦梁永安】</a></p>
+<p><a href="https://www.bilibili.com/video/BV1RS4y1d7R9/?share_source=copy_web&vd_source=0ee37b99b6275b36190f1dd4aff8f80a">60万年薪比不上公务员月薪4000？同志们，千万别再高估“体制内”的性价比了！【毯叔盘钱】</a></p>
+<p><a href="https://www.bilibili.com/video/BV1CM4y1F7PN/?share_source=copy_web&vd_source=0ee37b99b6275b36190f1dd4aff8f80a">【考编？看这一条就够了】8年！！宇宙尽头真不是编制！！</a></p>
+<p><a href="https://www.bilibili.com/video/BV1VY4y1A7XM/?share_source=copy_web&vd_source=0ee37b99b6275b36190f1dd4aff8f80a">537万人考公，500万人失业，宇宙的尽头是考编吗？</a> </p>
 ]]></content>
       <categories>
-        <category>技术总结</category>
-        <category>SpringBoot</category>
+        <category>个人思考</category>
       </categories>
   </entry>
   <entry>
@@ -6113,32 +6159,6 @@
       </categories>
   </entry>
   <entry>
-    <title>关于体制内的一些思考</title>
-    <url>/about-within-the-system.html</url>
-    <content><![CDATA[<p>面临秋招毕业季，进体制内还是体制外无疑是摆在毕业生面前的两个大方向选择。本人秋招以来也经历了类似选择，也谈谈我个人的一些思考。<span id="more"></span></p>
-<h2 id="体制内-x2F-外的对比"><a href="#体制内-x2F-外的对比" class="headerlink" title="体制内&#x2F;外的对比"></a>体制内&#x2F;外的对比</h2><h3 id="工作单位"><a href="#工作单位" class="headerlink" title="工作单位"></a>工作单位</h3><p>体制内狭义上指公务员和事业编，广义上的体制内还包含一些泛体制内的单位，比如烟草、电网、银行等国央企。</p>
-<p>体制外就是指私企了，互联网行业的话比如 “BAT”、”TMD”，外企如微软、ZOOM、SAP 等。</p>
-<h3 id="工作内容、时间、压力"><a href="#工作内容、时间、压力" class="headerlink" title="工作内容、时间、压力"></a>工作内容、时间、压力</h3><p>体制内的工作一般都不会很难。公务员一般是写材料、整理材料，事业编根据岗位不同具体工作内容也不同，比如教师编也属于事业编，教师一般除了承担教学任务以外，还要被安排一些杂活；加班一般都不会很多，不过疫情期间很多公务员承担防疫角色，加班情况十分严重，甚至半夜被叫醒去单位搞防疫工作；工作压力一般不会很大，就算完成不了也可以躺平摆烂，毕竟辞退一名体制内人员几乎不可能。</p>
-<p>体制外的工作一般而言都是和 OKR、KPI 相关，完成 ld、mt 派发的任务；加班一般比较多，资本主义吸血，996、995、10105、12126，互联网行业加班情况就更严重了；工作压力一般而言比较大，如果部门效益不好，有裁员指标，很容易被裁员，因此得不停的卷。</p>
-<h3 id="薪资待遇"><a href="#薪资待遇" class="headerlink" title="薪资待遇"></a>薪资待遇</h3><p>体制内的薪资待遇比较一般，在当地城市一般属于中等偏上的收入，吃得饱但也吃不好。公务员工资一般高于事业编，好的国央企的薪资待遇也还不错。薪资待遇较好的地区比如苏南、浙北一些城市。体制内最近火热跟房地产发展息息相关，土地财政大大增加了体制内的收入。如今房地产业萎靡的情况下，体制内降薪频繁，未来体制内的薪资待遇还会怎样，我们不得而知。</p>
-<p>体制外的薪资待遇无非就是看个人能力和个人机遇了，计算机应届生进入互联网大厂薪资好点的都有35+w年薪，一般的也能拿到20+w，在私企干几年跳槽还能收获不错的薪资涨幅。虽然互联网发展停滞，但是未来仍然有大量的数字化人才需求。</p>
-<h2 id="选择体制内还是体制外"><a href="#选择体制内还是体制外" class="headerlink" title="选择体制内还是体制外"></a>选择体制内还是体制外</h2><p>近年来，由于全球经济发展停滞、行业周期、疫情等各种原因，很多人在私企内混的不是很如意，pua、压迫、裁员。近几年体制内的薪资也增加很多，20 年的深圳高中 40w 招高中老师、余杭区街道办办事员录取的学生都是清北等顶尖高校的硕士生甚至博士生。清华的毕业生就业去向也显示 70% 的学生进入了体制内。</p>
-<p>那么，体制内真的就无敌嘛，宇宙的尽头真的是体制内嘛，还是选择体制外打拼打拼闯出自己的一片天呢？</p>
-<p>应届生在就业选择时一般都会跟家里人商量，听听父母的看法。于父母而言，父母一般都比较想让孩子进入体制内，我们作为子女应当尊重父母，但是不是完全听从父母，因为他们是那个时代的那些经验，在当今这个时代，要有自己的思想。把自己的生命过好了，过出精彩来，才是对父母最大的尊重，也是父母最大的幸福。</p>
-<p>很多人毕业时不知道选择什么，盲目从众，随大流进入体制内，进去之后觉得不是自己想要的。这种情况无非是无法在体制内获得自己想要取得的价值感、成就感。投入过的生命才会有温度，不管是体制内还是体制外，这样才会获得巨大的价值感。</p>
-<p>我们的社会、生活一直在发展变化，这个才是一直不变的。做选择一定要看清楚自己想要什么，可以想想自己死去的时候，那时候是一个什么样的身份、什么样的职位，因为这其实就是我们心底的追求，明确自己的追求，体制内还是体制外，往自己的追求上靠近就可以了。体制内还是体制外没有对错，只有适合，适合自己、适合自己的未来发展、适合自己的人生追求。</p>
-<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p>以下是一些我觉得讲的很在理的视频，非劝退性质，看完之后感悟很多。</p>
-<p><a href="https://www.bilibili.com/video/BV1JT41117Lx/?share_source=copy_web&vd_source=0ee37b99b6275b36190f1dd4aff8f80a">不适合就别考公务员了</a></p>
-<p><a href="https://www.bilibili.com/video/BV1Ga4y1p7Tw/?share_source=copy_web&vd_source=0ee37b99b6275b36190f1dd4aff8f80a">“别瞎混了，公务员才是正经工作”进体制真的香吗？【复旦梁永安】</a></p>
-<p><a href="https://www.bilibili.com/video/BV1RS4y1d7R9/?share_source=copy_web&vd_source=0ee37b99b6275b36190f1dd4aff8f80a">60万年薪比不上公务员月薪4000？同志们，千万别再高估“体制内”的性价比了！【毯叔盘钱】</a></p>
-<p><a href="https://www.bilibili.com/video/BV1CM4y1F7PN/?share_source=copy_web&vd_source=0ee37b99b6275b36190f1dd4aff8f80a">【考编？看这一条就够了】8年！！宇宙尽头真不是编制！！</a></p>
-<p><a href="https://www.bilibili.com/video/BV1VY4y1A7XM/?share_source=copy_web&vd_source=0ee37b99b6275b36190f1dd4aff8f80a">537万人考公，500万人失业，宇宙的尽头是考编吗？</a> </p>
-]]></content>
-      <categories>
-        <category>个人思考</category>
-      </categories>
-  </entry>
-  <entry>
     <title>回老家的一周</title>
     <url>/week-back-home.html</url>
     <content><![CDATA[<p>上周从常州省考回来，当天晚上正好是世界杯决赛，看到了凌晨两点，第二天一大早起床，和爸妈一起开车回老家，然后就开始了在老家的一周生活。</p>
@@ -6185,6 +6205,21 @@
 <p>看了一会，诶，咋更新了还这么糊，一看原来是只开了 1080P 画质，一冲动上某多多买了三个月的大会员，点开 4K 画质选项，好家伙，直接感受到了次世代的魅力。配音配的也很出色，没什么槽点。回头 PS5 上再三周目吧，并且期待一手巫师 4。</p>
 <p>充了大会员，接下来闲的时候再把 B 站上的电影再看看，总不能浪费了不是 hhh。</p>
 <p>最近多个平台都在搞年终总结了，比如 Apple Music 和 PlayStation，准备等其他平台都推出年终总结之后搞波分享～</p>
+]]></content>
+      <categories>
+        <category>日常小记</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>新买的小书桌</title>
+    <url>/new-desk.html</url>
+    <content><![CDATA[<p>之前买了个 LG 的 27 寸显示器，放在书房的桌子上，一方面不能升高（上面有架板挡住），另一方面是桌子宽度不够（只有 50cm），显示器靠墙前面只能勉强放下我的 mac，导致屏幕离我很近，观感极差。于是在淘宝上淘了个书桌，还算不错。</p>
+<span id="more"></span>
+
+<p>如果要使用 27 寸及以上尺寸显示器的话，建议购买宽度至少 70cm 的，我购买的尺寸为 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="16.416ex" height="1.581ex" role="img" focusable="false" viewBox="0 -677 7255.9 699"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(500,0)"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(1000,0)"></path></g><g data-mml-node="mo" transform="translate(1722.2,0)"><path data-c="D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path></g><g data-mml-node="mn" transform="translate(2722.4,0)"><path data-c="38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(500,0)"></path></g><g data-mml-node="mo" transform="translate(3944.7,0)"><path data-c="D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path></g><g data-mml-node="mn" transform="translate(4944.9,0)"><path data-c="37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"></path><path data-c="34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" transform="translate(500,0)"></path></g><g data-mml-node="mi" transform="translate(5944.9,0)"><path data-c="1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path></g><g data-mml-node="mi" transform="translate(6377.9,0)"><path data-c="1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g></g></g></svg></mjx-container>，店铺是“新尚美家居”。</p>
+<p>注意到手需要自己拧螺丝固定桌腿和桌板（用电动螺丝刀）以及桌腿和桌腿之间的连接（手拧即可）。</p>
+<p>以下是实拍图 hh。</p>
+<p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/IMG_1396.JPG" alt="新书桌实拍图"></p>
 ]]></content>
       <categories>
         <category>日常小记</category>
@@ -6252,21 +6287,6 @@
 ]]></content>
       <categories>
         <category>技术总结</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>新买的小书桌</title>
-    <url>/new-desk.html</url>
-    <content><![CDATA[<p>之前买了个 LG 的 27 寸显示器，放在书房的桌子上，一方面不能升高（上面有架板挡住），另一方面是桌子宽度不够（只有 50cm），显示器靠墙前面只能勉强放下我的 mac，导致屏幕离我很近，观感极差。于是在淘宝上淘了个书桌，还算不错。</p>
-<span id="more"></span>
-
-<p>如果要使用 27 寸及以上尺寸显示器的话，建议购买宽度至少 70cm 的，我购买的尺寸为 <mjx-container class="MathJax" jax="SVG"><svg style="vertical-align: -0.05ex;" xmlns="http://www.w3.org/2000/svg" width="16.416ex" height="1.581ex" role="img" focusable="false" viewBox="0 -677 7255.9 699"><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><path data-c="31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path data-c="32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z" transform="translate(500,0)"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(1000,0)"></path></g><g data-mml-node="mo" transform="translate(1722.2,0)"><path data-c="D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path></g><g data-mml-node="mn" transform="translate(2722.4,0)"><path data-c="38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path><path data-c="30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z" transform="translate(500,0)"></path></g><g data-mml-node="mo" transform="translate(3944.7,0)"><path data-c="D7" d="M630 29Q630 9 609 9Q604 9 587 25T493 118L389 222L284 117Q178 13 175 11Q171 9 168 9Q160 9 154 15T147 29Q147 36 161 51T255 146L359 250L255 354Q174 435 161 449T147 471Q147 480 153 485T168 490Q173 490 175 489Q178 487 284 383L389 278L493 382Q570 459 587 475T609 491Q630 491 630 471Q630 464 620 453T522 355L418 250L522 145Q606 61 618 48T630 29Z"></path></g><g data-mml-node="mn" transform="translate(4944.9,0)"><path data-c="37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"></path><path data-c="34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z" transform="translate(500,0)"></path></g><g data-mml-node="mi" transform="translate(5944.9,0)"><path data-c="1D450" d="M34 159Q34 268 120 355T306 442Q362 442 394 418T427 355Q427 326 408 306T360 285Q341 285 330 295T319 325T330 359T352 380T366 386H367Q367 388 361 392T340 400T306 404Q276 404 249 390Q228 381 206 359Q162 315 142 235T121 119Q121 73 147 50Q169 26 205 26H209Q321 26 394 111Q403 121 406 121Q410 121 419 112T429 98T420 83T391 55T346 25T282 0T202 -11Q127 -11 81 37T34 159Z"></path></g><g data-mml-node="mi" transform="translate(6377.9,0)"><path data-c="1D45A" d="M21 287Q22 293 24 303T36 341T56 388T88 425T132 442T175 435T205 417T221 395T229 376L231 369Q231 367 232 367L243 378Q303 442 384 442Q401 442 415 440T441 433T460 423T475 411T485 398T493 385T497 373T500 364T502 357L510 367Q573 442 659 442Q713 442 746 415T780 336Q780 285 742 178T704 50Q705 36 709 31T724 26Q752 26 776 56T815 138Q818 149 821 151T837 153Q857 153 857 145Q857 144 853 130Q845 101 831 73T785 17T716 -10Q669 -10 648 17T627 73Q627 92 663 193T700 345Q700 404 656 404H651Q565 404 506 303L499 291L466 157Q433 26 428 16Q415 -11 385 -11Q372 -11 364 -4T353 8T350 18Q350 29 384 161L420 307Q423 322 423 345Q423 404 379 404H374Q288 404 229 303L222 291L189 157Q156 26 151 16Q138 -11 108 -11Q95 -11 87 -5T76 7T74 17Q74 30 112 181Q151 335 151 342Q154 357 154 369Q154 405 129 405Q107 405 92 377T69 316T57 280Q55 278 41 278H27Q21 284 21 287Z"></path></g></g></g></svg></mjx-container>，店铺是“新尚美家居”。</p>
-<p>注意到手需要自己拧螺丝固定桌腿和桌板（用电动螺丝刀）以及桌腿和桌腿之间的连接（手拧即可）。</p>
-<p>以下是实拍图 hh。</p>
-<p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/IMG_1396.JPG" alt="新书桌实拍图"></p>
-]]></content>
-      <categories>
-        <category>日常小记</category>
       </categories>
   </entry>
   <entry>

@@ -1,3 +1,4 @@
+https://yaxing97.com/anaconda-pycharm.html
 https://yaxing97.com/lombok.html
 https://yaxing97.com/Logback-Slf4j.html
 https://yaxing97.com/springboot-junit.html
@@ -40,9 +41,9 @@ https://yaxing97.com/categories/%E6%97%A5%E5%B8%B8%E5%B0%8F%E8%AE%B0/
 https://yaxing97.com/categories/%E5%AE%9E%E4%B9%A0%E7%A7%8B%E6%8B%9B/
 https://yaxing97.com/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/
 https://yaxing97.com/categories/Java%E5%85%AB%E8%82%A1%E6%96%87/
-https://yaxing97.com/categories/%E5%AE%9E%E4%B9%A0%E7%A7%8B%E6%8B%9B/%E5%AE%9E%E4%B9%A0/
 https://yaxing97.com/categories/%E5%AE%9E%E4%B9%A0%E7%A7%8B%E6%8B%9B/%E7%A7%8B%E6%8B%9B/
 https://yaxing97.com/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/SpringBoot/
+https://yaxing97.com/categories/%E5%AE%9E%E4%B9%A0%E7%A7%8B%E6%8B%9B/%E5%AE%9E%E4%B9%A0/
 https://yaxing97.com/categories/Mac%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/
 https://yaxing97.com/categories/%E4%B8%AA%E4%BA%BA%E6%80%9D%E8%80%83/
 https://yaxing97.com/categories/%E7%AE%97%E6%B3%95/
