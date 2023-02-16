@@ -15,7 +15,7 @@ urlname: springboot-stater
 
 ## 建表
 
-```mysql
+```sql
 create table score
 (
     id          bigint unsigned auto_increment comment '主键'

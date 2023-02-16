@@ -19,7 +19,7 @@ urlname: mybatis-dynamic-sql
 
 使用动态 SQL 最常见情景是根据条件包含 where 子句的一部分。比如：
 
-```mysql
+```xml
 <select id="findActiveBlogWithTitleLike" resultType="Blog">
   SELECT * FROM BLOG
   WHERE state = ‘ACTIVE’
@@ -33,7 +33,7 @@ urlname: mybatis-dynamic-sql
 
 如果希望通过 “title” 和 “author” 两个参数进行可选搜索该怎么办呢？首先，我想先将语句名称修改成更名副其实的名称；接下来，只需要加入另一个条件即可。
 
-```mysql
+```xml
 <select id="findActiveBlogLike" resultType="Blog">
   SELECT * FROM BLOG WHERE state = ‘ACTIVE’
   <if test="title != null">
@@ -53,7 +53,7 @@ urlname: mybatis-dynamic-sql
 
 还是上面的例子，但是策略变为：传入了 “title” 就按 “title” 查找，传入了 “author” 就按 “author” 查找的情形。若两者都没有传入，就返回标记为 featured 的 BLOG。
 
-```mysql
+```xml
 <select id="findActiveBlogLike"
      resultType="Blog">
   SELECT * FROM BLOG WHERE state = ‘ACTIVE’
@@ -77,7 +77,7 @@ urlname: mybatis-dynamic-sql
 
 前面几个例子已经方便地解决了一个臭名昭著的动态 SQL 问题。现在回到之前的 “if” 示例，这次我们将 “state = ‘ACTIVE’” 设置成动态条件，看看会发生什么。
 
-```mysql
+```xml
 <select id="findActiveBlogLike" resultType="Blog">
   SELECT * FROM BLOG
   WHERE
@@ -95,14 +95,14 @@ urlname: mybatis-dynamic-sql
 
 如果没有匹配的条件会怎么样？最终这条 SQL 会变成这样：
 
-```mysql
+```sql
 SELECT * FROM BLOG
 WHERE
 ```
 
 这会导致查询失败。如果匹配的只是第二个条件又会怎样？这条 SQL 会是这样:
 
-```mysql
+```sql
 SELECT * FROM BLOG
 WHERE
 AND title like ‘someTitle’
@@ -112,7 +112,7 @@ AND title like ‘someTitle’
 
 MyBatis 有一个简单且适合大多数场景的解决办法。而在其他场景中，可以对其进行自定义以符合需求。而这，只需要一处简单的改动：
 
-```mysql
+```xml
 <select id="findActiveBlogLike" resultType="Blog">
   SELECT * FROM BLOG
   <where>
@@ -133,7 +133,7 @@ MyBatis 有一个简单且适合大多数场景的解决办法。而在其他场
 
 如果 *where* 元素与你期望的不太一样，你也可以通过自定义 trim 元素来定制 *where* 元素的功能。比如，和 *where* 元素等价的自定义 trim 元素为：
 
-```mysql
+```xml
 <trim prefix="WHERE" prefixOverrides="AND |OR ">
   ...
 </trim>
@@ -143,7 +143,7 @@ MyBatis 有一个简单且适合大多数场景的解决办法。而在其他场
 
 用于动态更新语句的类似解决方案叫做 *set*。*set* 元素可以用于动态包含需要更新的列，忽略其它不更新的列。比如：
 
-```mysql
+```xml
 <update id="updateAuthorIfNecessary">
   update Author
     <set>
@@ -160,7 +160,7 @@ MyBatis 有一个简单且适合大多数场景的解决办法。而在其他场
 
 或者，你可以通过使用*trim*元素来达到同样的效果：
 
-```mysql
+```xml
 <trim prefix="SET" suffixOverrides=",">
   ...
 </trim>
@@ -172,7 +172,7 @@ MyBatis 有一个简单且适合大多数场景的解决办法。而在其他场
 
 动态 SQL 的另一个常见使用场景是对集合进行遍历（尤其是在构建 IN 条件语句的时候）。比如：
 
-```mysql
+```xml
 <select id="selectPostIn" resultType="domain.blog.Post">
   SELECT *
   FROM POST P

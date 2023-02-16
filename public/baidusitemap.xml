@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://yaxing97.com/mybatis-dynamic-sql.html</loc>
+    <lastmod>2023-02-16</lastmod>
+  </url>
+  <url>
+    <loc>https://yaxing97.com/springboot-stater.html</loc>
+    <lastmod>2023-02-16</lastmod>
+  </url>
+  <url>
+    <loc>https://yaxing97.com/mysql-index.html</loc>
+    <lastmod>2023-02-16</lastmod>
+  </url>
+  <url>
+    <loc>https://yaxing97.com/mysql-ddl.html</loc>
+    <lastmod>2023-02-16</lastmod>
+  </url>
+  <url>
     <loc>https://yaxing97.com/anaconda-pycharm.html</loc>
     <lastmod>2023-02-15</lastmod>
   </url>
@@ -22,14 +38,6 @@
   </url>
   <url>
     <loc>https://yaxing97.com/spring%20boot-hot-build.html</loc>
-    <lastmod>2023-02-14</lastmod>
-  </url>
-  <url>
-    <loc>https://yaxing97.com/mybatis-dynamic-sql.html</loc>
-    <lastmod>2023-02-14</lastmod>
-  </url>
-  <url>
-    <loc>https://yaxing97.com/springboot-stater.html</loc>
     <lastmod>2023-02-14</lastmod>
   </url>
   <url>
