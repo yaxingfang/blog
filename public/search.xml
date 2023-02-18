@@ -1,34 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>2022秋招总结</title>
-    <url>/2022-autumn-recruitment-summary.html</url>
-    <content><![CDATA[<p>19 年乘着人见人吹的计算机大热，跨考计算机一站未果，二战上岸本校计算机。</p>
-<p>研二暑期留校科研，很幸运做出来两篇文章，接下来可以去实习了。</p>
-<p>从 12 月到 2 月，断断续续复习 Java 后端开发所需的知识。</p>
-<p>从 2 月底找实习，4 月底入职字节跳动，8 月底离职返校，直到 11 月底（11.27）正式签订三方，过程坎坷，内心惆怅。</p>
-<p>秋招投了约 50 家公司，都是 Java 后端，主要有以下：</p>
-<span id="more"></span>
-
-<p>蚂蚁，二面挂</p>
-<p>中移苏研，第二批次，面试走完，没有收到体检</p>
-<p>浙商银行，面试走完，没有材料审核</p>
-<p>山石网科，hr 面挂</p>
-<p>荣耀，面试走完，口头谈薪</p>
-<p>上海银行，总行苏州 base，收到 offer</p>
-<p>苏州农行，收到体检</p>
-<p>字节跳动，转正 offer，sp</p>
-<p>总体而言，今年强的人还是能拿到多个大厂 offer，但是大厂门槛比年高了很多。在互联网颓势的今年，芯片、嵌入式成为香饽饽，薪资高、发展好，不少人甚至直呼赶紧转行（我有朋友在零基础情况下拿了五六家嵌入式中小厂的 offer）。</p>
-<p>关于 offer 选择，最终是考虑字节跳动 base 杭州，还有一个江苏省某地级市 top1 高中的信息技术老师（进编）的 offer。在考虑家庭情况、个人卷度承受度、稳定性，最终选择了做一名教师。</p>
-<p>未来的发展，大概率就是做一名普通的信息技术教师，有卷的心还有机会尝试加入学校带竞赛的队伍。</p>
-<p>不管什么 offer 选择，有得必定有失，十全十美的工作几乎没有。所以在进行 offer 选择时，如果没有明确的爱好想做的工作的话（比如我），那就好好综合考虑以上几点进行判断得出选择了。</p>
-<p>做出选择就好好冲吧，未来可期。大家都有光明的未来！</p>
-]]></content>
-      <categories>
-        <category>实习秋招</category>
-      </categories>
-  </entry>
-  <entry>
     <title>12张图回忆我的2022</title>
     <url>/2022-memory.html</url>
     <content><![CDATA[<p>2022 年转瞬即逝，我从手机相册中每个月分别挑出一张照片，在此给我的 2022 留个回忆。</p>
@@ -61,6 +33,137 @@
 ]]></content>
       <categories>
         <category>日常小记</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>2022实习总结</title>
+    <url>/2022-internship-summary.html</url>
+    <content><![CDATA[<blockquote>
+<p>写在前面：作为一名硕转码的选手，今年暑期实习貌似又格外的难，身边的朋友、脉脉、牛客上的同学都表示今年大环境很差，实习很难找。各个大厂从裁员，”毕业季”，到锁 hc、停止流程、甚至主动毁约已签的 offer，无不表现出今年大环境有多差。以下是本人二月底以来找后端开发岗的暑期实习对各个公司面试流程一个大概的回顾和总结。</p>
+</blockquote>
+<span id="more"></span>
+
+<h2 id="已面试"><a href="#已面试" class="headerlink" title="已面试"></a>已面试</h2><h3 id="微软"><a href="#微软" class="headerlink" title="微软"></a>微软</h3><p>3.7 一面 →  3.10 （一二面平行面，一面过直达终面） → 3.16 挂 </p>
+<ul>
+<li>微软很看重算法，全程无八股，做题时没有思路可以和面试官沟通，不要自己一个人硬想，微软很看重沟通能力。</li>
+<li>尽量早投，微软今年暑期实习提前批差不多去年 12 月就开始了，身边有朋友提前批进的，相较于正式批而言难度感觉也没有更大，而且其实到了正式批剩余的 hc 就不多了。有朋友投简历有点晚连面试都没有安排到。</li>
+</ul>
+<h3 id="美团"><a href="#美团" class="headerlink" title="美团"></a>美团</h3><p>3.12 笔试（3.18 / 5） →  3.18 一面 →  3.18 挂</p>
+<p>面试体验很不好（当然自己面的也不好），后续脉脉牛客上看到这个部门貌似一面挂了不少人不乏顶级 985。</p>
+<h3 id="字节"><a href="#字节" class="headerlink" title="字节"></a>字节</h3><p>3.22 一面 →  3.23 二面 →  3.29 三面 →  4.2 offer 审批 →  4.11 offer 邮件</p>
+<ul>
+<li>字节比较看重基础和算法，题至少要有思路和面试官沟通，最好做出来。</li>
+<li>流程很快，一面二面都是当天晚上直接通知通过，三面过后好几天等到 HR 电话，然后 offer 审批跨了清明节，然后又过了一个周末，蛮痛苦的。</li>
+<li>综合而言，字节的面试体验很好，面试官会引导你去说，包括一些八股、场景题。</li>
+</ul>
+<h3 id="携程"><a href="#携程" class="headerlink" title="携程"></a>携程</h3><p>3.24 笔试（2.7 / 4） →  3.31 一面 →  4.13 约了二面（躺平不面了）</p>
+<p>携程一面问的比较基础，算法也比较简单。</p>
+<h3 id="阿里"><a href="#阿里" class="headerlink" title="阿里"></a>阿里</h3><p>3.24 初面 →  3.25 笔试（惨） →  4.7 二面 →  4.11 补笔试</p>
+<p>阿里一面看基础，二面看项目，项目不太熟悉了，被拷打烂了。<br>更新：4.11 晚上临时约做题，两道，一道多线程打印数据问题、一道高并发转账接口设计问题</p>
+<h3 id="恒生"><a href="#恒生" class="headerlink" title="恒生"></a>恒生</h3><p>3.31 笔试（无难度） → 4.6 一面 → 4.11 查看 已结束 → 4.12 HR 电话</p>
+<p>问的偏业务，貌似一面过了，拿了字节 offer 就拒了。</p>
+<h2 id="已笔试"><a href="#已笔试" class="headerlink" title="已笔试"></a>已笔试</h2><ul>
+<li><p>360 3.19 笔试（1.9 / 2） </p>
+</li>
+<li><p>贝壳 3.21 笔试（1.6 / 3）</p>
+</li>
+<li><p>网易雷火 3.26 笔试（1.5 / 2）</p>
+</li>
+<li><p>网易互联网 3.27 笔试（AK） → 4.2 查看 笔试未通过（今年貌似很多 AK 的同学被笔试挂的，挺迷）</p>
+</li>
+<li><p>便利蜂 3.31 笔试（惨）</p>
+</li>
+<li><p>京东 4.2 笔试（0.7 / 2）</p>
+</li>
+<li><p>百度 4.12 笔试 终止流程</p>
+</li>
+</ul>
+<h2 id="已投递简历挂"><a href="#已投递简历挂" class="headerlink" title="已投递简历挂"></a>已投递简历挂</h2><p>OPPO、网易互娱</p>
+<h2 id="已投递无后续"><a href="#已投递无后续" class="headerlink" title="已投递无后续"></a>已投递无后续</h2><p>顺丰、58 同城、联想、趋势科技</p>
+]]></content>
+      <categories>
+        <category>实习秋招</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>2022秋招总结</title>
+    <url>/2022-autumn-recruitment-summary.html</url>
+    <content><![CDATA[<p>19 年乘着人见人吹的计算机大热，跨考计算机一站未果，二战上岸本校计算机。</p>
+<p>研二暑期留校科研，很幸运做出来两篇文章，接下来可以去实习了。</p>
+<p>从 12 月到 2 月，断断续续复习 Java 后端开发所需的知识。</p>
+<p>从 2 月底找实习，4 月底入职字节跳动，8 月底离职返校，直到 11 月底（11.27）正式签订三方，过程坎坷，内心惆怅。</p>
+<p>秋招投了约 50 家公司，都是 Java 后端，主要有以下：</p>
+<span id="more"></span>
+
+<p>蚂蚁，二面挂</p>
+<p>中移苏研，第二批次，面试走完，没有收到体检</p>
+<p>浙商银行，面试走完，没有材料审核</p>
+<p>山石网科，hr 面挂</p>
+<p>荣耀，面试走完，口头谈薪</p>
+<p>上海银行，总行苏州 base，收到 offer</p>
+<p>苏州农行，收到体检</p>
+<p>字节跳动，转正 offer，sp</p>
+<p>总体而言，今年强的人还是能拿到多个大厂 offer，但是大厂门槛比年高了很多。在互联网颓势的今年，芯片、嵌入式成为香饽饽，薪资高、发展好，不少人甚至直呼赶紧转行（我有朋友在零基础情况下拿了五六家嵌入式中小厂的 offer）。</p>
+<p>关于 offer 选择，最终是考虑字节跳动 base 杭州，还有一个江苏省某地级市 top1 高中的信息技术老师（进编）的 offer。在考虑家庭情况、个人卷度承受度、稳定性，最终选择了做一名教师。</p>
+<p>未来的发展，大概率就是做一名普通的信息技术教师，有卷的心还有机会尝试加入学校带竞赛的队伍。</p>
+<p>不管什么 offer 选择，有得必定有失，十全十美的工作几乎没有。所以在进行 offer 选择时，如果没有明确的爱好想做的工作的话（比如我），那就好好综合考虑以上几点进行判断得出选择了。</p>
+<p>做出选择就好好冲吧，未来可期。大家都有光明的未来！</p>
+]]></content>
+      <categories>
+        <category>实习秋招</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Git 协同开发</title>
+    <url>/git-notes.html</url>
+    <content><![CDATA[<p>本文是本人在实习期间总结的一份关于使用 Git 进行协同开发的小记。<span id="more"></span></p>
+<p>背景：上游分支 release-branch，现在要在 release-branch 基础上进行开发</p>
+<p>1、先克隆整个项目，此时本地应该只有 master 分支</p>
+<p>2、克隆 release-branch 分支，<code>git checkout -b release-branch origin/release-branch</code>，此时本地 release-branch 和远程 release-branch 建立了映射关系，以后可以直接 pull 获得最新版本（tip：如果不想建立追踪关系，可以使用 <code>git fetch origin release-branch:release-branch</code>）</p>
+<p>3、拉好该分支后，此时处于 release-branch 分支，基于 release-branch 分支拉出来一个开发分支 dev-branch，可以使用 idea 里面的 Git 右键选择 release-branch，然后点击 new branch from …，建立本地的开发分支 dev-branch</p>
+<p>4、在本地开发一段时间后，commit 之后不能直接 push 到远程，因为此时 release-branch 上可能也有更新，所以此时要先使用 rebase 更新本地开发分支，然后再 push，具体操作如下：</p>
+<ul>
+<li><code>git checkout &lt;主分支&gt;</code></li>
+<li><code>git pull</code></li>
+<li><code>git checkout &lt;开发分支&gt;</code></li>
+<li><code>git rebase &lt;主分支&gt;</code>（将当前分支的基底设置为主分支，也就可以把主分支的更新拉过来到当前分支）</li>
+<li><code>git push --force origin &lt;开发分支&gt;</code></li>
+<li>提 MR 合并开发分支到下个版本的主分支上</li>
+</ul>
+<p>git push</p>
+<ul>
+<li><p>第一次使用 push，可以使用 idea 里面的 git，右键 push，可以设置远程分支，没有也会自动创建并设置关联关系。或者使用git 命令：<code>git push origin feature-branch:feature-branch</code></p>
+</li>
+<li><p>后续使用push，可以直接切换到该分支上，git push，但是一般都要进行 rebase 更新，所以使用 <code>git push --force origin &lt;本地分支名&gt;</code></p>
+</li>
+</ul>
+<p>git pull</p>
+<ul>
+<li><p>第一次拉某个分支，可以是用 <code>git checkout -b &lt;主分支&gt; orign/&lt;主分支&gt;</code></p>
+</li>
+<li><p>以后要更新，可以直接 git pull，完整版 <code>git pull origin &lt;远程分支名&gt;:&lt;本地分支名&gt;</code></p>
+</li>
+</ul>
+<p>回退</p>
+<ul>
+<li><p><code>git reflog</code> 查看版本号，在 Head{1&#x2F;2…} 前面的短字符串</p>
+</li>
+<li><p><code>git reset --hard &lt;版本号&gt;</code></p>
+</li>
+</ul>
+<p>参考</p>
+<ul>
+<li><p><a href="https://blog.51cto.com/u_15262460/2883040">git操作之pull拉取远程指定分支以及push推送到远程指定分支</a></p>
+</li>
+<li><p><a href="https://www.cnblogs.com/qyf404/p/git_push_local_branch_to_remote.html">git推送本地分支到远程分支</a></p>
+</li>
+<li><p><a href="https://zhuanlan.zhihu.com/p/34197548">GIT使用rebase和merge的正确姿势</a></p>
+</li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术总结</category>
+        <category>Git</category>
       </categories>
   </entry>
   <entry>
@@ -387,109 +490,6 @@
 ]]></content>
       <categories>
         <category>Java八股文</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>2022实习总结</title>
-    <url>/2022-internship-summary.html</url>
-    <content><![CDATA[<blockquote>
-<p>写在前面：作为一名硕转码的选手，今年暑期实习貌似又格外的难，身边的朋友、脉脉、牛客上的同学都表示今年大环境很差，实习很难找。各个大厂从裁员，”毕业季”，到锁 hc、停止流程、甚至主动毁约已签的 offer，无不表现出今年大环境有多差。以下是本人二月底以来找后端开发岗的暑期实习对各个公司面试流程一个大概的回顾和总结。</p>
-</blockquote>
-<span id="more"></span>
-
-<h2 id="已面试"><a href="#已面试" class="headerlink" title="已面试"></a>已面试</h2><h3 id="微软"><a href="#微软" class="headerlink" title="微软"></a>微软</h3><p>3.7 一面 →  3.10 （一二面平行面，一面过直达终面） → 3.16 挂 </p>
-<ul>
-<li>微软很看重算法，全程无八股，做题时没有思路可以和面试官沟通，不要自己一个人硬想，微软很看重沟通能力。</li>
-<li>尽量早投，微软今年暑期实习提前批差不多去年 12 月就开始了，身边有朋友提前批进的，相较于正式批而言难度感觉也没有更大，而且其实到了正式批剩余的 hc 就不多了。有朋友投简历有点晚连面试都没有安排到。</li>
-</ul>
-<h3 id="美团"><a href="#美团" class="headerlink" title="美团"></a>美团</h3><p>3.12 笔试（3.18 / 5） →  3.18 一面 →  3.18 挂</p>
-<p>面试体验很不好（当然自己面的也不好），后续脉脉牛客上看到这个部门貌似一面挂了不少人不乏顶级 985。</p>
-<h3 id="字节"><a href="#字节" class="headerlink" title="字节"></a>字节</h3><p>3.22 一面 →  3.23 二面 →  3.29 三面 →  4.2 offer 审批 →  4.11 offer 邮件</p>
-<ul>
-<li>字节比较看重基础和算法，题至少要有思路和面试官沟通，最好做出来。</li>
-<li>流程很快，一面二面都是当天晚上直接通知通过，三面过后好几天等到 HR 电话，然后 offer 审批跨了清明节，然后又过了一个周末，蛮痛苦的。</li>
-<li>综合而言，字节的面试体验很好，面试官会引导你去说，包括一些八股、场景题。</li>
-</ul>
-<h3 id="携程"><a href="#携程" class="headerlink" title="携程"></a>携程</h3><p>3.24 笔试（2.7 / 4） →  3.31 一面 →  4.13 约了二面（躺平不面了）</p>
-<p>携程一面问的比较基础，算法也比较简单。</p>
-<h3 id="阿里"><a href="#阿里" class="headerlink" title="阿里"></a>阿里</h3><p>3.24 初面 →  3.25 笔试（惨） →  4.7 二面 →  4.11 补笔试</p>
-<p>阿里一面看基础，二面看项目，项目不太熟悉了，被拷打烂了。<br>更新：4.11 晚上临时约做题，两道，一道多线程打印数据问题、一道高并发转账接口设计问题</p>
-<h3 id="恒生"><a href="#恒生" class="headerlink" title="恒生"></a>恒生</h3><p>3.31 笔试（无难度） → 4.6 一面 → 4.11 查看 已结束 → 4.12 HR 电话</p>
-<p>问的偏业务，貌似一面过了，拿了字节 offer 就拒了。</p>
-<h2 id="已笔试"><a href="#已笔试" class="headerlink" title="已笔试"></a>已笔试</h2><ul>
-<li><p>360 3.19 笔试（1.9 / 2） </p>
-</li>
-<li><p>贝壳 3.21 笔试（1.6 / 3）</p>
-</li>
-<li><p>网易雷火 3.26 笔试（1.5 / 2）</p>
-</li>
-<li><p>网易互联网 3.27 笔试（AK） → 4.2 查看 笔试未通过（今年貌似很多 AK 的同学被笔试挂的，挺迷）</p>
-</li>
-<li><p>便利蜂 3.31 笔试（惨）</p>
-</li>
-<li><p>京东 4.2 笔试（0.7 / 2）</p>
-</li>
-<li><p>百度 4.12 笔试 终止流程</p>
-</li>
-</ul>
-<h2 id="已投递简历挂"><a href="#已投递简历挂" class="headerlink" title="已投递简历挂"></a>已投递简历挂</h2><p>OPPO、网易互娱</p>
-<h2 id="已投递无后续"><a href="#已投递无后续" class="headerlink" title="已投递无后续"></a>已投递无后续</h2><p>顺丰、58 同城、联想、趋势科技</p>
-]]></content>
-      <categories>
-        <category>实习秋招</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Git 协同开发</title>
-    <url>/git-notes.html</url>
-    <content><![CDATA[<p>本文是本人在实习期间总结的一份关于使用 Git 进行协同开发的小记。<span id="more"></span></p>
-<p>背景：上游分支 release-branch，现在要在 release-branch 基础上进行开发</p>
-<p>1、先克隆整个项目，此时本地应该只有 master 分支</p>
-<p>2、克隆 release-branch 分支，<code>git checkout -b release-branch origin/release-branch</code>，此时本地 release-branch 和远程 release-branch 建立了映射关系，以后可以直接 pull 获得最新版本（tip：如果不想建立追踪关系，可以使用 <code>git fetch origin release-branch:release-branch</code>）</p>
-<p>3、拉好该分支后，此时处于 release-branch 分支，基于 release-branch 分支拉出来一个开发分支 dev-branch，可以使用 idea 里面的 Git 右键选择 release-branch，然后点击 new branch from …，建立本地的开发分支 dev-branch</p>
-<p>4、在本地开发一段时间后，commit 之后不能直接 push 到远程，因为此时 release-branch 上可能也有更新，所以此时要先使用 rebase 更新本地开发分支，然后再 push，具体操作如下：</p>
-<ul>
-<li><code>git checkout &lt;主分支&gt;</code></li>
-<li><code>git pull</code></li>
-<li><code>git checkout &lt;开发分支&gt;</code></li>
-<li><code>git rebase &lt;主分支&gt;</code>（将当前分支的基底设置为主分支，也就可以把主分支的更新拉过来到当前分支）</li>
-<li><code>git push --force origin &lt;开发分支&gt;</code></li>
-<li>提 MR 合并开发分支到下个版本的主分支上</li>
-</ul>
-<p>git push</p>
-<ul>
-<li><p>第一次使用 push，可以使用 idea 里面的 git，右键 push，可以设置远程分支，没有也会自动创建并设置关联关系。或者使用git 命令：<code>git push origin feature-branch:feature-branch</code></p>
-</li>
-<li><p>后续使用push，可以直接切换到该分支上，git push，但是一般都要进行 rebase 更新，所以使用 <code>git push --force origin &lt;本地分支名&gt;</code></p>
-</li>
-</ul>
-<p>git pull</p>
-<ul>
-<li><p>第一次拉某个分支，可以是用 <code>git checkout -b &lt;主分支&gt; orign/&lt;主分支&gt;</code></p>
-</li>
-<li><p>以后要更新，可以直接 git pull，完整版 <code>git pull origin &lt;远程分支名&gt;:&lt;本地分支名&gt;</code></p>
-</li>
-</ul>
-<p>回退</p>
-<ul>
-<li><p><code>git reflog</code> 查看版本号，在 Head{1&#x2F;2…} 前面的短字符串</p>
-</li>
-<li><p><code>git reset --hard &lt;版本号&gt;</code></p>
-</li>
-</ul>
-<p>参考</p>
-<ul>
-<li><p><a href="https://blog.51cto.com/u_15262460/2883040">git操作之pull拉取远程指定分支以及push推送到远程指定分支</a></p>
-</li>
-<li><p><a href="https://www.cnblogs.com/qyf404/p/git_push_local_branch_to_remote.html">git推送本地分支到远程分支</a></p>
-</li>
-<li><p><a href="https://zhuanlan.zhihu.com/p/34197548">GIT使用rebase和merge的正确姿势</a></p>
-</li>
-</ul>
-]]></content>
-      <categories>
-        <category>技术总结</category>
-        <category>Git</category>
       </categories>
   </entry>
   <entry>
@@ -1217,102 +1217,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Java八股文 - SpringMVC</title>
-    <url>/java-springmvc.html</url>
-    <content><![CDATA[<blockquote>
-<p>整理的SpringMVC相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～<span id="more"></span></p>
-</blockquote>
-<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><h3 id="什么是Spring-MVC？简单介绍下你对Spring-MVC的理解？"><a href="#什么是Spring-MVC？简单介绍下你对Spring-MVC的理解？" class="headerlink" title="什么是Spring MVC？简单介绍下你对Spring MVC的理解？"></a>什么是Spring MVC？简单介绍下你对Spring MVC的理解？</h3><p>Spring MVC 是一个基于 Java 的实现了 MVC 设计模式的请求驱动类型的轻量级 Web 框架，通过把模型-视图-控制器分离，将 web 层进行职责解耦，简化开发。</p>
-<h2 id="核心组件"><a href="#核心组件" class="headerlink" title="核心组件"></a>核心组件</h2><h3 id="Spring-MVC的主要组件？"><a href="#Spring-MVC的主要组件？" class="headerlink" title="Spring MVC的主要组件？"></a>Spring MVC的主要组件？</h3><p>（1）前端控制器 DispatcherServlet（不需要程序员开发）</p>
-<p>作用：接收请求、响应结果，相当于转发器，有了 DispatcherServlet 就减少了其它组件之间的耦合度。</p>
-<p>（2）处理器映射器 HandlerMapping（不需要程序员开发）</p>
-<p>作用：根据请求的 URL 来查找 Handler</p>
-<p>（3）处理器适配器 HandlerAdapter</p>
-<p>注意：在编写 Handler 的时候要按照 HandlerAdapter 要求的规则去编写，这样适配器 HandlerAdapter 才可以正确的去执行 Handler。</p>
-<p>（4）处理器 Handler（需要程序员开发）</p>
-<p>（5）视图解析器 ViewResolver（不需要程序员开发）</p>
-<p>作用：进行视图的解析，根据视图逻辑名解析成真正的视图（view）</p>
-<p>（6）视图 View（需要程序员开发 jsp）</p>
-<p>View 是一个接口， 它的实现类支持不同的视图类型（jsp，freemarker，pdf 等等）</p>
-<h3 id="什么是DispatcherServlet"><a href="#什么是DispatcherServlet" class="headerlink" title="什么是DispatcherServlet"></a>什么是DispatcherServlet</h3><p>Spring 的 MVC 框架是围绕 DispatcherServlet 来设计的，它用来处理所有的 HTTP 请求和响应。</p>
-<h3 id="什么是Spring-MVC框架的控制器？"><a href="#什么是Spring-MVC框架的控制器？" class="headerlink" title="什么是Spring MVC框架的控制器？"></a>什么是Spring MVC框架的控制器？</h3><p>控制器使用@Controller 注解，并且提供了@RequestMapping 注解，通过解析 url 中的路径，可以找到相应的控制器进行逻辑处理，响应数据等。</p>
-<h3 id="Spring-MVC的控制器是不是单例模式-如果是-有什么问题-怎么解决？"><a href="#Spring-MVC的控制器是不是单例模式-如果是-有什么问题-怎么解决？" class="headerlink" title="Spring MVC的控制器是不是单例模式,如果是,有什么问题,怎么解决？"></a>Spring MVC的控制器是不是单例模式,如果是,有什么问题,怎么解决？</h3><p>单例模式,所以在多线程访问的时候有线程安全问题,不要用同步,会影响性能的，解决方案是在控制器保持控制器无状态（不要写字段）。</p>
-<h2 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h2><h3 id="请描述Spring-MVC的工作流程？描述一下-DispatcherServlet-的工作流程？"><a href="#请描述Spring-MVC的工作流程？描述一下-DispatcherServlet-的工作流程？" class="headerlink" title="请描述Spring MVC的工作流程？描述一下 DispatcherServlet 的工作流程？"></a>请描述Spring MVC的工作流程？描述一下 DispatcherServlet 的工作流程？</h3><ol>
-<li>用户发送请求至前端控制器 DispatcherServlet；</li>
-<li>DispatcherServlet 收到请求后，调用 HandlerMapping 处理器映射器，请求获取 Handler；</li>
-<li>HandlerMapping 处理器映射器根据请求 url<strong>找到具体的处理器</strong>，生成处理器对象及处理器拦截器(如果有则生成)一并返回给 DispatcherServlet；</li>
-<li>DispatcherServlet 调用 HandlerAdapter 处理器适配器；</li>
-<li>HandlerAdapter 经过适配 <strong>调用具体处理器</strong>(Handler，也叫后端控制器)；</li>
-<li>Handler 执行完成返回 ModelAndView；</li>
-<li>HandlerAdapter 将 Handler 执行结果 ModelAndView 返回给 DispatcherServlet；</li>
-<li>DispatcherServlet 将 ModelAndView 传给 ViewResolver 视图解析器进行解析；</li>
-<li>ViewResolver 解析后返回具体 View；</li>
-<li>DispatcherServlet 对 View 进行渲染成为视图（即将模型数据填充至视图中）；</li>
-<li>DispatcherServlet 响应用户。</li>
-</ol>
-<p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes20200208211439106.png" alt="Spring MVC的工作流程"></p>
-<h2 id="常用注解"><a href="#常用注解" class="headerlink" title="常用注解"></a>常用注解</h2><h3 id="注解原理是什么"><a href="#注解原理是什么" class="headerlink" title="注解原理是什么"></a>注解原理是什么</h3><p>注解本质是一个继承了 Annotation 的特殊接口，其具体实现类是 Java 运行时生成的动态代理类。我们通过反射获取注解时，返回的是 Java 运行时生成的动态代理对象。通过代理对象调用自定义注解的方法。</p>
-<h3 id="Spring-MVC常用的注解有哪些？"><a href="#Spring-MVC常用的注解有哪些？" class="headerlink" title="Spring MVC常用的注解有哪些？"></a>Spring MVC常用的注解有哪些？</h3><p>@RequestMapping：用于处理请求 url 映射的注解，可用于类或方法上。用于类上，则表示类中的所有响应请求的方法都是以该地址作为父路径。</p>
-<p>@RequestBody：注解实现接收 http 请求的 json 数据，将 json 转换为 java 对象。</p>
-<p>@ResponseBody：注解实现将 controller 方法返回对象转化为 json 对象响应给客户。</p>
-<h3 id="Sping-MVC中的控制器的注解一般用哪个-有没有别的注解可以替代？"><a href="#Sping-MVC中的控制器的注解一般用哪个-有没有别的注解可以替代？" class="headerlink" title="Sping MVC中的控制器的注解一般用哪个,有没有别的注解可以替代？"></a>Sping MVC中的控制器的注解一般用哪个,有没有别的注解可以替代？</h3><p>答：一般用@Controller 注解，也可以使用@RestController，@RestController 注解相当于@ResponseBody ＋ @Controller，@ResponseBody 用于返回 json 数据＋ @Controller 用于表明控制器</p>
-<h3 id="Controller注解的作用"><a href="#Controller注解的作用" class="headerlink" title="@Controller注解的作用"></a>@Controller注解的作用</h3><p>@Controller 用于标记在一个类上，使用它标记的类就是一个 Spring MVC Controller 对象。通过请求的 url 和@RequestMapping 注解对应到实际处理请求的处理器。需要开启 mvc 注解扫描找到@Controller 的控制器。</p>
-<h3 id="RequestMapping注解的作用"><a href="#RequestMapping注解的作用" class="headerlink" title="@RequestMapping注解的作用"></a>@RequestMapping注解的作用</h3><p>RequestMapping 是一个用来处理请求地址映射的注解，可用于类或方法上。</p>
-<p>用于类上，表示类中的所有响应请求的方法都是以该地址作为父路径。</p>
-<p>RequestMapping 注解有六个属性：</p>
-<p><strong>path&#x2F;value， method</strong></p>
-<ul>
-<li><p>value： 指定请求的实际地址，指定的地址可以是 URI Template 模式（后面将会说明）；</p>
-</li>
-<li><p>method： 指定请求的 method 类型， GET、POST、PUT、DELETE 等；</p>
-</li>
-</ul>
-<p><strong>consumes，produces</strong></p>
-<ul>
-<li><p>consumes： 指定处理请求的提交内容类型（Content-Type），例如 application&#x2F;json, text&#x2F;html;</p>
-</li>
-<li><p>produces: 指定返回的内容类型，仅当 request 请求头中的(Accept)类型中包含该指定类型才返回；</p>
-</li>
-</ul>
-<p><strong>params，headers</strong></p>
-<ul>
-<li><p>params： 指定 request 中必须包含某些参数值时，才让该方法处理。</p>
-</li>
-<li><p>headers： 指定 request 中必须包含某些指定的 header 值，才能让该方法处理请求。</p>
-</li>
-</ul>
-<h3 id="PathVariable和-RequestParam的区别"><a href="#PathVariable和-RequestParam的区别" class="headerlink" title="@PathVariable和@RequestParam的区别"></a>@PathVariable和@RequestParam的区别</h3><p>@PathVariable 作用： 用于绑定 url 中的占位符。例如：请求 url 中 &#x2F;delete&#x2F;{id}，这个{id}就是 url 占位符。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 根据path /anno/testPathVariable/10 找到 testPathVariable 方法</span></span><br><span class="line"><span class="comment">* 然后，其中的10就是sid占位符所占的位置的数据，然后通过<span class="doctag">@PathVaribale</span>注解将其赋值给 id</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">@RequestMapping(path = &quot;testPathVariable/&#123;sid&#125;&quot;)</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">testPathVariable</span><span class="params">(<span class="meta">@PathVariable(value = &quot;sid&quot;)</span> String id)</span> &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;执行了testPathVariable...&quot;</span>);</span><br><span class="line">    System.out.println(id);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;success&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>@RequestParam 作用： 把请求中指定名称的参数给控制器中的形参赋值。</p>
-<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Controller中的代码：</span></span><br><span class="line"><span class="meta">@RequestMapping(path = &quot;/testRequestParam&quot;)</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">testRequestParam</span><span class="params">(<span class="meta">@RequestParam(value = &quot;name&quot;)</span> String username)</span> &#123;</span><br><span class="line">    <span class="comment">// 把请求中指定的name赋值给控制器中的形参username</span></span><br><span class="line">    System.out.println(<span class="string">&quot;执行了testRequestParam...&quot;</span>);</span><br><span class="line">    System.out.println(username);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;success&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="Spring-MVC怎么样设定转发和重定向的？"><a href="#Spring-MVC怎么样设定转发和重定向的？" class="headerlink" title="Spring MVC怎么样设定转发和重定向的？"></a>Spring MVC怎么样设定转发和重定向的？</h3><p>（1）转发：使用 forward<br>forward 是指内部转发，相当于服务器内部方法跳转调用。请求一次服务器。转发地址不变。</p>
-<p>（2）重定向：使用 redirect<br>重定向是指当浏览器请求一个 URL 时，服务器返回一个重定向指令，告诉浏览器地址已经变了，麻烦使用新的 URL 再重新发送新请求。请求两次服务器。重定向地址改变。</p>
-<h3 id="Spring-MVC怎么和AJAX相互调用的？"><a href="#Spring-MVC怎么和AJAX相互调用的？" class="headerlink" title="Spring MVC怎么和AJAX相互调用的？"></a>Spring MVC怎么和AJAX相互调用的？</h3><p>通过 Jackson 或者是 fastjson 就可以把 Java 里面的对象直接转化成 Js 可以识别的 Json 对象，来进行传输。</p>
-<h3 id="如何解决POST请求中文乱码问题，GET的又如何处理呢？"><a href="#如何解决POST请求中文乱码问题，GET的又如何处理呢？" class="headerlink" title="如何解决POST请求中文乱码问题，GET的又如何处理呢？"></a>如何解决POST请求中文乱码问题，GET的又如何处理呢？</h3><p>（1）解决 post 请求乱码问题：</p>
-<p>在 web.xml 中配置一个 CharacterEncodingFilter 过滤器，设置成 utf-8；</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">filter</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-class</span>&gt;</span>org.springframework.web.filter.CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-class</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">init-param</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-name</span>&gt;</span>encoding<span class="tag">&lt;/<span class="name">param-name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-value</span>&gt;</span>utf-8<span class="tag">&lt;/<span class="name">param-value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">init-param</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">filter</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">filter-mapping</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/*<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">filter-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>（2）get 请求中文参数出现乱码解决方法有两个：</p>
-<p>修改 tomcat 配置文件添加编码与工程编码一致，如下：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">&lt;ConnectorURIEncoding=&quot;utf-8&quot; connectionTimeout=&quot;20000&quot; port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot; redirectPort=&quot;8443&quot;/&gt;</span><br></pre></td></tr></table></figure>
-
-<h3 id="Spring-MVC的异常处理"><a href="#Spring-MVC的异常处理" class="headerlink" title="Spring MVC的异常处理"></a>Spring MVC的异常处理</h3><p>可以将异常抛给 Spring 框架，由 Spring 框架来处理；我们只需要配置简单的异常处理器，在异常处理器中添视图页面即可。</p>
-<h3 id="如果在拦截请求中，我想拦截get方式提交的方法-怎么配置"><a href="#如果在拦截请求中，我想拦截get方式提交的方法-怎么配置" class="headerlink" title="如果在拦截请求中，我想拦截get方式提交的方法,怎么配置"></a>如果在拦截请求中，我想拦截get方式提交的方法,怎么配置</h3><p>答：可以在@RequestMapping 注解里面加上 method&#x3D;RequestMethod.GET。</p>
-<h3 id="怎样在方法里面得到Request-或者Session？"><a href="#怎样在方法里面得到Request-或者Session？" class="headerlink" title="怎样在方法里面得到Request,或者Session？"></a>怎样在方法里面得到Request,或者Session？</h3><p>答：直接在方法的形参中声明 request,Spring MVC 就自动把 request 对象传入。</p>
-<h3 id="如果想在拦截的方法里面得到从前台传入的参数-怎么得到？"><a href="#如果想在拦截的方法里面得到从前台传入的参数-怎么得到？" class="headerlink" title="如果想在拦截的方法里面得到从前台传入的参数,怎么得到？"></a>如果想在拦截的方法里面得到从前台传入的参数,怎么得到？</h3><p>直接在形参里面声明这个参数就可以,但必须名字和传过来的参数一样。<br>或者使用 RequestParam 注解将前台的参数名 A 传给形参中的参数 B</p>
-<h3 id="如果前台有很多个参数传入-并且这些参数都是一个对象的-那么怎么样快速得到这个对象？"><a href="#如果前台有很多个参数传入-并且这些参数都是一个对象的-那么怎么样快速得到这个对象？" class="headerlink" title="如果前台有很多个参数传入,并且这些参数都是一个对象的,那么怎么样快速得到这个对象？"></a>如果前台有很多个参数传入,并且这些参数都是一个对象的,那么怎么样快速得到这个对象？</h3><p>直接在方法中声明这个对象,Spring MVC 就自动会把属性赋值到这个对象里面。</p>
-<h3 id="Spring-MVC中函数的返回值是什么？"><a href="#Spring-MVC中函数的返回值是什么？" class="headerlink" title="Spring MVC中函数的返回值是什么？"></a>Spring MVC中函数的返回值是什么？</h3><p>返回值可以有很多类型,有 String, ModelAndView（视图和数据合并在一起）。</p>
-<h3 id="Spring-MVC用什么对象从后台向前台传递数据的？"><a href="#Spring-MVC用什么对象从后台向前台传递数据的？" class="headerlink" title="Spring MVC用什么对象从后台向前台传递数据的？"></a>Spring MVC用什么对象从后台向前台传递数据的？</h3><p>通过 ModelMap 对象,可以在这个对象里面调用 put 方法,把对象加到里面,前台就可以通过 el 表达式拿到。</p>
-<h3 id="怎么样把ModelMap里面的数据放入Session里面？"><a href="#怎么样把ModelMap里面的数据放入Session里面？" class="headerlink" title="怎么样把ModelMap里面的数据放入Session里面？"></a>怎么样把ModelMap里面的数据放入Session里面？</h3><p>可以在类上面加上@SessionAttributes 注解,里面包含的字符串就是要放入 session 里面的 key。</p>
-<h3 id="Spring-MVC里面拦截器是怎么写的"><a href="#Spring-MVC里面拦截器是怎么写的" class="headerlink" title="Spring MVC里面拦截器是怎么写的"></a>Spring MVC里面拦截器是怎么写的</h3><p>有两种写法,一种是实现 HandlerInterceptor 接口，重写 prehandle 等方法，然后配置拦截器</p>
-]]></content>
-      <categories>
-        <category>Java八股文</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Java八股文 - Spring</title>
     <url>/java-spring.html</url>
     <content><![CDATA[<blockquote>
@@ -1621,6 +1525,102 @@
 </ul>
 <p>可以简单地认为, 使用 @Aspect 注解的类就是切面</p>
 <p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes2020021212264438.png" alt="在这里插入图片描述"></p>
+]]></content>
+      <categories>
+        <category>Java八股文</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Java八股文 - SpringMVC</title>
+    <url>/java-springmvc.html</url>
+    <content><![CDATA[<blockquote>
+<p>整理的SpringMVC相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～<span id="more"></span></p>
+</blockquote>
+<h2 id="概述"><a href="#概述" class="headerlink" title="概述"></a>概述</h2><h3 id="什么是Spring-MVC？简单介绍下你对Spring-MVC的理解？"><a href="#什么是Spring-MVC？简单介绍下你对Spring-MVC的理解？" class="headerlink" title="什么是Spring MVC？简单介绍下你对Spring MVC的理解？"></a>什么是Spring MVC？简单介绍下你对Spring MVC的理解？</h3><p>Spring MVC 是一个基于 Java 的实现了 MVC 设计模式的请求驱动类型的轻量级 Web 框架，通过把模型-视图-控制器分离，将 web 层进行职责解耦，简化开发。</p>
+<h2 id="核心组件"><a href="#核心组件" class="headerlink" title="核心组件"></a>核心组件</h2><h3 id="Spring-MVC的主要组件？"><a href="#Spring-MVC的主要组件？" class="headerlink" title="Spring MVC的主要组件？"></a>Spring MVC的主要组件？</h3><p>（1）前端控制器 DispatcherServlet（不需要程序员开发）</p>
+<p>作用：接收请求、响应结果，相当于转发器，有了 DispatcherServlet 就减少了其它组件之间的耦合度。</p>
+<p>（2）处理器映射器 HandlerMapping（不需要程序员开发）</p>
+<p>作用：根据请求的 URL 来查找 Handler</p>
+<p>（3）处理器适配器 HandlerAdapter</p>
+<p>注意：在编写 Handler 的时候要按照 HandlerAdapter 要求的规则去编写，这样适配器 HandlerAdapter 才可以正确的去执行 Handler。</p>
+<p>（4）处理器 Handler（需要程序员开发）</p>
+<p>（5）视图解析器 ViewResolver（不需要程序员开发）</p>
+<p>作用：进行视图的解析，根据视图逻辑名解析成真正的视图（view）</p>
+<p>（6）视图 View（需要程序员开发 jsp）</p>
+<p>View 是一个接口， 它的实现类支持不同的视图类型（jsp，freemarker，pdf 等等）</p>
+<h3 id="什么是DispatcherServlet"><a href="#什么是DispatcherServlet" class="headerlink" title="什么是DispatcherServlet"></a>什么是DispatcherServlet</h3><p>Spring 的 MVC 框架是围绕 DispatcherServlet 来设计的，它用来处理所有的 HTTP 请求和响应。</p>
+<h3 id="什么是Spring-MVC框架的控制器？"><a href="#什么是Spring-MVC框架的控制器？" class="headerlink" title="什么是Spring MVC框架的控制器？"></a>什么是Spring MVC框架的控制器？</h3><p>控制器使用@Controller 注解，并且提供了@RequestMapping 注解，通过解析 url 中的路径，可以找到相应的控制器进行逻辑处理，响应数据等。</p>
+<h3 id="Spring-MVC的控制器是不是单例模式-如果是-有什么问题-怎么解决？"><a href="#Spring-MVC的控制器是不是单例模式-如果是-有什么问题-怎么解决？" class="headerlink" title="Spring MVC的控制器是不是单例模式,如果是,有什么问题,怎么解决？"></a>Spring MVC的控制器是不是单例模式,如果是,有什么问题,怎么解决？</h3><p>单例模式,所以在多线程访问的时候有线程安全问题,不要用同步,会影响性能的，解决方案是在控制器保持控制器无状态（不要写字段）。</p>
+<h2 id="工作原理"><a href="#工作原理" class="headerlink" title="工作原理"></a>工作原理</h2><h3 id="请描述Spring-MVC的工作流程？描述一下-DispatcherServlet-的工作流程？"><a href="#请描述Spring-MVC的工作流程？描述一下-DispatcherServlet-的工作流程？" class="headerlink" title="请描述Spring MVC的工作流程？描述一下 DispatcherServlet 的工作流程？"></a>请描述Spring MVC的工作流程？描述一下 DispatcherServlet 的工作流程？</h3><ol>
+<li>用户发送请求至前端控制器 DispatcherServlet；</li>
+<li>DispatcherServlet 收到请求后，调用 HandlerMapping 处理器映射器，请求获取 Handler；</li>
+<li>HandlerMapping 处理器映射器根据请求 url<strong>找到具体的处理器</strong>，生成处理器对象及处理器拦截器(如果有则生成)一并返回给 DispatcherServlet；</li>
+<li>DispatcherServlet 调用 HandlerAdapter 处理器适配器；</li>
+<li>HandlerAdapter 经过适配 <strong>调用具体处理器</strong>(Handler，也叫后端控制器)；</li>
+<li>Handler 执行完成返回 ModelAndView；</li>
+<li>HandlerAdapter 将 Handler 执行结果 ModelAndView 返回给 DispatcherServlet；</li>
+<li>DispatcherServlet 将 ModelAndView 传给 ViewResolver 视图解析器进行解析；</li>
+<li>ViewResolver 解析后返回具体 View；</li>
+<li>DispatcherServlet 对 View 进行渲染成为视图（即将模型数据填充至视图中）；</li>
+<li>DispatcherServlet 响应用户。</li>
+</ol>
+<p><img src="https://yaxingfang-typora.oss-cn-hangzhou.aliyuncs.com/TyporaNotes20200208211439106.png" alt="Spring MVC的工作流程"></p>
+<h2 id="常用注解"><a href="#常用注解" class="headerlink" title="常用注解"></a>常用注解</h2><h3 id="注解原理是什么"><a href="#注解原理是什么" class="headerlink" title="注解原理是什么"></a>注解原理是什么</h3><p>注解本质是一个继承了 Annotation 的特殊接口，其具体实现类是 Java 运行时生成的动态代理类。我们通过反射获取注解时，返回的是 Java 运行时生成的动态代理对象。通过代理对象调用自定义注解的方法。</p>
+<h3 id="Spring-MVC常用的注解有哪些？"><a href="#Spring-MVC常用的注解有哪些？" class="headerlink" title="Spring MVC常用的注解有哪些？"></a>Spring MVC常用的注解有哪些？</h3><p>@RequestMapping：用于处理请求 url 映射的注解，可用于类或方法上。用于类上，则表示类中的所有响应请求的方法都是以该地址作为父路径。</p>
+<p>@RequestBody：注解实现接收 http 请求的 json 数据，将 json 转换为 java 对象。</p>
+<p>@ResponseBody：注解实现将 controller 方法返回对象转化为 json 对象响应给客户。</p>
+<h3 id="Sping-MVC中的控制器的注解一般用哪个-有没有别的注解可以替代？"><a href="#Sping-MVC中的控制器的注解一般用哪个-有没有别的注解可以替代？" class="headerlink" title="Sping MVC中的控制器的注解一般用哪个,有没有别的注解可以替代？"></a>Sping MVC中的控制器的注解一般用哪个,有没有别的注解可以替代？</h3><p>答：一般用@Controller 注解，也可以使用@RestController，@RestController 注解相当于@ResponseBody ＋ @Controller，@ResponseBody 用于返回 json 数据＋ @Controller 用于表明控制器</p>
+<h3 id="Controller注解的作用"><a href="#Controller注解的作用" class="headerlink" title="@Controller注解的作用"></a>@Controller注解的作用</h3><p>@Controller 用于标记在一个类上，使用它标记的类就是一个 Spring MVC Controller 对象。通过请求的 url 和@RequestMapping 注解对应到实际处理请求的处理器。需要开启 mvc 注解扫描找到@Controller 的控制器。</p>
+<h3 id="RequestMapping注解的作用"><a href="#RequestMapping注解的作用" class="headerlink" title="@RequestMapping注解的作用"></a>@RequestMapping注解的作用</h3><p>RequestMapping 是一个用来处理请求地址映射的注解，可用于类或方法上。</p>
+<p>用于类上，表示类中的所有响应请求的方法都是以该地址作为父路径。</p>
+<p>RequestMapping 注解有六个属性：</p>
+<p><strong>path&#x2F;value， method</strong></p>
+<ul>
+<li><p>value： 指定请求的实际地址，指定的地址可以是 URI Template 模式（后面将会说明）；</p>
+</li>
+<li><p>method： 指定请求的 method 类型， GET、POST、PUT、DELETE 等；</p>
+</li>
+</ul>
+<p><strong>consumes，produces</strong></p>
+<ul>
+<li><p>consumes： 指定处理请求的提交内容类型（Content-Type），例如 application&#x2F;json, text&#x2F;html;</p>
+</li>
+<li><p>produces: 指定返回的内容类型，仅当 request 请求头中的(Accept)类型中包含该指定类型才返回；</p>
+</li>
+</ul>
+<p><strong>params，headers</strong></p>
+<ul>
+<li><p>params： 指定 request 中必须包含某些参数值时，才让该方法处理。</p>
+</li>
+<li><p>headers： 指定 request 中必须包含某些指定的 header 值，才能让该方法处理请求。</p>
+</li>
+</ul>
+<h3 id="PathVariable和-RequestParam的区别"><a href="#PathVariable和-RequestParam的区别" class="headerlink" title="@PathVariable和@RequestParam的区别"></a>@PathVariable和@RequestParam的区别</h3><p>@PathVariable 作用： 用于绑定 url 中的占位符。例如：请求 url 中 &#x2F;delete&#x2F;{id}，这个{id}就是 url 占位符。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* 根据path /anno/testPathVariable/10 找到 testPathVariable 方法</span></span><br><span class="line"><span class="comment">* 然后，其中的10就是sid占位符所占的位置的数据，然后通过<span class="doctag">@PathVaribale</span>注解将其赋值给 id</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="meta">@RequestMapping(path = &quot;testPathVariable/&#123;sid&#125;&quot;)</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">testPathVariable</span><span class="params">(<span class="meta">@PathVariable(value = &quot;sid&quot;)</span> String id)</span> &#123;</span><br><span class="line">    System.out.println(<span class="string">&quot;执行了testPathVariable...&quot;</span>);</span><br><span class="line">    System.out.println(id);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;success&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>@RequestParam 作用： 把请求中指定名称的参数给控制器中的形参赋值。</p>
+<figure class="highlight java"><table><tr><td class="code"><pre><span class="line"><span class="comment">// Controller中的代码：</span></span><br><span class="line"><span class="meta">@RequestMapping(path = &quot;/testRequestParam&quot;)</span></span><br><span class="line"><span class="keyword">public</span> String <span class="title function_">testRequestParam</span><span class="params">(<span class="meta">@RequestParam(value = &quot;name&quot;)</span> String username)</span> &#123;</span><br><span class="line">    <span class="comment">// 把请求中指定的name赋值给控制器中的形参username</span></span><br><span class="line">    System.out.println(<span class="string">&quot;执行了testRequestParam...&quot;</span>);</span><br><span class="line">    System.out.println(username);</span><br><span class="line">    <span class="keyword">return</span> <span class="string">&quot;success&quot;</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><h3 id="Spring-MVC怎么样设定转发和重定向的？"><a href="#Spring-MVC怎么样设定转发和重定向的？" class="headerlink" title="Spring MVC怎么样设定转发和重定向的？"></a>Spring MVC怎么样设定转发和重定向的？</h3><p>（1）转发：使用 forward<br>forward 是指内部转发，相当于服务器内部方法跳转调用。请求一次服务器。转发地址不变。</p>
+<p>（2）重定向：使用 redirect<br>重定向是指当浏览器请求一个 URL 时，服务器返回一个重定向指令，告诉浏览器地址已经变了，麻烦使用新的 URL 再重新发送新请求。请求两次服务器。重定向地址改变。</p>
+<h3 id="Spring-MVC怎么和AJAX相互调用的？"><a href="#Spring-MVC怎么和AJAX相互调用的？" class="headerlink" title="Spring MVC怎么和AJAX相互调用的？"></a>Spring MVC怎么和AJAX相互调用的？</h3><p>通过 Jackson 或者是 fastjson 就可以把 Java 里面的对象直接转化成 Js 可以识别的 Json 对象，来进行传输。</p>
+<h3 id="如何解决POST请求中文乱码问题，GET的又如何处理呢？"><a href="#如何解决POST请求中文乱码问题，GET的又如何处理呢？" class="headerlink" title="如何解决POST请求中文乱码问题，GET的又如何处理呢？"></a>如何解决POST请求中文乱码问题，GET的又如何处理呢？</h3><p>（1）解决 post 请求乱码问题：</p>
+<p>在 web.xml 中配置一个 CharacterEncodingFilter 过滤器，设置成 utf-8；</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">filter</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-class</span>&gt;</span>org.springframework.web.filter.CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-class</span>&gt;</span></span><br><span class="line"></span><br><span class="line">    <span class="tag">&lt;<span class="name">init-param</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-name</span>&gt;</span>encoding<span class="tag">&lt;/<span class="name">param-name</span>&gt;</span></span><br><span class="line">        <span class="tag">&lt;<span class="name">param-value</span>&gt;</span>utf-8<span class="tag">&lt;/<span class="name">param-value</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">init-param</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">filter</span>&gt;</span></span><br><span class="line"></span><br><span class="line"><span class="tag">&lt;<span class="name">filter-mapping</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">filter-name</span>&gt;</span>CharacterEncodingFilter<span class="tag">&lt;/<span class="name">filter-name</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">url-pattern</span>&gt;</span>/*<span class="tag">&lt;/<span class="name">url-pattern</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">filter-mapping</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>（2）get 请求中文参数出现乱码解决方法有两个：</p>
+<p>修改 tomcat 配置文件添加编码与工程编码一致，如下：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line">&lt;ConnectorURIEncoding=&quot;utf-8&quot; connectionTimeout=&quot;20000&quot; port=&quot;8080&quot; protocol=&quot;HTTP/1.1&quot; redirectPort=&quot;8443&quot;/&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="Spring-MVC的异常处理"><a href="#Spring-MVC的异常处理" class="headerlink" title="Spring MVC的异常处理"></a>Spring MVC的异常处理</h3><p>可以将异常抛给 Spring 框架，由 Spring 框架来处理；我们只需要配置简单的异常处理器，在异常处理器中添视图页面即可。</p>
+<h3 id="如果在拦截请求中，我想拦截get方式提交的方法-怎么配置"><a href="#如果在拦截请求中，我想拦截get方式提交的方法-怎么配置" class="headerlink" title="如果在拦截请求中，我想拦截get方式提交的方法,怎么配置"></a>如果在拦截请求中，我想拦截get方式提交的方法,怎么配置</h3><p>答：可以在@RequestMapping 注解里面加上 method&#x3D;RequestMethod.GET。</p>
+<h3 id="怎样在方法里面得到Request-或者Session？"><a href="#怎样在方法里面得到Request-或者Session？" class="headerlink" title="怎样在方法里面得到Request,或者Session？"></a>怎样在方法里面得到Request,或者Session？</h3><p>答：直接在方法的形参中声明 request,Spring MVC 就自动把 request 对象传入。</p>
+<h3 id="如果想在拦截的方法里面得到从前台传入的参数-怎么得到？"><a href="#如果想在拦截的方法里面得到从前台传入的参数-怎么得到？" class="headerlink" title="如果想在拦截的方法里面得到从前台传入的参数,怎么得到？"></a>如果想在拦截的方法里面得到从前台传入的参数,怎么得到？</h3><p>直接在形参里面声明这个参数就可以,但必须名字和传过来的参数一样。<br>或者使用 RequestParam 注解将前台的参数名 A 传给形参中的参数 B</p>
+<h3 id="如果前台有很多个参数传入-并且这些参数都是一个对象的-那么怎么样快速得到这个对象？"><a href="#如果前台有很多个参数传入-并且这些参数都是一个对象的-那么怎么样快速得到这个对象？" class="headerlink" title="如果前台有很多个参数传入,并且这些参数都是一个对象的,那么怎么样快速得到这个对象？"></a>如果前台有很多个参数传入,并且这些参数都是一个对象的,那么怎么样快速得到这个对象？</h3><p>直接在方法中声明这个对象,Spring MVC 就自动会把属性赋值到这个对象里面。</p>
+<h3 id="Spring-MVC中函数的返回值是什么？"><a href="#Spring-MVC中函数的返回值是什么？" class="headerlink" title="Spring MVC中函数的返回值是什么？"></a>Spring MVC中函数的返回值是什么？</h3><p>返回值可以有很多类型,有 String, ModelAndView（视图和数据合并在一起）。</p>
+<h3 id="Spring-MVC用什么对象从后台向前台传递数据的？"><a href="#Spring-MVC用什么对象从后台向前台传递数据的？" class="headerlink" title="Spring MVC用什么对象从后台向前台传递数据的？"></a>Spring MVC用什么对象从后台向前台传递数据的？</h3><p>通过 ModelMap 对象,可以在这个对象里面调用 put 方法,把对象加到里面,前台就可以通过 el 表达式拿到。</p>
+<h3 id="怎么样把ModelMap里面的数据放入Session里面？"><a href="#怎么样把ModelMap里面的数据放入Session里面？" class="headerlink" title="怎么样把ModelMap里面的数据放入Session里面？"></a>怎么样把ModelMap里面的数据放入Session里面？</h3><p>可以在类上面加上@SessionAttributes 注解,里面包含的字符串就是要放入 session 里面的 key。</p>
+<h3 id="Spring-MVC里面拦截器是怎么写的"><a href="#Spring-MVC里面拦截器是怎么写的" class="headerlink" title="Spring MVC里面拦截器是怎么写的"></a>Spring MVC里面拦截器是怎么写的</h3><p>有两种写法,一种是实现 HandlerInterceptor 接口，重写 prehandle 等方法，然后配置拦截器</p>
 ]]></content>
       <categories>
         <category>Java八股文</category>
@@ -3346,116 +3346,6 @@
       </categories>
   </entry>
   <entry>
-    <title>Mac 安装 Anaconda 以及 PyCharm 使用</title>
-    <url>/anaconda-pycharm.html</url>
-    <content><![CDATA[<p>本文介绍在 Mac 上安装 Anaconda 以及 PyCharm 使用 。<span id="more"></span></p>
-<p>1、官网下载 .dmg 文件，可以到一些国内镜像站上下载速度较快。</p>
-<p>2、下载完成后一路 next 安装。</p>
-<p>3、配置环境变量</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">vim ~/.bash_profile</span><br><span class="line"><span class="built_in">export</span> PATH=/Users/yaxing/opt/anaconda3/bin:<span class="variable">$PATH</span></span><br></pre></td></tr></table></figure>
-
-<p>4、check 是否安装配置成功</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">conda info</span><br></pre></td></tr></table></figure>
-
-<p>P.S. 每次打开终端都会自动激活 conda 的基础环境 base，通过以下方法取消自动激活</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">conda config --<span class="built_in">set</span> auto_activate_base <span class="literal">false</span></span><br></pre></td></tr></table></figure>
-
-<p>5、配置 <a href="https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/">清华大学镜像</a>，方便后续下载包</p>
-<p>6、打开 PyCharm，new project &gt; Add Interpreter &gt; Add Local Interpreter &gt; 选择左侧的 Conda Environment</p>
-<p>其中 location 表示环境的名称及其所在路径，选择 Python version 3.7，配置 Conda executable 为 <code>/Users/yaxing/opt/anaconda3/bin/conda</code>，路径修改为自己的安装位置。</p>
-]]></content>
-      <categories>
-        <category>Mac开发环境配置</category>
-        <category>Anaconda</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>Mac 安装 MySQL 以及 Sequel Pro 配置与连接</title>
-    <url>/mysql-sequel-pro.html</url>
-    <content><![CDATA[<p>本文介绍在 Mac 上安装 MySQL 以及使用 Sequel Pro 作为可视化客户端的配置与连接。<span id="more"></span></p>
-<p>1、安装 MySQL</p>
-<p>可以在官网下载 .dmg 文件进行安装也可以使用 homebrew 安装 MySQL，以下使用 homebrew 安装。</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">brew install mysql</span><br></pre></td></tr></table></figure>
-
-<p>注意：设置密码的时候设置的不要太简单，要包含字母、数字、字符（太简单的话后续出问题还要再重新改成一个复杂的）</p>
-<p>2、下载 Sequel Pro </p>
-<p>Sequel Pro下载地址：<a href="http://www.sequelpro.com/">http://www.sequelpro.com/</a></p>
-<p>下载安装后，出现连接界面，填入信息，此时可能报错 Connection failed MySQL said: Authentication plug … cannot be loaded …</p>
-<p>解决方法如下：</p>
-<p>用终端连接MySQL，然后执行以下命令：</p>
-<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; ALTER USER <span class="string">&#x27;root&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span> IDENTIFIED WITH mysql_native_password BY <span class="string">&#x27;此处填写设置的MySQL密码&#x27;</span>;</span><br></pre></td></tr></table></figure>
-
-<p>如果报错显示密码简单，则通过以下方式修改密码：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">mysqladmin -u用户名 -p旧密码 password 新密码 </span><br></pre></td></tr></table></figure>
-
-<p>然后重新执行第一条命令，Sequel Pro 可以正常连接。</p>
-<p>P.S. 本机 Sequel Pro 导入 SQL 建表语句 loading 过久，不好用，不如使用 IDEA 自带的数据库工具，或者可以使用 Jet 家的 DataGrip。</p>
-]]></content>
-      <categories>
-        <category>Mac开发环境配置</category>
-        <category>MySQL</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>MyBatis 动态 SQL</title>
-    <url>/mybatis-dynamic-sql.html</url>
-    <content><![CDATA[<p>本文对 MyBatis 动态 SQL 使用做简单小记。<span id="more"></span></p>
-<p>动态 SQL 是 MyBatis 的强大特性之一。如果你使用过 JDBC 或其它类似的框架，你应该能理解根据不同条件拼接 SQL 语句有多痛苦，例如拼接时要确保不能忘记添加必要的空格，还要注意去掉列表最后一个列名的逗号。利用动态 SQL，可以彻底摆脱这种痛苦。（转自 <a href="https://mybatis.org/mybatis-3/zh/dynamic-sql.html">MyBatis 官方文档</a>）</p>
-<h2 id="if"><a href="#if" class="headerlink" title="if"></a>if</h2><p>使用动态 SQL 最常见情景是根据条件包含 where 子句的一部分。比如：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;findActiveBlogWithTitleLike&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;Blog&quot;</span>&gt;</span></span><br><span class="line">  SELECT * FROM BLOG</span><br><span class="line">  WHERE state = ‘ACTIVE’</span><br><span class="line">  <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;title != null&quot;</span>&gt;</span></span><br><span class="line">    AND title like #&#123;title&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>这条语句提供了可选的查找文本功能。如果不传入 “title”，那么所有处于 “ACTIVE” 状态的 BLOG 都会返回；如果传入了 “title” 参数，那么就会对 “title” 一列进行模糊查找并返回对应的 BLOG 结果。</p>
-<p>如果希望通过 “title” 和 “author” 两个参数进行可选搜索该怎么办呢？首先，我想先将语句名称修改成更名副其实的名称；接下来，只需要加入另一个条件即可。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;findActiveBlogLike&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;Blog&quot;</span>&gt;</span></span><br><span class="line">  SELECT * FROM BLOG WHERE state = ‘ACTIVE’</span><br><span class="line">  <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;title != null&quot;</span>&gt;</span></span><br><span class="line">    AND title like #&#123;title&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;author != null and author.name != null&quot;</span>&gt;</span></span><br><span class="line">    AND author_name like #&#123;author.name&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="choose、when、otherwise"><a href="#choose、when、otherwise" class="headerlink" title="choose、when、otherwise"></a>choose、when、otherwise</h2><p>有时候，我们不想使用所有的条件，而只是想从多个条件中选择一个使用。针对这种情况，MyBatis 提供了 choose 元素，它有点像 Java 中的 switch 语句。</p>
-<p>还是上面的例子，但是策略变为：传入了 “title” 就按 “title” 查找，传入了 “author” 就按 “author” 查找的情形。若两者都没有传入，就返回标记为 featured 的 BLOG。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;findActiveBlogLike&quot;</span></span></span><br><span class="line"><span class="tag">     <span class="attr">resultType</span>=<span class="string">&quot;Blog&quot;</span>&gt;</span></span><br><span class="line">  SELECT * FROM BLOG WHERE state = ‘ACTIVE’</span><br><span class="line">  <span class="tag">&lt;<span class="name">choose</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">when</span> <span class="attr">test</span>=<span class="string">&quot;title != null&quot;</span>&gt;</span></span><br><span class="line">      AND title like #&#123;title&#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">when</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">when</span> <span class="attr">test</span>=<span class="string">&quot;author != null and author.name != null&quot;</span>&gt;</span></span><br><span class="line">      AND author_name like #&#123;author.name&#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">when</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">otherwise</span>&gt;</span></span><br><span class="line">      AND featured = 1</span><br><span class="line">    <span class="tag">&lt;/<span class="name">otherwise</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">choose</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-
-
-<h2 id="trim、where、set"><a href="#trim、where、set" class="headerlink" title="trim、where、set"></a>trim、where、set</h2><p>前面几个例子已经方便地解决了一个臭名昭著的动态 SQL 问题。现在回到之前的 “if” 示例，这次我们将 “state &#x3D; ‘ACTIVE’” 设置成动态条件，看看会发生什么。</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;findActiveBlogLike&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;Blog&quot;</span>&gt;</span></span><br><span class="line">  SELECT * FROM BLOG</span><br><span class="line">  WHERE</span><br><span class="line">  <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;state != null&quot;</span>&gt;</span></span><br><span class="line">    state = #&#123;state&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;title != null&quot;</span>&gt;</span></span><br><span class="line">    AND title like #&#123;title&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;author != null and author.name != null&quot;</span>&gt;</span></span><br><span class="line">    AND author_name like #&#123;author.name&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>如果没有匹配的条件会怎么样？最终这条 SQL 会变成这样：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> BLOG</span><br><span class="line"><span class="keyword">WHERE</span></span><br></pre></td></tr></table></figure>
-
-<p>这会导致查询失败。如果匹配的只是第二个条件又会怎样？这条 SQL 会是这样:</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> BLOG</span><br><span class="line"><span class="keyword">WHERE</span></span><br><span class="line"><span class="keyword">AND</span> title <span class="keyword">like</span> ‘someTitle’</span><br></pre></td></tr></table></figure>
-
-<p>这个查询也会失败。这个问题不能简单地用条件元素来解决。这个问题是如此的难以解决，以至于解决过的人不会再想碰到这种问题。</p>
-<p>MyBatis 有一个简单且适合大多数场景的解决办法。而在其他场景中，可以对其进行自定义以符合需求。而这，只需要一处简单的改动：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;findActiveBlogLike&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;Blog&quot;</span>&gt;</span></span><br><span class="line">  SELECT * FROM BLOG</span><br><span class="line">  <span class="tag">&lt;<span class="name">where</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;state != null&quot;</span>&gt;</span></span><br><span class="line">         state = #&#123;state&#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;title != null&quot;</span>&gt;</span></span><br><span class="line">        AND title like #&#123;title&#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;author != null and author.name != null&quot;</span>&gt;</span></span><br><span class="line">        AND author_name like #&#123;author.name&#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">where</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><em>where</em> 元素只会在子元素返回任何内容的情况下才插入 “WHERE” 子句。而且，若子句的开头为 “AND” 或 “OR”，<em>where</em> 元素也会将它们去除。</p>
-<p>如果 <em>where</em> 元素与你期望的不太一样，你也可以通过自定义 trim 元素来定制 <em>where</em> 元素的功能。比如，和 <em>where</em> 元素等价的自定义 trim 元素为：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">trim</span> <span class="attr">prefix</span>=<span class="string">&quot;WHERE&quot;</span> <span class="attr">prefixOverrides</span>=<span class="string">&quot;AND |OR &quot;</span>&gt;</span></span><br><span class="line">  ...</span><br><span class="line"><span class="tag">&lt;/<span class="name">trim</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><em>prefixOverrides</em> 属性会忽略通过管道符分隔的文本序列（注意此例中的空格是必要的）。上述例子会移除所有 <em>prefixOverrides</em> 属性中指定的内容，并且插入 <em>prefix</em> 属性中指定的内容。</p>
-<p>用于动态更新语句的类似解决方案叫做 <em>set</em>。<em>set</em> 元素可以用于动态包含需要更新的列，忽略其它不更新的列。比如：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">update</span> <span class="attr">id</span>=<span class="string">&quot;updateAuthorIfNecessary&quot;</span>&gt;</span></span><br><span class="line">  update Author</span><br><span class="line">    <span class="tag">&lt;<span class="name">set</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;username != null&quot;</span>&gt;</span>username=#&#123;username&#125;,<span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;password != null&quot;</span>&gt;</span>password=#&#123;password&#125;,<span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;email != null&quot;</span>&gt;</span>email=#&#123;email&#125;,<span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;bio != null&quot;</span>&gt;</span>bio=#&#123;bio&#125;<span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">set</span>&gt;</span></span><br><span class="line">  where id=#&#123;id&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">update</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>这个例子中，<em>set</em> 元素会动态地在行首插入 SET 关键字，并会删掉额外的逗号（这些逗号是在使用条件语句给列赋值时引入的）。</p>
-<p>或者，你可以通过使用<em>trim</em>元素来达到同样的效果：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">trim</span> <span class="attr">prefix</span>=<span class="string">&quot;SET&quot;</span> <span class="attr">suffixOverrides</span>=<span class="string">&quot;,&quot;</span>&gt;</span></span><br><span class="line">  ...</span><br><span class="line"><span class="tag">&lt;/<span class="name">trim</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p>注意，我们覆盖了后缀值设置，并且自定义了前缀值。</p>
-<h2 id="foreach"><a href="#foreach" class="headerlink" title="foreach"></a>foreach</h2><p>动态 SQL 的另一个常见使用场景是对集合进行遍历（尤其是在构建 IN 条件语句的时候）。比如：</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectPostIn&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;domain.blog.Post&quot;</span>&gt;</span></span><br><span class="line">  SELECT *</span><br><span class="line">  FROM POST P</span><br><span class="line">  <span class="tag">&lt;<span class="name">where</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">item</span>=<span class="string">&quot;item&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span> <span class="attr">collection</span>=<span class="string">&quot;list&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">open</span>=<span class="string">&quot;ID in (&quot;</span> <span class="attr">separator</span>=<span class="string">&quot;,&quot;</span> <span class="attr">close</span>=<span class="string">&quot;)&quot;</span>&gt;</span></span><br><span class="line">          #&#123;item&#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">where</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
-
-<p><em>foreach</em> 元素的功能非常强大，它允许你指定一个集合，声明可以在元素体内使用的集合项（item）和索引（index）变量。它也允许你指定开头与结尾的字符串以及集合项迭代之间的分隔符。这个元素也不会错误地添加多余的分隔符，看它多智能！</p>
-<p><strong>提示</strong> 你可以将任何可迭代对象（如 List、Set 等）、Map 对象或者数组对象作为集合参数传递给 <em>foreach</em>。当使用可迭代对象或者数组时，index 是当前迭代的序号，item 的值是本次迭代获取到的元素。当使用 Map 对象（或者 Map.Entry 对象的集合）时，index 是键，item 是值。</p>
-<p>至此，我们已经完成了与 XML 配置及映射文件相关的讨论。下一章将详细探讨 Java API，以便你能充分利用已经创建的映射配置。</p>
-<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p><a href="https://developer.aliyun.com/article/1091810#slide-17">https://developer.aliyun.com/article/1091810#slide-17</a></p>
-]]></content>
-      <categories>
-        <category>技术总结</category>
-        <category>MyBatis</category>
-      </categories>
-  </entry>
-  <entry>
     <title>Java八股文 - Linux</title>
     <url>/linux.html</url>
     <content><![CDATA[<blockquote>
@@ -4535,62 +4425,109 @@
       </categories>
   </entry>
   <entry>
-    <title>MyBatis 批量插入</title>
-    <url>/mybatis-batch-insert.html</url>
-    <content><![CDATA[<p>本文对 MyBatis 批量插入做简单小记。<span id="more"></span></p>
-<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>首先对于批量数据的插入有两种解决方案</p>
-<p>1、for 循环调用 Dao 中的单条插入方法</p>
-<p>2、传一个 List&lt;Object&gt; 参数，使用 MyBatis 的 foreach 标签进行批量插入</p>
-<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">insert</span> <span class="attr">id</span>=<span class="string">&quot;addUser&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;java.util.List&quot;</span> &gt;</span></span><br><span class="line">  insert into user(name,age) values</span><br><span class="line">    <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;list&quot;</span> <span class="attr">item</span>=<span class="string">&quot;item&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span> <span class="attr">separator</span>=<span class="string">&quot;,&quot;</span>&gt;</span></span><br><span class="line">        (#&#123;item.name&#125;,#&#123;item.age&#125;)</span><br><span class="line">    <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">insert</span>&gt;</span></span><br></pre></td></tr></table></figure>
+    <title>Mac 安装 Anaconda 以及 PyCharm 使用</title>
+    <url>/anaconda-pycharm.html</url>
+    <content><![CDATA[<p>本文介绍在 Mac 上安装 Anaconda 以及 PyCharm 使用 。<span id="more"></span></p>
+<p>1、官网下载 .dmg 文件，可以到一些国内镜像站上下载速度较快。</p>
+<p>2、下载完成后一路 next 安装。</p>
+<p>3、配置环境变量</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">vim ~/.bash_profile</span><br><span class="line"><span class="built_in">export</span> PATH=/Users/yaxing/opt/anaconda3/bin:<span class="variable">$PATH</span></span><br></pre></td></tr></table></figure>
 
-<p>性能上对比，批量插入性能好，更加省时间。</p>
-<p>原因如下：</p>
-<ul>
-<li>循环插入：需要每次都获取 session, 获取连接，然后将 SQL 语句发给 MySQL 去执行（JDBC 一般情况下是通过 TCP&#x2F;IP 进行连接和数据库进行通信的）。可以看这里 <a href="https://my.oschina.net/zjllovecode/blog/1617754">mysql 四种通信协议</a></li>
-<li>批量插入： 批量插入通过 foreach 标签，将多条数据拼接在 SQL 语句后，一次执行只获取一次 session, 提交一条 SQL 语句。减少了程序和数据库交互的准备时间。</li>
-</ul>
-<h2 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h2><p>批量插入有需要注意的地方：</p>
-<h3 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h3><p><strong>对于普通的单条插入，数据库的返回值就是 （0&#x2F;1） 。</strong></p>
-<p>对于返回值代表的意思可以认为是“语句执行返回的数据库受影响的行数。”或者是“此次执行是否成功（0 - 失败，1 - 成功）。”</p>
-<p>对应的也就是在 Dao 层中，对于插入方法的返回值类型的设定有（int&#x2F;boolean）两种。 </p>
-<p><strong>对于批量插入的返回值，返回的还是（0&#x2F;1）, 而不是统计插入成功几条，即使你的 Dao 层方法的返回值类型为 int.</strong></p>
-<p>这里的（0&#x2F;1） 也就代表着，这次批量插入是否成功（0 - 失败，1 - 成功）。</p>
-<p>当然你 Dao 层的返回值还是可以是（int&#x2F;boolean）</p>
-<h3 id="批量插入中间有一个失败会怎么样"><a href="#批量插入中间有一个失败会怎么样" class="headerlink" title="批量插入中间有一个失败会怎么样"></a>批量插入中间有一个失败会怎么样</h3><p>猜想有下面三种情况</p>
-<p>a、继续插入后面的，把失败的跳过</p>
-<p>b、停止插入，但前面的插入成功保持。</p>
-<p>c、全部回滚</p>
-<p>这里就直接放结果了。</p>
-<p><strong>批量语句，只要有一个失败，就会全部失败。数据库会回滚全部数据。（原子性）</strong></p>
-<p>关于测试过程可以看这篇博客：<a href="https://www.oschina.net/action/GoToLink?url=https://www.cnblogs.com/grey-wolf/p/7117036.html">mysql 批量插入语句执行失败的话，是部分失败还是全部失败</a> </p>
-<p>其实也很好理解。</p>
-<p>首先我们知道了 MyBatis &lt;foreach&gt; 批量插入，是在程序内拼接 SQL 语句（拼接成多条同时插入的 SQL 语句），拼接后发给数据库。</p>
-<p>就相当于咱们自己在 MySQL 的命令行中，执行一条多插入的语句。默认情况下 MySQL 单条语句是一个事务，这在一个事务范围内，当中间的 SQL 语句有问题，或者有一个插入失败，就会触发事务回滚。同时你也能看到错误提示。（命令行执行单条 SQL 的情况）</p>
-<p>所以有一个插入不成功肯定全部回滚。</p>
-<h3 id="批量插入数据量的限制"><a href="#批量插入数据量的限制" class="headerlink" title="批量插入数据量的限制"></a>批量插入数据量的限制</h3><p>我这里就直接放结论，又兴趣的可以看这篇博客有探究过程 ： <a href="https://www.oschina.net/action/GoToLink?url=https://blog.csdn.net/syy_c_j/article/details/52151402">Mybatis 批量插入引发的血案</a></p>
-<p><strong>1、MyBatis 本身对插入的数据量没有限制</strong></p>
-<p><strong>2、MySQL 对语句的长度有限制，默认是 4M</strong></p>
-<p>其他数据库的情况这里不介绍，可以自行百度。通过上面 “MySQL 对语句的长度有限制，默认是 4M” 我们可以知道，批量插入数据是有限制的。不能一下把几万条数据（就是太大数据量意思）一次性插入。</p>
-<p><strong>所以一般情况下我们推荐即使使用批量插入，也要分批次。</strong></p>
-<p>每次批次设置多少？需要根据你的插入一条数据的参数量来做度量。因为受限条件是 SQL 语句的长度。</p>
-<p>而且分批插入更加合理，对于插入失败，回滚范围会缩小很多。</p>
-<h3 id="对空集合参数进行校验"><a href="#对空集合参数进行校验" class="headerlink" title="对空集合参数进行校验"></a>对空集合参数进行校验</h3><p>MyBatis 并没有做集合容量的验证，如果集合参数为空或者 size 为 0 则生成的 SQL 可能只有”insert into user (name,age) values” 这样一段或者没有，所以说，写批量 SQL 的时候注意在调用批量方法的地方加入对容量的验证。</p>
-<h3 id="另外一种-foreach-插入（不推荐）"><a href="#另外一种-foreach-插入（不推荐）" class="headerlink" title="另外一种 foreach 插入（不推荐）"></a>另外一种 foreach 插入（不推荐）</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">insert</span> <span class="attr">id</span>=<span class="string">&quot;addBatchUser&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;java.util.List&quot;</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;list&quot;</span> <span class="attr">item</span>=<span class="string">&quot;item&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span> <span class="attr">separator</span>=<span class="string">&quot;;&quot;</span>&gt;</span></span><br><span class="line">        insert into user(name,age) values(#&#123;item.name&#125;,#&#123;item.age&#125;)</span><br><span class="line">    <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">insert</span>&gt;</span> </span><br></pre></td></tr></table></figure>
+<p>4、check 是否安装配置成功</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">conda info</span><br></pre></td></tr></table></figure>
 
-<p>这种写法也能实现批量插入。但是有很多问题。</p>
-<p>a、首先这种方式的批量插入也是 SQL 拼接。但是明显<strong>字符长度增加。这就导致每批次可插入的数量减少</strong></p>
-<p>b、这种方式执行返回值还是（0、1）是已经尝试插入的最后一条数据是否成功。由于这种 foreach 拼接成的 SQL 语句，是以分号 “；” 分隔的多条 insert 语句。这就导致前面的数据项都插入成功了。（<strong>默认数据库的事务处理是单条提交的</strong>，出错前的执行都是一个个单条语句，所以并并没有回滚数据。）</p>
-<p>所以如果你想中间插入失败回滚的话，需要使用 Spring 事务，但是还需要注意 spring 事务是抛出运行时异常时才会回滚。这种批量插入中间有没插入成功的是不会抛出异常的。所以你需要根据返回值判断手动编码抛出异常。</p>
-<p>而最上面的那种写法就不用是用事务，因为他是一条 SQL 语句。</p>
-<h2 id="lt-foreach-gt-标签"><a href="#lt-foreach-gt-标签" class="headerlink" title="&lt;foreach&gt; 标签"></a>&lt;foreach&gt; 标签</h2><p>foreach 的主要用在构建 in 条件中，它可以在 SQL 语句中进行迭代一个集合。</p>
-<p>foreach 元素的属性主要有 item，index，collection，open，separator，close。<br>item 表示集合中每一个元素进行迭代时的别名<br>index 指定一个名字，用于表示在迭代过程中，每次迭代到的位置<br>open 表示该语句以什么开始<br>separator 表示在每次进行迭代之间以什么符号作为分隔符<br>close 表示以什么结束</p>
-<p>在使用 foreach 的时候最关键的也是最容易出错的就是 collection 属性，该属性是必须指定的，但是在不同情况 下，该属性的值是不一样的，主要有一下 3 种情况：</p>
-<p>\1. 如果传入的是单参数且参数类型是一个 List 的时候，collection 属性值为 list</p>
-<p>\2. 如果传入的是单参数且参数类型是一个 array 数组的时候，collection 的属性值为 array</p>
-<p>\3. 如果传入的参数是多个的时候，我们就需要把它们封装成一个 Map 了，当然单参数也可以封装成 map</p>
-<p>以上内容为自己总结，难免会有疏漏，如有错误还请指出。不胜感谢！</p>
-<p>参考</p>
-<p><a href="https://my.oschina.net/zjllovecode/blog/1818716">https://my.oschina.net/zjllovecode/blog/1818716</a></p>
+<p>P.S. 每次打开终端都会自动激活 conda 的基础环境 base，通过以下方法取消自动激活</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">conda config --<span class="built_in">set</span> auto_activate_base <span class="literal">false</span></span><br></pre></td></tr></table></figure>
+
+<p>5、配置 <a href="https://mirrors.tuna.tsinghua.edu.cn/help/anaconda/">清华大学镜像</a>，方便后续下载包</p>
+<p>6、打开 PyCharm，new project &gt; Add Interpreter &gt; Add Local Interpreter &gt; 选择左侧的 Conda Environment</p>
+<p>其中 location 表示环境的名称及其所在路径，选择 Python version 3.7，配置 Conda executable 为 <code>/Users/yaxing/opt/anaconda3/bin/conda</code>，路径修改为自己的安装位置。</p>
+]]></content>
+      <categories>
+        <category>Mac开发环境配置</category>
+        <category>Anaconda</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>Mac 安装 MySQL 以及 Sequel Pro 配置与连接</title>
+    <url>/mysql-sequel-pro.html</url>
+    <content><![CDATA[<p>本文介绍在 Mac 上安装 MySQL 以及使用 Sequel Pro 作为可视化客户端的配置与连接。<span id="more"></span></p>
+<p>1、安装 MySQL</p>
+<p>可以在官网下载 .dmg 文件进行安装也可以使用 homebrew 安装 MySQL，以下使用 homebrew 安装。</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">brew install mysql</span><br></pre></td></tr></table></figure>
+
+<p>注意：设置密码的时候设置的不要太简单，要包含字母、数字、字符（太简单的话后续出问题还要再重新改成一个复杂的）</p>
+<p>2、下载 Sequel Pro </p>
+<p>Sequel Pro下载地址：<a href="http://www.sequelpro.com/">http://www.sequelpro.com/</a></p>
+<p>下载安装后，出现连接界面，填入信息，此时可能报错 Connection failed MySQL said: Authentication plug … cannot be loaded …</p>
+<p>解决方法如下：</p>
+<p>用终端连接MySQL，然后执行以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">mysql&gt; ALTER USER <span class="string">&#x27;root&#x27;</span>@<span class="string">&#x27;localhost&#x27;</span> IDENTIFIED WITH mysql_native_password BY <span class="string">&#x27;此处填写设置的MySQL密码&#x27;</span>;</span><br></pre></td></tr></table></figure>
+
+<p>如果报错显示密码简单，则通过以下方式修改密码：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">mysqladmin -u用户名 -p旧密码 password 新密码 </span><br></pre></td></tr></table></figure>
+
+<p>然后重新执行第一条命令，Sequel Pro 可以正常连接。</p>
+<p>P.S. 本机 Sequel Pro 导入 SQL 建表语句 loading 过久，不好用，不如使用 IDEA 自带的数据库工具，或者可以使用 Jet 家的 DataGrip。</p>
+]]></content>
+      <categories>
+        <category>Mac开发环境配置</category>
+        <category>MySQL</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>MyBatis 动态 SQL</title>
+    <url>/mybatis-dynamic-sql.html</url>
+    <content><![CDATA[<p>本文对 MyBatis 动态 SQL 使用做简单小记。<span id="more"></span></p>
+<p>动态 SQL 是 MyBatis 的强大特性之一。如果你使用过 JDBC 或其它类似的框架，你应该能理解根据不同条件拼接 SQL 语句有多痛苦，例如拼接时要确保不能忘记添加必要的空格，还要注意去掉列表最后一个列名的逗号。利用动态 SQL，可以彻底摆脱这种痛苦。（转自 <a href="https://mybatis.org/mybatis-3/zh/dynamic-sql.html">MyBatis 官方文档</a>）</p>
+<h2 id="if"><a href="#if" class="headerlink" title="if"></a>if</h2><p>使用动态 SQL 最常见情景是根据条件包含 where 子句的一部分。比如：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;findActiveBlogWithTitleLike&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;Blog&quot;</span>&gt;</span></span><br><span class="line">  SELECT * FROM BLOG</span><br><span class="line">  WHERE state = ‘ACTIVE’</span><br><span class="line">  <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;title != null&quot;</span>&gt;</span></span><br><span class="line">    AND title like #&#123;title&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>这条语句提供了可选的查找文本功能。如果不传入 “title”，那么所有处于 “ACTIVE” 状态的 BLOG 都会返回；如果传入了 “title” 参数，那么就会对 “title” 一列进行模糊查找并返回对应的 BLOG 结果。</p>
+<p>如果希望通过 “title” 和 “author” 两个参数进行可选搜索该怎么办呢？首先，我想先将语句名称修改成更名副其实的名称；接下来，只需要加入另一个条件即可。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;findActiveBlogLike&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;Blog&quot;</span>&gt;</span></span><br><span class="line">  SELECT * FROM BLOG WHERE state = ‘ACTIVE’</span><br><span class="line">  <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;title != null&quot;</span>&gt;</span></span><br><span class="line">    AND title like #&#123;title&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;author != null and author.name != null&quot;</span>&gt;</span></span><br><span class="line">    AND author_name like #&#123;author.name&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="choose、when、otherwise"><a href="#choose、when、otherwise" class="headerlink" title="choose、when、otherwise"></a>choose、when、otherwise</h2><p>有时候，我们不想使用所有的条件，而只是想从多个条件中选择一个使用。针对这种情况，MyBatis 提供了 choose 元素，它有点像 Java 中的 switch 语句。</p>
+<p>还是上面的例子，但是策略变为：传入了 “title” 就按 “title” 查找，传入了 “author” 就按 “author” 查找的情形。若两者都没有传入，就返回标记为 featured 的 BLOG。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;findActiveBlogLike&quot;</span></span></span><br><span class="line"><span class="tag">     <span class="attr">resultType</span>=<span class="string">&quot;Blog&quot;</span>&gt;</span></span><br><span class="line">  SELECT * FROM BLOG WHERE state = ‘ACTIVE’</span><br><span class="line">  <span class="tag">&lt;<span class="name">choose</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">when</span> <span class="attr">test</span>=<span class="string">&quot;title != null&quot;</span>&gt;</span></span><br><span class="line">      AND title like #&#123;title&#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">when</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">when</span> <span class="attr">test</span>=<span class="string">&quot;author != null and author.name != null&quot;</span>&gt;</span></span><br><span class="line">      AND author_name like #&#123;author.name&#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">when</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">otherwise</span>&gt;</span></span><br><span class="line">      AND featured = 1</span><br><span class="line">    <span class="tag">&lt;/<span class="name">otherwise</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">choose</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="trim、where、set"><a href="#trim、where、set" class="headerlink" title="trim、where、set"></a>trim、where、set</h2><p>前面几个例子已经方便地解决了一个臭名昭著的动态 SQL 问题。现在回到之前的 “if” 示例，这次我们将 “state &#x3D; ‘ACTIVE’” 设置成动态条件，看看会发生什么。</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;findActiveBlogLike&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;Blog&quot;</span>&gt;</span></span><br><span class="line">  SELECT * FROM BLOG</span><br><span class="line">  WHERE</span><br><span class="line">  <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;state != null&quot;</span>&gt;</span></span><br><span class="line">    state = #&#123;state&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;title != null&quot;</span>&gt;</span></span><br><span class="line">    AND title like #&#123;title&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;author != null and author.name != null&quot;</span>&gt;</span></span><br><span class="line">    AND author_name like #&#123;author.name&#125;</span><br><span class="line">  <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>如果没有匹配的条件会怎么样？最终这条 SQL 会变成这样：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> BLOG</span><br><span class="line"><span class="keyword">WHERE</span></span><br></pre></td></tr></table></figure>
+
+<p>这会导致查询失败。如果匹配的只是第二个条件又会怎样？这条 SQL 会是这样:</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">SELECT</span> <span class="operator">*</span> <span class="keyword">FROM</span> BLOG</span><br><span class="line"><span class="keyword">WHERE</span></span><br><span class="line"><span class="keyword">AND</span> title <span class="keyword">like</span> ‘someTitle’</span><br></pre></td></tr></table></figure>
+
+<p>这个查询也会失败。这个问题不能简单地用条件元素来解决。这个问题是如此的难以解决，以至于解决过的人不会再想碰到这种问题。</p>
+<p>MyBatis 有一个简单且适合大多数场景的解决办法。而在其他场景中，可以对其进行自定义以符合需求。而这，只需要一处简单的改动：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;findActiveBlogLike&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;Blog&quot;</span>&gt;</span></span><br><span class="line">  SELECT * FROM BLOG</span><br><span class="line">  <span class="tag">&lt;<span class="name">where</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;state != null&quot;</span>&gt;</span></span><br><span class="line">         state = #&#123;state&#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;title != null&quot;</span>&gt;</span></span><br><span class="line">        AND title like #&#123;title&#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;author != null and author.name != null&quot;</span>&gt;</span></span><br><span class="line">        AND author_name like #&#123;author.name&#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">where</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><em>where</em> 元素只会在子元素返回任何内容的情况下才插入 “WHERE” 子句。而且，若子句的开头为 “AND” 或 “OR”，<em>where</em> 元素也会将它们去除。</p>
+<p>如果 <em>where</em> 元素与你期望的不太一样，你也可以通过自定义 trim 元素来定制 <em>where</em> 元素的功能。比如，和 <em>where</em> 元素等价的自定义 trim 元素为：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">trim</span> <span class="attr">prefix</span>=<span class="string">&quot;WHERE&quot;</span> <span class="attr">prefixOverrides</span>=<span class="string">&quot;AND |OR &quot;</span>&gt;</span></span><br><span class="line">  ...</span><br><span class="line"><span class="tag">&lt;/<span class="name">trim</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><em>prefixOverrides</em> 属性会忽略通过管道符分隔的文本序列（注意此例中的空格是必要的）。上述例子会移除所有 <em>prefixOverrides</em> 属性中指定的内容，并且插入 <em>prefix</em> 属性中指定的内容。</p>
+<p>用于动态更新语句的类似解决方案叫做 <em>set</em>。<em>set</em> 元素可以用于动态包含需要更新的列，忽略其它不更新的列。比如：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">update</span> <span class="attr">id</span>=<span class="string">&quot;updateAuthorIfNecessary&quot;</span>&gt;</span></span><br><span class="line">  update Author</span><br><span class="line">    <span class="tag">&lt;<span class="name">set</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;username != null&quot;</span>&gt;</span>username=#&#123;username&#125;,<span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;password != null&quot;</span>&gt;</span>password=#&#123;password&#125;,<span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;email != null&quot;</span>&gt;</span>email=#&#123;email&#125;,<span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">if</span> <span class="attr">test</span>=<span class="string">&quot;bio != null&quot;</span>&gt;</span>bio=#&#123;bio&#125;<span class="tag">&lt;/<span class="name">if</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;/<span class="name">set</span>&gt;</span></span><br><span class="line">  where id=#&#123;id&#125;</span><br><span class="line"><span class="tag">&lt;/<span class="name">update</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>这个例子中，<em>set</em> 元素会动态地在行首插入 SET 关键字，并会删掉额外的逗号（这些逗号是在使用条件语句给列赋值时引入的）。</p>
+<p>或者，你可以通过使用<em>trim</em>元素来达到同样的效果：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">trim</span> <span class="attr">prefix</span>=<span class="string">&quot;SET&quot;</span> <span class="attr">suffixOverrides</span>=<span class="string">&quot;,&quot;</span>&gt;</span></span><br><span class="line">  ...</span><br><span class="line"><span class="tag">&lt;/<span class="name">trim</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>注意，我们覆盖了后缀值设置，并且自定义了前缀值。</p>
+<h2 id="foreach"><a href="#foreach" class="headerlink" title="foreach"></a>foreach</h2><p>动态 SQL 的另一个常见使用场景是对集合进行遍历（尤其是在构建 IN 条件语句的时候）。比如：</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">select</span> <span class="attr">id</span>=<span class="string">&quot;selectPostIn&quot;</span> <span class="attr">resultType</span>=<span class="string">&quot;domain.blog.Post&quot;</span>&gt;</span></span><br><span class="line">  SELECT *</span><br><span class="line">  FROM POST P</span><br><span class="line">  <span class="tag">&lt;<span class="name">where</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">item</span>=<span class="string">&quot;item&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span> <span class="attr">collection</span>=<span class="string">&quot;list&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">open</span>=<span class="string">&quot;ID in (&quot;</span> <span class="attr">separator</span>=<span class="string">&quot;,&quot;</span> <span class="attr">close</span>=<span class="string">&quot;)&quot;</span>&gt;</span></span><br><span class="line">          #&#123;item&#125;</span><br><span class="line">    <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line">  <span class="tag">&lt;/<span class="name">where</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">select</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p><em>foreach</em> 元素的功能非常强大，它允许你指定一个集合，声明可以在元素体内使用的集合项（item）和索引（index）变量。它也允许你指定开头与结尾的字符串以及集合项迭代之间的分隔符。这个元素也不会错误地添加多余的分隔符，看它多智能！</p>
+<p><strong>提示</strong> 你可以将任何可迭代对象（如 List、Set 等）、Map 对象或者数组对象作为集合参数传递给 <em>foreach</em>。当使用可迭代对象或者数组时，index 是当前迭代的序号，item 的值是本次迭代获取到的元素。当使用 Map 对象（或者 Map.Entry 对象的集合）时，index 是键，item 是值。</p>
+<p>至此，我们已经完成了与 XML 配置及映射文件相关的讨论。下一章将详细探讨 Java API，以便你能充分利用已经创建的映射配置。</p>
+<h2 id="更多"><a href="#更多" class="headerlink" title="更多"></a>更多</h2><p><a href="https://developer.aliyun.com/article/1091810#slide-17">https://developer.aliyun.com/article/1091810#slide-17</a></p>
 ]]></content>
       <categories>
         <category>技术总结</category>
@@ -5062,51 +4999,64 @@
       </categories>
   </entry>
   <entry>
-    <title>MySQL 的 DDL 语句小记</title>
-    <url>/mysql-ddl.html</url>
-    <content><![CDATA[<p>本文对 MySQL 的 DDL 语句做简单小记。<span id="more"></span></p>
-<p><strong>DDL（Data Definition Languages）语句：</strong>数据定义语言，这些语句定义了不同的数据段、数据库、表、列、索引等数据库对象的定义。常用的语句关键字主要包括 create、drop、alter等。</p>
-<h2 id="建表"><a href="#建表" class="headerlink" title="建表"></a>建表</h2><p>MySQL 建表一般设置一些参数：</p>
-<p>Field ：字段名<br>Type：字段类型<br>Extra：额外（是否 auto_increment)<br>Default：缺省值<br>Null ：是否可以为NULL<br>Key：索引（PRIMARY KEY、UNIQUE INDEX、INDEX)<br>Comment：备注（MySQL 5.0以上有)</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> score</span><br><span class="line">(</span><br><span class="line">    id          <span class="type">bigint</span> unsigned auto_increment comment <span class="string">&#x27;主键&#x27;</span></span><br><span class="line">        <span class="keyword">primary</span> key,</span><br><span class="line">    name        <span class="type">varchar</span>(<span class="number">255</span>)                       <span class="keyword">not</span> <span class="keyword">null</span> comment <span class="string">&#x27;姓名&#x27;</span>,</span><br><span class="line">    subject     <span class="type">varchar</span>(<span class="number">255</span>)                       <span class="keyword">not</span> <span class="keyword">null</span> comment <span class="string">&#x27;科目&#x27;</span>,</span><br><span class="line">    score       <span class="type">int</span>                                <span class="keyword">not</span> <span class="keyword">null</span> comment <span class="string">&#x27;得分&#x27;</span>,</span><br><span class="line">    create_time datetime <span class="keyword">default</span> <span class="built_in">CURRENT_TIMESTAMP</span> <span class="keyword">not</span> <span class="keyword">null</span> comment <span class="string">&#x27;创建时间&#x27;</span>,</span><br><span class="line">    update_time datetime <span class="keyword">default</span> <span class="built_in">CURRENT_TIMESTAMP</span> <span class="keyword">not</span> <span class="keyword">null</span> <span class="keyword">on</span> <span class="keyword">update</span> <span class="built_in">CURRENT_TIMESTAMP</span> comment <span class="string">&#x27;更新时间&#x27;</span></span><br><span class="line">)ENGINE<span class="operator">=</span>InnoDB <span class="keyword">DEFAULT</span> CHARSET<span class="operator">=</span>utf8;</span><br></pre></td></tr></table></figure>
+    <title>MyBatis 批量插入</title>
+    <url>/mybatis-batch-insert.html</url>
+    <content><![CDATA[<p>本文对 MyBatis 批量插入做简单小记。<span id="more"></span></p>
+<h2 id="解决方案"><a href="#解决方案" class="headerlink" title="解决方案"></a>解决方案</h2><p>首先对于批量数据的插入有两种解决方案</p>
+<p>1、for 循环调用 Dao 中的单条插入方法</p>
+<p>2、传一个 List&lt;Object&gt; 参数，使用 MyBatis 的 foreach 标签进行批量插入</p>
+<figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">insert</span> <span class="attr">id</span>=<span class="string">&quot;addUser&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;java.util.List&quot;</span> &gt;</span></span><br><span class="line">  insert into user(name,age) values</span><br><span class="line">    <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;list&quot;</span> <span class="attr">item</span>=<span class="string">&quot;item&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span> <span class="attr">separator</span>=<span class="string">&quot;,&quot;</span>&gt;</span></span><br><span class="line">        (#&#123;item.name&#125;,#&#123;item.age&#125;)</span><br><span class="line">    <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">insert</span>&gt;</span></span><br></pre></td></tr></table></figure>
 
-<h2 id="修改表"><a href="#修改表" class="headerlink" title="修改表"></a>修改表</h2><h3 id="修改字段类型（MODIFY）"><a href="#修改字段类型（MODIFY）" class="headerlink" title="修改字段类型（MODIFY）"></a>修改字段类型（MODIFY）</h3><p><strong>ALTER TABLE 表名 MODIFY [COLUMN] 字段名 字段类型 [FIRST | AFTER col_name];</strong></p>
-<p>例如，修改表 emp 的 ename 字段定义，将 varchar(10)改为 varchar(20)：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp modify ename <span class="type">varchar</span>(<span class="number">20</span>); </span><br></pre></td></tr></table></figure>
+<p>性能上对比，批量插入性能好，更加省时间。</p>
+<p>原因如下：</p>
+<ul>
+<li>循环插入：需要每次都获取 session, 获取连接，然后将 SQL 语句发给 MySQL 去执行（JDBC 一般情况下是通过 TCP&#x2F;IP 进行连接和数据库进行通信的）。可以看这里 <a href="https://my.oschina.net/zjllovecode/blog/1617754">mysql 四种通信协议</a></li>
+<li>批量插入： 批量插入通过 foreach 标签，将多条数据拼接在 SQL 语句后，一次执行只获取一次 session, 提交一条 SQL 语句。减少了程序和数据库交互的准备时间。</li>
+</ul>
+<h2 id="注意点"><a href="#注意点" class="headerlink" title="注意点"></a>注意点</h2><p>批量插入有需要注意的地方：</p>
+<h3 id="返回值"><a href="#返回值" class="headerlink" title="返回值"></a>返回值</h3><p><strong>对于普通的单条插入，数据库的返回值就是 （0&#x2F;1） 。</strong></p>
+<p>对于返回值代表的意思可以认为是“语句执行返回的数据库受影响的行数。”或者是“此次执行是否成功（0 - 失败，1 - 成功）。”</p>
+<p>对应的也就是在 Dao 层中，对于插入方法的返回值类型的设定有（int&#x2F;boolean）两种。 </p>
+<p><strong>对于批量插入的返回值，返回的还是（0&#x2F;1）, 而不是统计插入成功几条，即使你的 Dao 层方法的返回值类型为 int.</strong></p>
+<p>这里的（0&#x2F;1） 也就代表着，这次批量插入是否成功（0 - 失败，1 - 成功）。</p>
+<p>当然你 Dao 层的返回值还是可以是（int&#x2F;boolean）</p>
+<h3 id="批量插入中间有一个失败会怎么样"><a href="#批量插入中间有一个失败会怎么样" class="headerlink" title="批量插入中间有一个失败会怎么样"></a>批量插入中间有一个失败会怎么样</h3><p>猜想有下面三种情况</p>
+<p>a、继续插入后面的，把失败的跳过</p>
+<p>b、停止插入，但前面的插入成功保持。</p>
+<p>c、全部回滚</p>
+<p>这里就直接放结果了。</p>
+<p><strong>批量语句，只要有一个失败，就会全部失败。数据库会回滚全部数据。（原子性）</strong></p>
+<p>关于测试过程可以看这篇博客：<a href="https://www.oschina.net/action/GoToLink?url=https://www.cnblogs.com/grey-wolf/p/7117036.html">mysql 批量插入语句执行失败的话，是部分失败还是全部失败</a> </p>
+<p>其实也很好理解。</p>
+<p>首先我们知道了 MyBatis &lt;foreach&gt; 批量插入，是在程序内拼接 SQL 语句（拼接成多条同时插入的 SQL 语句），拼接后发给数据库。</p>
+<p>就相当于咱们自己在 MySQL 的命令行中，执行一条多插入的语句。默认情况下 MySQL 单条语句是一个事务，这在一个事务范围内，当中间的 SQL 语句有问题，或者有一个插入失败，就会触发事务回滚。同时你也能看到错误提示。（命令行执行单条 SQL 的情况）</p>
+<p>所以有一个插入不成功肯定全部回滚。</p>
+<h3 id="批量插入数据量的限制"><a href="#批量插入数据量的限制" class="headerlink" title="批量插入数据量的限制"></a>批量插入数据量的限制</h3><p>我这里就直接放结论，又兴趣的可以看这篇博客有探究过程 ： <a href="https://www.oschina.net/action/GoToLink?url=https://blog.csdn.net/syy_c_j/article/details/52151402">Mybatis 批量插入引发的血案</a></p>
+<p><strong>1、MyBatis 本身对插入的数据量没有限制</strong></p>
+<p><strong>2、MySQL 对语句的长度有限制，默认是 4M</strong></p>
+<p>其他数据库的情况这里不介绍，可以自行百度。通过上面 “MySQL 对语句的长度有限制，默认是 4M” 我们可以知道，批量插入数据是有限制的。不能一下把几万条数据（就是太大数据量意思）一次性插入。</p>
+<p><strong>所以一般情况下我们推荐即使使用批量插入，也要分批次。</strong></p>
+<p>每次批次设置多少？需要根据你的插入一条数据的参数量来做度量。因为受限条件是 SQL 语句的长度。</p>
+<p>而且分批插入更加合理，对于插入失败，回滚范围会缩小很多。</p>
+<h3 id="对空集合参数进行校验"><a href="#对空集合参数进行校验" class="headerlink" title="对空集合参数进行校验"></a>对空集合参数进行校验</h3><p>MyBatis 并没有做集合容量的验证，如果集合参数为空或者 size 为 0 则生成的 SQL 可能只有”insert into user (name,age) values” 这样一段或者没有，所以说，写批量 SQL 的时候注意在调用批量方法的地方加入对容量的验证。</p>
+<h3 id="另外一种-foreach-插入（不推荐）"><a href="#另外一种-foreach-插入（不推荐）" class="headerlink" title="另外一种 foreach 插入（不推荐）"></a>另外一种 foreach 插入（不推荐）</h3><figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">insert</span> <span class="attr">id</span>=<span class="string">&quot;addBatchUser&quot;</span> <span class="attr">parameterType</span>=<span class="string">&quot;java.util.List&quot;</span> &gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">foreach</span> <span class="attr">collection</span>=<span class="string">&quot;list&quot;</span> <span class="attr">item</span>=<span class="string">&quot;item&quot;</span> <span class="attr">index</span>=<span class="string">&quot;index&quot;</span> <span class="attr">separator</span>=<span class="string">&quot;;&quot;</span>&gt;</span></span><br><span class="line">        insert into user(name,age) values(#&#123;item.name&#125;,#&#123;item.age&#125;)</span><br><span class="line">    <span class="tag">&lt;/<span class="name">foreach</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">insert</span>&gt;</span> </span><br></pre></td></tr></table></figure>
 
-<h3 id="增加字段（ADD）"><a href="#增加字段（ADD）" class="headerlink" title="增加字段（ADD）"></a>增加字段（ADD）</h3><p><strong>ALTER TABLE 表名 ADD [COLUMN] 字段名 字段类型 [FIRST &#x2F; AFTER col_name];</strong></p>
-<p>例如，表 emp 上新增加字段 age，类型为 int(3)：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">add</span> age <span class="type">int</span>(<span class="number">3</span>);</span><br></pre></td></tr></table></figure>
-
-<h3 id="删除字段（DROP）"><a href="#删除字段（DROP）" class="headerlink" title="删除字段（DROP）"></a>删除字段（DROP）</h3><p><strong>ALTER TABLE 表名 DROP [COLUMN] 字段名;</strong></p>
-<p>例如，将字段 age 删除：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">drop</span> age;</span><br></pre></td></tr></table></figure>
-
-<h3 id="字段改名（CHANGE）"><a href="#字段改名（CHANGE）" class="headerlink" title="字段改名（CHANGE）"></a>字段改名（CHANGE）</h3><p><strong>ALTER TABLE 表名 CHANGE [COLUMN] 字段名 新字段名 字段类型  [FIRST &#x2F; AFTER col_name];</strong></p>
-<p>例如，将 age 改名为 age1，同时修改字段类型为 int(4)：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp change age age1 <span class="type">int</span>(<span class="number">4</span>) ; </span><br></pre></td></tr></table></figure>
-
-<p>注意：change 和 modify 都可以修改表的定义，不同的是 change 后面需要将新列名也要表示出来（就算不修改其名称），不方便。但是 change 的优点是可以修改列名称，modify 则不能。</p>
-<h3 id="修改字段排列顺序"><a href="#修改字段排列顺序" class="headerlink" title="修改字段排列顺序"></a>修改字段排列顺序</h3><p>前面介绍的的字段增加和修改语法（ADD&#x2F;CNAHGE&#x2F;MODIFY）中，都有一个可选项 <strong>FIRST &#x2F; AFTER col_name</strong>，这个选项可以用来修改字段在表中的位置，<strong>默认 ADD 增加的新字段是加在表的最后位置，而 CHANGE&#x2F;MODIFY 默认都不会改变字段的位置。</strong></p>
-<p>例如，将新增的字段 birth date 加在 ename 之后：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">add</span> birth <span class="type">date</span> after ename;</span><br></pre></td></tr></table></figure>
-
-<p>修改字段 age，将它放在最前面：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp modify age <span class="type">int</span>(<span class="number">3</span>) <span class="keyword">first</span>;</span><br></pre></td></tr></table></figure>
-
-<p><strong>注意：CHANGE &#x2F; FIRST &#x2F; AFTER col_name 这些关键字都属于 MySQL 在标准 SQL 上的扩展，在其他数据库上不一定适用。</strong></p>
-<h3 id="表改名（RENAME）"><a href="#表改名（RENAME）" class="headerlink" title="表改名（RENAME）"></a>表改名（RENAME）</h3><p><strong>ALTER TABLE 表名 RENAME 新表名;</strong></p>
-<p>例如，将表 emp 改名为 emp1：</p>
-<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp rename emp1</span><br></pre></td></tr></table></figure>
-
-
-
-
-
+<p>这种写法也能实现批量插入。但是有很多问题。</p>
+<p>a、首先这种方式的批量插入也是 SQL 拼接。但是明显<strong>字符长度增加。这就导致每批次可插入的数量减少</strong></p>
+<p>b、这种方式执行返回值还是（0、1）是已经尝试插入的最后一条数据是否成功。由于这种 foreach 拼接成的 SQL 语句，是以分号 “；” 分隔的多条 insert 语句。这就导致前面的数据项都插入成功了。（<strong>默认数据库的事务处理是单条提交的</strong>，出错前的执行都是一个个单条语句，所以并并没有回滚数据。）</p>
+<p>所以如果你想中间插入失败回滚的话，需要使用 Spring 事务，但是还需要注意 spring 事务是抛出运行时异常时才会回滚。这种批量插入中间有没插入成功的是不会抛出异常的。所以你需要根据返回值判断手动编码抛出异常。</p>
+<p>而最上面的那种写法就不用是用事务，因为他是一条 SQL 语句。</p>
+<h2 id="lt-foreach-gt-标签"><a href="#lt-foreach-gt-标签" class="headerlink" title="&lt;foreach&gt; 标签"></a>&lt;foreach&gt; 标签</h2><p>foreach 的主要用在构建 in 条件中，它可以在 SQL 语句中进行迭代一个集合。</p>
+<p>foreach 元素的属性主要有 item，index，collection，open，separator，close。<br>item 表示集合中每一个元素进行迭代时的别名<br>index 指定一个名字，用于表示在迭代过程中，每次迭代到的位置<br>open 表示该语句以什么开始<br>separator 表示在每次进行迭代之间以什么符号作为分隔符<br>close 表示以什么结束</p>
+<p>在使用 foreach 的时候最关键的也是最容易出错的就是 collection 属性，该属性是必须指定的，但是在不同情况 下，该属性的值是不一样的，主要有一下 3 种情况：</p>
+<p>1、如果传入的是单参数且参数类型是一个 List 的时候，collection 属性值为 list</p>
+<p>2、如果传入的是单参数且参数类型是一个 array 数组的时候，collection 的属性值为 array</p>
+<p>3、如果传入的参数是多个的时候，我们就需要把它们封装成一个 Map 了，当然单参数也可以封装成 map</p>
+<h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><p><a href="https://my.oschina.net/zjllovecode/blog/1818716">https://my.oschina.net/zjllovecode/blog/1818716</a></p>
 ]]></content>
       <categories>
         <category>技术总结</category>
-        <category>MySQL</category>
+        <category>MyBatis</category>
       </categories>
   </entry>
   <entry>
@@ -5130,31 +5080,6 @@
       <categories>
         <category>技术总结</category>
         <category>MySQL</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>SpringBoot 热部署配置</title>
-    <url>/spring%20boot-hot-build.html</url>
-    <content><![CDATA[<p>本文对 SpringBoot 热部署配置做简单小记。<span id="more"></span></p>
-<p>项目首次部署，服务启动之后，如果应用发生了变化，让 IDEA 感知到应用的变化，自动完成 jar 的更新，无需手动再次启动服务器，就可以访问应用的更新。</p>
-<ol>
-<li><p>Settings &gt; Build &gt; Compiler，勾选 Build project automatically</p>
-</li>
-<li><p>双击 shift 搜索 Registry，进入后勾选 Compile autoMake allow when app running</p>
-<p> 如果没有该选项，则 Settings &gt; Advanced Settings，勾选 Allow auto-make to start even if developed application is currently running（在运行时也会自动编译，可以不勾选该项）</p>
-</li>
-<li><p>配置项目 on update action 和 on frame deactivation 为更新 class 和 resources</p>
-</li>
-<li><p>导入spring-boot-devtools坐标</p>
- <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-devtools<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
-</li>
-<li><p>在 application.yml 文件中开启热部署配置</p>
- <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">devtools:</span></span><br><span class="line">    <span class="attr">remote:</span></span><br><span class="line">      <span class="attr">restart:</span></span><br><span class="line">        <span class="attr">enabled:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></li>
-</ol>
-]]></content>
-      <categories>
-        <category>技术总结</category>
-        <category>SpringBoot</category>
       </categories>
   </entry>
   <entry>
@@ -6084,6 +6009,79 @@
       </categories>
   </entry>
   <entry>
+    <title>SpringBoot 热部署配置</title>
+    <url>/spring%20boot-hot-build.html</url>
+    <content><![CDATA[<p>本文对 SpringBoot 热部署配置做简单小记。<span id="more"></span></p>
+<p>项目首次部署，服务启动之后，如果应用发生了变化，让 IDEA 感知到应用的变化，自动完成 jar 的更新，无需手动再次启动服务器，就可以访问应用的更新。</p>
+<ol>
+<li><p>Settings &gt; Build &gt; Compiler，勾选 Build project automatically</p>
+</li>
+<li><p>双击 shift 搜索 Registry，进入后勾选 Compile autoMake allow when app running</p>
+<p> 如果没有该选项，则 Settings &gt; Advanced Settings，勾选 Allow auto-make to start even if developed application is currently running（在运行时也会自动编译，可以不勾选该项）</p>
+</li>
+<li><p>配置项目 on update action 和 on frame deactivation 为更新 class 和 resources</p>
+</li>
+<li><p>导入spring-boot-devtools坐标</p>
+ <figure class="highlight xml"><table><tr><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">dependency</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">groupId</span>&gt;</span>org.springframework.boot<span class="tag">&lt;/<span class="name">groupId</span>&gt;</span></span><br><span class="line">    <span class="tag">&lt;<span class="name">artifactId</span>&gt;</span>spring-boot-devtools<span class="tag">&lt;/<span class="name">artifactId</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">dependency</span>&gt;</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>在 application.yml 文件中开启热部署配置</p>
+ <figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">spring:</span></span><br><span class="line">  <span class="attr">devtools:</span></span><br><span class="line">    <span class="attr">remote:</span></span><br><span class="line">      <span class="attr">restart:</span></span><br><span class="line">        <span class="attr">enabled:</span> <span class="literal">true</span></span><br></pre></td></tr></table></figure></li>
+</ol>
+]]></content>
+      <categories>
+        <category>技术总结</category>
+        <category>SpringBoot</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>MySQL 的 DDL 语句小记</title>
+    <url>/mysql-ddl.html</url>
+    <content><![CDATA[<p>本文对 MySQL 的 DDL 语句做简单小记。<span id="more"></span></p>
+<p><strong>DDL（Data Definition Languages）语句：</strong>数据定义语言，这些语句定义了不同的数据段、数据库、表、列、索引等数据库对象的定义。常用的语句关键字主要包括 create、drop、alter等。</p>
+<h2 id="建表"><a href="#建表" class="headerlink" title="建表"></a>建表</h2><p>MySQL 建表一般设置一些参数：</p>
+<p>Field ：字段名<br>Type：字段类型<br>Extra：额外（是否 auto_increment)<br>Default：缺省值<br>Null ：是否可以为NULL<br>Key：索引（PRIMARY KEY、UNIQUE INDEX、INDEX)<br>Comment：备注（MySQL 5.0以上有)</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">create</span> <span class="keyword">table</span> score</span><br><span class="line">(</span><br><span class="line">    id          <span class="type">bigint</span> unsigned auto_increment comment <span class="string">&#x27;主键&#x27;</span></span><br><span class="line">        <span class="keyword">primary</span> key,</span><br><span class="line">    name        <span class="type">varchar</span>(<span class="number">255</span>)                       <span class="keyword">not</span> <span class="keyword">null</span> comment <span class="string">&#x27;姓名&#x27;</span>,</span><br><span class="line">    subject     <span class="type">varchar</span>(<span class="number">255</span>)                       <span class="keyword">not</span> <span class="keyword">null</span> comment <span class="string">&#x27;科目&#x27;</span>,</span><br><span class="line">    score       <span class="type">int</span>                                <span class="keyword">not</span> <span class="keyword">null</span> comment <span class="string">&#x27;得分&#x27;</span>,</span><br><span class="line">    create_time datetime <span class="keyword">default</span> <span class="built_in">CURRENT_TIMESTAMP</span> <span class="keyword">not</span> <span class="keyword">null</span> comment <span class="string">&#x27;创建时间&#x27;</span>,</span><br><span class="line">    update_time datetime <span class="keyword">default</span> <span class="built_in">CURRENT_TIMESTAMP</span> <span class="keyword">not</span> <span class="keyword">null</span> <span class="keyword">on</span> <span class="keyword">update</span> <span class="built_in">CURRENT_TIMESTAMP</span> comment <span class="string">&#x27;更新时间&#x27;</span></span><br><span class="line">)ENGINE<span class="operator">=</span>InnoDB <span class="keyword">DEFAULT</span> CHARSET<span class="operator">=</span>utf8;</span><br></pre></td></tr></table></figure>
+
+<h2 id="修改表"><a href="#修改表" class="headerlink" title="修改表"></a>修改表</h2><h3 id="修改字段类型（MODIFY）"><a href="#修改字段类型（MODIFY）" class="headerlink" title="修改字段类型（MODIFY）"></a>修改字段类型（MODIFY）</h3><p><strong>ALTER TABLE 表名 MODIFY [COLUMN] 字段名 字段类型 [FIRST | AFTER col_name];</strong></p>
+<p>例如，修改表 emp 的 ename 字段定义，将 varchar(10)改为 varchar(20)：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp modify ename <span class="type">varchar</span>(<span class="number">20</span>); </span><br></pre></td></tr></table></figure>
+
+<h3 id="增加字段（ADD）"><a href="#增加字段（ADD）" class="headerlink" title="增加字段（ADD）"></a>增加字段（ADD）</h3><p><strong>ALTER TABLE 表名 ADD [COLUMN] 字段名 字段类型 [FIRST &#x2F; AFTER col_name];</strong></p>
+<p>例如，表 emp 上新增加字段 age，类型为 int(3)：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">add</span> age <span class="type">int</span>(<span class="number">3</span>);</span><br></pre></td></tr></table></figure>
+
+<h3 id="删除字段（DROP）"><a href="#删除字段（DROP）" class="headerlink" title="删除字段（DROP）"></a>删除字段（DROP）</h3><p><strong>ALTER TABLE 表名 DROP [COLUMN] 字段名;</strong></p>
+<p>例如，将字段 age 删除：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">drop</span> age;</span><br></pre></td></tr></table></figure>
+
+<h3 id="字段改名（CHANGE）"><a href="#字段改名（CHANGE）" class="headerlink" title="字段改名（CHANGE）"></a>字段改名（CHANGE）</h3><p><strong>ALTER TABLE 表名 CHANGE [COLUMN] 字段名 新字段名 字段类型  [FIRST &#x2F; AFTER col_name];</strong></p>
+<p>例如，将 age 改名为 age1，同时修改字段类型为 int(4)：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp change age age1 <span class="type">int</span>(<span class="number">4</span>) ; </span><br></pre></td></tr></table></figure>
+
+<p>注意：change 和 modify 都可以修改表的定义，不同的是 change 后面需要将新列名也要表示出来（就算不修改其名称），不方便。但是 change 的优点是可以修改列名称，modify 则不能。</p>
+<h3 id="修改字段排列顺序"><a href="#修改字段排列顺序" class="headerlink" title="修改字段排列顺序"></a>修改字段排列顺序</h3><p>前面介绍的的字段增加和修改语法（ADD&#x2F;CNAHGE&#x2F;MODIFY）中，都有一个可选项 <strong>FIRST &#x2F; AFTER col_name</strong>，这个选项可以用来修改字段在表中的位置，<strong>默认 ADD 增加的新字段是加在表的最后位置，而 CHANGE&#x2F;MODIFY 默认都不会改变字段的位置。</strong></p>
+<p>例如，将新增的字段 birth date 加在 ename 之后：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp <span class="keyword">add</span> birth <span class="type">date</span> after ename;</span><br></pre></td></tr></table></figure>
+
+<p>修改字段 age，将它放在最前面：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp modify age <span class="type">int</span>(<span class="number">3</span>) <span class="keyword">first</span>;</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意：CHANGE &#x2F; FIRST &#x2F; AFTER col_name 这些关键字都属于 MySQL 在标准 SQL 上的扩展，在其他数据库上不一定适用。</strong></p>
+<h3 id="表改名（RENAME）"><a href="#表改名（RENAME）" class="headerlink" title="表改名（RENAME）"></a>表改名（RENAME）</h3><p><strong>ALTER TABLE 表名 RENAME 新表名;</strong></p>
+<p>例如，将表 emp 改名为 emp1：</p>
+<figure class="highlight sql"><table><tr><td class="code"><pre><span class="line"><span class="keyword">alter</span> <span class="keyword">table</span> emp rename emp1</span><br></pre></td></tr></table></figure>
+
+
+
+
+
+]]></content>
+      <categories>
+        <category>技术总结</category>
+        <category>MySQL</category>
+      </categories>
+  </entry>
+  <entry>
     <title>SpringBoot 集成 Junit</title>
     <url>/springboot-junit.html</url>
     <content><![CDATA[<p>本文对 SpringBoot 集成 Junit 做简单小记。<span id="more"></span></p>
@@ -6331,20 +6329,6 @@
 ]]></content>
       <categories>
         <category>实习秋招</category>
-      </categories>
-  </entry>
-  <entry>
-    <title>开了个B站大会员</title>
-    <url>/bilibili-vip.html</url>
-    <content><![CDATA[<p>最近巫师 3 更新了次世代版本（画质优化+中文配音），由于 PS5 放在了学校里，笔记本也带不太动，只能看老戴的视频云玩家二周目了（<a href="https://www.bilibili.com/video/BV1L14y1N7b3">链接</a>）。</p>
-<span id="more"></span>
-
-<p>看了一会，诶，咋更新了还这么糊，一看原来是只开了 1080P 画质，一冲动上某多多买了三个月的大会员，点开 4K 画质选项，好家伙，直接感受到了次世代的魅力。配音配的也很出色，没什么槽点。回头 PS5 上再三周目吧，并且期待一手巫师 4。</p>
-<p>充了大会员，接下来闲的时候再把 B 站上的电影再看看，总不能浪费了不是 hhh。</p>
-<p>最近多个平台都在搞年终总结了，比如 Apple Music 和 PlayStation，准备等其他平台都推出年终总结之后搞波分享～</p>
-]]></content>
-      <categories>
-        <category>日常小记</category>
       </categories>
   </entry>
   <entry>
@@ -6601,6 +6585,20 @@
 ]]></content>
       <categories>
         <category>算法</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>开了个B站大会员</title>
+    <url>/bilibili-vip.html</url>
+    <content><![CDATA[<p>最近巫师 3 更新了次世代版本（画质优化+中文配音），由于 PS5 放在了学校里，笔记本也带不太动，只能看老戴的视频云玩家二周目了（<a href="https://www.bilibili.com/video/BV1L14y1N7b3">链接</a>）。</p>
+<span id="more"></span>
+
+<p>看了一会，诶，咋更新了还这么糊，一看原来是只开了 1080P 画质，一冲动上某多多买了三个月的大会员，点开 4K 画质选项，好家伙，直接感受到了次世代的魅力。配音配的也很出色，没什么槽点。回头 PS5 上再三周目吧，并且期待一手巫师 4。</p>
+<p>充了大会员，接下来闲的时候再把 B 站上的电影再看看，总不能浪费了不是 hhh。</p>
+<p>最近多个平台都在搞年终总结了，比如 Apple Music 和 PlayStation，准备等其他平台都推出年终总结之后搞波分享～</p>
+]]></content>
+      <categories>
+        <category>日常小记</category>
       </categories>
   </entry>
 </search>
