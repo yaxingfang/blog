@@ -4,6 +4,7 @@ copyright: true
 mathjax: false
 categories:
   - Mac开发环境配置
+  - MySQL
 toc: false
 date: 2023-02-11 10:23:54
 tags:

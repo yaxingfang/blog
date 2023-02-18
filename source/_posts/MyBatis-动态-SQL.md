@@ -4,7 +4,7 @@ copyright: true
 mathjax: false
 categories:
   - 技术总结
-  - SpringBoot
+  - MyBatis
 toc: false
 date: 2023-02-14 09:25:13
 tags:

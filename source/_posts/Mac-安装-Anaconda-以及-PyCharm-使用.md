@@ -4,6 +4,7 @@ copyright: true
 mathjax: false
 categories:
   - Mac开发环境配置
+  - Anaconda
 toc: false
 date: 2023-02-15 17:48:25
 tags:
