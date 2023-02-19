@@ -1,3 +1,6 @@
+https://yaxing97.com/java8-stream.html
+https://yaxing97.com/maven-aggregation-project.html
+https://yaxing97.com/maven-base.html
 https://yaxing97.com/mybatis-batch-insert.html
 https://yaxing97.com/my-bytedance-internship-friends-offer.html
 https://yaxing97.com/2022-autumn-recruitment-summary.html
@@ -31,8 +34,8 @@ https://yaxing97.com/image-host.html
 https://yaxing97.com/mysql.html
 https://yaxing97.com/java-springmvc.html
 https://yaxing97.com/java-spring.html
-https://yaxing97.com/java-mybatis.html
 https://yaxing97.com/java-collection.html
+https://yaxing97.com/java-mybatis.html
 https://yaxing97.com/java-concurrent-programming.html
 https://yaxing97.com/2022-memory.html
 https://yaxing97.com/week-back-home.html
@@ -45,15 +48,17 @@ https://yaxing97.com/categories/%E5%AE%9E%E4%B9%A0%E7%A7%8B%E6%8B%9B/
 https://yaxing97.com/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/
 https://yaxing97.com/categories/Java%E5%85%AB%E8%82%A1%E6%96%87/
 https://yaxing97.com/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/Git/
+https://yaxing97.com/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/Java8-%E6%96%B0%E7%89%B9%E6%80%A7/
 https://yaxing97.com/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E6%97%A5%E5%BF%97/
 https://yaxing97.com/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/Lombok/
 https://yaxing97.com/categories/Mac%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/
+https://yaxing97.com/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/Maven/
 https://yaxing97.com/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/MyBatis/
 https://yaxing97.com/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/MySQL/
-https://yaxing97.com/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/SpringBoot/
 https://yaxing97.com/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/
 https://yaxing97.com/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/Swagger/
+https://yaxing97.com/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/SpringBoot/
 https://yaxing97.com/categories/%E4%B8%AA%E4%BA%BA%E6%80%9D%E8%80%83/
 https://yaxing97.com/categories/Mac%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/Anaconda/
-https://yaxing97.com/categories/Mac%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/MySQL/
 https://yaxing97.com/categories/%E7%AE%97%E6%B3%95/
+https://yaxing97.com/categories/Mac%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/MySQL/
