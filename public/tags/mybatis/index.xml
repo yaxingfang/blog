@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MyBatis on Yaxing&#39;s Blog</title>
+    <link>https://yaxing97.com/tags/mybatis/</link>
+    <description>Recent content in MyBatis on Yaxing&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 27 Feb 2023 16:08:48 +0000</lastBuildDate><atom:link href="https://yaxing97.com/tags/mybatis/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MyBatis-Plus 使用详解</title>
+      <link>https://yaxing97.com/mybatis-plus/</link>
+      <pubDate>Mon, 27 Feb 2023 16:08:48 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/mybatis-plus/</guid>
+      <description>&lt;p&gt;本文对 MyBatis-Plus 的使用做简单小记。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MyBatis 批量插入</title>
+      <link>https://yaxing97.com/mybatis-batch-insert/</link>
+      <pubDate>Thu, 16 Feb 2023 17:16:34 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/mybatis-batch-insert/</guid>
+      <description>&lt;p&gt;本文对 MyBatis 批量插入做简单小记。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MyBatis 动态 SQL</title>
+      <link>https://yaxing97.com/mybatis-dynamic-sql/</link>
+      <pubDate>Tue, 14 Feb 2023 09:25:13 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/mybatis-dynamic-sql/</guid>
+      <description>&lt;p&gt;本文对 MyBatis 动态 SQL 使用做简单小记。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java八股文 - MyBatis</title>
+      <link>https://yaxing97.com/java-mybatis/</link>
+      <pubDate>Mon, 23 Jan 2023 15:30:00 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/java-mybatis/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;整理的MyBatis框架相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Maven on Yaxing&#39;s Blog</title>
+    <link>https://yaxing97.com/tags/maven/</link>
+    <description>Recent content in Maven on Yaxing&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 19 Feb 2023 10:21:34 +0000</lastBuildDate><atom:link href="https://yaxing97.com/tags/maven/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Maven 聚合工程</title>
+      <link>https://yaxing97.com/maven-aggregation-project/</link>
+      <pubDate>Sun, 19 Feb 2023 10:21:34 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/maven-aggregation-project/</guid>
+      <description>&lt;p&gt;本文对 Maven 聚合工程的搭建做简单小记。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Maven 使用小记</title>
+      <link>https://yaxing97.com/maven-base/</link>
+      <pubDate>Sun, 19 Feb 2023 10:18:20 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/maven-base/</guid>
+      <description>&lt;p&gt;本文对 Maven 的安装、配置与基本使用做简单小记。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

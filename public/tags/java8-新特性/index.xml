@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Java8 新特性 on Yaxing&#39;s Blog</title>
+    <link>https://yaxing97.com/tags/java8-%E6%96%B0%E7%89%B9%E6%80%A7/</link>
+    <description>Recent content in Java8 新特性 on Yaxing&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 19 Feb 2023 10:23:24 +0000</lastBuildDate><atom:link href="https://yaxing97.com/tags/java8-%E6%96%B0%E7%89%B9%E6%80%A7/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java8 Stream 用法</title>
+      <link>https://yaxing97.com/java8-stream/</link>
+      <pubDate>Sun, 19 Feb 2023 10:23:24 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/java8-stream/</guid>
+      <description>&lt;p&gt;本文对 Java8 Stream 的使用做简单小记。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

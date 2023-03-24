@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>热部署 on Yaxing&#39;s Blog</title>
+    <link>https://yaxing97.com/tags/%E7%83%AD%E9%83%A8%E7%BD%B2/</link>
+    <description>Recent content in 热部署 on Yaxing&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 14 Feb 2023 09:26:06 +0000</lastBuildDate><atom:link href="https://yaxing97.com/tags/%E7%83%AD%E9%83%A8%E7%BD%B2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SpringBoot 热部署配置</title>
+      <link>https://yaxing97.com/spring-boot-hot-build/</link>
+      <pubDate>Tue, 14 Feb 2023 09:26:06 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/spring-boot-hot-build/</guid>
+      <description>&lt;p&gt;本文对 SpringBoot 热部署配置做简单小记。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

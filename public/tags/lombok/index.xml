@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Lombok on Yaxing&#39;s Blog</title>
+    <link>https://yaxing97.com/tags/lombok/</link>
+    <description>Recent content in Lombok on Yaxing&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 13 Feb 2023 15:09:10 +0000</lastBuildDate><atom:link href="https://yaxing97.com/tags/lombok/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lombok 使用小记</title>
+      <link>https://yaxing97.com/lombok/</link>
+      <pubDate>Mon, 13 Feb 2023 15:09:10 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/lombok/</guid>
+      <description>&lt;p&gt;本文对 Lombok 的使用做简单小记。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

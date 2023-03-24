@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MySQL on Yaxing&#39;s Blog</title>
+    <link>https://yaxing97.com/tags/mysql/</link>
+    <description>Recent content in MySQL on Yaxing&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 16 Feb 2023 13:52:29 +0000</lastBuildDate><atom:link href="https://yaxing97.com/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>MySQL 的索引小记</title>
+      <link>https://yaxing97.com/mysql-index/</link>
+      <pubDate>Thu, 16 Feb 2023 13:52:29 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/mysql-index/</guid>
+      <description>&lt;p&gt;本文对 MySQL 的索引相关操作做简单小记。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MySQL 的 DDL 语句小记</title>
+      <link>https://yaxing97.com/mysql-ddl/</link>
+      <pubDate>Thu, 16 Feb 2023 13:17:29 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/mysql-ddl/</guid>
+      <description>&lt;p&gt;本文对 MySQL 的 DDL 语句做简单小记。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mac 安装 MySQL 以及 Sequel Pro 配置与连接</title>
+      <link>https://yaxing97.com/mysql-sequel-pro/</link>
+      <pubDate>Sat, 11 Feb 2023 10:23:54 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/mysql-sequel-pro/</guid>
+      <description>&lt;p&gt;本文介绍在 Mac 上安装 MySQL 以及使用 Sequel Pro 作为可视化客户端的配置与连接。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java八股文 - MySQL</title>
+      <link>https://yaxing97.com/mysql/</link>
+      <pubDate>Wed, 25 Jan 2023 13:43:41 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/mysql/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;整理的 MySQL 相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

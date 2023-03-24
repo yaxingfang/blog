@@ -1,0 +1,471 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Yaxing&#39;s Blog</title>
+    <link>https://yaxing97.com/</link>
+    <description>Recent content on Yaxing&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 23 Mar 2023 10:49:01 +0800</lastBuildDate><atom:link href="https://yaxing97.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://yaxing97.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/about/</guid>
+      <description>🔭 本科：苏州大学纳米科学与技术学院，半导体器件方向；硕士：苏州大学计算机科学与技术学院，计算机技术。 🌱 在字节跳动飞书后端开发实习过 4 个月，秋</description>
+    </item>
+    
+    <item>
+      <title>博客从hexo迁移到hugo</title>
+      <link>https://yaxing97.com/hero-to-hugo/</link>
+      <pubDate>Thu, 23 Mar 2023 10:49:01 +0800</pubDate>
+      
+      <guid>https://yaxing97.com/hero-to-hugo/</guid>
+      <description>&lt;p&gt;为啥要换博客框架呢？闲的，哈哈哈😶。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于读研的一些思考</title>
+      <link>https://yaxing97.com/thoughts-on-postgraduate-study/</link>
+      <pubDate>Mon, 20 Mar 2023 10:57:45 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/thoughts-on-postgraduate-study/</guid>
+      <description>&lt;p&gt;今早刷 V2EX 看到了一个跟读研、就业相关的帖感觉很唏嘘的事情，感触很深。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Docker 使用小记</title>
+      <link>https://yaxing97.com/docker/</link>
+      <pubDate>Wed, 15 Mar 2023 10:07:56 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/docker/</guid>
+      <description>&lt;p&gt;本文对 Docker 的配置与使用做简单小记。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MyBatis-Plus 使用详解</title>
+      <link>https://yaxing97.com/mybatis-plus/</link>
+      <pubDate>Mon, 27 Feb 2023 16:08:48 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/mybatis-plus/</guid>
+      <description>&lt;p&gt;本文对 MyBatis-Plus 的使用做简单小记。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>接口幂等性保证方案</title>
+      <link>https://yaxing97.com/interface-idempotence/</link>
+      <pubDate>Thu, 23 Feb 2023 13:38:06 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/interface-idempotence/</guid>
+      <description>&lt;p&gt;本文介绍接口幂等性含义以及接口幂等性保证方案。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Linux 常用命令</title>
+      <link>https://yaxing97.com/linux-command/</link>
+      <pubDate>Sun, 19 Feb 2023 12:02:02 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/linux-command/</guid>
+      <description>&lt;p&gt;本文对 Linux 常用命令做简单小记。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java8 Stream 用法</title>
+      <link>https://yaxing97.com/java8-stream/</link>
+      <pubDate>Sun, 19 Feb 2023 10:23:24 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/java8-stream/</guid>
+      <description>&lt;p&gt;本文对 Java8 Stream 的使用做简单小记。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Maven 聚合工程</title>
+      <link>https://yaxing97.com/maven-aggregation-project/</link>
+      <pubDate>Sun, 19 Feb 2023 10:21:34 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/maven-aggregation-project/</guid>
+      <description>&lt;p&gt;本文对 Maven 聚合工程的搭建做简单小记。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Maven 使用小记</title>
+      <link>https://yaxing97.com/maven-base/</link>
+      <pubDate>Sun, 19 Feb 2023 10:18:20 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/maven-base/</guid>
+      <description>&lt;p&gt;本文对 Maven 的安装、配置与基本使用做简单小记。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MyBatis 批量插入</title>
+      <link>https://yaxing97.com/mybatis-batch-insert/</link>
+      <pubDate>Thu, 16 Feb 2023 17:16:34 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/mybatis-batch-insert/</guid>
+      <description>&lt;p&gt;本文对 MyBatis 批量插入做简单小记。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MySQL 的索引小记</title>
+      <link>https://yaxing97.com/mysql-index/</link>
+      <pubDate>Thu, 16 Feb 2023 13:52:29 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/mysql-index/</guid>
+      <description>&lt;p&gt;本文对 MySQL 的索引相关操作做简单小记。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MySQL 的 DDL 语句小记</title>
+      <link>https://yaxing97.com/mysql-ddl/</link>
+      <pubDate>Thu, 16 Feb 2023 13:17:29 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/mysql-ddl/</guid>
+      <description>&lt;p&gt;本文对 MySQL 的 DDL 语句做简单小记。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mac 安装 Anaconda 以及 PyCharm 使用</title>
+      <link>https://yaxing97.com/anaconda-pycharm/</link>
+      <pubDate>Wed, 15 Feb 2023 17:48:25 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/anaconda-pycharm/</guid>
+      <description>&lt;p&gt;本文介绍在 Mac 上安装 Anaconda 以及 PyCharm 使用 。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SpringBoot 集成 Junit</title>
+      <link>https://yaxing97.com/springboot-junit/</link>
+      <pubDate>Tue, 14 Feb 2023 09:26:51 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/springboot-junit/</guid>
+      <description>&lt;p&gt;本文对 SpringBoot 集成 Junit 做简单小记。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SpringBoot 集成 Swagger</title>
+      <link>https://yaxing97.com/springboot/swagger/</link>
+      <pubDate>Tue, 14 Feb 2023 09:26:39 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/springboot/swagger/</guid>
+      <description>&lt;p&gt;本文对 SpringBoot 集成 Swagger 配置和使用做简单小记。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>SpringBoot 热部署配置</title>
+      <link>https://yaxing97.com/spring-boot-hot-build/</link>
+      <pubDate>Tue, 14 Feb 2023 09:26:06 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/spring-boot-hot-build/</guid>
+      <description>&lt;p&gt;本文对 SpringBoot 热部署配置做简单小记。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>MyBatis 动态 SQL</title>
+      <link>https://yaxing97.com/mybatis-dynamic-sql/</link>
+      <pubDate>Tue, 14 Feb 2023 09:25:13 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/mybatis-dynamic-sql/</guid>
+      <description>&lt;p&gt;本文对 MyBatis 动态 SQL 使用做简单小记。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>从 0 搭建 SpringBoot 项目</title>
+      <link>https://yaxing97.com/springboot-stater/</link>
+      <pubDate>Tue, 14 Feb 2023 09:24:21 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/springboot-stater/</guid>
+      <description>&lt;p&gt;本文对从 0 搭建一个 SpringBoot 项目并实现简单查询逻辑进行小记。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Logback &#43; Slf4j 使用小记</title>
+      <link>https://yaxing97.com/Logback-Slf4j/</link>
+      <pubDate>Mon, 13 Feb 2023 15:09:20 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/Logback-Slf4j/</guid>
+      <description>&lt;p&gt;本文对 Logback + Slf4j 的配置和使用做简单小记。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Lombok 使用小记</title>
+      <link>https://yaxing97.com/lombok/</link>
+      <pubDate>Mon, 13 Feb 2023 15:09:10 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/lombok/</guid>
+      <description>&lt;p&gt;本文对 Lombok 的使用做简单小记。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Git 协同开发</title>
+      <link>https://yaxing97.com/git-notes/</link>
+      <pubDate>Sat, 11 Feb 2023 17:50:38 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/git-notes/</guid>
+      <description>&lt;p&gt;本文是本人在实习期间总结的一份关于使用 Git 进行协同开发的小记。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mac 安装 MySQL 以及 Sequel Pro 配置与连接</title>
+      <link>https://yaxing97.com/mysql-sequel-pro/</link>
+      <pubDate>Sat, 11 Feb 2023 10:23:54 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/mysql-sequel-pro/</guid>
+      <description>&lt;p&gt;本文介绍在 Mac 上安装 MySQL 以及使用 Sequel Pro 作为可视化客户端的配置与连接。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>关于体制内的一些思考</title>
+      <link>https://yaxing97.com/about-within-the-system/</link>
+      <pubDate>Sun, 05 Feb 2023 10:35:33 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/about-within-the-system/</guid>
+      <description>&lt;p&gt;面临秋招毕业季，进体制内还是体制外无疑是摆在毕业生面前的两个大方向选择。本人秋招以来也经历了类似选择，也谈谈我个人的一些思考。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java八股文 - Linux</title>
+      <link>https://yaxing97.com/linux/</link>
+      <pubDate>Wed, 25 Jan 2023 13:45:06 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/linux/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;整理的 Linux 相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>算法 - 排序算法</title>
+      <link>https://yaxing97.com/sort-algorithm/</link>
+      <pubDate>Wed, 25 Jan 2023 13:44:55 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/sort-algorithm/</guid>
+      <description>&lt;p&gt;八大排序算法的代码实现和时空复杂度比较。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java八股文 - 计算机网络</title>
+      <link>https://yaxing97.com/computer-network/</link>
+      <pubDate>Wed, 25 Jan 2023 13:44:16 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/computer-network/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;整理的计算机网络相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java八股文 - Redis</title>
+      <link>https://yaxing97.com/redis/</link>
+      <pubDate>Wed, 25 Jan 2023 13:43:59 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/redis/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;整理的 Redis 相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java八股文 - MySQL</title>
+      <link>https://yaxing97.com/mysql/</link>
+      <pubDate>Wed, 25 Jan 2023 13:43:41 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/mysql/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;整理的 MySQL 相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java八股文 - SpringMVC</title>
+      <link>https://yaxing97.com/java-springmvc/</link>
+      <pubDate>Mon, 23 Jan 2023 16:14:20 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/java-springmvc/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;整理的SpringMVC相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java八股文 - Spring</title>
+      <link>https://yaxing97.com/java-spring/</link>
+      <pubDate>Mon, 23 Jan 2023 16:14:06 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/java-spring/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;整理的Spring框架相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java八股文 - MyBatis</title>
+      <link>https://yaxing97.com/java-mybatis/</link>
+      <pubDate>Mon, 23 Jan 2023 15:30:00 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/java-mybatis/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;整理的MyBatis框架相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java八股文 - Java并发</title>
+      <link>https://yaxing97.com/java-concurrent-programming/</link>
+      <pubDate>Mon, 23 Jan 2023 15:29:48 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/java-concurrent-programming/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;整理的Java并发相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java八股文 - Java集合</title>
+      <link>https://yaxing97.com/java-collection/</link>
+      <pubDate>Mon, 23 Jan 2023 10:06:52 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/java-collection/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;整理的Java集合相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java八股文 - Java异常</title>
+      <link>https://yaxing97.com/java-exception-error/</link>
+      <pubDate>Mon, 23 Jan 2023 10:06:31 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/java-exception-error/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;整理的Java异常相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java八股文 - Java基础</title>
+      <link>https://yaxing97.com/java-basic-knowledge/</link>
+      <pubDate>Mon, 23 Jan 2023 10:05:51 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/java-basic-knowledge/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;整理的Java基础相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+    <item>
+      <title>新年快乐！</title>
+      <link>https://yaxing97.com/2023-happy-spring-festival/</link>
+      <pubDate>Sun, 22 Jan 2023 09:55:21 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/2023-happy-spring-festival/</guid>
+      <description>今年是大年初一，过新年。祝愿我和各位读者们新年快乐，事事如意，日进斗金，财运亨通，兔年大吉🎉</description>
+    </item>
+    
+    <item>
+      <title>最近关于校招、互联网的一些信息</title>
+      <link>https://yaxing97.com/202301-it-info/</link>
+      <pubDate>Fri, 13 Jan 2023 12:56:40 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/202301-it-info/</guid>
+      <description>&lt;p&gt;最近刷脉脉、知乎等记录下一些网友发布的一些信息，仅作记录，不对其真实性等作深究，侵删。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>12张图回忆我的2022</title>
+      <link>https://yaxing97.com/2022-memory/</link>
+      <pubDate>Sun, 01 Jan 2023 20:59:55 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/2022-memory/</guid>
+      <description>&lt;p&gt;2022 年转瞬即逝，我从手机相册中每个月分别挑出一张照片，在此给我的 2022 留个回忆。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>回老家的一周</title>
+      <link>https://yaxing97.com/week-back-home/</link>
+      <pubDate>Fri, 23 Dec 2022 18:46:02 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/week-back-home/</guid>
+      <description>&lt;p&gt;上周从常州省考回来，当天晚上正好是世界杯决赛，看到了凌晨两点，第二天一大早起床，和爸妈一起开车回老家，然后就开始了在老家的一周生活。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>江苏省考考完啦</title>
+      <link>https://yaxing97.com/2022-jiangsu-gwy/</link>
+      <pubDate>Sun, 18 Dec 2022 11:49:32 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/2022-jiangsu-gwy/</guid>
+      <description>&lt;p&gt;坐标常州钟楼区肯德基青山店，看了下下一班回家的班车要到下午一点了，遂坐在肯德基里，沐浴暖冬的阳光，简单回顾一下我备考这次江苏省考的一些事情吧。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>开了个B站大会员</title>
+      <link>https://yaxing97.com/bilibili-vip/</link>
+      <pubDate>Thu, 15 Dec 2022 21:39:46 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/bilibili-vip/</guid>
+      <description>&lt;p&gt;最近巫师 3 更新了次世代版本（画质优化+中文配音），由于 PS5 放在了学校里，笔记本也带不太动，只能看老戴的视频云玩家二周目了（&lt;a href=&#34;https://www.bilibili.com/video/BV1L14y1N7b3&#34;&gt;链接&lt;/a&gt;）。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>新买的小书桌</title>
+      <link>https://yaxing97.com/new-desk/</link>
+      <pubDate>Wed, 14 Dec 2022 16:21:02 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/new-desk/</guid>
+      <description>&lt;p&gt;之前买了个 LG 的 27 寸显示器，放在书房的桌子上，一方面不能升高（上面有架板挡住），另一方面是桌子宽度不够（只有 50cm），显示器靠墙前面只能勉强放下我的 mac，导致屏幕离我很近，观感极差。于是在淘宝上淘了个书桌，还算不错。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>字节暑期实习同组实习生秋招情况分享</title>
+      <link>https://yaxing97.com/my-bytedance-internship-friends-offer/</link>
+      <pubDate>Tue, 13 Dec 2022 20:02:14 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/my-bytedance-internship-friends-offer/</guid>
+      <description>&lt;p&gt;突然想起来做这个分享，是因为刚好下午有个字节跳动暑期实习时同组的朋友刚签约三方，和父母也顺便分享了其他同组实习生的签约情况。这边也给大家分享下。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Typora配置阿里云OSS图床</title>
+      <link>https://yaxing97.com/image-host/</link>
+      <pubDate>Mon, 12 Dec 2022 22:11:09 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/image-host/</guid>
+      <description>&lt;p&gt;在我们日常使用 Typora 写文档时，一般图片都是放在本地的一个相对路径下，如果将 markdown 文件发送给别人，那么这个文件中的图片别人自然是访问不到的。图床的作用就是把图片存在网站上，对应的图片生成一个链接，markdown 文件中使用该链接访问图片。在本文中我们使用 Typora + PicGo + 阿里云 OSS 图床实现图片自动上传并自由访问。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>手把手带你搭建个人博客</title>
+      <link>https://yaxing97.com/build-blog/</link>
+      <pubDate>Mon, 12 Dec 2022 21:08:31 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/build-blog/</guid>
+      <description>&lt;h2 id=&#34;系统环境工具&#34;&gt;系统环境&amp;amp;工具&lt;/h2&gt;
+&lt;p&gt;系统环境：MacOS&lt;/p&gt;
+&lt;p&gt;工具：博客框架为 hexo，博客文件托管于 GitHub，博客网站用 Netlify 生成，国内访问采用 CloudFlare 进行 CDN 加速&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2022 秋招总结</title>
+      <link>https://yaxing97.com/2022-autumn-recruitment-summary/</link>
+      <pubDate>Mon, 12 Dec 2022 11:57:22 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/2022-autumn-recruitment-summary/</guid>
+      <description>&lt;p&gt;19 年乘着人见人吹的计算机大热，跨考计算机一站未果，二战上岸本校计算机。&lt;/p&gt;
+&lt;p&gt;研二暑期留校科研，很幸运做出来两篇文章，接下来可以去实习了。&lt;/p&gt;
+&lt;p&gt;从 12 月到 2 月，断断续续复习 Java 后端开发所需的知识。&lt;/p&gt;
+&lt;p&gt;从 2 月底找实习，4 月底入职字节跳动，8 月底离职返校，直到 11 月底（11.27）正式签订三方，过程坎坷，内心惆怅。&lt;/p&gt;
+&lt;p&gt;秋招投了约 50 家公司，都是 Java 后端，主要有以下：&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>2022实习总结</title>
+      <link>https://yaxing97.com/2022-internship-summary/</link>
+      <pubDate>Mon, 12 Dec 2022 10:40:27 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/2022-internship-summary/</guid>
+      <description>写在前面：作为一名硕转码的选手，今年暑期实习貌似又格外的难，身边的朋友、脉脉、牛客上的同学都表示今年大环境很差，实习很难找。各个大厂从裁员，</description>
+    </item>
+    
+  </channel>
+</rss>

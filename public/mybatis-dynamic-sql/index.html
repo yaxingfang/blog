@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>MyBatis 动态 SQL - Yaxing&#39;s Blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Yaxing" /><meta name="description" content="本文对 MyBatis 动态 SQL 使用做简单小记。
+" /><meta name="keywords" content="Java, 日记, 思考, 总结" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.108.0 with theme even" />
+
+
+<link rel="canonical" href="https://yaxing97.com/mybatis-dynamic-sql/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="MyBatis 动态 SQL" />
+<meta property="og:description" content="本文对 MyBatis 动态 SQL 使用做简单小记。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yaxing97.com/mybatis-dynamic-sql/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-02-14T09:25:13+00:00" />
+<meta property="article:modified_time" content="2023-02-14T09:25:13+00:00" />
+<meta itemprop="name" content="MyBatis 动态 SQL">
+<meta itemprop="description" content="本文对 MyBatis 动态 SQL 使用做简单小记。"><meta itemprop="datePublished" content="2023-02-14T09:25:13+00:00" />
+<meta itemprop="dateModified" content="2023-02-14T09:25:13+00:00" />
+<meta itemprop="wordCount" content="1839">
+<meta itemprop="keywords" content="MyBatis," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="MyBatis 动态 SQL"/>
+<meta name="twitter:description" content="本文对 MyBatis 动态 SQL 使用做简单小记。"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Yaxing&#39;s Blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Yaxing&#39;s Blog</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">MyBatis 动态 SQL</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2023-02-14 </span>
+        <div class="post-category">
+            <a href="/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"> 技术总结 </a>
+            </div>
+          <span class="more-meta"> 约 1839 字 </span>
+          <span class="more-meta"> 预计阅读 4 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#if">if</a></li>
+        <li><a href="#choosewhenotherwise">choose、when、otherwise</a></li>
+        <li><a href="#trimwhereset">trim、where、set</a></li>
+        <li><a href="#foreach">foreach</a></li>
+        <li><a href="#更多">更多</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>本文对 MyBatis 动态 SQL 使用做简单小记。</p>
+<p>动态 SQL 是 MyBatis 的强大特性之一。如果你使用过 JDBC 或其它类似的框架，你应该能理解根据不同条件拼接 SQL 语句有多痛苦，例如拼接时要确保不能忘记添加必要的空格，还要注意去掉列表最后一个列名的逗号。利用动态 SQL，可以彻底摆脱这种痛苦。（转自 <a href="https://mybatis.org/mybatis-3/zh/dynamic-sql.html">MyBatis 官方文档</a>）</p>
+<h2 id="if">if</h2>
+<p>使用动态 SQL 最常见情景是根据条件包含 where 子句的一部分。比如：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&#34;findActiveBlogWithTitleLike&#34;</span> <span class="na">resultType=</span><span class="s">&#34;Blog&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">  SELECT * FROM BLOG
+</span></span><span class="line"><span class="cl">  WHERE state = ‘ACTIVE’
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;title != null&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">    AND title like #{title}
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;/if&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/select&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这条语句提供了可选的查找文本功能。如果不传入 “title”，那么所有处于 “ACTIVE” 状态的 BLOG 都会返回；如果传入了 “title” 参数，那么就会对 “title” 一列进行模糊查找并返回对应的 BLOG 结果。</p>
+<p>如果希望通过 “title” 和 “author” 两个参数进行可选搜索该怎么办呢？首先，我想先将语句名称修改成更名副其实的名称；接下来，只需要加入另一个条件即可。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&#34;findActiveBlogLike&#34;</span> <span class="na">resultType=</span><span class="s">&#34;Blog&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">  SELECT * FROM BLOG WHERE state = ‘ACTIVE’
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;title != null&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">    AND title like #{title}
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;/if&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;author != null and author.name != null&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">    AND author_name like #{author.name}
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;/if&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/select&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="choosewhenotherwise">choose、when、otherwise</h2>
+<p>有时候，我们不想使用所有的条件，而只是想从多个条件中选择一个使用。针对这种情况，MyBatis 提供了 choose 元素，它有点像 Java 中的 switch 语句。</p>
+<p>还是上面的例子，但是策略变为：传入了 “title” 就按 “title” 查找，传入了 “author” 就按 “author” 查找的情形。若两者都没有传入，就返回标记为 featured 的 BLOG。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&#34;findActiveBlogLike&#34;</span>
+</span></span><span class="line"><span class="cl">     <span class="na">resultType=</span><span class="s">&#34;Blog&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">  SELECT * FROM BLOG WHERE state = ‘ACTIVE’
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;choose&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;when</span> <span class="na">test=</span><span class="s">&#34;title != null&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">      AND title like #{title}
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/when&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;when</span> <span class="na">test=</span><span class="s">&#34;author != null and author.name != null&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">      AND author_name like #{author.name}
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/when&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;otherwise&gt;</span>
+</span></span><span class="line"><span class="cl">      AND featured = 1
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/otherwise&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;/choose&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/select&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="trimwhereset">trim、where、set</h2>
+<p>前面几个例子已经方便地解决了一个臭名昭著的动态 SQL 问题。现在回到之前的 “if” 示例，这次我们将 “state = ‘ACTIVE’” 设置成动态条件，看看会发生什么。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&#34;findActiveBlogLike&#34;</span> <span class="na">resultType=</span><span class="s">&#34;Blog&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">  SELECT * FROM BLOG
+</span></span><span class="line"><span class="cl">  WHERE
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;state != null&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">    state = #{state}
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;/if&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;title != null&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">    AND title like #{title}
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;/if&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;author != null and author.name != null&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">    AND author_name like #{author.name}
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;/if&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/select&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>如果没有匹配的条件会怎么样？最终这条 SQL 会变成这样：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">BLOG</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">WHERE</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>这会导致查询失败。如果匹配的只是第二个条件又会怎样？这条 SQL 会是这样:</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">SELECT</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="k">FROM</span><span class="w"> </span><span class="n">BLOG</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">WHERE</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">AND</span><span class="w"> </span><span class="n">title</span><span class="w"> </span><span class="k">like</span><span class="w"> </span><span class="err">‘</span><span class="n">someTitle</span><span class="err">’</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>这个查询也会失败。这个问题不能简单地用条件元素来解决。这个问题是如此的难以解决，以至于解决过的人不会再想碰到这种问题。</p>
+<p>MyBatis 有一个简单且适合大多数场景的解决办法。而在其他场景中，可以对其进行自定义以符合需求。而这，只需要一处简单的改动：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&#34;findActiveBlogLike&#34;</span> <span class="na">resultType=</span><span class="s">&#34;Blog&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">  SELECT * FROM BLOG
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;where&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;state != null&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">         state = #{state}
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/if&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;title != null&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">        AND title like #{title}
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/if&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;author != null and author.name != null&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">        AND author_name like #{author.name}
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/if&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;/where&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/select&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><em>where</em> 元素只会在子元素返回任何内容的情况下才插入 “WHERE” 子句。而且，若子句的开头为 “AND” 或 “OR”，<em>where</em> 元素也会将它们去除。</p>
+<p>如果 <em>where</em> 元素与你期望的不太一样，你也可以通过自定义 trim 元素来定制 <em>where</em> 元素的功能。比如，和 <em>where</em> 元素等价的自定义 trim 元素为：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;trim</span> <span class="na">prefix=</span><span class="s">&#34;WHERE&#34;</span> <span class="na">prefixOverrides=</span><span class="s">&#34;AND |OR &#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">  ...
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/trim&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><em>prefixOverrides</em> 属性会忽略通过管道符分隔的文本序列（注意此例中的空格是必要的）。上述例子会移除所有 <em>prefixOverrides</em> 属性中指定的内容，并且插入 <em>prefix</em> 属性中指定的内容。</p>
+<p>用于动态更新语句的类似解决方案叫做 <em>set</em>。<em>set</em> 元素可以用于动态包含需要更新的列，忽略其它不更新的列。比如：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;update</span> <span class="na">id=</span><span class="s">&#34;updateAuthorIfNecessary&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">  update Author
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;set&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;username != null&#34;</span><span class="nt">&gt;</span>username=#{username},<span class="nt">&lt;/if&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;password != null&#34;</span><span class="nt">&gt;</span>password=#{password},<span class="nt">&lt;/if&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;email != null&#34;</span><span class="nt">&gt;</span>email=#{email},<span class="nt">&lt;/if&gt;</span>
+</span></span><span class="line"><span class="cl">      <span class="nt">&lt;if</span> <span class="na">test=</span><span class="s">&#34;bio != null&#34;</span><span class="nt">&gt;</span>bio=#{bio}<span class="nt">&lt;/if&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/set&gt;</span>
+</span></span><span class="line"><span class="cl">  where id=#{id}
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/update&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>这个例子中，<em>set</em> 元素会动态地在行首插入 SET 关键字，并会删掉额外的逗号（这些逗号是在使用条件语句给列赋值时引入的）。</p>
+<p>或者，你可以通过使用<em>trim</em>元素来达到同样的效果：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;trim</span> <span class="na">prefix=</span><span class="s">&#34;SET&#34;</span> <span class="na">suffixOverrides=</span><span class="s">&#34;,&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">  ...
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/trim&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>注意，我们覆盖了后缀值设置，并且自定义了前缀值。</p>
+<h2 id="foreach">foreach</h2>
+<p>动态 SQL 的另一个常见使用场景是对集合进行遍历（尤其是在构建 IN 条件语句的时候）。比如：</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;select</span> <span class="na">id=</span><span class="s">&#34;selectPostIn&#34;</span> <span class="na">resultType=</span><span class="s">&#34;domain.blog.Post&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">  SELECT *
+</span></span><span class="line"><span class="cl">  FROM POST P
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;where&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;foreach</span> <span class="na">item=</span><span class="s">&#34;item&#34;</span> <span class="na">index=</span><span class="s">&#34;index&#34;</span> <span class="na">collection=</span><span class="s">&#34;list&#34;</span>
+</span></span><span class="line"><span class="cl">        <span class="na">open=</span><span class="s">&#34;ID in (&#34;</span> <span class="na">separator=</span><span class="s">&#34;,&#34;</span> <span class="na">close=</span><span class="s">&#34;)&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">          #{item}
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/foreach&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;/where&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/select&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p><em>foreach</em> 元素的功能非常强大，它允许你指定一个集合，声明可以在元素体内使用的集合项（item）和索引（index）变量。它也允许你指定开头与结尾的字符串以及集合项迭代之间的分隔符。这个元素也不会错误地添加多余的分隔符，看它多智能！</p>
+<p><strong>提示</strong> 你可以将任何可迭代对象（如 List、Set 等）、Map 对象或者数组对象作为集合参数传递给 <em>foreach</em>。当使用可迭代对象或者数组时，index 是当前迭代的序号，item 的值是本次迭代获取到的元素。当使用 Map 对象（或者 Map.Entry 对象的集合）时，index 是键，item 是值。</p>
+<p>至此，我们已经完成了与 XML 配置及映射文件相关的讨论。下一章将详细探讨 Java API，以便你能充分利用已经创建的映射配置。</p>
+<h2 id="更多">更多</h2>
+<p><a href="https://developer.aliyun.com/article/1091810#slide-17">https://developer.aliyun.com/article/1091810#slide-17</a></p>
+    </div>
+
+    
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/mybatis/">MyBatis</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/spring-boot-hot-build/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">SpringBoot 热部署配置</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/springboot-stater/">
+            <span class="next-text nav-default">从 0 搭建 SpringBoot 项目</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:yaxingfang@163.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://scholar.google.com.hk/citations?user=9DPge4wAAAAJ&amp;hl=zh-CN&amp;oi=sra" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/yaxingfang" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.zhihu.com/people/fang-ya-xing-22" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="https://yaxing97.com" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://yaxing97.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2022 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>Yaxing</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-FD6WJ02QTG', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script id="baidu_analytics">
+  var _hmt = _hmt || [];
+  (function() {
+    if (window.location.hostname === 'localhost') return;
+    var hm = document.createElement("script"); hm.async = true;
+    hm.src = "https://hm.baidu.com/hm.js?2037c3637df2058f01d810ede4492aec";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+
+
+
+
+
+</body>
+</html>

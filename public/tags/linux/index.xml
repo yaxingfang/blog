@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Linux on Yaxing&#39;s Blog</title>
+    <link>https://yaxing97.com/tags/linux/</link>
+    <description>Recent content in Linux on Yaxing&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Sun, 19 Feb 2023 12:02:02 +0000</lastBuildDate><atom:link href="https://yaxing97.com/tags/linux/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Linux 常用命令</title>
+      <link>https://yaxing97.com/linux-command/</link>
+      <pubDate>Sun, 19 Feb 2023 12:02:02 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/linux-command/</guid>
+      <description>&lt;p&gt;本文对 Linux 常用命令做简单小记。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java八股文 - Linux</title>
+      <link>https://yaxing97.com/linux/</link>
+      <pubDate>Wed, 25 Jan 2023 13:45:06 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/linux/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;整理的 Linux 相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

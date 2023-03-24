@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>MyBatis-Plus 使用详解 - Yaxing&#39;s Blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Yaxing" /><meta name="description" content="本文对 MyBatis-Plus 的使用做简单小记。
+" /><meta name="keywords" content="Java, 日记, 思考, 总结" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.108.0 with theme even" />
+
+
+<link rel="canonical" href="https://yaxing97.com/mybatis-plus/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="MyBatis-Plus 使用详解" />
+<meta property="og:description" content="本文对 MyBatis-Plus 的使用做简单小记。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yaxing97.com/mybatis-plus/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-02-27T16:08:48+00:00" />
+<meta property="article:modified_time" content="2023-02-27T16:08:48+00:00" />
+<meta itemprop="name" content="MyBatis-Plus 使用详解">
+<meta itemprop="description" content="本文对 MyBatis-Plus 的使用做简单小记。"><meta itemprop="datePublished" content="2023-02-27T16:08:48+00:00" />
+<meta itemprop="dateModified" content="2023-02-27T16:08:48+00:00" />
+<meta itemprop="wordCount" content="2186">
+<meta itemprop="keywords" content="MyBatis," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="MyBatis-Plus 使用详解"/>
+<meta name="twitter:description" content="本文对 MyBatis-Plus 的使用做简单小记。"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Yaxing&#39;s Blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Yaxing&#39;s Blog</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">MyBatis-Plus 使用详解</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2023-02-27 </span>
+        <div class="post-category">
+            <a href="/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"> 技术总结 </a>
+            </div>
+          <span class="more-meta"> 约 2186 字 </span>
+          <span class="more-meta"> 预计阅读 5 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    <div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  <div class="post-toc-content always-active">
+    <nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#入门">入门</a>
+          <ul>
+            <li><a href="#建表">建表</a></li>
+            <li><a href="#引入依赖设置配置文件">引入依赖，设置配置文件</a></li>
+            <li><a href="#生成实体类和-mapper">生成实体类和 Mapper</a></li>
+            <li><a href="#主启动类添加注解扫描">主启动类添加注解扫描</a></li>
+            <li><a href="#测试">测试</a></li>
+          </ul>
+        </li>
+        <li><a href="#注解">注解</a>
+          <ul>
+            <li><a href="#tablename">@TableName</a></li>
+            <li><a href="#tableid">@TableId</a></li>
+            <li><a href="#tablefield">@TableField</a></li>
+          </ul>
+        </li>
+        <li><a href="#mapper-crud-接口">Mapper CRUD 接口</a>
+          <ul>
+            <li><a href="#insert">Insert</a></li>
+            <li><a href="#delete">Delete</a></li>
+            <li><a href="#update">Update</a></li>
+            <li><a href="#select">Select</a></li>
+          </ul>
+        </li>
+        <li><a href="#逻辑删除">逻辑删除</a>
+          <ul>
+            <li><a href="#说明">说明</a></li>
+            <li><a href="#使用方法">使用方法</a></li>
+            <li><a href="#常见问题">常见问题</a></li>
+          </ul>
+        </li>
+        <li><a href="#参考">参考</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+  </div>
+</div>
+    <div class="post-content">
+      <p>本文对 MyBatis-Plus 的使用做简单小记。</p>
+<h2 id="入门">入门</h2>
+<h3 id="建表">建表</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sql" data-lang="sql"><span class="line"><span class="cl"><span class="k">DROP</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">IF</span><span class="w"> </span><span class="k">EXISTS</span><span class="w"> </span><span class="k">user</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">CREATE</span><span class="w"> </span><span class="k">TABLE</span><span class="w"> </span><span class="k">user</span><span class="w"> </span><span class="p">(</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">id</span><span class="w"> </span><span class="nb">BIGINT</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="w"> </span><span class="k">PRIMARY</span><span class="w"> </span><span class="k">KEY</span><span class="w"> </span><span class="k">NOT</span><span class="w"> </span><span class="k">NULL</span><span class="w"> </span><span class="k">COMMENT</span><span class="w"> </span><span class="s1">&#39;主键&#39;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">name</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">30</span><span class="p">)</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="k">NULL</span><span class="w"> </span><span class="k">COMMENT</span><span class="w"> </span><span class="s1">&#39;姓名&#39;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">age</span><span class="w"> </span><span class="nb">INT</span><span class="p">(</span><span class="mi">11</span><span class="p">)</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="k">NULL</span><span class="w"> </span><span class="k">COMMENT</span><span class="w"> </span><span class="s1">&#39;年龄&#39;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">email</span><span class="w"> </span><span class="nb">VARCHAR</span><span class="p">(</span><span class="mi">50</span><span class="p">)</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="k">NULL</span><span class="w"> </span><span class="k">COMMENT</span><span class="w"> </span><span class="s1">&#39;邮箱&#39;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">manager_id</span><span class="w"> </span><span class="nb">BIGINT</span><span class="p">(</span><span class="mi">20</span><span class="p">)</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="k">NULL</span><span class="w"> </span><span class="k">COMMENT</span><span class="w"> </span><span class="s1">&#39;直属上级id&#39;</span><span class="p">,</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="n">create_time</span><span class="w"> </span><span class="n">DATETIME</span><span class="w"> </span><span class="k">DEFAULT</span><span class="w"> </span><span class="k">NULL</span><span class="w"> </span><span class="k">COMMENT</span><span class="w"> </span><span class="s1">&#39;创建时间&#39;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">)</span><span class="w"> </span><span class="n">ENGINE</span><span class="o">=</span><span class="n">INNODB</span><span class="w"> </span><span class="n">CHARSET</span><span class="o">=</span><span class="n">UTF8</span><span class="p">;</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="k">INSERT</span><span class="w"> </span><span class="k">INTO</span><span class="w"> </span><span class="k">user</span><span class="w"> </span><span class="p">(</span><span class="n">id</span><span class="p">,</span><span class="w"> </span><span class="n">name</span><span class="p">,</span><span class="w"> </span><span class="n">age</span><span class="w"> </span><span class="p">,</span><span class="n">email</span><span class="p">,</span><span class="w"> </span><span class="n">manager_id</span><span class="p">,</span><span class="w"> </span><span class="n">create_time</span><span class="p">)</span><span class="w"> </span><span class="k">VALUES</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;大BOSS&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;boss@baomidou.com&#39;</span><span class="p">,</span><span class="w"> </span><span class="k">NULL</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;2021-03-22 09:48:00&#39;</span><span class="p">),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">(</span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;李经理&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;boss@baomidou.com&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;2021-01-22 09:48:00&#39;</span><span class="p">),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;黄主管&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;boss@baomidou.com&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;2021-01-22 09:48:00&#39;</span><span class="p">),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">(</span><span class="mi">4</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;吴组长&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;boss@baomidou.com&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;2021-02-22 09:48:00&#39;</span><span class="p">),</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;小菜&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">40</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;boss@baomidou.com&#39;</span><span class="p">,</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;2021-02-22 09:48:00&#39;</span><span class="p">)</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="引入依赖设置配置文件">引入依赖，设置配置文件</h3>
+<p>引入依赖 pom.xml</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="nt">&lt;dependencies&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;groupId&gt;</span>org.springframework.boot<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;artifactId&gt;</span>spring-boot-starter-web<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/dependency&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;groupId&gt;</span>org.springframework.boot<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;artifactId&gt;</span>spring-boot-starter-test<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/dependency&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;groupId&gt;</span>junit<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;artifactId&gt;</span>junit<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;scope&gt;</span>test<span class="nt">&lt;/scope&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/dependency&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;groupId&gt;</span>com.baomidou<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;artifactId&gt;</span>mybatis-plus-boot-starter<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/dependency&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;groupId&gt;</span>mysql<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;artifactId&gt;</span>mysql-connector-java<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/dependency&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;groupId&gt;</span>org.projectlombok<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;artifactId&gt;</span>lombok<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/dependency&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/dependencies&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>配置文件 <code>application.yaml</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">spring</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">datasource</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">driver-class-name</span><span class="p">:</span><span class="w"> </span><span class="l">com.mysql.cj.jdbc.Driver</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">url</span><span class="p">:</span><span class="w"> </span><span class="l">jdbc:mysql://localhost:3306/java?serverTimezone=Asia/Shanghai</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">username</span><span class="p">:</span><span class="w"> </span><span class="l">root</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">password</span><span class="p">:</span><span class="w"> </span><span class="l">FYX123fyx.</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="c"># 开启SQL语句打印</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w"></span><span class="nt">mybatis-plus</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">configuration</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">log-impl</span><span class="p">:</span><span class="w"> </span><span class="l">org.apache.ibatis.logging.stdout.StdOutImpl</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="生成实体类和-mapper">生成实体类和 Mapper</h3>
+<p>实体类 <code>com.yaxing.entity.User</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span><span class="lnt">23
+</span><span class="lnt">24
+</span><span class="lnt">25
+</span><span class="lnt">26
+</span><span class="lnt">27
+</span><span class="lnt">28
+</span><span class="lnt">29
+</span><span class="lnt">30
+</span><span class="lnt">31
+</span><span class="lnt">32
+</span><span class="lnt">33
+</span><span class="lnt">34
+</span><span class="lnt">35
+</span><span class="lnt">36
+</span><span class="lnt">37
+</span><span class="lnt">38
+</span><span class="lnt">39
+</span><span class="lnt">40
+</span><span class="lnt">41
+</span><span class="lnt">42
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@TableName</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">&#34;user&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@Data</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">User</span> <span class="kd">implements</span> <span class="n">Serializable</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * 主键
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@TableId</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">&#34;id&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">Long</span> <span class="n">id</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * 姓名
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@TableField</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">&#34;name&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">String</span> <span class="n">name</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * 年龄
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@TableField</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">&#34;age&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">Integer</span> <span class="n">age</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * 邮箱
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@TableField</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">&#34;email&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">String</span> <span class="n">email</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * 直属上级id
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@TableField</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">&#34;manager_id&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">Long</span> <span class="n">managerId</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="cm">/**
+</span></span></span><span class="line"><span class="cl"><span class="cm">     * 创建时间
+</span></span></span><span class="line"><span class="cl"><span class="cm">     */</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@TableField</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">&#34;create_time&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">Date</span> <span class="n">createTime</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nd">@TableField</span><span class="o">(</span><span class="n">exist</span> <span class="o">=</span> <span class="kc">false</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="kd">static</span> <span class="kd">final</span> <span class="kt">long</span> <span class="n">serialVersionUID</span> <span class="o">=</span> <span class="mi">1L</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>mapper 文件 <code>com.yaxing.mapper.UserMapper</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@Mapper</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">interface</span> <span class="nc">UserMapper</span> <span class="kd">extends</span> <span class="n">BaseMapper</span><span class="o">&lt;</span><span class="n">User</span><span class="o">&gt;</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="主启动类添加注解扫描">主启动类添加注解扫描</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span><span class="lnt">9
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@SpringBootApplication</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@MapperScan</span><span class="o">(</span><span class="s">&#34;com.yaxing.mapper&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MybatisPlusDemoApplication</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">SpringApplication</span><span class="o">.</span><span class="na">run</span><span class="o">(</span><span class="n">MybatisPlusDemoApplication</span><span class="o">.</span><span class="na">class</span><span class="o">,</span> <span class="n">args</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="测试">测试</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@RunWith</span><span class="o">(</span><span class="n">SpringRunner</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="nd">@SpringBootTest</span><span class="o">(</span><span class="n">classes</span> <span class="o">=</span> <span class="n">MybatisPlusDemoApplication</span><span class="o">.</span><span class="na">class</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">MybatisPlusDemoApplicationTest</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Autowired</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">private</span> <span class="n">UserMapper</span> <span class="n">userMapper</span><span class="o">;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="nd">@Test</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">testSelect</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">List</span><span class="o">&lt;</span><span class="n">User</span><span class="o">&gt;</span> <span class="n">list</span> <span class="o">=</span> <span class="n">userMapper</span><span class="o">.</span><span class="na">selectList</span><span class="o">(</span><span class="kc">null</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">Assert</span><span class="o">.</span><span class="na">assertEquals</span><span class="o">(</span><span class="mi">5</span><span class="o">,</span> <span class="n">list</span><span class="o">.</span><span class="na">size</span><span class="o">());</span>
+</span></span><span class="line"><span class="cl">        <span class="n">list</span><span class="o">.</span><span class="na">forEach</span><span class="o">(</span><span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">::</span><span class="n">println</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>测试结果</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-sh" data-lang="sh"><span class="line"><span class="cl"><span class="o">==</span>&gt;  Preparing: SELECT id,name,age,email,manager_id,create_time FROM <span class="nv">user</span>
+</span></span><span class="line"><span class="cl"><span class="o">==</span>&gt; Parameters: 
+</span></span><span class="line"><span class="cl">&lt;<span class="o">==</span>    Columns: id, name, age, email, manager_id, create_time
+</span></span><span class="line"><span class="cl">&lt;<span class="o">==</span>        Row: 1, 大BOSS, 40, boss@baomidou.com, null, 2021-03-22 09:48:00
+</span></span><span class="line"><span class="cl">&lt;<span class="o">==</span>        Row: 2, 李经理, 40, boss@baomidou.com, 1, 2021-01-22 09:48:00
+</span></span><span class="line"><span class="cl">&lt;<span class="o">==</span>        Row: 3, 黄主管, 40, boss@baomidou.com, 2, 2021-01-22 09:48:00
+</span></span><span class="line"><span class="cl">&lt;<span class="o">==</span>        Row: 4, 吴组长, 40, boss@baomidou.com, 2, 2021-02-22 09:48:00
+</span></span><span class="line"><span class="cl">&lt;<span class="o">==</span>        Row: 5, 小菜, 40, boss@baomidou.com, 2, 2021-02-22 09:48:00
+</span></span><span class="line"><span class="cl">&lt;<span class="o">==</span>      Total: <span class="m">5</span>
+</span></span><span class="line"><span class="cl">Closing non transactional SqlSession <span class="o">[</span>org.apache.ibatis.session.defaults.DefaultSqlSession@4cbc2e3b<span class="o">]</span>
+</span></span><span class="line"><span class="cl">User<span class="o">(</span><span class="nv">id</span><span class="o">=</span>1, <span class="nv">name</span><span class="o">=</span>大BOSS, <span class="nv">age</span><span class="o">=</span>40, <span class="nv">email</span><span class="o">=</span>boss@baomidou.com, <span class="nv">managerId</span><span class="o">=</span>null, <span class="nv">createTime</span><span class="o">=</span>Mon Mar <span class="m">22</span> 09:48:00 CST 2021<span class="o">)</span>
+</span></span><span class="line"><span class="cl">User<span class="o">(</span><span class="nv">id</span><span class="o">=</span>2, <span class="nv">name</span><span class="o">=</span>李经理, <span class="nv">age</span><span class="o">=</span>40, <span class="nv">email</span><span class="o">=</span>boss@baomidou.com, <span class="nv">managerId</span><span class="o">=</span>1, <span class="nv">createTime</span><span class="o">=</span>Fri Jan <span class="m">22</span> 09:48:00 CST 2021<span class="o">)</span>
+</span></span><span class="line"><span class="cl">User<span class="o">(</span><span class="nv">id</span><span class="o">=</span>3, <span class="nv">name</span><span class="o">=</span>黄主管, <span class="nv">age</span><span class="o">=</span>40, <span class="nv">email</span><span class="o">=</span>boss@baomidou.com, <span class="nv">managerId</span><span class="o">=</span>2, <span class="nv">createTime</span><span class="o">=</span>Fri Jan <span class="m">22</span> 09:48:00 CST 2021<span class="o">)</span>
+</span></span><span class="line"><span class="cl">User<span class="o">(</span><span class="nv">id</span><span class="o">=</span>4, <span class="nv">name</span><span class="o">=</span>吴组长, <span class="nv">age</span><span class="o">=</span>40, <span class="nv">email</span><span class="o">=</span>boss@baomidou.com, <span class="nv">managerId</span><span class="o">=</span>2, <span class="nv">createTime</span><span class="o">=</span>Mon Feb <span class="m">22</span> 09:48:00 CST 2021<span class="o">)</span>
+</span></span><span class="line"><span class="cl">User<span class="o">(</span><span class="nv">id</span><span class="o">=</span>5, <span class="nv">name</span><span class="o">=</span>小菜, <span class="nv">age</span><span class="o">=</span>40, <span class="nv">email</span><span class="o">=</span>boss@baomidou.com, <span class="nv">managerId</span><span class="o">=</span>2, <span class="nv">createTime</span><span class="o">=</span>Mon Feb <span class="m">22</span> 09:48:00 CST 2021<span class="o">)</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="注解">注解</h2>
+<h3 id="tablename">@TableName</h3>
+<ul>
+<li>描述：表名注解，标识实体类对应的表</li>
+<li>使用位置：实体类</li>
+</ul>
+<h3 id="tableid">@TableId</h3>
+<ul>
+<li>描述：主键注解</li>
+<li>使用位置：实体类主键字段</li>
+</ul>
+<h3 id="tablefield">@TableField</h3>
+<ul>
+<li>描述：字段注解（非主键）</li>
+</ul>
+<h2 id="mapper-crud-接口">Mapper CRUD 接口</h2>
+<p>说明:</p>
+<ul>
+<li>通用 CRUD 封装 BaseMapper 接口，为 <code>Mybatis-Plus</code> 启动时自动解析实体表关系映射转换为 <code>Mybatis</code> 内部对象注入容器</li>
+<li>泛型 <code>T</code> 为任意实体对象</li>
+<li>参数 <code>Serializable</code> 为任意类型主键 <code>Mybatis-Plus</code> 不推荐使用复合主键约定每一张表都有自己的唯一 <code>id</code> 主键</li>
+<li>对象 <code>Wrapper</code> 为 条件构造器</li>
+</ul>
+<h3 id="insert">Insert</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// 插入一条记录
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="nf">insert</span><span class="o">(</span><span class="n">T</span> <span class="n">entity</span><span class="o">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><table>
+<thead>
+<tr>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">参数名</th>
+<th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">entity</td>
+<td style="text-align:center">实体对象</td>
+</tr>
+</tbody>
+</table>
+<h3 id="delete">Delete</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span><span class="lnt">7
+</span><span class="lnt">8
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// 根据 entity 条件，删除记录
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="nf">delete</span><span class="o">(</span><span class="nd">@Param</span><span class="o">(</span><span class="n">Constants</span><span class="o">.</span><span class="na">WRAPPER</span><span class="o">)</span> <span class="n">Wrapper</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">wrapper</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 删除（根据ID 批量删除）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="nf">deleteBatchIds</span><span class="o">(</span><span class="nd">@Param</span><span class="o">(</span><span class="n">Constants</span><span class="o">.</span><span class="na">COLLECTION</span><span class="o">)</span> <span class="n">Collection</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">Serializable</span><span class="o">&gt;</span> <span class="n">idList</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 根据 ID 删除
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="nf">deleteById</span><span class="o">(</span><span class="n">Serializable</span> <span class="n">id</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 根据 columnMap 条件，删除记录
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="nf">deleteByMap</span><span class="o">(</span><span class="nd">@Param</span><span class="o">(</span><span class="n">Constants</span><span class="o">.</span><span class="na">COLUMN_MAP</span><span class="o">)</span> <span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">columnMap</span><span class="o">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><table>
+<thead>
+<tr>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">参数名</th>
+<th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Wrapper&lt;T&gt;</td>
+<td style="text-align:center">wrapper</td>
+<td style="text-align:center">实体对象封装操作类（可以为 null）</td>
+</tr>
+<tr>
+<td style="text-align:center">Collection&lt;? extends Serializable&gt;</td>
+<td style="text-align:center">idList</td>
+<td style="text-align:center">主键 ID 列表(不能为 null 以及 empty)</td>
+</tr>
+<tr>
+<td style="text-align:center">Serializable</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">主键 ID</td>
+</tr>
+<tr>
+<td style="text-align:center">Map&lt;String, Object&gt;</td>
+<td style="text-align:center">columnMap</td>
+<td style="text-align:center">表字段 map 对象</td>
+</tr>
+</tbody>
+</table>
+<h3 id="update">Update</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// 根据 whereWrapper 条件，更新记录
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="nf">update</span><span class="o">(</span><span class="nd">@Param</span><span class="o">(</span><span class="n">Constants</span><span class="o">.</span><span class="na">ENTITY</span><span class="o">)</span> <span class="n">T</span> <span class="n">updateEntity</span><span class="o">,</span> <span class="nd">@Param</span><span class="o">(</span><span class="n">Constants</span><span class="o">.</span><span class="na">WRAPPER</span><span class="o">)</span> <span class="n">Wrapper</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">whereWrapper</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 根据 ID 修改
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="kt">int</span> <span class="nf">updateById</span><span class="o">(</span><span class="nd">@Param</span><span class="o">(</span><span class="n">Constants</span><span class="o">.</span><span class="na">ENTITY</span><span class="o">)</span> <span class="n">T</span> <span class="n">entity</span><span class="o">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><table>
+<thead>
+<tr>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">参数名</th>
+<th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">T</td>
+<td style="text-align:center">entity</td>
+<td style="text-align:center">实体对象 (set 条件值,可为 null)</td>
+</tr>
+<tr>
+<td style="text-align:center">Wrapper&lt;T&gt;</td>
+<td style="text-align:center">updateWrapper</td>
+<td style="text-align:center">实体对象封装操作类（可以为 null,里面的 entity 用于生成 where 语句）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="select">Select</h3>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span><span class="lnt">19
+</span><span class="lnt">20
+</span><span class="lnt">21
+</span><span class="lnt">22
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="c1">// 根据 ID 查询
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">T</span> <span class="nf">selectById</span><span class="o">(</span><span class="n">Serializable</span> <span class="n">id</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 根据 entity 条件，查询一条记录
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">T</span> <span class="nf">selectOne</span><span class="o">(</span><span class="nd">@Param</span><span class="o">(</span><span class="n">Constants</span><span class="o">.</span><span class="na">WRAPPER</span><span class="o">)</span> <span class="n">Wrapper</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">queryWrapper</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 查询（根据ID 批量查询）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">List</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="nf">selectBatchIds</span><span class="o">(</span><span class="nd">@Param</span><span class="o">(</span><span class="n">Constants</span><span class="o">.</span><span class="na">COLLECTION</span><span class="o">)</span> <span class="n">Collection</span><span class="o">&lt;?</span> <span class="kd">extends</span> <span class="n">Serializable</span><span class="o">&gt;</span> <span class="n">idList</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 根据 entity 条件，查询全部记录
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">List</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="nf">selectList</span><span class="o">(</span><span class="nd">@Param</span><span class="o">(</span><span class="n">Constants</span><span class="o">.</span><span class="na">WRAPPER</span><span class="o">)</span> <span class="n">Wrapper</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">queryWrapper</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 查询（根据 columnMap 条件）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">List</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="nf">selectByMap</span><span class="o">(</span><span class="nd">@Param</span><span class="o">(</span><span class="n">Constants</span><span class="o">.</span><span class="na">COLUMN_MAP</span><span class="o">)</span> <span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;</span> <span class="n">columnMap</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 根据 Wrapper 条件，查询全部记录
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">List</span><span class="o">&lt;</span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;&gt;</span> <span class="nf">selectMaps</span><span class="o">(</span><span class="nd">@Param</span><span class="o">(</span><span class="n">Constants</span><span class="o">.</span><span class="na">WRAPPER</span><span class="o">)</span> <span class="n">Wrapper</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">queryWrapper</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 根据 Wrapper 条件，查询全部记录。注意： 只返回第一个字段的值
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">List</span><span class="o">&lt;</span><span class="n">Object</span><span class="o">&gt;</span> <span class="nf">selectObjs</span><span class="o">(</span><span class="nd">@Param</span><span class="o">(</span><span class="n">Constants</span><span class="o">.</span><span class="na">WRAPPER</span><span class="o">)</span> <span class="n">Wrapper</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">queryWrapper</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="c1">// 根据 entity 条件，查询全部记录（并翻页）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">IPage</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="nf">selectPage</span><span class="o">(</span><span class="n">IPage</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">page</span><span class="o">,</span> <span class="nd">@Param</span><span class="o">(</span><span class="n">Constants</span><span class="o">.</span><span class="na">WRAPPER</span><span class="o">)</span> <span class="n">Wrapper</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">queryWrapper</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 根据 Wrapper 条件，查询全部记录（并翻页）
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">IPage</span><span class="o">&lt;</span><span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Object</span><span class="o">&gt;&gt;</span> <span class="nf">selectMapsPage</span><span class="o">(</span><span class="n">IPage</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">page</span><span class="o">,</span> <span class="nd">@Param</span><span class="o">(</span><span class="n">Constants</span><span class="o">.</span><span class="na">WRAPPER</span><span class="o">)</span> <span class="n">Wrapper</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">queryWrapper</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl"><span class="c1">// 根据 Wrapper 条件，查询总记录数
+</span></span></span><span class="line"><span class="cl"><span class="c1"></span><span class="n">Integer</span> <span class="nf">selectCount</span><span class="o">(</span><span class="nd">@Param</span><span class="o">(</span><span class="n">Constants</span><span class="o">.</span><span class="na">WRAPPER</span><span class="o">)</span> <span class="n">Wrapper</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span> <span class="n">queryWrapper</span><span class="o">);</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><table>
+<thead>
+<tr>
+<th style="text-align:center">类型</th>
+<th style="text-align:center">参数名</th>
+<th style="text-align:center">描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">Serializable</td>
+<td style="text-align:center">id</td>
+<td style="text-align:center">主键 ID</td>
+</tr>
+<tr>
+<td style="text-align:center">Wrapper&lt;T&gt;</td>
+<td style="text-align:center">queryWrapper</td>
+<td style="text-align:center">实体对象封装操作类（可以为 null）</td>
+</tr>
+<tr>
+<td style="text-align:center">Collection&lt;? extends Serializable&gt;</td>
+<td style="text-align:center">idList</td>
+<td style="text-align:center">主键 ID 列表(不能为 null 以及 empty)</td>
+</tr>
+<tr>
+<td style="text-align:center">Map&lt;String, Object&gt;</td>
+<td style="text-align:center">columnMap</td>
+<td style="text-align:center">表字段 map 对象</td>
+</tr>
+<tr>
+<td style="text-align:center">IPage&lt;T&gt;</td>
+<td style="text-align:center">page</td>
+<td style="text-align:center">分页查询条件（可以为 RowBounds.DEFAULT）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="逻辑删除">逻辑删除</h2>
+<h3 id="说明">说明</h3>
+<p>只对自动注入的 sql 起效：</p>
+<ul>
+<li>插入：不作限制</li>
+<li>查找：追加 where 条件过滤掉已删除数据,如果使用 wrapper.entity 生成的 where 条件也会自动追加该字段</li>
+<li>更新：追加 where 条件防止更新到已删除数据,如果使用 wrapper.entity 生成的 where 条件也会自动追加该字段</li>
+<li>删除：转变为 更新</li>
+</ul>
+<p>例如：</p>
+<ul>
+<li>删除：<code>update user set deleted=1 where id = 1 and deleted=0</code></li>
+<li>查找：<code>select id,name,deleted from user where deleted=0</code></li>
+</ul>
+<p>字段类型支持说明：</p>
+<ul>
+<li>支持所有数据类型(推荐使用 <code>Integer</code>,<code>Boolean</code>,<code>LocalDateTime</code>)</li>
+<li>如果数据库字段使用<code>datetime</code>,逻辑未删除值和已删除值支持配置为字符串<code>null</code>,另一个值支持配置为函数来获取值如<code>now()</code></li>
+</ul>
+<p>附录：</p>
+<ul>
+<li>逻辑删除是为了方便数据恢复和保护数据本身价值等等的一种方案，但实际就是删除。</li>
+<li>如果你需要频繁查出来看就不应使用逻辑删除，而是以一个状态去表示。</li>
+</ul>
+<h3 id="使用方法">使用方法</h3>
+<p>1、配置 <code>application.yaml</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span><span class="lnt">4
+</span><span class="lnt">5
+</span><span class="lnt">6
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-yaml" data-lang="yaml"><span class="line"><span class="cl"><span class="nt">mybatis-plus</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">  </span><span class="nt">global-config</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">    </span><span class="nt">db-config</span><span class="p">:</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">logic-delete-field</span><span class="p">:</span><span class="w"> </span><span class="l">flag</span><span class="w"> </span><span class="c"># 全局逻辑删除的实体字段名(since 3.3.0,配置后可以忽略不配置步骤2)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">logic-delete-value</span><span class="p">:</span><span class="w"> </span><span class="m">1</span><span class="w"> </span><span class="c"># 逻辑已删除值(默认为 1)</span><span class="w">
+</span></span></span><span class="line"><span class="cl"><span class="w">      </span><span class="nt">logic-not-delete-value</span><span class="p">:</span><span class="w"> </span><span class="m">0</span><span class="w"> </span><span class="c"># 逻辑未删除值(默认为 0)</span><span class="w">
+</span></span></span></code></pre></td></tr></table>
+</div>
+</div><p>2、实体类字段上加上<code>@TableLogic</code>注解</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@TableLogic</span>
+</span></span><span class="line"><span class="cl"><span class="kd">private</span> <span class="n">Integer</span> <span class="n">deleted</span><span class="o">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>前面在 <code>application.yaml</code> 中的配置是全局的。通常来说，对于多个表，我们也会统一逻辑删除字段的名称，统一逻辑已删除和未删除的值，所以全局配置即可。当然，若要对某些表进行单独配置，在实体类的对应字段上使用<code>@TableLogic</code>即可。</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@TableLogic</span><span class="o">(</span><span class="n">value</span> <span class="o">=</span> <span class="s">&#34;0&#34;</span><span class="o">,</span> <span class="n">delval</span> <span class="o">=</span> <span class="s">&#34;1&#34;</span><span class="o">)</span>
+</span></span><span class="line"><span class="cl"><span class="kd">private</span> <span class="n">Integer</span> <span class="n">deleted</span><span class="o">;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h3 id="常见问题">常见问题</h3>
+<p><strong>如何 insert ?</strong></p>
+<ol>
+<li>字段在数据库定义默认值(推荐)</li>
+<li>insert 前自己 set 值</li>
+<li>使用 <a href="https://baomidou.com/pages/4c6bcf/">自动填充功能</a></li>
+</ol>
+<p><strong>删除接口自动填充功能失效</strong></p>
+<ol>
+<li>使用 <code>deleteById</code> 方法(推荐)</li>
+<li>使用 <code>update</code> 方法并: <code>UpdateWrapper.set(column, value)</code>(推荐)</li>
+<li>使用 <code>update</code> 方法并: <code>UpdateWrapper.setSql(&quot;column=value&quot;)</code></li>
+<li>使用 <a href="https://baomidou.com/pages/42ea4a/">Sql 注入器</a> 注入 <code>com.baomidou.mybatisplus.extension.injector.methods.LogicDeleteByIdWithFill</code> 并使用(3.5.0版本已废弃，推荐使用deleteById)</li>
+</ol>
+<h2 id="参考">参考</h2>
+<p><a href="https://baomidou.com/">https://baomidou.com/</a></p>
+<p><a href="https://juejin.cn/post/6961721367846715428">https://juejin.cn/post/6961721367846715428</a></p>
+    </div>
+
+    
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/mybatis/">MyBatis</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/docker/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">Docker 使用小记</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/interface-idempotence/">
+            <span class="next-text nav-default">接口幂等性保证方案</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:yaxingfang@163.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://scholar.google.com.hk/citations?user=9DPge4wAAAAJ&amp;hl=zh-CN&amp;oi=sra" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/yaxingfang" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.zhihu.com/people/fang-ya-xing-22" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="https://yaxing97.com" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://yaxing97.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2022 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>Yaxing</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-FD6WJ02QTG', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script id="baidu_analytics">
+  var _hmt = _hmt || [];
+  (function() {
+    if (window.location.hostname === 'localhost') return;
+    var hm = document.createElement("script"); hm.async = true;
+    hm.src = "https://hm.baidu.com/hm.js?2037c3637df2058f01d810ede4492aec";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+
+
+
+
+
+</body>
+</html>

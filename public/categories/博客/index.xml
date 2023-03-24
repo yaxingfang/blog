@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>博客 on Yaxing&#39;s Blog</title>
+    <link>https://yaxing97.com/categories/%E5%8D%9A%E5%AE%A2/</link>
+    <description>Recent content in 博客 on Yaxing&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 23 Mar 2023 10:49:01 +0800</lastBuildDate><atom:link href="https://yaxing97.com/categories/%E5%8D%9A%E5%AE%A2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>博客从hexo迁移到hugo</title>
+      <link>https://yaxing97.com/hero-to-hugo/</link>
+      <pubDate>Thu, 23 Mar 2023 10:49:01 +0800</pubDate>
+      
+      <guid>https://yaxing97.com/hero-to-hugo/</guid>
+      <description>&lt;p&gt;为啥要换博客框架呢？闲的，哈哈哈😶。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>手把手带你搭建个人博客</title>
+      <link>https://yaxing97.com/build-blog/</link>
+      <pubDate>Mon, 12 Dec 2022 21:08:31 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/build-blog/</guid>
+      <description>&lt;h2 id=&#34;系统环境工具&#34;&gt;系统环境&amp;amp;工具&lt;/h2&gt;
+&lt;p&gt;系统环境：MacOS&lt;/p&gt;
+&lt;p&gt;工具：博客框架为 hexo，博客文件托管于 GitHub，博客网站用 Netlify 生成，国内访问采用 CloudFlare 进行 CDN 加速&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

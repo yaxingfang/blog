@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Yaxing&#39;s Blog</title>
+    <link>https://yaxing97.com/tags/</link>
+    <description>Recent content in Tags on Yaxing&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 23 Mar 2023 10:49:01 +0800</lastBuildDate><atom:link href="https://yaxing97.com/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>hexo</title>
+      <link>https://yaxing97.com/tags/hexo/</link>
+      <pubDate>Thu, 23 Mar 2023 10:49:01 +0800</pubDate>
+      
+      <guid>https://yaxing97.com/tags/hexo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>hugo</title>
+      <link>https://yaxing97.com/tags/hugo/</link>
+      <pubDate>Thu, 23 Mar 2023 10:49:01 +0800</pubDate>
+      
+      <guid>https://yaxing97.com/tags/hugo/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>读研</title>
+      <link>https://yaxing97.com/tags/%E8%AF%BB%E7%A0%94/</link>
+      <pubDate>Mon, 20 Mar 2023 10:57:45 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/tags/%E8%AF%BB%E7%A0%94/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Docker</title>
+      <link>https://yaxing97.com/tags/docker/</link>
+      <pubDate>Wed, 15 Mar 2023 10:07:56 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/tags/docker/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MyBatis</title>
+      <link>https://yaxing97.com/tags/mybatis/</link>
+      <pubDate>Mon, 27 Feb 2023 16:08:48 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/tags/mybatis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>幂等</title>
+      <link>https://yaxing97.com/tags/%E5%B9%82%E7%AD%89/</link>
+      <pubDate>Thu, 23 Feb 2023 13:38:06 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/tags/%E5%B9%82%E7%AD%89/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Linux</title>
+      <link>https://yaxing97.com/tags/linux/</link>
+      <pubDate>Sun, 19 Feb 2023 12:02:02 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/tags/linux/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java8 新特性</title>
+      <link>https://yaxing97.com/tags/java8-%E6%96%B0%E7%89%B9%E6%80%A7/</link>
+      <pubDate>Sun, 19 Feb 2023 10:23:24 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/tags/java8-%E6%96%B0%E7%89%B9%E6%80%A7/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Maven</title>
+      <link>https://yaxing97.com/tags/maven/</link>
+      <pubDate>Sun, 19 Feb 2023 10:21:34 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/tags/maven/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>MySQL</title>
+      <link>https://yaxing97.com/tags/mysql/</link>
+      <pubDate>Thu, 16 Feb 2023 13:52:29 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/tags/mysql/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Anaconda</title>
+      <link>https://yaxing97.com/tags/anaconda/</link>
+      <pubDate>Wed, 15 Feb 2023 17:48:25 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/tags/anaconda/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SpringBoot</title>
+      <link>https://yaxing97.com/tags/springboot/</link>
+      <pubDate>Tue, 14 Feb 2023 09:26:51 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/tags/springboot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>单元测试</title>
+      <link>https://yaxing97.com/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</link>
+      <pubDate>Tue, 14 Feb 2023 09:26:51 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/tags/%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Swagger</title>
+      <link>https://yaxing97.com/tags/swagger/</link>
+      <pubDate>Tue, 14 Feb 2023 09:26:39 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/tags/swagger/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>热部署</title>
+      <link>https://yaxing97.com/tags/%E7%83%AD%E9%83%A8%E7%BD%B2/</link>
+      <pubDate>Tue, 14 Feb 2023 09:26:06 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/tags/%E7%83%AD%E9%83%A8%E7%BD%B2/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>日志</title>
+      <link>https://yaxing97.com/tags/%E6%97%A5%E5%BF%97/</link>
+      <pubDate>Mon, 13 Feb 2023 15:09:20 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/tags/%E6%97%A5%E5%BF%97/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lombok</title>
+      <link>https://yaxing97.com/tags/lombok/</link>
+      <pubDate>Mon, 13 Feb 2023 15:09:10 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/tags/lombok/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Git</title>
+      <link>https://yaxing97.com/tags/git/</link>
+      <pubDate>Sat, 11 Feb 2023 17:50:38 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/tags/git/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>体制内</title>
+      <link>https://yaxing97.com/tags/%E4%BD%93%E5%88%B6%E5%86%85/</link>
+      <pubDate>Sun, 05 Feb 2023 10:35:33 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/tags/%E4%BD%93%E5%88%B6%E5%86%85/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>计算机网络</title>
+      <link>https://yaxing97.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</link>
+      <pubDate>Wed, 25 Jan 2023 13:44:16 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/tags/%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Redis</title>
+      <link>https://yaxing97.com/tags/redis/</link>
+      <pubDate>Wed, 25 Jan 2023 13:43:59 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/tags/redis/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>SpringMVC</title>
+      <link>https://yaxing97.com/tags/springmvc/</link>
+      <pubDate>Mon, 23 Jan 2023 16:14:20 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/tags/springmvc/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Spring</title>
+      <link>https://yaxing97.com/tags/spring/</link>
+      <pubDate>Mon, 23 Jan 2023 16:14:06 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/tags/spring/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>省考</title>
+      <link>https://yaxing97.com/tags/%E7%9C%81%E8%80%83/</link>
+      <pubDate>Sun, 18 Dec 2022 11:49:32 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/tags/%E7%9C%81%E8%80%83/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>SpringMVC on Yaxing&#39;s Blog</title>
+    <link>https://yaxing97.com/tags/springmvc/</link>
+    <description>Recent content in SpringMVC on Yaxing&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 23 Jan 2023 16:14:20 +0000</lastBuildDate><atom:link href="https://yaxing97.com/tags/springmvc/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Java八股文 - SpringMVC</title>
+      <link>https://yaxing97.com/java-springmvc/</link>
+      <pubDate>Mon, 23 Jan 2023 16:14:20 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/java-springmvc/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;整理的SpringMVC相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

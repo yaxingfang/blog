@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Logback &#43; Slf4j 使用小记 - Yaxing&#39;s Blog</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="Yaxing" /><meta name="description" content="本文对 Logback &#43; Slf4j 的配置和使用做简单小记。
+" /><meta name="keywords" content="Java, 日记, 思考, 总结" />
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.108.0 with theme even" />
+
+
+<link rel="canonical" href="https://yaxing97.com/Logback-Slf4j/" />
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+<link href="/sass/main.min.f92fd13721ddf72129410fd8250e73152cc6f2438082b6c0208dc24ee7c13fc4.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.css" integrity="sha256-7TyXnr2YU040zfSP+rEcz29ggW4j56/ujTPwjMzyqFY=" crossorigin="anonymous">
+
+
+<meta property="og:title" content="Logback &#43; Slf4j 使用小记" />
+<meta property="og:description" content="本文对 Logback &#43; Slf4j 的配置和使用做简单小记。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://yaxing97.com/Logback-Slf4j/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2023-02-13T15:09:20+00:00" />
+<meta property="article:modified_time" content="2023-02-13T15:09:20+00:00" />
+<meta itemprop="name" content="Logback &#43; Slf4j 使用小记">
+<meta itemprop="description" content="本文对 Logback &#43; Slf4j 的配置和使用做简单小记。"><meta itemprop="datePublished" content="2023-02-13T15:09:20+00:00" />
+<meta itemprop="dateModified" content="2023-02-13T15:09:20+00:00" />
+<meta itemprop="wordCount" content="1623">
+<meta itemprop="keywords" content="日志," /><meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Logback &#43; Slf4j 使用小记"/>
+<meta name="twitter:description" content="本文对 Logback &#43; Slf4j 的配置和使用做简单小记。"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Yaxing&#39;s Blog</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">Home</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">Archives</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">Tags</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">Categories</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">About</li>
+      </a>
+  </ul>
+
+  
+
+
+</nav>
+
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Yaxing&#39;s Blog</a>
+</div>
+
+
+
+
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">Home</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">Archives</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">Tags</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">Categories</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">About</a>
+      </li>
+  </ul>
+</nav>
+
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">Logback &#43; Slf4j 使用小记</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2023-02-13 </span>
+        <div class="post-category">
+            <a href="/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/"> 技术总结 </a>
+            </div>
+          <span class="more-meta"> 约 1623 字 </span>
+          <span class="more-meta"> 预计阅读 4 分钟 </span>
+        <span id="busuanzi_container_page_pv" class="more-meta"> <span id="busuanzi_value_page_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次阅读 </span>
+      </div>
+    </header>
+
+    
+    <div class="post-content">
+      <p>本文对 Logback + Slf4j 的配置和使用做简单小记。</p>
+<h2 id="简介">简介</h2>
+<p>Logback + Slf4j 是主流的日志框架 + 日志门面的使用组合。</p>
+<h2 id="配置">配置</h2>
+<p>1、导入依赖</p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span><span class="lnt">12
+</span><span class="lnt">13
+</span><span class="lnt">14
+</span><span class="lnt">15
+</span><span class="lnt">16
+</span><span class="lnt">17
+</span><span class="lnt">18
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="c">&lt;!-- https://mvnrepository.com/artifact/ch.qos.logback/logback-classic --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;groupId&gt;</span>ch.qos.logback<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;artifactId&gt;</span>logback-classic<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;version&gt;</span>1.2.3<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/dependency&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;groupId&gt;</span>org.projectlombok<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;artifactId&gt;</span>lombok<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;version&gt;</span>1.18.22<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/dependency&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;dependency&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;groupId&gt;</span>junit<span class="nt">&lt;/groupId&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;artifactId&gt;</span>junit<span class="nt">&lt;/artifactId&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;version&gt;</span>4.12<span class="nt">&lt;/version&gt;</span>
+</span></span><span class="line"><span class="cl">  <span class="nt">&lt;scope&gt;</span>test<span class="nt">&lt;/scope&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/dependency&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><p>2、配置 <code>logback.xml</code></p>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">  1
+</span><span class="lnt">  2
+</span><span class="lnt">  3
+</span><span class="lnt">  4
+</span><span class="lnt">  5
+</span><span class="lnt">  6
+</span><span class="lnt">  7
+</span><span class="lnt">  8
+</span><span class="lnt">  9
+</span><span class="lnt"> 10
+</span><span class="lnt"> 11
+</span><span class="lnt"> 12
+</span><span class="lnt"> 13
+</span><span class="lnt"> 14
+</span><span class="lnt"> 15
+</span><span class="lnt"> 16
+</span><span class="lnt"> 17
+</span><span class="lnt"> 18
+</span><span class="lnt"> 19
+</span><span class="lnt"> 20
+</span><span class="lnt"> 21
+</span><span class="lnt"> 22
+</span><span class="lnt"> 23
+</span><span class="lnt"> 24
+</span><span class="lnt"> 25
+</span><span class="lnt"> 26
+</span><span class="lnt"> 27
+</span><span class="lnt"> 28
+</span><span class="lnt"> 29
+</span><span class="lnt"> 30
+</span><span class="lnt"> 31
+</span><span class="lnt"> 32
+</span><span class="lnt"> 33
+</span><span class="lnt"> 34
+</span><span class="lnt"> 35
+</span><span class="lnt"> 36
+</span><span class="lnt"> 37
+</span><span class="lnt"> 38
+</span><span class="lnt"> 39
+</span><span class="lnt"> 40
+</span><span class="lnt"> 41
+</span><span class="lnt"> 42
+</span><span class="lnt"> 43
+</span><span class="lnt"> 44
+</span><span class="lnt"> 45
+</span><span class="lnt"> 46
+</span><span class="lnt"> 47
+</span><span class="lnt"> 48
+</span><span class="lnt"> 49
+</span><span class="lnt"> 50
+</span><span class="lnt"> 51
+</span><span class="lnt"> 52
+</span><span class="lnt"> 53
+</span><span class="lnt"> 54
+</span><span class="lnt"> 55
+</span><span class="lnt"> 56
+</span><span class="lnt"> 57
+</span><span class="lnt"> 58
+</span><span class="lnt"> 59
+</span><span class="lnt"> 60
+</span><span class="lnt"> 61
+</span><span class="lnt"> 62
+</span><span class="lnt"> 63
+</span><span class="lnt"> 64
+</span><span class="lnt"> 65
+</span><span class="lnt"> 66
+</span><span class="lnt"> 67
+</span><span class="lnt"> 68
+</span><span class="lnt"> 69
+</span><span class="lnt"> 70
+</span><span class="lnt"> 71
+</span><span class="lnt"> 72
+</span><span class="lnt"> 73
+</span><span class="lnt"> 74
+</span><span class="lnt"> 75
+</span><span class="lnt"> 76
+</span><span class="lnt"> 77
+</span><span class="lnt"> 78
+</span><span class="lnt"> 79
+</span><span class="lnt"> 80
+</span><span class="lnt"> 81
+</span><span class="lnt"> 82
+</span><span class="lnt"> 83
+</span><span class="lnt"> 84
+</span><span class="lnt"> 85
+</span><span class="lnt"> 86
+</span><span class="lnt"> 87
+</span><span class="lnt"> 88
+</span><span class="lnt"> 89
+</span><span class="lnt"> 90
+</span><span class="lnt"> 91
+</span><span class="lnt"> 92
+</span><span class="lnt"> 93
+</span><span class="lnt"> 94
+</span><span class="lnt"> 95
+</span><span class="lnt"> 96
+</span><span class="lnt"> 97
+</span><span class="lnt"> 98
+</span><span class="lnt"> 99
+</span><span class="lnt">100
+</span><span class="lnt">101
+</span><span class="lnt">102
+</span><span class="lnt">103
+</span><span class="lnt">104
+</span><span class="lnt">105
+</span><span class="lnt">106
+</span><span class="lnt">107
+</span><span class="lnt">108
+</span><span class="lnt">109
+</span><span class="lnt">110
+</span><span class="lnt">111
+</span><span class="lnt">112
+</span><span class="lnt">113
+</span><span class="lnt">114
+</span><span class="lnt">115
+</span><span class="lnt">116
+</span><span class="lnt">117
+</span><span class="lnt">118
+</span><span class="lnt">119
+</span><span class="lnt">120
+</span><span class="lnt">121
+</span><span class="lnt">122
+</span><span class="lnt">123
+</span><span class="lnt">124
+</span><span class="lnt">125
+</span><span class="lnt">126
+</span><span class="lnt">127
+</span><span class="lnt">128
+</span><span class="lnt">129
+</span><span class="lnt">130
+</span><span class="lnt">131
+</span><span class="lnt">132
+</span><span class="lnt">133
+</span><span class="lnt">134
+</span><span class="lnt">135
+</span><span class="lnt">136
+</span><span class="lnt">137
+</span><span class="lnt">138
+</span><span class="lnt">139
+</span><span class="lnt">140
+</span><span class="lnt">141
+</span><span class="lnt">142
+</span><span class="lnt">143
+</span><span class="lnt">144
+</span><span class="lnt">145
+</span><span class="lnt">146
+</span><span class="lnt">147
+</span><span class="lnt">148
+</span><span class="lnt">149
+</span><span class="lnt">150
+</span><span class="lnt">151
+</span><span class="lnt">152
+</span><span class="lnt">153
+</span><span class="lnt">154
+</span><span class="lnt">155
+</span><span class="lnt">156
+</span><span class="lnt">157
+</span><span class="lnt">158
+</span><span class="lnt">159
+</span><span class="lnt">160
+</span><span class="lnt">161
+</span><span class="lnt">162
+</span><span class="lnt">163
+</span><span class="lnt">164
+</span><span class="lnt">165
+</span><span class="lnt">166
+</span><span class="lnt">167
+</span><span class="lnt">168
+</span><span class="lnt">169
+</span><span class="lnt">170
+</span><span class="lnt">171
+</span><span class="lnt">172
+</span><span class="lnt">173
+</span><span class="lnt">174
+</span><span class="lnt">175
+</span><span class="lnt">176
+</span><span class="lnt">177
+</span><span class="lnt">178
+</span><span class="lnt">179
+</span><span class="lnt">180
+</span><span class="lnt">181
+</span><span class="lnt">182
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-xml" data-lang="xml"><span class="line"><span class="cl"><span class="cp">&lt;?xml version=&#34;1.0&#34; encoding=&#34;UTF-8&#34;?&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- scan属性未true时，如果配置文档发生改变将会进行重新加载 --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- scanPeriod属性设置监测配置文件修改的时间间隔，默认单位为毫秒，在scan为true时才生效 --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="c">&lt;!-- debug属性如果为true时，会打印出logback内部的日志信息 --&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;configuration</span> <span class="na">scan=</span><span class="s">&#34;true&#34;</span> <span class="na">scanPeriod=</span><span class="s">&#34;60 seconds&#34;</span> <span class="na">debug=</span><span class="s">&#34;false&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- 定义参数常量 --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- 日志级别：TRACE&lt;DEBUG&lt;INFO&lt;WARN&lt;ERROR，其中常用的是DEBUG、INFO和ERROR --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;log.level&#34;</span> <span class="na">value=</span><span class="s">&#34;debug&#34;</span> <span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- 文件保留时间 --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;log.maxHistory&#34;</span> <span class="na">value=</span><span class="s">&#34;30&#34;</span> <span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- 日志存储路径 --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;log.filePath&#34;</span> <span class="na">value=</span><span class="s">&#34;./logs/&#34;</span> <span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- 日志的显示格式 --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;property</span> <span class="na">name=</span><span class="s">&#34;log.pattern&#34;</span>
+</span></span><span class="line"><span class="cl">              <span class="na">value=</span><span class="s">&#34;%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50}-%msg%n&#34;</span><span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- 用于说明输出介质，此处说明控制台输出 --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;appender</span> <span class="na">name=</span><span class="s">&#34;consoleAppender&#34;</span>
+</span></span><span class="line"><span class="cl">              <span class="na">class=</span><span class="s">&#34;ch.qos.logback.core.ConsoleAppender&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- 类似于layout，除了将时间转化为数组，还会将转换后的数组输出到相应的文件中 --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;encoder&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&lt;!-- 定义日志的输出格式 --&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;pattern&gt;</span>${log.pattern}<span class="nt">&lt;/pattern&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;/encoder&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/appender&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- 所有日志，表示文件随着时间的推移按时间生成日志文件 --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;appender</span> <span class="na">name=</span><span class="s">&#34;allLogAppender&#34;</span>
+</span></span><span class="line"><span class="cl">              <span class="na">class=</span><span class="s">&#34;ch.qos.logback.core.rolling.RollingFileAppender&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- 文件路径 --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;file&gt;</span>${log.filePath}/allLog.log<span class="nt">&lt;/file&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- 滚动策略 --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;rollingPolicy</span> <span class="na">class=</span><span class="s">&#34;ch.qos.logback.core.rolling.TimeBasedRollingPolicy&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&lt;!-- 设置文件名称 --&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;fileNamePattern&gt;</span>
+</span></span><span class="line"><span class="cl">                ${log.filePath}/all/allLog.%d{yyyy-MM-dd}.log
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;/fileNamePattern&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&lt;!-- 设置最大保存周期 --&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;MaxHistory&gt;</span>${log.maxHistory}<span class="nt">&lt;/MaxHistory&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;/rollingPolicy&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;encoder&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;pattern&gt;</span>${log.pattern}<span class="nt">&lt;/pattern&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;/encoder&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- &amp;lt;!&amp;ndash; 过滤器，过滤掉不是指定日志水平的日志 &amp;ndash;&amp;gt; --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- &lt;filter class=&#34;ch.qos.logback.classic.filter.LevelFilter&#34;&gt; --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!--     &amp;lt;!&amp;ndash; 设置日志级别 &amp;ndash;&amp;gt; --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!--     &lt;level&gt;DEBUG&lt;/level&gt; --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!--     &amp;lt;!&amp;ndash; 如果跟该日志水平相匹配，则接受 &amp;ndash;&amp;gt; --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!--     &lt;onMatch&gt;ACCEPT&lt;/onMatch&gt; --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!--     &amp;lt;!&amp;ndash; 如果跟该日志水平不匹配，则过滤掉 &amp;ndash;&amp;gt; --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!--     &lt;onMismatch&gt;DENY&lt;/onMismatch&gt; --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- &lt;/filter&gt; --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/appender&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- DEBUG，表示文件随着时间的推移按时间生成日志文件 --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;appender</span> <span class="na">name=</span><span class="s">&#34;debugAppender&#34;</span>
+</span></span><span class="line"><span class="cl">              <span class="na">class=</span><span class="s">&#34;ch.qos.logback.core.rolling.RollingFileAppender&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- 文件路径 --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;file&gt;</span>${log.filePath}/debug.log<span class="nt">&lt;/file&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- 滚动策略 --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;rollingPolicy</span> <span class="na">class=</span><span class="s">&#34;ch.qos.logback.core.rolling.TimeBasedRollingPolicy&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&lt;!-- 设置文件名称 --&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;fileNamePattern&gt;</span>
+</span></span><span class="line"><span class="cl">                ${log.filePath}/debug/debug.%d{yyyy-MM-dd}.log
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;/fileNamePattern&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&lt;!-- 设置最大保存周期 --&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;MaxHistory&gt;</span>${log.maxHistory}<span class="nt">&lt;/MaxHistory&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;/rollingPolicy&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;encoder&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;pattern&gt;</span>${log.pattern}<span class="nt">&lt;/pattern&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;/encoder&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- 过滤器，过滤掉不是指定日志水平的日志 --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;filter</span> <span class="na">class=</span><span class="s">&#34;ch.qos.logback.classic.filter.LevelFilter&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&lt;!-- 设置日志级别 --&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;level&gt;</span>DEBUG<span class="nt">&lt;/level&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&lt;!-- 如果跟该日志水平相匹配，则接受 --&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;onMatch&gt;</span>ACCEPT<span class="nt">&lt;/onMatch&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&lt;!-- 如果跟该日志水平不匹配，则过滤掉 --&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;onMismatch&gt;</span>DENY<span class="nt">&lt;/onMismatch&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;/filter&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/appender&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- INFO，表示文件随着时间的推移按时间生成日志文件 --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;appender</span> <span class="na">name=</span><span class="s">&#34;infoAppender&#34;</span>
+</span></span><span class="line"><span class="cl">              <span class="na">class=</span><span class="s">&#34;ch.qos.logback.core.rolling.RollingFileAppender&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- 文件路径 --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;file&gt;</span>${log.filePath}/info.log<span class="nt">&lt;/file&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- 滚动策略 --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;rollingPolicy</span> <span class="na">class=</span><span class="s">&#34;ch.qos.logback.core.rolling.TimeBasedRollingPolicy&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&lt;!-- 设置文件名称 --&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;fileNamePattern&gt;</span>
+</span></span><span class="line"><span class="cl">                ${log.filePath}/info/info.%d{yyyy-MM-dd}.log
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;/fileNamePattern&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&lt;!-- 设置最大保存周期 --&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;MaxHistory&gt;</span>${log.maxHistory}<span class="nt">&lt;/MaxHistory&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;/rollingPolicy&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;encoder&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;pattern&gt;</span>${log.pattern}<span class="nt">&lt;/pattern&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;/encoder&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- 过滤器，过滤掉不是指定日志水平的日志 --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;filter</span> <span class="na">class=</span><span class="s">&#34;ch.qos.logback.classic.filter.LevelFilter&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&lt;!-- 设置日志级别 --&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;level&gt;</span>INFO<span class="nt">&lt;/level&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&lt;!-- 如果跟该日志水平相匹配，则接受 --&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;onMatch&gt;</span>ACCEPT<span class="nt">&lt;/onMatch&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&lt;!-- 如果跟该日志水平不匹配，则过滤掉 --&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;onMismatch&gt;</span>DENY<span class="nt">&lt;/onMismatch&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;/filter&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/appender&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- WARN，表示文件随着时间的推移按时间生成日志文件 --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;appender</span> <span class="na">name=</span><span class="s">&#34;warnAppender&#34;</span>
+</span></span><span class="line"><span class="cl">              <span class="na">class=</span><span class="s">&#34;ch.qos.logback.core.rolling.RollingFileAppender&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- 文件路径 --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;file&gt;</span>${log.filePath}/warn.log<span class="nt">&lt;/file&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- 滚动策略 --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;rollingPolicy</span> <span class="na">class=</span><span class="s">&#34;ch.qos.logback.core.rolling.TimeBasedRollingPolicy&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&lt;!-- 设置文件名称 --&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;fileNamePattern&gt;</span>
+</span></span><span class="line"><span class="cl">                ${log.filePath}/warn/warn.%d{yyyy-MM-dd}.log
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;/fileNamePattern&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&lt;!-- 设置最大保存周期 --&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;MaxHistory&gt;</span>${log.maxHistory}<span class="nt">&lt;/MaxHistory&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;/rollingPolicy&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;encoder&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;pattern&gt;</span>${log.pattern}<span class="nt">&lt;/pattern&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;/encoder&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- 过滤器，过滤掉不是指定日志水平的日志 --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;filter</span> <span class="na">class=</span><span class="s">&#34;ch.qos.logback.classic.filter.LevelFilter&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&lt;!-- 设置日志级别 --&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;level&gt;</span>WARN<span class="nt">&lt;/level&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&lt;!-- 如果跟该日志水平相匹配，则接受 --&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;onMatch&gt;</span>ACCEPT<span class="nt">&lt;/onMatch&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&lt;!-- 如果跟该日志水平不匹配，则过滤掉 --&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;onMismatch&gt;</span>DENY<span class="nt">&lt;/onMismatch&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;/filter&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/appender&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- ERROR，表示文件随着时间的推移按时间生成日志文件 --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;appender</span> <span class="na">name=</span><span class="s">&#34;errorAppender&#34;</span>
+</span></span><span class="line"><span class="cl">              <span class="na">class=</span><span class="s">&#34;ch.qos.logback.core.rolling.RollingFileAppender&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- 文件路径 --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;file&gt;</span>${log.filePath}/error.log<span class="nt">&lt;/file&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- 滚动策略 --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;rollingPolicy</span> <span class="na">class=</span><span class="s">&#34;ch.qos.logback.core.rolling.TimeBasedRollingPolicy&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&lt;!-- 设置文件名称 --&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;fileNamePattern&gt;</span>
+</span></span><span class="line"><span class="cl">                ${log.filePath}/error/error.%d{yyyy-MM-dd}.log
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;/fileNamePattern&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&lt;!-- 设置最大保存周期 --&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;MaxHistory&gt;</span>${log.maxHistory}<span class="nt">&lt;/MaxHistory&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;/rollingPolicy&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;encoder&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;pattern&gt;</span>${log.pattern}<span class="nt">&lt;/pattern&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;/encoder&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- 过滤器，过滤掉不是指定日志水平的日志 --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;filter</span> <span class="na">class=</span><span class="s">&#34;ch.qos.logback.classic.filter.LevelFilter&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&lt;!-- 设置日志级别 --&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;level&gt;</span>ERROR<span class="nt">&lt;/level&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&lt;!-- 如果跟该日志水平相匹配，则接受 --&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;onMatch&gt;</span>ACCEPT<span class="nt">&lt;/onMatch&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="c">&lt;!-- 如果跟该日志水平不匹配，则过滤掉 --&gt;</span>
+</span></span><span class="line"><span class="cl">            <span class="nt">&lt;onMismatch&gt;</span>DENY<span class="nt">&lt;/onMismatch&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;/filter&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/appender&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- 用于存放日志对象，同时指定关联的package位置 --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- name指定关联的package --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- level表明指记录哪个日志级别以上的日志 --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- appender-ref指定logger向哪个文件输出日志信息 --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- additivity为true时，logger会把根logger的日志输出地址加入进来，但logger水平不依赖于根logger --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- &lt;logger name=&#34;com.campus.o2o&#34; level=&#34;${log.level}&#34; additivity=&#34;true&#34;&gt; --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!--     &lt;appender-ref ref=&#34;debugAppender&#34; /&gt; --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!--     &lt;appender-ref ref=&#34;infoAppender&#34; /&gt; --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!--     &lt;appender-ref ref=&#34;errorAppender&#34; /&gt; --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- &lt;/logger&gt; --&gt;</span>
+</span></span><span class="line"><span class="cl">
+</span></span><span class="line"><span class="cl">    <span class="c">&lt;!-- 特殊的logger，根logger --&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;root</span> <span class="na">level=</span><span class="s">&#34;info&#34;</span><span class="nt">&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="c">&lt;!-- 指定默认的日志输出 --&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;appender-ref</span> <span class="na">ref=</span><span class="s">&#34;consoleAppender&#34;</span> <span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;appender-ref</span> <span class="na">ref=</span><span class="s">&#34;allLogAppender&#34;</span> <span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;appender-ref</span> <span class="na">ref=</span><span class="s">&#34;debugAppender&#34;</span> <span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;appender-ref</span> <span class="na">ref=</span><span class="s">&#34;infoAppender&#34;</span> <span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;appender-ref</span> <span class="na">ref=</span><span class="s">&#34;warnAppender&#34;</span> <span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">        <span class="nt">&lt;appender-ref</span> <span class="na">ref=</span><span class="s">&#34;errorAppender&#34;</span> <span class="nt">/&gt;</span>
+</span></span><span class="line"><span class="cl">    <span class="nt">&lt;/root&gt;</span>
+</span></span><span class="line"><span class="cl"><span class="nt">&lt;/configuration&gt;</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="使用">使用</h2>
+<div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt"> 1
+</span><span class="lnt"> 2
+</span><span class="lnt"> 3
+</span><span class="lnt"> 4
+</span><span class="lnt"> 5
+</span><span class="lnt"> 6
+</span><span class="lnt"> 7
+</span><span class="lnt"> 8
+</span><span class="lnt"> 9
+</span><span class="lnt">10
+</span><span class="lnt">11
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-java" data-lang="java"><span class="line"><span class="cl"><span class="nd">@Slf4j</span>
+</span></span><span class="line"><span class="cl"><span class="kd">public</span> <span class="kd">class</span> <span class="nc">LogbackTest</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">    <span class="nd">@Test</span>
+</span></span><span class="line"><span class="cl">    <span class="kd">public</span> <span class="kt">void</span> <span class="nf">test</span><span class="o">()</span> <span class="o">{</span>
+</span></span><span class="line"><span class="cl">        <span class="n">log</span><span class="o">.</span><span class="na">trace</span><span class="o">(</span><span class="s">&#34;=====trace=====&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">log</span><span class="o">.</span><span class="na">debug</span><span class="o">(</span><span class="s">&#34;=====debug=====&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">log</span><span class="o">.</span><span class="na">info</span><span class="o">(</span><span class="s">&#34;=====info=====&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">log</span><span class="o">.</span><span class="na">warn</span><span class="o">(</span><span class="s">&#34;=====warn=====&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">        <span class="n">log</span><span class="o">.</span><span class="na">error</span><span class="o">(</span><span class="s">&#34;=====error=====&#34;</span><span class="o">);</span>
+</span></span><span class="line"><span class="cl">    <span class="o">}</span>
+</span></span><span class="line"><span class="cl"><span class="o">}</span>
+</span></span></code></pre></td></tr></table>
+</div>
+</div><div class="highlight"><div class="chroma">
+<table class="lntable"><tr><td class="lntd">
+<pre tabindex="0" class="chroma"><code><span class="lnt">1
+</span><span class="lnt">2
+</span><span class="lnt">3
+</span></code></pre></td>
+<td class="lntd">
+<pre tabindex="0" class="chroma"><code class="language-fallback" data-lang="fallback"><span class="line"><span class="cl">2023-02-13 15:07:36.226 [main] INFO  com.yaxing.LogbackTest-=====info=====
+</span></span><span class="line"><span class="cl">2023-02-13 15:07:36.228 [main] WARN  com.yaxing.LogbackTest-=====warn=====
+</span></span><span class="line"><span class="cl">2023-02-13 15:07:36.229 [main] ERROR com.yaxing.LogbackTest-=====error=====
+</span></span></code></pre></td></tr></table>
+</div>
+</div><h2 id="参考">参考</h2>
+<p><a href="https://www.cnblogs.com/xrq730/p/8628945.html">https://www.cnblogs.com/xrq730/p/8628945.html</a></p>
+<p><a href="https://www.cnblogs.com/warking/p/5710303.html">https://www.cnblogs.com/warking/p/5710303.html</a></p>
+    </div>
+
+    
+<footer class="post-footer">
+      <div class="post-tags">
+          <a href="/tags/%E6%97%A5%E5%BF%97/">日志</a>
+          </div>
+      <nav class="post-nav">
+        <a class="prev" href="/springboot-stater/">
+            <i class="iconfont icon-left"></i>
+            <span class="prev-text nav-default">从 0 搭建 SpringBoot 项目</span>
+            <span class="prev-text nav-mobile">上一篇</span>
+          </a>
+        <a class="next" href="/lombok/">
+            <span class="next-text nav-default">Lombok 使用小记</span>
+            <span class="next-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:yaxingfang@163.com" class="iconfont icon-email" title="email"></a>
+      <a href="https://scholar.google.com.hk/citations?user=9DPge4wAAAAJ&amp;hl=zh-CN&amp;oi=sra" class="iconfont icon-google" title="google"></a>
+      <a href="https://github.com/yaxingfang" class="iconfont icon-github" title="github"></a>
+      <a href="https://www.zhihu.com/people/fang-ya-xing-22" class="iconfont icon-zhihu" title="zhihu"></a>
+      <a href="https://yaxing97.com" class="iconfont icon-bilibili" title="bilibili"></a>
+  <a href="https://yaxing97.com/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  <div class="busuanzi-footer">
+    <span id="busuanzi_container_site_pv"> 本站总访问量 <span id="busuanzi_value_site_pv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 次 </span>
+      <span class="division">|</span>
+    <span id="busuanzi_container_site_uv"> 本站总访客数 <span id="busuanzi_value_site_uv"><img src="/img/spinner.svg" alt="spinner.svg"/></span> 人 </span>
+  </div>
+
+  <span class="copyright-year">
+    &copy; 
+    2022 - 
+    2023<span class="heart"><i class="iconfont icon-heart"></i></span><span>Yaxing</span>
+  </span>
+</div>
+
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slideout@1.0.1/dist/slideout.min.js" integrity="sha256-t+zJ/g8/KXIJMjSVQdnibt4dlaDxc9zXr/9oNPeWqdg=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.1.20/dist/jquery.fancybox.min.js" integrity="sha256-XVLffZaxoWfGUEbdzuLi7pwaUJv1cecsQJQqGLe7axY=" crossorigin="anonymous"></script>
+
+
+
+<script type="text/javascript" src="/js/main.min.4ae89da218555efa0e7093a20b92017d2e1202b66fff9fc2edf4cb8d44b44c6e.js"></script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'G-FD6WJ02QTG', 'auto');
+	ga('set', 'anonymizeIp', true);
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+<script id="baidu_analytics">
+  var _hmt = _hmt || [];
+  (function() {
+    if (window.location.hostname === 'localhost') return;
+    var hm = document.createElement("script"); hm.async = true;
+    hm.src = "https://hm.baidu.com/hm.js?2037c3637df2058f01d810ede4492aec";
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(hm, s);
+  })();
+</script>
+
+
+
+
+
+
+</body>
+</html>

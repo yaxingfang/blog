@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Mac开发环境配置 on Yaxing&#39;s Blog</title>
+    <link>https://yaxing97.com/categories/mac%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</link>
+    <description>Recent content in Mac开发环境配置 on Yaxing&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 15 Feb 2023 17:48:25 +0000</lastBuildDate><atom:link href="https://yaxing97.com/categories/mac%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mac 安装 Anaconda 以及 PyCharm 使用</title>
+      <link>https://yaxing97.com/anaconda-pycharm/</link>
+      <pubDate>Wed, 15 Feb 2023 17:48:25 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/anaconda-pycharm/</guid>
+      <description>&lt;p&gt;本文介绍在 Mac 上安装 Anaconda 以及 PyCharm 使用 。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Mac 安装 MySQL 以及 Sequel Pro 配置与连接</title>
+      <link>https://yaxing97.com/mysql-sequel-pro/</link>
+      <pubDate>Sat, 11 Feb 2023 10:23:54 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/mysql-sequel-pro/</guid>
+      <description>&lt;p&gt;本文介绍在 Mac 上安装 MySQL 以及使用 Sequel Pro 作为可视化客户端的配置与连接。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

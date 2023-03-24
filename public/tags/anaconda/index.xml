@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Anaconda on Yaxing&#39;s Blog</title>
+    <link>https://yaxing97.com/tags/anaconda/</link>
+    <description>Recent content in Anaconda on Yaxing&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 15 Feb 2023 17:48:25 +0000</lastBuildDate><atom:link href="https://yaxing97.com/tags/anaconda/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Mac 安装 Anaconda 以及 PyCharm 使用</title>
+      <link>https://yaxing97.com/anaconda-pycharm/</link>
+      <pubDate>Wed, 15 Feb 2023 17:48:25 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/anaconda-pycharm/</guid>
+      <description>&lt;p&gt;本文介绍在 Mac 上安装 Anaconda 以及 PyCharm 使用 。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
