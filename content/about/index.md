@@ -1,7 +1,5 @@
 ---
-title: "About"
-menu: "main"
-weight: 50
+title: "关于"
 comment: false
 ---
 
