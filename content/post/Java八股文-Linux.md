@@ -18,7 +18,7 @@ author: "Yaxing"
 comment: false
 autoCollapseToc: true
 postMetaInFooter: false
-hiddenFromHomePage: false
+hiddenFromHomePage: true
 contentCopyright: true
 ---
 

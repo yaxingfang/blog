@@ -20,7 +20,7 @@ author: "Yaxing"
 
 comment: false
 postMetaInFooter: false
-hiddenFromHomePage: false
+hiddenFromHomePage: true
 contentCopyright: true
 ---
 
