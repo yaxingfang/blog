@@ -6,18 +6,18 @@
     <description>Recent content on Yaxing&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 23 Mar 2023 10:49:01 +0800</lastBuildDate><atom:link href="https://yaxing97.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Mar 2023 15:41:40 +0800</lastBuildDate><atom:link href="https://yaxing97.com/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>About</title>
-      <link>https://yaxing97.com/about/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <title>全局异常捕获</title>
+      <link>https://yaxing97.com/global-exception-handler/</link>
+      <pubDate>Tue, 28 Mar 2023 15:41:40 +0800</pubDate>
       
-      <guid>https://yaxing97.com/about/</guid>
-      <description>🔭 本科：苏州大学纳米科学与技术学院，半导体器件方向；硕士：苏州大学计算机科学与技术学院，计算机技术。 🌱 在字节跳动飞书后端开发实习过 4 个月，秋</description>
+      <guid>https://yaxing97.com/global-exception-handler/</guid>
+      <description>&lt;p&gt;最近在看新项目代码里面，出现大量的 try…catch，然后 return 返回结果的冗余代码，想着可不可以通过构造一个全局的异常捕获器对捕获到的异常进行处理。&lt;/p&gt;</description>
     </item>
     
     <item>
-      <title>博客从hexo迁移到hugo</title>
+      <title>博客从 hexo 迁移到 hugo</title>
       <link>https://yaxing97.com/hero-to-hugo/</link>
       <pubDate>Thu, 23 Mar 2023 10:49:01 +0800</pubDate>
       
@@ -465,6 +465,15 @@
       
       <guid>https://yaxing97.com/2022-internship-summary/</guid>
       <description>写在前面：作为一名硕转码的选手，今年暑期实习貌似又格外的难，身边的朋友、脉脉、牛客上的同学都表示今年大环境很差，实习很难找。各个大厂从裁员，</description>
+    </item>
+    
+    <item>
+      <title>关于</title>
+      <link>https://yaxing97.com/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/about/</guid>
+      <description>🔭 本科：苏州大学纳米科学与技术学院，半导体器件方向；硕士：苏州大学计算机科学与技术学院，计算机技术。 🌱 在字节跳动飞书后端开发实习过 4 个月，秋</description>
     </item>
     
   </channel>

@@ -6,7 +6,16 @@
     <description>Recent content in 技术总结 on Yaxing&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 15 Mar 2023 10:07:56 +0000</lastBuildDate><atom:link href="https://yaxing97.com/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Mar 2023 15:41:40 +0800</lastBuildDate><atom:link href="https://yaxing97.com/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>全局异常捕获</title>
+      <link>https://yaxing97.com/global-exception-handler/</link>
+      <pubDate>Tue, 28 Mar 2023 15:41:40 +0800</pubDate>
+      
+      <guid>https://yaxing97.com/global-exception-handler/</guid>
+      <description>&lt;p&gt;最近在看新项目代码里面，出现大量的 try…catch，然后 return 返回结果的冗余代码，想着可不可以通过构造一个全局的异常捕获器对捕获到的异常进行处理。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>Docker 使用小记</title>
       <link>https://yaxing97.com/docker/</link>

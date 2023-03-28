@@ -1,5 +1,5 @@
 ---
-title: "博客从hexo迁移到hugo"
+title: "博客从 hexo 迁移到 hugo"
 date: 2023-03-23T10:49:01+08:00
 categories: ["博客"]
 tags: ["hexo", "hugo"]

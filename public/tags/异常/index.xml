@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>异常 on Yaxing&#39;s Blog</title>
+    <link>https://yaxing97.com/tags/%E5%BC%82%E5%B8%B8/</link>
+    <description>Recent content in 异常 on Yaxing&#39;s Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Tue, 28 Mar 2023 15:41:40 +0800</lastBuildDate><atom:link href="https://yaxing97.com/tags/%E5%BC%82%E5%B8%B8/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>全局异常捕获</title>
+      <link>https://yaxing97.com/global-exception-handler/</link>
+      <pubDate>Tue, 28 Mar 2023 15:41:40 +0800</pubDate>
+      
+      <guid>https://yaxing97.com/global-exception-handler/</guid>
+      <description>&lt;p&gt;最近在看新项目代码里面，出现大量的 try…catch，然后 return 返回结果的冗余代码，想着可不可以通过构造一个全局的异常捕获器对捕获到的异常进行处理。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Java八股文 - Java异常</title>
+      <link>https://yaxing97.com/java-exception-error/</link>
+      <pubDate>Mon, 23 Jan 2023 10:06:31 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/java-exception-error/</guid>
+      <description>&lt;blockquote&gt;
+&lt;p&gt;整理的Java异常相关知识点和面试题，部分内容摘自网络，如有侵权请联系我～&lt;/p&gt;
+&lt;/blockquote&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -2,6 +2,7 @@
 title: "Java八股文 - Java异常"
 date: 2023-01-23 10:06:31
 categories: ["Java八股文"]
+tags: ["异常"]
 url: java-exception-error
 
 ################################目录################################
@@ -15,7 +16,6 @@ mathjax: false
 draft: false
 # keywords: []
 # description: ""
-# tags: []
 author: "Yaxing"
 
 comment: false
