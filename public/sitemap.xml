@@ -3,7 +3,49 @@
   
   <url>
     <loc>https://yaxing97.com/categories/</loc>
-    <lastmod>2023-04-09T12:34:49+08:00</lastmod>
+    <lastmod>2023-04-10T12:10:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaxing97.com/post/</loc>
+    <lastmod>2023-04-10T12:10:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaxing97.com/tags/</loc>
+    <lastmod>2023-04-10T12:10:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaxing97.com/</loc>
+    <lastmod>2023-04-10T12:10:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaxing97.com/2023-travel/</loc>
+    <lastmod>2023-04-10T12:10:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaxing97.com/tags/%E6%97%85%E8%A1%8C/</loc>
+    <lastmod>2023-04-10T12:10:38+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaxing97.com/categories/%E6%97%A5%E5%B8%B8%E5%B0%8F%E8%AE%B0/</loc>
+    <lastmod>2023-04-10T12:10:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -17,27 +59,6 @@
   
   <url>
     <loc>https://yaxing97.com/tags/git/</loc>
-    <lastmod>2023-04-09T12:34:49+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://yaxing97.com/post/</loc>
-    <lastmod>2023-04-09T12:34:49+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://yaxing97.com/tags/</loc>
-    <lastmod>2023-04-09T12:34:49+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://yaxing97.com/</loc>
     <lastmod>2023-04-09T12:34:49+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -501,13 +522,6 @@
   <url>
     <loc>https://yaxing97.com/java-basic-knowledge/</loc>
     <lastmod>2023-01-23T10:05:51+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://yaxing97.com/categories/%E6%97%A5%E5%B8%B8%E5%B0%8F%E8%AE%B0/</loc>
-    <lastmod>2023-01-22T09:55:21+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
