@@ -49,6 +49,11 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
   identifier = "categories"
   url = "/categories/"
 [[menu.main]]
+  name = "相册"
+  weight = 45
+  identifier = "album"
+  url = "/album/"
+[[menu.main]]
   name = "关于"
   weight = 50
   identifier = "about"

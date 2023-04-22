@@ -6,7 +6,16 @@
     <description>Recent content on Yaxing&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 13 Apr 2023 11:05:48 +0800</lastBuildDate><atom:link href="https://yaxing97.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 18 Apr 2023 09:24:13 +0800</lastBuildDate><atom:link href="https://yaxing97.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>五一旅游计划</title>
+      <link>https://yaxing97.com/2023-May-Day-travel/</link>
+      <pubDate>Tue, 18 Apr 2023 09:24:13 +0800</pubDate>
+      
+      <guid>https://yaxing97.com/2023-May-Day-travel/</guid>
+      <description>&lt;p&gt;简单做一下五一旅游计划叭～&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>OpenAI API 代理</title>
       <link>https://yaxing97.com/openai-api-proxy/</link>
@@ -510,6 +519,15 @@
       
       <guid>https://yaxing97.com/about/</guid>
       <description>🔭 本科：苏州大学纳米科学与技术学院，半导体器件方向；硕士：苏州大学计算机科学与技术学院，计算机技术。 🌱 在字节跳动飞书后端开发实习过 4 个月，秋</description>
+    </item>
+    
+    <item>
+      <title>相册</title>
+      <link>https://yaxing97.com/album/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://yaxing97.com/album/</guid>
+      <description></description>
     </item>
     
   </channel>

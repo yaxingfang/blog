@@ -3,7 +3,49 @@
   
   <url>
     <loc>https://yaxing97.com/categories/</loc>
-    <lastmod>2023-04-13T11:05:48+08:00</lastmod>
+    <lastmod>2023-04-18T09:24:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaxing97.com/post/</loc>
+    <lastmod>2023-04-18T09:24:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaxing97.com/tags/</loc>
+    <lastmod>2023-04-18T09:24:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaxing97.com/</loc>
+    <lastmod>2023-04-18T09:24:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaxing97.com/tags/%E6%97%85%E6%B8%B8/</loc>
+    <lastmod>2023-04-18T09:24:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaxing97.com/categories/%E6%97%A5%E5%B8%B8%E5%B0%8F%E8%AE%B0/</loc>
+    <lastmod>2023-04-18T09:24:13+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaxing97.com/2023-May-Day-travel/</loc>
+    <lastmod>2023-04-18T09:24:13+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -30,27 +72,6 @@
   </url>
   
   <url>
-    <loc>https://yaxing97.com/post/</loc>
-    <lastmod>2023-04-13T11:05:48+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://yaxing97.com/tags/</loc>
-    <lastmod>2023-04-13T11:05:48+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://yaxing97.com/</loc>
-    <lastmod>2023-04-13T11:05:48+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://yaxing97.com/categories/%E6%8A%80%E6%9C%AF%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2023-04-13T11:05:48+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -66,13 +87,6 @@
   
   <url>
     <loc>https://yaxing97.com/tags/%E6%97%85%E8%A1%8C/</loc>
-    <lastmod>2023-04-10T12:10:38+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://yaxing97.com/categories/%E6%97%A5%E5%B8%B8%E5%B0%8F%E8%AE%B0/</loc>
     <lastmod>2023-04-10T12:10:38+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -647,6 +661,12 @@
   
   <url>
     <loc>https://yaxing97.com/about/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaxing97.com/album/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
