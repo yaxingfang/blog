@@ -27,11 +27,7 @@ postMetaInFooter: false
 
 [ISFJ的爱情（mbti isfj） - 冰心玉壶的文章 - 知乎](https://zhuanlan.zhihu.com/p/70979343)
 
-[ISFJ 配对：“守卫者”人格和什么人格类型最合适 - MBTI星球的文章 - 知乎](https://zhuanlan.zhihu.com/p/555763946)
-
 [ISFJ喜欢什么类型的人？ - 纾佟的回答 - 知乎](https://www.zhihu.com/question/523485641/answer/2693364983)
-
-[ISFJ喜欢什么类型的人？ - 知乎用户的回答 - 知乎](https://www.zhihu.com/question/523485641/answer/2486105959)
 
 看完发现讲的还是蛮准确的（报我身份证得了），结合之前分享的“[谈谈恋爱观](https://yaxing97.com/view-of-love/)”，感觉很多观念确实都是和 ISFJ 所自洽的。
 
