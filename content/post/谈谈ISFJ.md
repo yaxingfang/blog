@@ -43,4 +43,4 @@ postMetaInFooter: false
 
 所以，认识一个人，可以从认识他/她的 16 型人格开始。
 
-以下是 16 人格类型测试网址：https://www.16personalities.com/ch
+以下是 16 人格类型测试网址：[16personalities](https://www.16personalities.com/ch)
