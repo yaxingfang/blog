@@ -3,28 +3,49 @@
   
   <url>
     <loc>https://yaxing97.com/categories/</loc>
-    <lastmod>2023-05-03T14:05:06+08:00</lastmod>
+    <lastmod>2023-05-14T16:40:20+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaxing97.com/tags/leetcode/</loc>
+    <lastmod>2023-05-14T16:40:20+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaxing97.com/leetcode/</loc>
+    <lastmod>2023-05-14T16:40:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://yaxing97.com/post/</loc>
-    <lastmod>2023-05-03T14:05:06+08:00</lastmod>
+    <lastmod>2023-05-14T16:40:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://yaxing97.com/tags/</loc>
-    <lastmod>2023-05-03T14:05:06+08:00</lastmod>
+    <lastmod>2023-05-14T16:40:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://yaxing97.com/</loc>
-    <lastmod>2023-05-03T14:05:06+08:00</lastmod>
+    <lastmod>2023-05-14T16:40:20+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaxing97.com/categories/%E7%AE%97%E6%B3%95/</loc>
+    <lastmod>2023-05-14T16:40:20+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -480,13 +501,6 @@
   <url>
     <loc>https://yaxing97.com/linux/</loc>
     <lastmod>2023-01-25T13:45:06+00:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://yaxing97.com/categories/%E7%AE%97%E6%B3%95/</loc>
-    <lastmod>2023-01-25T13:44:55+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
