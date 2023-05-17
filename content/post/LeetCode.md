@@ -2922,6 +2922,154 @@ public class Codec {
 
 ## 链表
 
+### :o:反转链表
+
+#### ⭐[206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
+
+给你单链表的头节点 `head` ，请你反转链表，并返回反转后的链表。
+
+```java
+class Solution {
+    // 迭代：设置dummy每次新节点进行头插
+    public ListNode reverseList(ListNode head) {
+        ListNode dummy = new ListNode();
+        ListNode cur = head, temp = null;
+        while (cur != null) {
+            temp = cur.next;
+            cur.next = dummy.next;
+            dummy.next = cur;
+            cur = temp;
+        }
+        return dummy.next;
+    }
+
+    // 递归：
+    public ListNode reverseList1(ListNode head) {
+        if (head == null || head.next == null) return head;
+        ListNode new_head = reverseList1(head.next);
+        head.next.next = head;
+        head.next = null;
+        return new_head;
+    }
+}
+```
+
+#### ⭐[92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
+
+难度中等1180
+
+给你单链表的头指针 `head` 和两个整数 `left` 和 `right` ，其中 `left <= right` 。请你反转从位置 `left` 到位置 `right` 的链表节点，返回 **反转后的链表** 。
+
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public ListNode reverseBetween(ListNode head, int left, int right) {
+        // 可以把2、3分别头插到4后面，需要定位到1和4，然后在对2、3进行处理
+        // 也可以把3、4分别头插到1后面，需要定位到1，然后对2、3进行处理，更快
+        ListNode dummy = new ListNode(0, head);
+        ListNode pre = dummy;
+        for (int i = 0; i < left - 1; i++) {
+            pre = pre.next;
+        }
+        ListNode temp = pre.next;
+        for (int i = 0; i < right - left; i++) {
+            ListNode cur = temp.next;
+            temp.next = cur.next;
+
+            cur.next = pre.next;
+            pre.next = cur;
+        }
+        return dummy.next;
+    }
+}
+```
+
+#### [24. 两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/)
+
+给你一个链表，两两交换其中相邻的节点，并返回交换后链表的头节点。你必须在不修改节点内部的值的情况下完成本题（即，只能进行节点交换）。
+
+```java
+/**
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+class Solution {
+    public ListNode swapPairs(ListNode head) {
+        ListNode dummy = new ListNode(0, head);
+        ListNode pre = dummy, tail = pre;
+        while (true) {
+            for (int i = 0; i < 2; i++) {
+                if (tail != null) {
+                    tail = tail.next;
+                }
+            }
+            if (tail == null) break;
+            ListNode cur = pre.next;
+            pre.next = cur.next;
+            cur.next = tail.next;
+            tail.next = cur;
+
+            pre = cur;
+            tail = cur;
+        }
+        return dummy.next;
+    }
+}
+```
+
+#### ⭐⭐⭐[25. K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/)
+
+给你一个链表，每 *k* 个节点一组进行翻转，请你返回翻转后的链表。
+
+*k* 是一个正整数，它的值小于或等于链表的长度。
+
+如果节点总数不是 *k* 的整数倍，那么请将最后剩余的节点保持原有顺序。
+
+```java
+// 每个子序列，使每个最前面的结点尾插到该序列当前tail后面，tail维持不动
+class Solution {
+    public ListNode reverseKGroup(ListNode head, int k) {
+        ListNode dummy = new ListNode(0, head);
+        ListNode pre = dummy, tail = dummy;
+        while (true) {
+            for (int i = 0; i < k; i++) {
+                if (tail != null) {
+                    tail = tail.next;
+                }
+            }
+            if (tail == null) break;
+            ListNode curHead = pre.next;
+            while (pre.next != tail) {
+                ListNode cur = pre.next;    // 取出操作的结点
+                pre.next = cur.next;    // 断链
+                cur.next = tail.next;   // 尾插到tail后面
+                tail.next = cur;
+            }
+            pre = curHead;
+            tail = curHead;
+        }
+        return dummy.next;
+    }
+}
+```
+
+### 其他
+
 #### [61. 旋转链表](https://leetcode-cn.com/problems/rotate-list/)
 
 给你一个链表的头节点 `head` ，旋转链表，将链表每个节点向右移动 `k` 个位置。
@@ -3239,154 +3387,6 @@ public class Solution {
     }
 }
 ```
-
-### :o:反转链表
-
-#### ⭐[206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
-
-给你单链表的头节点 `head` ，请你反转链表，并返回反转后的链表。
-
-```java
-class Solution {
-    // 迭代：设置dummy每次新节点进行头插
-    public ListNode reverseList(ListNode head) {
-        ListNode dummy = new ListNode();
-        ListNode cur = head, temp = null;
-        while (cur != null) {
-            temp = cur.next;
-            cur.next = dummy.next;
-            dummy.next = cur;
-            cur = temp;
-        }
-        return dummy.next;
-    }
-
-    // 递归：
-    public ListNode reverseList1(ListNode head) {
-        if (head == null || head.next == null) return head;
-        ListNode new_head = reverseList1(head.next);
-        head.next.next = head;
-        head.next = null;
-        return new_head;
-    }
-}
-```
-
-#### ⭐[92. 反转链表 II](https://leetcode-cn.com/problems/reverse-linked-list-ii/)
-
-难度中等1180
-
-给你单链表的头指针 `head` 和两个整数 `left` 和 `right` ，其中 `left <= right` 。请你反转从位置 `left` 到位置 `right` 的链表节点，返回 **反转后的链表** 。
-
-```java
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
-class Solution {
-    public ListNode reverseBetween(ListNode head, int left, int right) {
-        // 可以把2、3分别头插到4后面，需要定位到1和4，然后在对2、3进行处理
-        // 也可以把3、4分别头插到1后面，需要定位到1，然后对2、3进行处理，更快
-        ListNode dummy = new ListNode(0, head);
-        ListNode pre = dummy;
-        for (int i = 0; i < left - 1; i++) {
-            pre = pre.next;
-        }
-        ListNode temp = pre.next;
-        for (int i = 0; i < right - left; i++) {
-            ListNode cur = temp.next;
-            temp.next = cur.next;
-
-            cur.next = pre.next;
-            pre.next = cur;
-        }
-        return dummy.next;
-    }
-}
-```
-
-#### [24. 两两交换链表中的节点](https://leetcode-cn.com/problems/swap-nodes-in-pairs/)
-
-给你一个链表，两两交换其中相邻的节点，并返回交换后链表的头节点。你必须在不修改节点内部的值的情况下完成本题（即，只能进行节点交换）。
-
-```java
-/**
- * Definition for singly-linked list.
- * public class ListNode {
- *     int val;
- *     ListNode next;
- *     ListNode() {}
- *     ListNode(int val) { this.val = val; }
- *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
- * }
- */
-class Solution {
-    public ListNode swapPairs(ListNode head) {
-        ListNode dummy = new ListNode(0, head);
-        ListNode pre = dummy, tail = pre;
-        while (true) {
-            for (int i = 0; i < 2; i++) {
-                if (tail != null) {
-                    tail = tail.next;
-                }
-            }
-            if (tail == null) break;
-            ListNode cur = pre.next;
-            pre.next = cur.next;
-            cur.next = tail.next;
-            tail.next = cur;
-
-            pre = cur;
-            tail = cur;
-        }
-        return dummy.next;
-    }
-}
-```
-
-#### ⭐⭐⭐[25. K 个一组翻转链表](https://leetcode-cn.com/problems/reverse-nodes-in-k-group/)
-
-给你一个链表，每 *k* 个节点一组进行翻转，请你返回翻转后的链表。
-
-*k* 是一个正整数，它的值小于或等于链表的长度。
-
-如果节点总数不是 *k* 的整数倍，那么请将最后剩余的节点保持原有顺序。
-
-```java
-// 每个子序列，使每个最前面的结点尾插到该序列当前tail后面，tail维持不动
-class Solution {
-    public ListNode reverseKGroup(ListNode head, int k) {
-        ListNode dummy = new ListNode(0, head);
-        ListNode pre = dummy, tail = dummy;
-        while (true) {
-            for (int i = 0; i < k; i++) {
-                if (tail != null) {
-                    tail = tail.next;
-                }
-            }
-            if (tail == null) break;
-            ListNode curHead = pre.next;
-            while (pre.next != tail) {
-                ListNode cur = pre.next;    // 取出操作的结点
-                pre.next = cur.next;    // 断链
-                cur.next = tail.next;   // 尾插到tail后面
-                tail.next = cur;
-            }
-            pre = curHead;
-            tail = curHead;
-        }
-        return dummy.next;
-    }
-}
-```
-
-♦♦♦♦♦♦
 
 ## 滑动窗口
 
@@ -3721,7 +3721,905 @@ class Solution {
 }
 ```
 
-## 主要⭕️
+### 旋转排序数组
+
+#### ⭐[33. 搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)(left)
+
+整数数组 `nums` 按升序排列，数组中的值 **互不相同** 。
+
+在传递给函数之前，`nums` 在预先未知的某个下标 `k`（`0 <= k < nums.length`）上进行了 **旋转**，使数组变为 `[nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]]`（下标 **从 0 开始** 计数）。例如， `[0,1,2,4,5,6,7]` 在下标 `3` 处经旋转后可能变为 `[4,5,6,7,0,1,2]` 。
+
+给你 **旋转后** 的数组 `nums` 和一个整数 `target` ，如果 `nums` 中存在这个目标值 `target` ，则返回它的下标，否则返回 `-1` 。
+
+```java
+class Solution {
+    public int search(int[] nums, int target) {
+        if (nums == null || nums.length == 0) return -1;
+        int len = nums.length, left = 0, right = len - 1;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (nums[mid] == target) return mid;
+            if (nums[mid] < nums[left]) {
+                if (nums[mid] < target && target <= nums[right]) {
+                    left = mid + 1;
+                } else {
+                    right = mid - 1;
+                }
+            } else {
+                if (nums[left] <= target && target < nums[mid]) {
+                    right = mid - 1;
+                } else {
+                    left = mid + 1;
+                }
+            }
+        }
+        return nums[left] == target ? left : -1;
+    }
+}
+```
+
+#### ⭐⭐[81. 搜索旋转排序数组 II](https://leetcode-cn.com/problems/search-in-rotated-sorted-array-ii/)(left)
+
+已知存在一个按非降序排列的整数数组 `nums` ，数组中的值不必互不相同。(**可能有重复的值**)
+
+在传递给函数之前，`nums` 在预先未知的某个下标 `k`（`0 <= k < nums.length`）上进行了 **旋转** ，使数组变为 `[nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]]`（下标 **从 0 开始** 计数）。例如， `[0,1,2,4,4,4,5,6,6,7]` 在下标 `5` 处经旋转后可能变为 `[4,5,6,6,7,0,1,2,4,4]` 。
+
+给你 **旋转后** 的数组 `nums` 和一个整数 `target` ，请你编写一个函数来判断给定的目标值是否存在于数组中。如果 `nums` 中存在这个目标值 `target` ，则返回 `true` ，否则返回 `false` 
+
+```java
+/*
+该题与33. 搜索旋转排序数组的区别在于，这题的数组中可能会出现重复元素。
+二分查找的本质就是在循环的每一步中考虑排除掉哪些元素，本题在用二分查找时，只有在nums[mid]严格大于或小于左边界时才能判断它左边或右边是升序的，这时可以再根据nums[mid], target与左右边界的大小关系排除掉一半的元素；
+当nums[mid]等于左边界时，无法判断是mid的左边还是右边是升序数组，而只能肯定左边界不等于target（因为nums[mid] != target），所以只能排除掉这一个元素，让左边界加一。
+*/
+class Solution {
+    public boolean search(int[] nums, int target) {
+        int len = nums.length, left = 0, right = len - 1;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (nums[mid] == target) return true;
+            if (nums[mid] == nums[left]) {
+                left++;
+            } else if (nums[mid] > nums[left]) {
+                if (nums[left] <= target && target < nums[mid]) {
+                    right = mid - 1;
+                } else {
+                    left = mid + 1;
+                }
+            } else {
+                if (nums[mid] < target && target <= nums[right]) {
+                    left = mid + 1;
+                } else {
+                    right = mid - 1;
+                }
+            }
+        }
+        return nums[left] == target;
+    }
+}
+```
+
+#### ⭐⭐[面试题 10.03. 搜索旋转数组](https://leetcode-cn.com/problems/search-rotate-array-lcci/)(right)
+
+搜索旋转数组。给定一个排序后的数组，包含n个整数，但这个数组已被旋转过很多次了，次数不详。请编写代码找出数组中的某个元素，假设数组元素原先是按升序排列的。若有多个相同元素，返回索引值最小的一个。
+
+```java
+class Solution {
+    public int search(int[] arr, int target) {
+        if (arr[0] == target) return 0;
+        int left = 0, right = arr.length - 1;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            if (arr[mid] == target) {
+                while (mid > 0 && arr[mid - 1] == arr[mid]) mid--;
+                return mid;
+            }
+            if (arr[mid] == arr[right]) {
+                right--;
+            } else if (arr[mid] < arr[right]) {
+                if (arr[mid] < target && target <= arr[right]) {
+                    left = mid + 1;
+                } else {
+                    right = mid - 1;
+                }
+            } else {
+                if (arr[left] <= target && target < arr[mid]) {
+                    right = mid - 1;
+                } else {
+                    left = mid + 1;
+                }
+            }
+        }
+        return arr[left] == target ? left : -1;
+    }
+}
+```
+
+#### ⭐⭐⭐[153. 寻找旋转排序数组中的最小值](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/)(right)
+
+已知一个长度为 `n` 的数组，预先按照升序排列，经由 `1` 到 `n` 次 **旋转** 后，得到输入数组。例如，原数组 `nums = [0,1,2,4,5,6,7]` 在变化后可能得到：
+
+- 若旋转 `4` 次，则可以得到 `[4,5,6,7,0,1,2]`
+- 若旋转 `7` 次，则可以得到 `[0,1,2,4,5,6,7]`
+
+注意，数组 `[a[0], a[1], a[2], ..., a[n-1]]` **旋转一次** 的结果为数组 `[a[n-1], a[0], a[1], a[2], ..., a[n-2]]` 。
+
+给你一个元素值 **互不相同** 的数组 `nums` ，它原来是一个升序排列的数组，并按上述情形进行了多次旋转。请你找出并返回数组中的 **最小元素** 。
+
+```java
+class Solution {
+    public int findMin(int[] nums) {
+        int left = 0, right = nums.length - 1;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            // 最后一段是 [l, l+1]，此时mid等于l，nums[mid]==nums[l]无法判断较小的在左边还是右边也就是无法进一步缩小区间，如果和右端点比的话，mid等于l+1,nums[l]和nums[l+1]可以判断谁大谁小，也就可以进一步缩小区间
+            // 同理，要是要搜索旋转数组的最大值，那么就要和左端点比了
+            if (nums[mid] <= nums[right]) {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
+        }
+       return nums[left];
+    }
+}
+```
+
+#### ⭐⭐⭐[154. 寻找旋转排序数组中的最小值 II](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array-ii/)(right)
+
+已知一个长度为 `n` 的数组，预先按照升序排列，经由 `1` 到 `n` 次 **旋转** 后，得到输入数组。给你一个可能存在 重复 元素值的数组 nums ，它原来是一个升序排列的数组，并按上述情形进行了多次旋转。请你找出并返回数组中的 最小元素 。
+
+你必须尽可能减少整个过程的操作步骤。
+
+```java
+class Solution {
+    public int findMin(int[] nums) {
+        int len = nums.length, left = 0, right = len - 1;
+        while (left < right) {
+            int mid = left + (right - left) / 2;
+            // 对于有重复元素的情况，如果等于的话，只能把当前元素排除
+            if (nums[mid] == nums[right]) {
+                right--;
+            } else if (nums[mid] < nums[right]) {
+                right = mid;
+            } else {
+                left = mid + 1;
+            }
+        }
+        return nums[left];
+    }
+}
+```
+
+### LRU & LFU
+
+#### ⭕️⭐⭐⭐[146. LRU 缓存机制](https://leetcode-cn.com/problems/lru-cache/)
+
+实现 `LRUCache` 类：
+
+- `LRUCache(int capacity)` 以正整数作为容量 `capacity` 初始化 LRU 缓存
+- `int get(int key)` 如果关键字 `key` 存在于缓存中，则返回关键字的值，否则返回 `-1` 。
+- `void put(int key, int value)` 如果关键字已经存在，则变更其数据值；如果关键字不存在，则插入该组「关键字-值」。当缓存容量达到上限时，它应该在写入新数据之前删除最久未使用的数据值，从而为新的数据值留出空间。
+
+**进阶**：你是否可以在 `O(1)` 时间复杂度内完成这两种操作？
+
+```java
+class LRUCache {
+    class Node {
+        int key, val;
+        Node next, prev;
+
+        public Node(int key, int val) {
+            this.key = key;
+            this.val = val;
+        }
+    }
+
+    class DoubleList {
+        Node head, tail;
+        int size;
+
+        public int getSize() {
+            return this.size;
+        }
+
+        public DoubleList() {
+            head = new Node(0, 0);
+            tail = new Node(0, 0);
+            head.next = tail;
+            tail.prev = head;
+            size = 0;
+        }
+
+        public void remove(Node node) {
+            node.prev.next = node.next;
+            node.next.prev = node.prev;
+            size--;
+        }
+
+        public Node removeLast() {
+            Node last = tail.prev;
+            remove(last);
+            return last;
+        }
+
+        public void addFirst(Node node) {
+            Node p = head, q = head.next;
+            node.prev = p;
+            p.next = node;
+            node.next = q;
+            q.prev = node;
+            size++;
+        }
+    }
+
+    DoubleList doubleList;
+    Map<Integer, Node> map;
+    int capacity;
+
+    public LRUCache(int capacity) {
+        doubleList = new DoubleList();
+        map = new HashMap<>();
+        this.capacity = capacity;
+    }
+
+    public int get(int key) {
+        if (!map.containsKey(key)) return -1;
+        int val = map.get(key).val;
+        put(key, val);
+        return val;
+    }
+
+    public void put(int key, int value) {
+        Node node = new Node(key, value);
+        if (map.containsKey(key)) {
+            doubleList.remove(map.get(key));
+            doubleList.addFirst(node);
+            map.put(key, node);
+        } else {
+            if (doubleList.getSize() == capacity) {
+                Node last = doubleList.removeLast();
+                map.remove(last.key);
+            }
+            doubleList.addFirst(node);
+            map.put(key, node);
+        }
+    }
+}
+```
+
+#### [460. LFU 缓存](https://leetcode-cn.com/problems/lfu-cache/)
+
+难度困难515
+
+请你为 [最不经常使用（LFU）](https://baike.baidu.com/item/%E7%BC%93%E5%AD%98%E7%AE%97%E6%B3%95)缓存算法设计并实现数据结构。
+
+实现 `LFUCache` 类：
+
+- `LFUCache(int capacity)` - 用数据结构的容量 `capacity` 初始化对象
+- `int get(int key)` - 如果键 `key` 存在于缓存中，则获取键的值，否则返回 `-1` 。
+- `void put(int key, int value)` - 如果键 `key` 已存在，则变更其值；如果键不存在，请插入键值对。当缓存达到其容量 `capacity` 时，则应该在插入新项之前，移除最不经常使用的项。在此问题中，当存在平局（即两个或更多个键具有相同使用频率）时，应该去除 **最近最久未使用** 的键。
+
+为了确定最不常使用的键，可以为缓存中的每个键维护一个 **使用计数器** 。使用计数最小的键是最久未使用的键。
+
+当一个键首次插入到缓存中时，它的使用计数器被设置为 `1` (由于 put 操作)。对缓存中的键执行 `get` 或 `put` 操作，使用计数器的值将会递增。
+
+函数 `get` 和 `put` 必须以 `O(1)` 的平均时间复杂度运行。
+
+```java
+class LFUCache {
+
+    class Node {
+        int key, value;
+        int freq = 1;
+        Node prev, next;
+        
+        public Node(int key, int value) {
+            this.key = key;
+            this.value = value;
+        }
+    }
+
+    class DoubleList {
+        Node head, tail;
+
+        public DoubleList() {
+            head = new Node(0, 0);
+            tail = new Node(0, 0);
+            head.next = tail;
+            tail.prev = head;
+        }
+
+        public void addNode(Node node) {
+            Node p = head.next;
+            node.prev = head;
+            head.next = node;
+            node.next = p;
+            p.prev = node;
+        }
+
+        public void removeNode(Node node) {
+            node.prev.next = node.next;
+            node.next.prev = node.prev;
+        }   
+    }
+
+    Map<Integer, Node> cache; // 存储缓存的内容
+    Map<Integer, DoubleList> freqMap; // 存储每个频次对应的双向链表
+    int capacity;   // 缓存最大容量
+    int min; // 存储当前最小频次
+
+    public LFUCache(int capacity) {
+        this.cache = new HashMap<> (capacity);
+        this.freqMap = new HashMap<>();
+        this.capacity = capacity;
+        this.min = 0;
+    }
+    
+    public int get(int key) {
+        if (!cache.containsKey(key)) return -1;
+        Node node = cache.get(key);
+        freqInc(node);
+        return node.value;
+    }
+    
+    public void put(int key, int value) {
+        if (capacity == 0) {
+            return;
+        }
+        if (cache.containsKey(key)) {
+            Node node = cache.get(key);
+            node.value = value;
+            freqInc(node);
+        } else {
+            if (cache.size() == capacity) {
+                DoubleList minFreqList = freqMap.get(min);
+                Node last = minFreqList.tail.prev;
+                minFreqList.removeNode(last);
+                cache.remove(last.key);
+            }
+            Node newNode = new Node(key, value);
+            if (!freqMap.containsKey(1)) {
+                freqMap.put(1, new DoubleList());
+            }
+            DoubleList list = freqMap.get(1);
+            list.addNode(newNode);
+            cache.put(key, newNode);
+            min = 1;   
+        }
+    }
+
+    public void freqInc(Node node) {
+        // 从原freq对应的链表里移除, 并更新min
+        int freq = node.freq;
+        DoubleList list = freqMap.get(freq);
+        list.removeNode(node);
+        // 一定要注意这一步判断：移除当前元素后是否要更新minFreq
+        if (freq == min && list.head.next == list.tail) { 
+            min = freq + 1;
+        }
+        // 加入新freq对应的链表
+        node.freq++;
+        if (!freqMap.containsKey(freq + 1)) {
+            freqMap.put(freq + 1, new DoubleList());
+        }
+        freqMap.get(freq + 1).addNode(node);
+    }
+}
+```
+
+### 二分模板
+
+```java
+// 查找第一个值等于给定值的元素
+private int firstEquals(int[] arr, int target) {
+    int l = 0, r = arr.length - 1;
+    while (l < r) {
+        int mid = l + ((r - l) >> 1);
+        if (arr[mid] < target) l = mid + 1;
+        else r = mid; // 收缩右边界不影响 first equals
+    }
+    if (arr[l] == target && (l == 0 || arr[l - 1] < target)) return l;
+    return -1;
+}
+// 查找最后一个值等于给定值的元素
+private int lastEquals(int[] arr, int target) {
+    int l = 0, r = arr.length - 1;
+    while (l < r) {
+        int mid = l + ((r - l + 1) >> 1);
+        if (arr[mid] > target) r = mid - 1;
+        else l = mid; // 收缩左边界不影响 last equals
+    }
+    if (arr[l] == target && (l == arr.length - 1 || arr[l + 1] > target)) return l;
+    return -1;
+}
+// 查找第一个大于等于给定值的元素
+private int firstLargeOrEquals(int[] arr, int target) {
+    int l = 0, r = arr.length - 1;
+    while (l < r) {
+        int mid = l + ((r - l) >> 1);
+        if (arr[mid] < target) l = mid + 1;
+        else r = mid; // 收缩右边界不影响 first equals
+    }
+    if (arr[l] >= target && (l == 0 || arr[l - 1] < target)) return l; // >=
+    return -1;
+}
+// 查找最后一个小于等于给定值的元素
+private int lastLessOrEquals(int[] arr, int target) {
+    int l = 0, r = arr.length - 1;
+    while (l < r) {
+        int mid = l + ((r - l + 1) >> 1);
+        if (arr[mid] > target) r = mid - 1;
+        else l = mid; // 收缩左边界不影响 last equals
+    }
+    if (arr[l] <= target && (l == arr.length - 1 || arr[l + 1] > target)) return l; // <=
+    return -1;
+}
+```
+
+### 拓扑排序
+
+#### ✅⭐[207. 课程表](https://leetcode-cn.com/problems/course-schedule/)
+
+你这个学期必须选修 `numCourses` 门课程，记为 `0` 到 `numCourses - 1` 。
+
+在选修某些课程之前需要一些先修课程。 先修课程按数组 `prerequisites` 给出，其中 `prerequisites[i] = [ai, bi]` ，表示如果要学习课程 `ai` 则 **必须** 先学习课程 `bi` 。
+
+- 例如，先修课程对 `[0, 1]` 表示：想要学习课程 `0` ，你需要先完成课程 `1` 。
+
+请你判断是否可能完成所有课程的学习？如果可以，返回 `true` ；否则，返回 `false` 。
+
+参考：
+
+总结：拓扑排序问题
+根据依赖关系，构建邻接表、入度数组。
+选取入度为 0 的数据，根据邻接表，减小依赖它的数据指向的入度。
+找出入度变为 0 的数据，重复第 2 步。
+直至所有数据的入度为 0，得到排序，如果还有数据的入度不为 0，说明图中存在环。
+
+作者：xiao_ben_zhu
+链接：https://leetcode-cn.com/problems/course-schedule/solution/bao-mu-shi-ti-jie-shou-ba-shou-da-tong-tuo-bu-pai-/
+来源：力扣（LeetCode）
+
+```java
+class Solution {
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
+        int[] indegree = new int[numCourses];
+        Map<Integer, List<Integer>> map = new HashMap<>();
+        
+        for (int[] prerequisite : prerequisites) {
+            int head = prerequisite[1], tail = prerequisite[0];
+            indegree[tail]++;
+            if (!map.containsKey(head)) map.put(head, new ArrayList<>());
+            map.get(head).add(tail);
+        }
+        Deque<Integer> queue = new LinkedList<>();
+        for (int i = 0; i < indegree.length; i++) {
+            if (indegree[i] == 0) {
+                queue.offer(i);
+            }
+        }
+        int cnt = 0;
+        while (!queue.isEmpty()) {
+            int head = queue.poll();
+            cnt++;
+            if (map.containsKey(head)) {
+                List<Integer> tails = map.get(head);
+                for (int tail : tails) {
+                    indegree[tail]--;
+                    if (indegree[tail] == 0) {
+                        queue.offer(tail);
+                    }
+                }
+            }
+        }
+        return cnt == numCourses;
+    }
+}
+
+// dfs
+class Solution {
+    // 对每个结点开始dfs，维护flags数组
+    // flags[i] == 0，没有被dfs遍历过
+    // flags[i] == -1,被其他结点开始的dfs遍历过
+    // flags[i] == 1,被当前结点开始的dfs遍历过
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
+        Map<Integer, List<Integer>> map = new HashMap<>();
+        int[] flags = new int[numCourses];
+        for (int[] prerequisite : prerequisites) {
+            int head = prerequisite[1], tail = prerequisite[0];
+            if (!map.containsKey(head)) map.put(head, new ArrayList<>());
+            map.get(head).add(tail);
+        }
+        for (int i = 0; i < numCourses; i++) {
+            if (!dfs(map, i, flags)) return false;
+        }
+        return true;
+    }
+
+    private boolean dfs(Map<Integer, List<Integer>> map, int i, int[] flags) {
+        if (flags[i] == -1) return true;
+        if (flags[i] == 1)  return false;
+        flags[i] = 1;
+        if (map.containsKey(i)) {
+            List<Integer> tails = map.get(i);
+            for (int tail : tails) {
+                if (!dfs(map, tail, flags)) return false;
+            }
+        }
+        flags[i] = -1;
+        return true;
+    }
+}
+
+// 如果不知道课程的号码
+class Solution {
+    public boolean canFinish(int numCourses, int[][] prerequisites) {
+        Map<Integer, Integer> indegrees = new HashMap<>();	// 记录入度
+        Map<Integer, List<Integer>> map = new HashMap<>();	// 记录图
+        Set<Integer> courses = new HashSet<>();	// 记录课程号
+
+        for (int[] prerequisite : prerequisites) {
+            int head = prerequisite[1], tail = prerequisite[0];
+            indegrees.put(tail, indegrees.getOrDefault(tail, 0) + 1);
+            indegrees.put(head, indegrees.getOrDefault(head, 0));	// 注意也要将head加入防止找不到head
+            courses.add(head);
+            courses.add(tail);
+            if (!map.containsKey(head)) map.put(head, new ArrayList<>());
+            map.get(head).add(tail);
+        }
+        Deque<Integer> queue = new LinkedList<>();
+        for (int tail : indegrees.keySet()) {
+            if (indegrees.get(tail) == 0) {
+                queue.offer(tail);
+            }
+        }
+        int cnt = 0;
+        while (!queue.isEmpty()) {
+            int head = queue.poll();
+            cnt++;
+            if (map.containsKey(head)) {
+                List<Integer> tails = map.get(head);
+                for (int tail : tails) {
+                    indegrees.put(tail, indegrees.get(tail) - 1);
+                    if (indegrees.get(tail) == 0) {
+                        queue.offer(tail);
+                    }
+                }
+            }
+        }
+        return cnt == courses.size();
+    }
+}
+```
+
+#### ✅⭐[210. 课程表 II](https://leetcode-cn.com/problems/course-schedule-ii/)
+
+现在你总共有 `numCourses` 门课需要选，记为 `0` 到 `numCourses - 1`。给你一个数组 `prerequisites` ，其中 `prerequisites[i] = [ai, bi]` ，表示在选修课程 `ai` 前 **必须** 先选修 `bi` 。
+
+- 例如，想要学习课程 `0` ，你需要先完成课程 `1` ，我们用一个匹配来表示：`[0,1]` 。
+
+返回你为了学完所有课程所安排的学习顺序。可能会有多个正确的顺序，你只要返回 **任意一种** 就可以了。如果不可能完成所有课程，返回 **一个空数组** 。
+
+```java
+class Solution {
+    public int[] findOrder(int numCourses, int[][] prerequisites) {
+        int[] res = new int[numCourses];
+        int ind = 0;
+        int[] indegree = new int[numCourses];   // value -> indegree
+        Map<Integer, List<Integer>> map = new HashMap<>();   // value -> tails from value
+        for (int[] prerequisite : prerequisites) {
+            int head = prerequisite[1], tail = prerequisite[0];
+            indegree[tail]++;
+            if (!map.containsKey(head)) map.put(head, new ArrayList<>());
+            map.get(head).add(tail);
+        }
+        Deque<Integer> queue = new LinkedList<>();
+        for (int i = 0; i < indegree.length; i++) {
+            if (indegree[i] == 0) {
+                queue.offer(i);
+            }
+        }
+        while(!queue.isEmpty()) {
+            int head = queue.poll();
+            res[ind++] = head;
+            if (map.containsKey(head)) {
+                List<Integer> tails = map.get(head);
+                for (int tail : tails) {
+                    indegree[tail]--;
+                    if (indegree[tail] == 0) {
+                        queue.offer(tail);
+                    }
+                }
+            }
+        }
+        return ind == numCourses ? res : new int[0];
+    }
+}
+```
+
+### 重复数相关
+
+#### [剑指 Offer 03. 数组中重复的数字](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/)
+
+找出数组中重复的数字。在一个长度为 n 的数组 nums 里的所有数字都在 0～n-1 的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。
+
+```java
+class Solution {
+    public int findRepeatNumber(int[] nums) {
+        // 限定了数字的范围，因此可以原地哈希，不用额外开哈希表
+        for (int i = 0; i < nums.length; i++) {
+            while (nums[i] != i) {
+                if (nums[i] == nums[nums[i]]) {
+                    return nums[i];
+                }
+                swap(nums, i, nums[i]);
+            }
+        }
+        return -1;
+    }
+
+    private void swap(int[] nums, int i, int j) {
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+    }
+}
+```
+
+#### ⭐[287. 寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)
+
+给定一个包含 `n + 1` 个整数的数组 `nums` ，其数字都在 `[1, n]` 范围内（包括 `1` 和 `n`），可知至少存在一个重复的整数。
+
+假设 `nums` 只有 **一个重复的整数** ，返回 **这个重复的数** 。
+
+你设计的解决方案必须 **不修改** 数组 `nums` 且只用常量级 `O(1)` 的额外空间。
+
+```java
+class Solution {
+    public int findDuplicate(int[] nums) {
+        // 范围都在 [1, n]，就算都不同，那么就会出现有两个不同的下标，他们位置上的元素相同，建立从下标到数字的映射，将问题转化为链表有环的问题
+        int slow = 0, fast = 0;
+        while (true) {
+            slow = nums[slow];
+            fast = nums[nums[fast]];
+            if (slow == fast) {
+                slow = 0;
+                while (slow != fast) {
+                    slow = nums[slow];
+                    fast = nums[fast];
+                }
+                return slow;
+            }
+        }
+    }
+}
+```
+
+#### ✅[136. 只出现一次的数字](https://leetcode-cn.com/problems/single-number/)
+
+给定一个**非空**整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。
+
+**说明：**
+
+你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？
+
+```java
+class Solution {
+    public int singleNumber(int[] nums) {
+        // a ^ 0 = a, a ^ a = 0
+        int res = 0;
+        for (int num : nums) {
+            res ^= num;
+        }
+        return res;
+    }
+}
+```
+
+#### ⭕️[137. 只出现一次的数字 II](https://leetcode-cn.com/problems/single-number-ii/)
+
+给你一个整数数组 `nums` ，除某个元素仅出现 **一次** 外，其余每个元素都恰出现 **三次 。**请你找出并返回那个只出现了一次的元素。
+
+```java
+class Solution {
+    public int singleNumber(int[] nums) {
+        // 每一位上相加，如果该位上是3的倍数，则结果该位为0，否则为1
+        int[] digits = new int[32];
+        for (int num : nums) {
+            for (int i = 0; i < 32; i++) {
+                digits[i] += (num & 1);
+                num >>= 1;
+            }
+        }
+        int res = 0;
+        for (int i = 31; i >= 0; i--) {
+            res <<= 1;
+            if (digits[i] % 3 != 0) {
+                res = (res | 1);	// 将该位数字置为1
+            }
+        }
+        return res;
+    }
+}
+```
+
+#### ⭕️[260. 只出现一次的数字 III](https://leetcode-cn.com/problems/single-number-iii/)
+
+给定一个整数数组 `nums`，其中恰好有两个元素只出现一次，其余所有元素均出现两次。 找出只出现一次的那两个元素。你可以按 **任意顺序** 返回答案。
+
+ ```java
+class Solution {
+    public int[] singleNumber(int[] nums) {
+        // a ^ b = x
+        // a和b至少有一位是不一样的，找出这个位置，然后对于数组中的每个数，根据这一位是否为1分为两组，两组分别异或，得到两组最后结果
+        int x = 0;
+        for (int num : nums) {
+            x ^= num;
+        }
+        int idx = 0;
+        while ((x & 1) == 0) {
+            x >>= 1;
+            idx++;
+        }
+        int a = 0, b = 0;
+        for (int num : nums) {
+            if (((num >> idx) & 1) == 0) {
+                a ^= num;
+            } else {
+                b ^= num;
+            }
+        }
+        return new int[]{a, b};
+    }
+}
+ ```
+
+### 并查集
+
+#### [990. 等式方程的可满足性](https://leetcode-cn.com/problems/satisfiability-of-equality-equations/)
+
+给定一个由表示变量之间关系的字符串方程组成的数组，每个字符串方程 `equations[i]` 的长度为 `4`，并采用两种不同的形式之一：`"a==b"` 或 `"a!=b"`。在这里，a 和 b 是小写字母（不一定不同），表示单字母变量名。
+
+只有当可以将整数分配给变量名，以便满足所有给定的方程时才返回 `true`，否则返回 `false`。 
+
+```java
+class Solution {
+    public boolean equationsPossible(String[] equations) {
+        int[] parent = new int[26];
+        for (int i = 0; i < 26; i++) {
+            parent[i] = i;
+        }
+        for (String equation : equations) {
+            if ("==".equals(equation.substring(1, 3))) {
+                int idx1 = equation.charAt(0) - 'a', idx2 = equation.charAt(3) - 'a';
+                merge(parent, idx1, idx2);
+            }
+        }
+        for (String equation : equations) {
+            if ("!=".equals(equation.substring(1, 3))) {
+                int idx1 = equation.charAt(0) - 'a', idx2 = equation.charAt(3) - 'a';
+                if (find(parent, idx1) == find(parent, idx2)) return false;
+            }
+        }
+        return true;
+    }
+
+    private void merge(int[] parent, int idx1, int idx2) {
+        parent[find(parent, idx1)] = find(parent, idx2);
+    }
+
+    private int find(int[] parent, int idx) {
+        if (parent[idx] == idx) {
+            return idx;
+        } else {
+            return find(parent, parent[idx]);
+        }
+    }
+}
+```
+
+#### [399. 除法求值](https://leetcode-cn.com/problems/evaluate-division/)
+
+给你一个变量对数组 `equations` 和一个实数值数组 `values` 作为已知条件，其中 `equations[i] = [Ai, Bi]` 和 `values[i]` 共同表示等式 `Ai / Bi = values[i]` 。每个 `Ai` 或 `Bi` 是一个表示单个变量的字符串。
+
+另有一些以数组 `queries` 表示的问题，其中 `queries[j] = [Cj, Dj]` 表示第 `j` 个问题，请你根据已知条件找出 `Cj / Dj = ?` 的结果作为答案。
+
+返回 **所有问题的答案** 。如果存在某个无法确定的答案，则用 `-1.0` 替代这个答案。如果问题中出现了给定的已知条件中没有出现的字符串，也需要用 `-1.0` 替代这个答案。
+
+**注意：**输入总是有效的。你可以假设除法运算中不会出现除数为 0 的情况，且不存在任何矛盾的结果。
+
+```java
+class Solution {
+    public double[] calcEquation(List<List<String>> equations, double[] values, List<List<String>> queries) {
+        int n_var = 0;
+        Map<String, Integer> variables = new HashMap<>();
+
+        int n = equations.size();
+        for (List<String> equation : equations) {
+            if (!variables.containsKey(equation.get(0))) {
+                variables.put(equation.get(0), n_var++);
+            }
+            if (!variables.containsKey(equation.get(1))) {
+                variables.put(equation.get(1), n_var++);
+            }
+        }
+        int[] f = new int[n_var];
+        double[] w = new double[n_var];
+        for (int i = 0; i < n_var; i++) {
+            f[i] = i;
+            w[i] = 1.0;
+        }
+
+        for (int i = 0; i < n; i++) {
+            int va = variables.get(equations.get(i).get(0)), vb = variables.get(equations.get(i).get(1));
+            merge(f, w, va, vb, values[i]);
+        }
+        int queriesCount = queries.size();
+        double[] ret = new double[queriesCount];
+        for (int i = 0; i < queriesCount; i++) {
+            List<String> query = queries.get(i);
+            double result = -1.0;
+            if (variables.containsKey(query.get(0)) && variables.containsKey(query.get(1))) {
+                int ia = variables.get(query.get(0)), ib = variables.get(query.get(1));
+                int fa = find(f, w, ia), fb = find(f, w, ib);
+                if (fa == fb) {
+                    result = w[ia] / w[ib];
+                }
+            }
+            ret[i] = result;
+        }
+        return ret;
+    }
+
+    private void merge(int[] f, double[] w, int x, int y, double val) {
+        int fx = find(f, w, x);
+        int fy = find(f, w, y);
+        f[fx] = fy;
+        w[fx] = val * w[y] / w[x];
+    }
+
+    private int find(int[] f, double[] w, int x) {
+        if (f[x] != x) {
+            int father = find(f, w, f[x]);
+            w[x] = w[x] * w[f[x]];
+            f[x] = father;
+        }
+        return f[x];
+    }
+}
+```
+
+#### [406. 根据身高重建队列](https://leetcode-cn.com/problems/queue-reconstruction-by-height/)
+
+假设有打乱顺序的一群人站成一个队列，数组 `people` 表示队列中一些人的属性（不一定按顺序）。每个 `people[i] = [hi, ki]` 表示第 `i` 个人的身高为 `hi` ，前面 **正好** 有 `ki` 个身高大于或等于 `hi` 的人。
+
+请你重新构造并返回输入数组 `people` 所表示的队列。返回的队列应该格式化为数组 `queue` ，其中 `queue[j] = [hj, kj]` 是队列中第 `j` 个人的属性（`queue[0]` 是排在队列前面的人）。
+
+```java
+class Solution {
+    public int[][] reconstructQueue(int[][] people) {
+        // 按照身高降序 K升序排序
+        Arrays.sort(people, (o1, o2) -> o1[0] == o2[0] ? o1[1] - o2[1] : o2[0] - o1[0]);
+        List<int[]> res = new ArrayList<>();
+        // K值定义为 排在h前面且身高大于或等于h的人数
+        // 因为从身高降序开始插入，此时所有人身高都大于等于h
+        // 因此K值即为需要插入的位置
+        for (int[] arr : people) {
+            res.add(arr[1], arr);
+        }
+        return res.toArray(new int[res.size()][]);
+    }
+}
+```
+
+#### 
+
+#### 
+
+#### 
+
+### 主要⭕️
 
 #### ⭐⭐[3. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)
 
@@ -4072,178 +4970,6 @@ class Solution {
             }
         }
         return ans;
-    }
-}
-```
-
-***
-
-#### ✅♦♦♦旋转排序数组♦♦♦
-
-#### ⭐[33. 搜索旋转排序数组](https://leetcode-cn.com/problems/search-in-rotated-sorted-array/)(left)
-
-整数数组 `nums` 按升序排列，数组中的值 **互不相同** 。
-
-在传递给函数之前，`nums` 在预先未知的某个下标 `k`（`0 <= k < nums.length`）上进行了 **旋转**，使数组变为 `[nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]]`（下标 **从 0 开始** 计数）。例如， `[0,1,2,4,5,6,7]` 在下标 `3` 处经旋转后可能变为 `[4,5,6,7,0,1,2]` 。
-
-给你 **旋转后** 的数组 `nums` 和一个整数 `target` ，如果 `nums` 中存在这个目标值 `target` ，则返回它的下标，否则返回 `-1` 。
-
-```java
-class Solution {
-    public int search(int[] nums, int target) {
-        if (nums == null || nums.length == 0) return -1;
-        int len = nums.length, left = 0, right = len - 1;
-        while (left < right) {
-            int mid = left + (right - left) / 2;
-            if (nums[mid] == target) return mid;
-            if (nums[mid] < nums[left]) {
-                if (nums[mid] < target && target <= nums[right]) {
-                    left = mid + 1;
-                } else {
-                    right = mid - 1;
-                }
-            } else {
-                if (nums[left] <= target && target < nums[mid]) {
-                    right = mid - 1;
-                } else {
-                    left = mid + 1;
-                }
-            }
-        }
-        return nums[left] == target ? left : -1;
-    }
-}
-```
-
-#### ⭐⭐[81. 搜索旋转排序数组 II](https://leetcode-cn.com/problems/search-in-rotated-sorted-array-ii/)(left)
-
-已知存在一个按非降序排列的整数数组 `nums` ，数组中的值不必互不相同。(**可能有重复的值**)
-
-在传递给函数之前，`nums` 在预先未知的某个下标 `k`（`0 <= k < nums.length`）上进行了 **旋转** ，使数组变为 `[nums[k], nums[k+1], ..., nums[n-1], nums[0], nums[1], ..., nums[k-1]]`（下标 **从 0 开始** 计数）。例如， `[0,1,2,4,4,4,5,6,6,7]` 在下标 `5` 处经旋转后可能变为 `[4,5,6,6,7,0,1,2,4,4]` 。
-
-给你 **旋转后** 的数组 `nums` 和一个整数 `target` ，请你编写一个函数来判断给定的目标值是否存在于数组中。如果 `nums` 中存在这个目标值 `target` ，则返回 `true` ，否则返回 `false` 
-
-```java
-/*
-该题与33. 搜索旋转排序数组的区别在于，这题的数组中可能会出现重复元素。
-二分查找的本质就是在循环的每一步中考虑排除掉哪些元素，本题在用二分查找时，只有在nums[mid]严格大于或小于左边界时才能判断它左边或右边是升序的，这时可以再根据nums[mid], target与左右边界的大小关系排除掉一半的元素；
-当nums[mid]等于左边界时，无法判断是mid的左边还是右边是升序数组，而只能肯定左边界不等于target（因为nums[mid] != target），所以只能排除掉这一个元素，让左边界加一。
-*/
-class Solution {
-    public boolean search(int[] nums, int target) {
-        int len = nums.length, left = 0, right = len - 1;
-        while (left < right) {
-            int mid = left + (right - left) / 2;
-            if (nums[mid] == target) return true;
-            if (nums[mid] == nums[left]) {
-                left++;
-            } else if (nums[mid] > nums[left]) {
-                if (nums[left] <= target && target < nums[mid]) {
-                    right = mid - 1;
-                } else {
-                    left = mid + 1;
-                }
-            } else {
-                if (nums[mid] < target && target <= nums[right]) {
-                    left = mid + 1;
-                } else {
-                    right = mid - 1;
-                }
-            }
-        }
-        return nums[left] == target;
-    }
-}
-```
-
-#### ⭐⭐[面试题 10.03. 搜索旋转数组](https://leetcode-cn.com/problems/search-rotate-array-lcci/)(right)
-
-搜索旋转数组。给定一个排序后的数组，包含n个整数，但这个数组已被旋转过很多次了，次数不详。请编写代码找出数组中的某个元素，假设数组元素原先是按升序排列的。若有多个相同元素，返回索引值最小的一个。
-
-```java
-class Solution {
-    public int search(int[] arr, int target) {
-        if (arr[0] == target) return 0;
-        int left = 0, right = arr.length - 1;
-        while (left < right) {
-            int mid = left + (right - left) / 2;
-            if (arr[mid] == target) {
-                while (mid > 0 && arr[mid - 1] == arr[mid]) mid--;
-                return mid;
-            }
-            if (arr[mid] == arr[right]) {
-                right--;
-            } else if (arr[mid] < arr[right]) {
-                if (arr[mid] < target && target <= arr[right]) {
-                    left = mid + 1;
-                } else {
-                    right = mid - 1;
-                }
-            } else {
-                if (arr[left] <= target && target < arr[mid]) {
-                    right = mid - 1;
-                } else {
-                    left = mid + 1;
-                }
-            }
-        }
-        return arr[left] == target ? left : -1;
-    }
-}
-```
-
-#### ⭐⭐⭐[153. 寻找旋转排序数组中的最小值](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array/)(right)
-
-已知一个长度为 `n` 的数组，预先按照升序排列，经由 `1` 到 `n` 次 **旋转** 后，得到输入数组。例如，原数组 `nums = [0,1,2,4,5,6,7]` 在变化后可能得到：
-
-- 若旋转 `4` 次，则可以得到 `[4,5,6,7,0,1,2]`
-- 若旋转 `7` 次，则可以得到 `[0,1,2,4,5,6,7]`
-
-注意，数组 `[a[0], a[1], a[2], ..., a[n-1]]` **旋转一次** 的结果为数组 `[a[n-1], a[0], a[1], a[2], ..., a[n-2]]` 。
-
-给你一个元素值 **互不相同** 的数组 `nums` ，它原来是一个升序排列的数组，并按上述情形进行了多次旋转。请你找出并返回数组中的 **最小元素** 。
-
-```java
-class Solution {
-    public int findMin(int[] nums) {
-        int left = 0, right = nums.length - 1;
-        while (left < right) {
-            int mid = left + (right - left) / 2;
-            // 最后一段是 [l, l+1]，此时mid等于l，nums[mid]==nums[l]无法判断较小的在左边还是右边也就是无法进一步缩小区间，如果和右端点比的话，mid等于l+1,nums[l]和nums[l+1]可以判断谁大谁小，也就可以进一步缩小区间
-            // 同理，要是要搜索旋转数组的最大值，那么就要和左端点比了
-            if (nums[mid] <= nums[right]) {
-                right = mid;
-            } else {
-                left = mid + 1;
-            }
-        }
-       return nums[left];
-    }
-}
-```
-
-#### ⭐⭐⭐[154. 寻找旋转排序数组中的最小值 II](https://leetcode-cn.com/problems/find-minimum-in-rotated-sorted-array-ii/)(right)
-
-已知一个长度为 `n` 的数组，预先按照升序排列，经由 `1` 到 `n` 次 **旋转** 后，得到输入数组。给你一个可能存在 重复 元素值的数组 nums ，它原来是一个升序排列的数组，并按上述情形进行了多次旋转。请你找出并返回数组中的 最小元素 。
-
-你必须尽可能减少整个过程的操作步骤。
-
-```java
-class Solution {
-    public int findMin(int[] nums) {
-        int len = nums.length, left = 0, right = len - 1;
-        while (left < right) {
-            int mid = left + (right - left) / 2;
-            // 对于有重复元素的情况，如果等于的话，只能把当前元素排除
-            if (nums[mid] == nums[right]) {
-                right--;
-            } else if (nums[mid] < nums[right]) {
-                right = mid;
-            } else {
-                left = mid + 1;
-            }
-        }
-        return nums[left];
     }
 }
 ```
@@ -4910,223 +5636,6 @@ class Solution {
 }
  ```
 
-#### ⭕️⭐⭐⭐[146. LRU 缓存机制](https://leetcode-cn.com/problems/lru-cache/)
-
-实现 `LRUCache` 类：
-
-- `LRUCache(int capacity)` 以正整数作为容量 `capacity` 初始化 LRU 缓存
-- `int get(int key)` 如果关键字 `key` 存在于缓存中，则返回关键字的值，否则返回 `-1` 。
-- `void put(int key, int value)` 如果关键字已经存在，则变更其数据值；如果关键字不存在，则插入该组「关键字-值」。当缓存容量达到上限时，它应该在写入新数据之前删除最久未使用的数据值，从而为新的数据值留出空间。
-
-**进阶**：你是否可以在 `O(1)` 时间复杂度内完成这两种操作？
-
-```java
-class LRUCache {
-    class Node {
-        int key, val;
-        Node next, prev;
-
-        public Node(int key, int val) {
-            this.key = key;
-            this.val = val;
-        }
-    }
-
-    class DoubleList {
-        Node head, tail;
-        int size;
-
-        public int getSize() {
-            return this.size;
-        }
-
-        public DoubleList() {
-            head = new Node(0, 0);
-            tail = new Node(0, 0);
-            head.next = tail;
-            tail.prev = head;
-            size = 0;
-        }
-
-        public void remove(Node node) {
-            node.prev.next = node.next;
-            node.next.prev = node.prev;
-            size--;
-        }
-
-        public Node removeLast() {
-            Node last = tail.prev;
-            remove(last);
-            return last;
-        }
-
-        public void addFirst(Node node) {
-            Node p = head, q = head.next;
-            node.prev = p;
-            p.next = node;
-            node.next = q;
-            q.prev = node;
-            size++;
-        }
-    }
-
-    DoubleList doubleList;
-    Map<Integer, Node> map;
-    int capacity;
-
-    public LRUCache(int capacity) {
-        doubleList = new DoubleList();
-        map = new HashMap<>();
-        this.capacity = capacity;
-    }
-
-    public int get(int key) {
-        if (!map.containsKey(key)) return -1;
-        int val = map.get(key).val;
-        put(key, val);
-        return val;
-    }
-
-    public void put(int key, int value) {
-        Node node = new Node(key, value);
-        if (map.containsKey(key)) {
-            doubleList.remove(map.get(key));
-            doubleList.addFirst(node);
-            map.put(key, node);
-        } else {
-            if (doubleList.getSize() == capacity) {
-                Node last = doubleList.removeLast();
-                map.remove(last.key);
-            }
-            doubleList.addFirst(node);
-            map.put(key, node);
-        }
-    }
-}
-```
-
-#### [460. LFU 缓存](https://leetcode-cn.com/problems/lfu-cache/)
-
-难度困难515
-
-请你为 [最不经常使用（LFU）](https://baike.baidu.com/item/%E7%BC%93%E5%AD%98%E7%AE%97%E6%B3%95)缓存算法设计并实现数据结构。
-
-实现 `LFUCache` 类：
-
-- `LFUCache(int capacity)` - 用数据结构的容量 `capacity` 初始化对象
-- `int get(int key)` - 如果键 `key` 存在于缓存中，则获取键的值，否则返回 `-1` 。
-- `void put(int key, int value)` - 如果键 `key` 已存在，则变更其值；如果键不存在，请插入键值对。当缓存达到其容量 `capacity` 时，则应该在插入新项之前，移除最不经常使用的项。在此问题中，当存在平局（即两个或更多个键具有相同使用频率）时，应该去除 **最近最久未使用** 的键。
-
-为了确定最不常使用的键，可以为缓存中的每个键维护一个 **使用计数器** 。使用计数最小的键是最久未使用的键。
-
-当一个键首次插入到缓存中时，它的使用计数器被设置为 `1` (由于 put 操作)。对缓存中的键执行 `get` 或 `put` 操作，使用计数器的值将会递增。
-
-函数 `get` 和 `put` 必须以 `O(1)` 的平均时间复杂度运行。
-
-```java
-class LFUCache {
-
-    class Node {
-        int key, value;
-        int freq = 1;
-        Node prev, next;
-        
-        public Node(int key, int value) {
-            this.key = key;
-            this.value = value;
-        }
-    }
-
-    class DoubleList {
-        Node head, tail;
-
-        public DoubleList() {
-            head = new Node(0, 0);
-            tail = new Node(0, 0);
-            head.next = tail;
-            tail.prev = head;
-        }
-
-        public void addNode(Node node) {
-            Node p = head.next;
-            node.prev = head;
-            head.next = node;
-            node.next = p;
-            p.prev = node;
-        }
-
-        public void removeNode(Node node) {
-            node.prev.next = node.next;
-            node.next.prev = node.prev;
-        }   
-    }
-
-    Map<Integer, Node> cache; // 存储缓存的内容
-    Map<Integer, DoubleList> freqMap; // 存储每个频次对应的双向链表
-    int capacity;   // 缓存最大容量
-    int min; // 存储当前最小频次
-
-    public LFUCache(int capacity) {
-        this.cache = new HashMap<> (capacity);
-        this.freqMap = new HashMap<>();
-        this.capacity = capacity;
-        this.min = 0;
-    }
-    
-    public int get(int key) {
-        if (!cache.containsKey(key)) return -1;
-        Node node = cache.get(key);
-        freqInc(node);
-        return node.value;
-    }
-    
-    public void put(int key, int value) {
-        if (capacity == 0) {
-            return;
-        }
-        if (cache.containsKey(key)) {
-            Node node = cache.get(key);
-            node.value = value;
-            freqInc(node);
-        } else {
-            if (cache.size() == capacity) {
-                DoubleList minFreqList = freqMap.get(min);
-                Node last = minFreqList.tail.prev;
-                minFreqList.removeNode(last);
-                cache.remove(last.key);
-            }
-            Node newNode = new Node(key, value);
-            if (!freqMap.containsKey(1)) {
-                freqMap.put(1, new DoubleList());
-            }
-            DoubleList list = freqMap.get(1);
-            list.addNode(newNode);
-            cache.put(key, newNode);
-            min = 1;   
-        }
-    }
-
-    public void freqInc(Node node) {
-        // 从原freq对应的链表里移除, 并更新min
-        int freq = node.freq;
-        DoubleList list = freqMap.get(freq);
-        list.removeNode(node);
-        // 一定要注意这一步判断：移除当前元素后是否要更新minFreq
-        if (freq == min && list.head.next == list.tail) { 
-            min = freq + 1;
-        }
-        // 加入新freq对应的链表
-        node.freq++;
-        if (!freqMap.containsKey(freq + 1)) {
-            freqMap.put(freq + 1, new DoubleList());
-        }
-        freqMap.get(freq + 1).addNode(node);
-    }
-}
-```
-
-
-
 #### ⭐[151. 翻转字符串里的单词](https://leetcode-cn.com/problems/reverse-words-in-a-string/)
 
 ```java
@@ -5292,189 +5801,6 @@ class Solution {
 ```
 
 
-
-
-
-#### ♦♦♦拓扑排序♦♦♦
-
-#### ✅⭐[207. 课程表](https://leetcode-cn.com/problems/course-schedule/)
-
-你这个学期必须选修 `numCourses` 门课程，记为 `0` 到 `numCourses - 1` 。
-
-在选修某些课程之前需要一些先修课程。 先修课程按数组 `prerequisites` 给出，其中 `prerequisites[i] = [ai, bi]` ，表示如果要学习课程 `ai` 则 **必须** 先学习课程 `bi` 。
-
-- 例如，先修课程对 `[0, 1]` 表示：想要学习课程 `0` ，你需要先完成课程 `1` 。
-
-请你判断是否可能完成所有课程的学习？如果可以，返回 `true` ；否则，返回 `false` 。
-
-参考：
-
-总结：拓扑排序问题
-根据依赖关系，构建邻接表、入度数组。
-选取入度为 0 的数据，根据邻接表，减小依赖它的数据指向的入度。
-找出入度变为 0 的数据，重复第 2 步。
-直至所有数据的入度为 0，得到排序，如果还有数据的入度不为 0，说明图中存在环。
-
-作者：xiao_ben_zhu
-链接：https://leetcode-cn.com/problems/course-schedule/solution/bao-mu-shi-ti-jie-shou-ba-shou-da-tong-tuo-bu-pai-/
-来源：力扣（LeetCode）
-
-```java
-class Solution {
-    public boolean canFinish(int numCourses, int[][] prerequisites) {
-        int[] indegree = new int[numCourses];
-        Map<Integer, List<Integer>> map = new HashMap<>();
-        
-        for (int[] prerequisite : prerequisites) {
-            int head = prerequisite[1], tail = prerequisite[0];
-            indegree[tail]++;
-            if (!map.containsKey(head)) map.put(head, new ArrayList<>());
-            map.get(head).add(tail);
-        }
-        Deque<Integer> queue = new LinkedList<>();
-        for (int i = 0; i < indegree.length; i++) {
-            if (indegree[i] == 0) {
-                queue.offer(i);
-            }
-        }
-        int cnt = 0;
-        while (!queue.isEmpty()) {
-            int head = queue.poll();
-            cnt++;
-            if (map.containsKey(head)) {
-                List<Integer> tails = map.get(head);
-                for (int tail : tails) {
-                    indegree[tail]--;
-                    if (indegree[tail] == 0) {
-                        queue.offer(tail);
-                    }
-                }
-            }
-        }
-        return cnt == numCourses;
-    }
-}
-
-// dfs
-class Solution {
-    // 对每个结点开始dfs，维护flags数组
-    // flags[i] == 0，没有被dfs遍历过
-    // flags[i] == -1,被其他结点开始的dfs遍历过
-    // flags[i] == 1,被当前结点开始的dfs遍历过
-    public boolean canFinish(int numCourses, int[][] prerequisites) {
-        Map<Integer, List<Integer>> map = new HashMap<>();
-        int[] flags = new int[numCourses];
-        for (int[] prerequisite : prerequisites) {
-            int head = prerequisite[1], tail = prerequisite[0];
-            if (!map.containsKey(head)) map.put(head, new ArrayList<>());
-            map.get(head).add(tail);
-        }
-        for (int i = 0; i < numCourses; i++) {
-            if (!dfs(map, i, flags)) return false;
-        }
-        return true;
-    }
-
-    private boolean dfs(Map<Integer, List<Integer>> map, int i, int[] flags) {
-        if (flags[i] == -1) return true;
-        if (flags[i] == 1)  return false;
-        flags[i] = 1;
-        if (map.containsKey(i)) {
-            List<Integer> tails = map.get(i);
-            for (int tail : tails) {
-                if (!dfs(map, tail, flags)) return false;
-            }
-        }
-        flags[i] = -1;
-        return true;
-    }
-}
-
-// 如果不知道课程的号码
-class Solution {
-    public boolean canFinish(int numCourses, int[][] prerequisites) {
-        Map<Integer, Integer> indegrees = new HashMap<>();	// 记录入度
-        Map<Integer, List<Integer>> map = new HashMap<>();	// 记录图
-        Set<Integer> courses = new HashSet<>();	// 记录课程号
-
-        for (int[] prerequisite : prerequisites) {
-            int head = prerequisite[1], tail = prerequisite[0];
-            indegrees.put(tail, indegrees.getOrDefault(tail, 0) + 1);
-            indegrees.put(head, indegrees.getOrDefault(head, 0));	// 注意也要将head加入防止找不到head
-            courses.add(head);
-            courses.add(tail);
-            if (!map.containsKey(head)) map.put(head, new ArrayList<>());
-            map.get(head).add(tail);
-        }
-        Deque<Integer> queue = new LinkedList<>();
-        for (int tail : indegrees.keySet()) {
-            if (indegrees.get(tail) == 0) {
-                queue.offer(tail);
-            }
-        }
-        int cnt = 0;
-        while (!queue.isEmpty()) {
-            int head = queue.poll();
-            cnt++;
-            if (map.containsKey(head)) {
-                List<Integer> tails = map.get(head);
-                for (int tail : tails) {
-                    indegrees.put(tail, indegrees.get(tail) - 1);
-                    if (indegrees.get(tail) == 0) {
-                        queue.offer(tail);
-                    }
-                }
-            }
-        }
-        return cnt == courses.size();
-    }
-}
-```
-
-#### ✅⭐[210. 课程表 II](https://leetcode-cn.com/problems/course-schedule-ii/)
-
-现在你总共有 `numCourses` 门课需要选，记为 `0` 到 `numCourses - 1`。给你一个数组 `prerequisites` ，其中 `prerequisites[i] = [ai, bi]` ，表示在选修课程 `ai` 前 **必须** 先选修 `bi` 。
-
-- 例如，想要学习课程 `0` ，你需要先完成课程 `1` ，我们用一个匹配来表示：`[0,1]` 。
-
-返回你为了学完所有课程所安排的学习顺序。可能会有多个正确的顺序，你只要返回 **任意一种** 就可以了。如果不可能完成所有课程，返回 **一个空数组** 。
-
-```java
-class Solution {
-    public int[] findOrder(int numCourses, int[][] prerequisites) {
-        int[] res = new int[numCourses];
-        int ind = 0;
-        int[] indegree = new int[numCourses];   // value -> indegree
-        Map<Integer, List<Integer>> map = new HashMap<>();   // value -> tails from value
-        for (int[] prerequisite : prerequisites) {
-            int head = prerequisite[1], tail = prerequisite[0];
-            indegree[tail]++;
-            if (!map.containsKey(head)) map.put(head, new ArrayList<>());
-            map.get(head).add(tail);
-        }
-        Deque<Integer> queue = new LinkedList<>();
-        for (int i = 0; i < indegree.length; i++) {
-            if (indegree[i] == 0) {
-                queue.offer(i);
-            }
-        }
-        while(!queue.isEmpty()) {
-            int head = queue.poll();
-            res[ind++] = head;
-            if (map.containsKey(head)) {
-                List<Integer> tails = map.get(head);
-                for (int tail : tails) {
-                    indegree[tail]--;
-                    if (indegree[tail] == 0) {
-                        queue.offer(tail);
-                    }
-                }
-            }
-        }
-        return ind == numCourses ? res : new int[0];
-    }
-}
-```
 
 
 
@@ -6063,194 +6389,6 @@ class Solution {
 }
 ```
 
-#### ♦♦♦二分♦♦♦
-
-```java
-// 查找第一个值等于给定值的元素
-private int firstEquals(int[] arr, int target) {
-    int l = 0, r = arr.length - 1;
-    while (l < r) {
-        int mid = l + ((r - l) >> 1);
-        if (arr[mid] < target) l = mid + 1;
-        else r = mid; // 收缩右边界不影响 first equals
-    }
-    if (arr[l] == target && (l == 0 || arr[l - 1] < target)) return l;
-    return -1;
-}
-// 查找最后一个值等于给定值的元素
-private int lastEquals(int[] arr, int target) {
-    int l = 0, r = arr.length - 1;
-    while (l < r) {
-        int mid = l + ((r - l + 1) >> 1);
-        if (arr[mid] > target) r = mid - 1;
-        else l = mid; // 收缩左边界不影响 last equals
-    }
-    if (arr[l] == target && (l == arr.length - 1 || arr[l + 1] > target)) return l;
-    return -1;
-}
-// 查找第一个大于等于给定值的元素
-private int firstLargeOrEquals(int[] arr, int target) {
-    int l = 0, r = arr.length - 1;
-    while (l < r) {
-        int mid = l + ((r - l) >> 1);
-        if (arr[mid] < target) l = mid + 1;
-        else r = mid; // 收缩右边界不影响 first equals
-    }
-    if (arr[l] >= target && (l == 0 || arr[l - 1] < target)) return l; // >=
-    return -1;
-}
-// 查找最后一个小于等于给定值的元素
-private int lastLessOrEquals(int[] arr, int target) {
-    int l = 0, r = arr.length - 1;
-    while (l < r) {
-        int mid = l + ((r - l + 1) >> 1);
-        if (arr[mid] > target) r = mid - 1;
-        else l = mid; // 收缩左边界不影响 last equals
-    }
-    if (arr[l] <= target && (l == arr.length - 1 || arr[l + 1] > target)) return l; // <=
-    return -1;
-}
-```
-
-#### ♦♦♦重复数相关♦♦♦
-
-#### [剑指 Offer 03. 数组中重复的数字](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/)
-
-找出数组中重复的数字。在一个长度为 n 的数组 nums 里的所有数字都在 0～n-1 的范围内。数组中某些数字是重复的，但不知道有几个数字重复了，也不知道每个数字重复了几次。请找出数组中任意一个重复的数字。
-
-```java
-class Solution {
-    public int findRepeatNumber(int[] nums) {
-        // 限定了数字的范围，因此可以原地哈希，不用额外开哈希表
-        for (int i = 0; i < nums.length; i++) {
-            while (nums[i] != i) {
-                if (nums[i] == nums[nums[i]]) {
-                    return nums[i];
-                }
-                swap(nums, i, nums[i]);
-            }
-        }
-        return -1;
-    }
-
-    private void swap(int[] nums, int i, int j) {
-        int temp = nums[i];
-        nums[i] = nums[j];
-        nums[j] = temp;
-    }
-}
-```
-
-#### ⭐[287. 寻找重复数](https://leetcode-cn.com/problems/find-the-duplicate-number/)
-
-给定一个包含 `n + 1` 个整数的数组 `nums` ，其数字都在 `[1, n]` 范围内（包括 `1` 和 `n`），可知至少存在一个重复的整数。
-
-假设 `nums` 只有 **一个重复的整数** ，返回 **这个重复的数** 。
-
-你设计的解决方案必须 **不修改** 数组 `nums` 且只用常量级 `O(1)` 的额外空间。
-
-```java
-class Solution {
-    public int findDuplicate(int[] nums) {
-        // 范围都在 [1, n]，就算都不同，那么就会出现有两个不同的下标，他们位置上的元素相同，建立从下标到数字的映射，将问题转化为链表有环的问题
-        int slow = 0, fast = 0;
-        while (true) {
-            slow = nums[slow];
-            fast = nums[nums[fast]];
-            if (slow == fast) {
-                slow = 0;
-                while (slow != fast) {
-                    slow = nums[slow];
-                    fast = nums[fast];
-                }
-                return slow;
-            }
-        }
-    }
-}
-```
-
-#### ✅[136. 只出现一次的数字](https://leetcode-cn.com/problems/single-number/)
-
-给定一个**非空**整数数组，除了某个元素只出现一次以外，其余每个元素均出现两次。找出那个只出现了一次的元素。
-
-**说明：**
-
-你的算法应该具有线性时间复杂度。 你可以不使用额外空间来实现吗？
-
-```java
-class Solution {
-    public int singleNumber(int[] nums) {
-        // a ^ 0 = a, a ^ a = 0
-        int res = 0;
-        for (int num : nums) {
-            res ^= num;
-        }
-        return res;
-    }
-}
-```
-
-#### ⭕️[137. 只出现一次的数字 II](https://leetcode-cn.com/problems/single-number-ii/)
-
-给你一个整数数组 `nums` ，除某个元素仅出现 **一次** 外，其余每个元素都恰出现 **三次 。**请你找出并返回那个只出现了一次的元素。
-
-```java
-class Solution {
-    public int singleNumber(int[] nums) {
-        // 每一位上相加，如果该位上是3的倍数，则结果该位为0，否则为1
-        int[] digits = new int[32];
-        for (int num : nums) {
-            for (int i = 0; i < 32; i++) {
-                digits[i] += (num & 1);
-                num >>= 1;
-            }
-        }
-        int res = 0;
-        for (int i = 31; i >= 0; i--) {
-            res <<= 1;
-            if (digits[i] % 3 != 0) {
-                res = (res | 1);	// 将该位数字置为1
-            }
-        }
-        return res;
-    }
-}
-```
-
-#### ⭕️[260. 只出现一次的数字 III](https://leetcode-cn.com/problems/single-number-iii/)
-
-给定一个整数数组 `nums`，其中恰好有两个元素只出现一次，其余所有元素均出现两次。 找出只出现一次的那两个元素。你可以按 **任意顺序** 返回答案。
-
- ```java
-class Solution {
-    public int[] singleNumber(int[] nums) {
-        // a ^ b = x
-        // a和b至少有一位是不一样的，找出这个位置，然后对于数组中的每个数，根据这一位是否为1分为两组，两组分别异或，得到两组最后结果
-        int x = 0;
-        for (int num : nums) {
-            x ^= num;
-        }
-        int idx = 0;
-        while ((x & 1) == 0) {
-            x >>= 1;
-            idx++;
-        }
-        int a = 0, b = 0;
-        for (int num : nums) {
-            if (((num >> idx) & 1) == 0) {
-                a ^= num;
-            } else {
-                b ^= num;
-            }
-        }
-        return new int[]{a, b};
-    }
-}
- ```
-
-#### ♦♦♦♦♦♦
-
 #### ⭐⭐[295. 数据流的中位数](https://leetcode-cn.com/problems/find-median-from-data-stream/)
 
 中位数是有序列表中间的数。如果列表长度是偶数，中位数则是中间两个数的平均值。
@@ -6483,144 +6621,6 @@ class Solution {
             }
         }
         return curStr.toString();
-    }
-}
-```
-
-#### ---并查集---
-
-#### [990. 等式方程的可满足性](https://leetcode-cn.com/problems/satisfiability-of-equality-equations/)
-
-给定一个由表示变量之间关系的字符串方程组成的数组，每个字符串方程 `equations[i]` 的长度为 `4`，并采用两种不同的形式之一：`"a==b"` 或 `"a!=b"`。在这里，a 和 b 是小写字母（不一定不同），表示单字母变量名。
-
-只有当可以将整数分配给变量名，以便满足所有给定的方程时才返回 `true`，否则返回 `false`。 
-
-```java
-class Solution {
-    public boolean equationsPossible(String[] equations) {
-        int[] parent = new int[26];
-        for (int i = 0; i < 26; i++) {
-            parent[i] = i;
-        }
-        for (String equation : equations) {
-            if ("==".equals(equation.substring(1, 3))) {
-                int idx1 = equation.charAt(0) - 'a', idx2 = equation.charAt(3) - 'a';
-                merge(parent, idx1, idx2);
-            }
-        }
-        for (String equation : equations) {
-            if ("!=".equals(equation.substring(1, 3))) {
-                int idx1 = equation.charAt(0) - 'a', idx2 = equation.charAt(3) - 'a';
-                if (find(parent, idx1) == find(parent, idx2)) return false;
-            }
-        }
-        return true;
-    }
-
-    private void merge(int[] parent, int idx1, int idx2) {
-        parent[find(parent, idx1)] = find(parent, idx2);
-    }
-
-    private int find(int[] parent, int idx) {
-        if (parent[idx] == idx) {
-            return idx;
-        } else {
-            return find(parent, parent[idx]);
-        }
-    }
-}
-```
-
-#### [399. 除法求值](https://leetcode-cn.com/problems/evaluate-division/)
-
-给你一个变量对数组 `equations` 和一个实数值数组 `values` 作为已知条件，其中 `equations[i] = [Ai, Bi]` 和 `values[i]` 共同表示等式 `Ai / Bi = values[i]` 。每个 `Ai` 或 `Bi` 是一个表示单个变量的字符串。
-
-另有一些以数组 `queries` 表示的问题，其中 `queries[j] = [Cj, Dj]` 表示第 `j` 个问题，请你根据已知条件找出 `Cj / Dj = ?` 的结果作为答案。
-
-返回 **所有问题的答案** 。如果存在某个无法确定的答案，则用 `-1.0` 替代这个答案。如果问题中出现了给定的已知条件中没有出现的字符串，也需要用 `-1.0` 替代这个答案。
-
-**注意：**输入总是有效的。你可以假设除法运算中不会出现除数为 0 的情况，且不存在任何矛盾的结果。
-
-```java
-class Solution {
-    public double[] calcEquation(List<List<String>> equations, double[] values, List<List<String>> queries) {
-        int n_var = 0;
-        Map<String, Integer> variables = new HashMap<>();
-
-        int n = equations.size();
-        for (List<String> equation : equations) {
-            if (!variables.containsKey(equation.get(0))) {
-                variables.put(equation.get(0), n_var++);
-            }
-            if (!variables.containsKey(equation.get(1))) {
-                variables.put(equation.get(1), n_var++);
-            }
-        }
-        int[] f = new int[n_var];
-        double[] w = new double[n_var];
-        for (int i = 0; i < n_var; i++) {
-            f[i] = i;
-            w[i] = 1.0;
-        }
-
-        for (int i = 0; i < n; i++) {
-            int va = variables.get(equations.get(i).get(0)), vb = variables.get(equations.get(i).get(1));
-            merge(f, w, va, vb, values[i]);
-        }
-        int queriesCount = queries.size();
-        double[] ret = new double[queriesCount];
-        for (int i = 0; i < queriesCount; i++) {
-            List<String> query = queries.get(i);
-            double result = -1.0;
-            if (variables.containsKey(query.get(0)) && variables.containsKey(query.get(1))) {
-                int ia = variables.get(query.get(0)), ib = variables.get(query.get(1));
-                int fa = find(f, w, ia), fb = find(f, w, ib);
-                if (fa == fb) {
-                    result = w[ia] / w[ib];
-                }
-            }
-            ret[i] = result;
-        }
-        return ret;
-    }
-
-    private void merge(int[] f, double[] w, int x, int y, double val) {
-        int fx = find(f, w, x);
-        int fy = find(f, w, y);
-        f[fx] = fy;
-        w[fx] = val * w[y] / w[x];
-    }
-
-    private int find(int[] f, double[] w, int x) {
-        if (f[x] != x) {
-            int father = find(f, w, f[x]);
-            w[x] = w[x] * w[f[x]];
-            f[x] = father;
-        }
-        return f[x];
-    }
-}
-```
-
-#### [406. 根据身高重建队列](https://leetcode-cn.com/problems/queue-reconstruction-by-height/)
-
-假设有打乱顺序的一群人站成一个队列，数组 `people` 表示队列中一些人的属性（不一定按顺序）。每个 `people[i] = [hi, ki]` 表示第 `i` 个人的身高为 `hi` ，前面 **正好** 有 `ki` 个身高大于或等于 `hi` 的人。
-
-请你重新构造并返回输入数组 `people` 所表示的队列。返回的队列应该格式化为数组 `queue` ，其中 `queue[j] = [hj, kj]` 是队列中第 `j` 个人的属性（`queue[0]` 是排在队列前面的人）。
-
-```java
-class Solution {
-    public int[][] reconstructQueue(int[][] people) {
-        // 按照身高降序 K升序排序
-        Arrays.sort(people, (o1, o2) -> o1[0] == o2[0] ? o1[1] - o2[1] : o2[0] - o1[0]);
-        List<int[]> res = new ArrayList<>();
-        // K值定义为 排在h前面且身高大于或等于h的人数
-        // 因为从身高降序开始插入，此时所有人身高都大于等于h
-        // 因此K值即为需要插入的位置
-        for (int[] arr : people) {
-            res.add(arr[1], arr);
-        }
-        return res.toArray(new int[res.size()][]);
     }
 }
 ```
@@ -7291,6 +7291,8 @@ class Trie {
 ```
 
 # 剑指Offer
+
+### 题解
 
 #### [剑指 Offer 03. 数组中重复的数字](https://leetcode-cn.com/problems/shu-zu-zhong-zhong-fu-de-shu-zi-lcof/)
 
