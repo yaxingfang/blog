@@ -299,7 +299,7 @@ class Solution {
 }
 ```
 
-### :o:分割
+### 分割
 
 #### ⭐[131. 分割回文串](https://leetcode-cn.com/problems/palindrome-partitioning/)
 
@@ -497,7 +497,7 @@ class Solution {
 }
 ```
 
-### :o:棋盘
+### 棋盘
 
 #### [51. N 皇后](https://leetcode-cn.com/problems/n-queens/)
 
@@ -1439,7 +1439,7 @@ class Solution {
 }
 ```
 
-### :o:完全背包
+### 完全背包
 
 #### ⭐[322. 零钱兑换](https://leetcode-cn.com/problems/coin-change/)
 
@@ -1583,7 +1583,7 @@ class Solution {
 }
 ```
 
-### :o:01背包
+### 01背包
 
 #### [416. 分割等和子集](https://leetcode-cn.com/problems/partition-equal-subset-sum/)
 
@@ -2376,7 +2376,7 @@ class Solution {
 }
 ```
 
-### :o:二叉树的最近公共祖先
+### 二叉树的最近公共祖先
 
 #### ⭐⭐⭐[236. 二叉树的最近公共祖先](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree/)
 
@@ -2450,9 +2450,7 @@ class Solution {
 }
 ```
 
-
-
-### :o:路径总和
+### 路径总和
 
 #### ⭐[112. 路径总和](https://leetcode-cn.com/problems/path-sum/)
 
@@ -2575,9 +2573,7 @@ class Solution {
 }
 ```
 
-
-
-### :o:二叉树路径系列
+### 二叉树路径系列
 
 #### [543. 二叉树的直径](https://leetcode-cn.com/problems/diameter-of-binary-tree/)
 
@@ -2690,9 +2686,7 @@ class Solution {
 }
 ```
 
-
-
-### :o:树的序列化
+### 树的序列化
 
 #### ⭐⭐[297. 二叉树的序列化与反序列化](https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree/)
 
@@ -2922,7 +2916,7 @@ public class Codec {
 
 ## 链表
 
-### :o:反转链表
+### 反转链表
 
 #### ⭐[206. 反转链表](https://leetcode-cn.com/problems/reverse-linked-list/)
 
@@ -3388,7 +3382,9 @@ public class Solution {
 }
 ```
 
-## 滑动窗口
+## 其他类型
+
+### 滑动窗口
 
 ### 覆盖子串问题
 
@@ -4613,13 +4609,9 @@ class Solution {
 }
 ```
 
-#### 
+## 其他题解
 
-#### 
-
-#### 
-
-### 主要⭕️
+### 主要
 
 #### ⭐⭐[3. 无重复字符的最长子串](https://leetcode-cn.com/problems/longest-substring-without-repeating-characters/)
 
