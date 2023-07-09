@@ -6,7 +6,34 @@
     <description>Recent content on Yaxing&#39;s Blog</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 14 May 2023 16:40:20 +0800</lastBuildDate><atom:link href="https://yaxing97.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 09 Jul 2023 20:41:04 +0800</lastBuildDate><atom:link href="https://yaxing97.com/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于感情</title>
+      <link>https://yaxing97.com/about-love/</link>
+      <pubDate>Sun, 09 Jul 2023 20:41:04 +0800</pubDate>
+      
+      <guid>https://yaxing97.com/about-love/</guid>
+      <description>&lt;p&gt;刚分手，聊聊对于感情的一些看法。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>毕业啦!</title>
+      <link>https://yaxing97.com/master-graduate/</link>
+      <pubDate>Sat, 24 Jun 2023 20:47:14 +0800</pubDate>
+      
+      <guid>https://yaxing97.com/master-graduate/</guid>
+      <description>我毕业啦，在苏大的三年研究生生活就此结束。 三年中，生活上、工作上、感情上均有得有失，总体还是以一个比较美好的结局收尾。 敬过去的自己，也敬未来</description>
+    </item>
+    
+    <item>
+      <title>今日小感触，关于工作，关于未来</title>
+      <link>https://yaxing97.com/some-feelings-today/</link>
+      <pubDate>Wed, 17 May 2023 21:20:04 +0800</pubDate>
+      
+      <guid>https://yaxing97.com/some-feelings-today/</guid>
+      <description>&lt;p&gt;今日份小感触，有关于工作，有关于未来。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>LeetCode</title>
       <link>https://yaxing97.com/leetcode/</link>
