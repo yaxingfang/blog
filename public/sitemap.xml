@@ -93,28 +93,14 @@
   </url>
   
   <url>
-    <loc>https://yaxing97.com/categories/%E4%B8%AA%E4%BA%BA%E6%80%9D%E8%80%83/</loc>
-    <lastmod>2023-07-09T20:41:04+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://yaxing97.com/about-love/</loc>
-    <lastmod>2023-07-09T20:41:04+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://yaxing97.com/tags/%E6%81%8B%E7%88%B1/</loc>
-    <lastmod>2023-07-09T20:41:04+08:00</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://yaxing97.com/master-graduate/</loc>
+    <lastmod>2023-06-24T20:47:14+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaxing97.com/categories/%E4%B8%AA%E4%BA%BA%E6%80%9D%E8%80%83/</loc>
     <lastmod>2023-06-24T20:47:14+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -186,6 +172,13 @@
   <url>
     <loc>https://yaxing97.com/categories/%E6%97%A5%E5%B8%B8%E5%B0%8F%E8%AE%B0/</loc>
     <lastmod>2023-04-28T19:46:55+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://yaxing97.com/tags/%E6%81%8B%E7%88%B1/</loc>
+    <lastmod>2023-04-24T08:01:30+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
