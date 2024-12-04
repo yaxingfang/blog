@@ -200,7 +200,7 @@ copyright = ""            # default: author.name ↓        # 默认为下面配
     # d-facebook = "https://yaxing97.com"
     # e-linkedin = "https://yaxing97.com"
     f-google = "https://scholar.google.com.hk/citations?user=9DPge4wAAAAJ&hl=zh-CN&oi=sra"
-    g-github = "https://github.com/yaxingfang"
+    # g-github = "https://github.com/yaxingfang"
     # h-weibo = "https://yaxing97.com"
     # i-zhihu = "https://www.zhihu.com/people/fang-ya-xing-22"
     # j-douban = "https://yaxing97.com"
